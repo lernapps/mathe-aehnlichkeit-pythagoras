@@ -69,6 +69,11 @@ Lernlandkarte Mathematik; eigene Herleitungen. Nachgeschlagenes (Satz des Pythag
 
 ## Rules learned from mistakes
 
+- Antwortreihenfolge in Auswahlfragen und Kurztests ist im YAML gemischt (die richtige Antwort nicht immer zuerst); beim Ergänzen neuer Fragen die richtige Option nicht an den Anfang setzen.
+- `generated`: Toleranz 0,05 bei einer Dezimalstelle, 0,0005 bei drei (die Laufzeit zeigt sie in der Lösung); `where` schließt unsinnige Größen aus (Turm und Fluss 6 bis 60 m, Leiter höchstens etwa 75°) und Fälle, in denen eine Fehlermeldung gleich der Lösung wäre (zum Beispiel α = 45° bei sin gegen cos).
+- Aufgabentexte nennen die Buchstaben, auf die Tipps und Lösungen verweisen (a, b, c, l, d).
+- Mehr als ein `: ` im Klartext einer YAML-Zeile in Anführungszeichen setzen; Kommas in Flow-Maps vermeiden (Block-Schreibweise).
+
 - Keine `links:` an Aufgaben (Epic-Regel); `lernapps check` besteht ohne.
 - Formeln: kein `\angle`, `\overline`, `\ldots`; Winkel mit ∠ im Text. Dezimalzahlen in `formula` mit `{,}`.
 - Komponenten brauchen `min-width: 0` und Umbruch (360 px), `nojs`-Text mit Werten.
