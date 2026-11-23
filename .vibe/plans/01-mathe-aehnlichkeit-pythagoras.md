@@ -247,9 +247,10 @@ page, which a link. -->
       `.agents/skills/lernapps-explainer/references/structure.md` says. Write the choice under "Key decisions".
 - [x] Musterseite streckung (Kapitel 1, Seite 2): Komponente Streckung (Regler, Tastatur, nojs, Test), Einstieg, Idee, Beispiel, Aufgaben (erkennen, generated, Sachaufgabe); Lernenden-Prüfer (Klasse 9-10) spielt sie durch; app.yaml, chapter.yaml, Gerüst
 <!-- tasks: pattern (1 added): the one page or screen that is the pattern for the others -->
-- [ ] **Checkpoint:** the pattern page. Load skill `lernapps-learner-check` and do its learner check on the page. Fix
+- [x] **Checkpoint:** the pattern page. Load skill `lernapps-learner-check` and do its learner check on the page. Fix
       what it finds. Then show the creator the page and ask whether the others may follow it. Stop and wait. A
       change: change the pattern first.
+      Creator: Musterseite angenommen, übrige Seiten dürfen dem Muster folgen (Orchestrator).
 - [ ] Kapitel 1 Recap: Seite recap mit Kurztest-Komponente (Kopie der Vorlage), Abschnitte Kongruenz, Proportionale Zuordnungen, Maßstab, Lineare Gleichungen, Winkelmessen und Winkelsumme; Glossar; Push
 - [ ] Kapitel 1: Seite aehnliche-figuren (ähnlich erkennen, Faktor k, Maßstab, Flächen mal k²) mit Aufgaben
 - [ ] Kapitel 1: Seite strahlensaetze (V- und X-Figur, erster und zweiter Strahlensatz) mit Aufgaben
