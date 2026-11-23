@@ -42,7 +42,7 @@ blocks:
         licence: CC0-1.0
       - type: text
         text: |
-          Gegeben sind der Stab mit 1,5 m und 3 m Schatten und der Turmschatten mit 24 m. Stab und Turm sind die parallelen Strecken, die Schatten sind die Abstände von Z. Der zweite Strahlensatz sagt: Turmhöhe durch Stabhöhe ist gleich Turmschatten durch Stabschatten.
+          Gegeben sind der Stab mit 1,5 m und 3 m Schatten und der Turmschatten mit 24 m. Stab und Turm sind die parallelen Strecken, die Schatten sind die Abstände von Z. Der zweite Strahlensatz sagt: Turmhöhe durch Stabhöhe ist gleich Turmschatten durch Stabschatten.
       - type: formula
         formula: '\frac{h}{1{,}5} = \frac{24}{3} \quad | \cdot 1{,}5'
       - type: formula

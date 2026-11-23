@@ -17,12 +17,12 @@ blocks:
         id: dritter-winkel
         text: Wie groß ist der Winkel γ bei C im Dreieck ABC?
         options:
-          - text: 123°
-            correct: false
-            info: Das ist die Summe von 52° und 71°. Der dritte Winkel ergänzt sie auf 180°.
           - text: 57°
             correct: true
             info: Die Winkel im Dreieck sind zusammen 180°. 180° − 52° − 71° = 57°.
+          - text: 123°
+            correct: false
+            info: Das ist die Summe von 52° und 71°. Der dritte Winkel ergänzt sie auf 180°.
           - text: 38°
             correct: false
             info: 90° − 52° würde nur im rechtwinkligen Dreieck gelten. Hier ist kein Winkel 90°, du brauchst die Winkelsumme 180°.
@@ -92,12 +92,12 @@ blocks:
           - text: "a : sin β = b : sin α"
             correct: false
             info: Hier stehen Seite und Winkel über Kreuz. a liegt α gegenüber, nicht β.
-          - text: a · sin α = b · sin β
-            correct: false
-            info: Aus dem Sinussatz folgt a · sin β = b · sin α, nicht a · sin α. Die Seite gehört zum Winkel gegenüber.
           - text: "a : sin α = b : sin β"
             correct: true
             info: Jede Seite steht über dem Sinus des gegenüberliegenden Winkels. a gehört zu α, b zu β.
+          - text: a · sin α = b · sin β
+            correct: false
+            info: Aus dem Sinussatz folgt a · sin β = b · sin α, nicht a · sin α. Die Seite gehört zum Winkel gegenüber.
         explanation: Der Sinussatz verbindet jede Seite mit dem Winkel, der ihr gegenüberliegt.
       - type: generated
         id: baum-entfernung
@@ -117,7 +117,7 @@ blocks:
         answer:
           {
             value: "round(c * sin(beta) / sin(180 - alpha - beta), 1)",
-            compare: { number: { format: decimal, decimals: 1, tolerance: 0.1, unit: m } },
+            compare: { number: { format: decimal, decimals: 1, tolerance: 0.05, unit: m } },
           }
         mistakes:
           - {

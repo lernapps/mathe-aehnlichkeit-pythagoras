@@ -145,7 +145,7 @@ blocks:
         answer:
           {
             value: "round(sqrt(b * b + c * c - 2 * b * c * cos(alpha)), 1)",
-            compare: { number: { format: decimal, decimals: 1, tolerance: 0.1, unit: m } },
+            compare: { number: { format: decimal, decimals: 1, tolerance: 0.05, unit: m } },
           }
         mistakes:
           - {

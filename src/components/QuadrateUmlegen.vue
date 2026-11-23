@@ -77,7 +77,10 @@ const fills: Record<string, string> = { a: "#cfe3ff", b: "#d4f0d0", c: "#ffe0b3"
             {{ sq.name }}²
           </text>
         </svg>
-        <figcaption>{{ v.title }}. Grau gestrichelt: die vier Dreiecke 1 bis 4.</figcaption>
+        <figcaption>
+          {{ v.title }}. Grau gestrichelt: die vier Dreiecke 1 bis 4. Orange: Quadrat über c, blau: über a, grün: über
+          b.
+        </figcaption>
       </figure>
     </div>
     <p class="text" aria-live="polite">{{ text }}</p>

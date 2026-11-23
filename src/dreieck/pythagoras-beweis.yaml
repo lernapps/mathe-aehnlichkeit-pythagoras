@@ -60,7 +60,7 @@ blocks:
           Das große Quadrat ist in beiden Fällen gleich groß, und die vier Dreiecke sind dieselben. Also müssen auch die Reste gleich groß sein. Die Mitte in Schritt 1 ist wirklich ein Quadrat: Alle vier Seiten sind *c* lang, und an jeder Ecke ergänzen sich die Winkel *α*, *β* und der Winkel der Mitte zu 180°. Weil *α* + *β* = 90° ist, bleiben 90° für die Mitte.
       - type: definition
         term: Satz des Pythagoras
-        explanation: In jedem rechtwinkligen Dreieck ist das Quadrat über der Hypotenuse so groß wie die beiden Quadrate über den Katheten zusammen, $a^2 + b^2 = c^2$.
+        explanation: In jedem rechtwinkligen Dreieck ist das Quadrat über der Hypotenuse so groß wie die beiden Quadrate über den Katheten zusammen.
       - type: formula
         formula: "a^2 + b^2 = c^2"
       - type: note

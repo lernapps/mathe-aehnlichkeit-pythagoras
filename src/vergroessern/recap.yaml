@@ -55,7 +55,7 @@ blocks:
         id: test-kongruenz-sws
         component: Kurztest
         props:
-          question: Dreieck 1 hat die Seiten 4 cm und 6 cm, dazwischen den Winkel 50°. Dreieck 2 hat auch die Seiten 4 cm und 6 cm und einen Winkel von 50°, der aber an der 6 cm langen Seite gegenüber der 4 cm langen Seite liegt, also nicht zwischen den beiden Seiten. Was gilt?
+          question: Dreieck 1 hat die Seiten 4 cm und 6 cm, dazwischen den Winkel 50°. Dreieck 2 hat auch die Seiten 4 cm und 6 cm und einen Winkel von 50°, der aber an der 6 cm langen Seite gegenüber der 4 cm langen Seite liegt, also nicht zwischen den beiden Seiten. Was gilt?
           options:
             - text: Die Dreiecke sind kongruent nach SWS.
               correct: false
@@ -69,7 +69,7 @@ blocks:
           right: Richtig.
           wrong: Nicht richtig.
         nojs: |
-          Kurztest: Dreieck 1 hat die Seiten 4 cm und 6 cm mit dem Winkel 50° dazwischen, Dreieck 2 hat die Seiten 4 cm und 6 cm und einen Winkel 50°, der nicht zwischen ihnen liegt. Antwort: nicht automatisch kongruent, denn SWS verlangt den eingeschlossenen Winkel.
+          Kurztest: Dreieck 1 hat die Seiten 4 cm und 6 cm mit dem Winkel 50° dazwischen, Dreieck 2 hat die Seiten 4 cm und 6 cm und einen Winkel 50°, der nicht zwischen ihnen liegt. Antwort: nicht automatisch kongruent, denn SWS verlangt den eingeschlossenen Winkel.
       - type: text
         text: |
           Warst du unsicher oder war deine Antwort falsch? Dann schau dir den Baustein „Kongruenz“ auf der [Lernlandkarte](https://lernapps.net/apps/map/mathematik/c/kongruenz/) an.

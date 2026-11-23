@@ -106,11 +106,11 @@ blocks:
           b: { int: [2, 12] }
         where: ["a > b"]
         task:
-          text: "Die Katheten eines rechtwinkligen Dreiecks sind {{a}} cm und {{b}} cm lang. Wie lang ist die Hypotenuse? Runde auf eine Stelle nach dem Komma."
+          text: "Die Katheten eines rechtwinkligen Dreiecks sind a = {{a}} cm und b = {{b}} cm lang. Wie lang ist die Hypotenuse c? Runde auf eine Stelle nach dem Komma."
         answer:
           {
             value: "round(sqrt(a * a + b * b), 1)",
-            compare: { number: { format: decimal, decimals: 1, tolerance: 0.1, unit: cm } },
+            compare: { number: { format: decimal, decimals: 1, tolerance: 0.05, unit: cm } },
           }
         mistakes:
           - {
@@ -132,11 +132,11 @@ blocks:
           b: { int: [2, 12] }
         where: ["b < c"]
         task:
-          text: "Die Hypotenuse eines rechtwinkligen Dreiecks ist {{c}} cm lang, eine Kathete {{b}} cm. Wie lang ist die andere Kathete? Runde auf eine Stelle nach dem Komma."
+          text: "Die Hypotenuse eines rechtwinkligen Dreiecks ist c = {{c}} cm lang, eine Kathete b = {{b}} cm. Wie lang ist die andere Kathete a? Runde auf eine Stelle nach dem Komma."
         answer:
           {
             value: "round(sqrt(c * c - b * b), 1)",
-            compare: { number: { format: decimal, decimals: 1, tolerance: 0.1, unit: cm } },
+            compare: { number: { format: decimal, decimals: 1, tolerance: 0.05, unit: cm } },
           }
         mistakes:
           - {
@@ -171,11 +171,11 @@ blocks:
           l: { int: [4, 8] }
           d: { oneOf: [1, 1.5, 2] }
         task:
-          text: "Eine Leiter ist {{l}} m lang. Ihr Fuß steht {{d}} m von der senkrechten Wand entfernt. Wie hoch reicht sie an der Wand? Runde auf eine Stelle nach dem Komma."
+          text: "Eine Leiter ist l = {{l}} m lang. Ihr Fuß steht d = {{d}} m von der senkrechten Wand entfernt. Wie hoch reicht sie an der Wand? Runde auf eine Stelle nach dem Komma."
         answer:
           {
             value: "round(sqrt(l * l - d * d), 1)",
-            compare: { number: { format: decimal, decimals: 1, tolerance: 0.1, unit: m } },
+            compare: { number: { format: decimal, decimals: 1, tolerance: 0.05, unit: m } },
           }
         mistakes:
           - {

@@ -50,11 +50,35 @@ blocks:
         nojs: |
           Kurztest: Zwischen welchen zwei ganzen Zahlen liegt die Wurzel aus 75? Antwort: zwischen 8 und 9, denn 8 · 8 = 64 und 9 · 9 = 81, und 75 liegt dazwischen.
       - type: vue-component
+        id: test-wurzel-summe
+        component: Kurztest
+        props:
+          question: Wie groß ist die Wurzel aus 9 + 16?
+          options:
+            - text: "7"
+              correct: false
+              info: Du hast die Wurzeln einzeln gezogen, 3 + 4. Die Wurzel aus einer Summe ist aber nicht die Summe der Wurzeln.
+            - text: "25"
+              correct: false
+              info: Das ist die Summe 9 + 16. Die Wurzel daraus musst du noch ziehen.
+            - text: "5"
+              correct: true
+              info: "Erst addieren: 9 + 16 = 25, dann die Wurzel: 5."
+          right: Richtig.
+          wrong: Nicht richtig.
+        nojs: |
+          Kurztest: Wie groß ist die Wurzel aus 9 + 16? Antwort: 5, denn 9 + 16 = 25 und die Wurzel aus 25 ist 5. Die Wurzeln einzeln zu ziehen (3 + 4 = 7) ist falsch.
+      - type: vue-component
         id: test-wurzel-quadrat
         component: Kurztest
         props:
           question: Ein quadratisches Beet hat eine Fläche von 81 m². Wie lang ist eine Seite?
           options:
+            - {
+                text: "9 m",
+                correct: true,
+                info: "Die Fläche ist Seite mal Seite. 9 · 9 = 81, also ist die Seite die Wurzel aus 81, nämlich 9 m.",
+              }
             - {
                 text: "40,5 m",
                 correct: false,
@@ -64,11 +88,6 @@ blocks:
                 text: "9 m²",
                 correct: false,
                 info: "Die Zahl stimmt, aber eine Seitenlänge hat die Einheit m, nicht m².",
-              }
-            - {
-                text: "9 m",
-                correct: true,
-                info: "Die Fläche ist Seite mal Seite. 9 · 9 = 81, also ist die Seite die Wurzel aus 81, nämlich 9 m.",
               }
           right: Richtig.
           wrong: Nicht richtig.
@@ -100,14 +119,14 @@ blocks:
           question: Ein Quadrat hat den Umfang 20 cm. Wie groß ist seine Fläche?
           options:
             - {
-                text: "25 cm²",
-                correct: true,
-                info: "Eine Seite ist 20 cm : 4 = 5 cm, die Fläche 5 cm · 5 cm = 25 cm².",
-              }
-            - {
                 text: "400 cm²",
                 correct: false,
                 info: "Du hast den Umfang selbst mal sich selbst genommen. Erst die Seitenlänge bestimmen: 20 cm : 4 = 5 cm.",
+              }
+            - {
+                text: "25 cm²",
+                correct: true,
+                info: "Eine Seite ist 20 cm : 4 = 5 cm, die Fläche 5 cm · 5 cm = 25 cm².",
               }
             - {
                 text: "5 cm²",
@@ -129,16 +148,35 @@ blocks:
                 correct: false,
                 info: "7 · 4,5 = 31,5 ist die Fläche, in cm². Der Umfang ist die Summe aller vier Seiten.",
               }
-            - { text: "23 cm", correct: true, info: "Umfang = 2 · (7 cm + 4,5 cm) = 2 · 11,5 cm = 23 cm." }
             - {
                 text: "11,5 cm",
                 correct: false,
                 info: "Du hast nur zwei Seiten addiert. Ein Rechteck hat vier Seiten, also noch mal 2.",
               }
+            - { text: "23 cm", correct: true, info: "Umfang = 2 · (7 cm + 4,5 cm) = 2 · 11,5 cm = 23 cm." }
           right: Richtig.
           wrong: Nicht richtig.
         nojs: |
           Kurztest: Ein Rechteck ist 7 cm lang und 4,5 cm breit. Wie groß ist sein Umfang? Antwort: 23 cm, denn 2 · (7 + 4,5) = 23. Die Fläche wäre 31,5 cm².
+      - type: vue-component
+        id: test-rechteck-seite
+        component: Kurztest
+        props:
+          question: Ein Rechteck hat die Fläche 54 cm² und ist 9 cm lang. Wie breit ist es?
+          options:
+            - text: 6 cm
+              correct: true
+              info: "Fläche = Länge mal Breite, also Breite = 54 cm² : 9 cm = 6 cm."
+            - text: 45 cm
+              correct: false
+              info: Du hast subtrahiert, 54 − 9. Die Fläche ist ein Produkt, also wird geteilt.
+            - text: 486 cm
+              correct: false
+              info: Du hast multipliziert, 54 · 9. Gesucht ist ein Faktor des Produkts, also wird geteilt.
+          right: Richtig.
+          wrong: Nicht richtig.
+        nojs: |
+          Kurztest: Ein Rechteck hat die Fläche 54 cm² und ist 9 cm lang. Wie breit ist es? Antwort: 6 cm, denn Breite = 54 cm² : 9 cm = 6 cm.
       - type: text
         text: |
           Warst du unsicher oder war deine Antwort falsch? Dann schau dir den Baustein „Fläche und Umfang: Rechteck, Quadrat“ auf der [Lernlandkarte](https://lernapps.net/apps/map/mathematik/c/flaeche-umfang-quadrat-rechteck/) an.

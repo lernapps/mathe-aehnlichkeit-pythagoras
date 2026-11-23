@@ -12,7 +12,7 @@ blocks:
           Du berechnest aus einem Winkel und einer Seite eine fehlende Seite eines rechtwinkligen Dreiecks. Du wählst dafür Sinus, Kosinus oder Tangens und bedienst den Taschenrechner richtig.
       - type: text
         text: |
-          Die Klasse will die Höhe einer Rampe wissen. Gemessen sind die Länge der Rampe und der Winkel, den sie mit dem Boden bildet. Den Sinus eines Winkels liefert der Taschenrechner. Er muss dafür auf Grad stehen, im Display steht oft DEG.
+          Die Klasse will die Höhe einer Rampe wissen. Gemessen sind die Länge der Rampe und der Winkel, den sie mit dem Boden bildet. Den Sinus eines Winkels liefert der Taschenrechner. Er muss dafür auf Grad stehen, im Display steht oft DEG. Umstellen kannst du das meist mit der Taste MODE, SETUP oder DRG.
       - type: single-choice
         id: rechner-modus
         text: Du tippst sin 30° in den Taschenrechner. Er steht auf Grad (DEG). Was zeigt er?
@@ -20,12 +20,12 @@ blocks:
           - text: "−0,988"
             correct: false
             info: Das zeigt ein Rechner im Bogenmaß (RAD), wenn du 30 eintippst. Stelle ihn auf DEG.
-          - text: "30"
-            correct: false
-            info: Der Rechner liefert nicht den Winkel zurück, sondern das Verhältnis Gegenkathete durch Hypotenuse.
           - text: "0,5"
             correct: true
             info: In einem Dreieck mit 30° ist die Gegenkathete halb so lang wie die Hypotenuse. Der Sinus ist 0,5.
+          - text: "30"
+            correct: false
+            info: Der Rechner liefert nicht den Winkel zurück, sondern das Verhältnis Gegenkathete durch Hypotenuse.
         explanation: Im Gradmaß (DEG) ist sin 30° = 0,5. Prüfe vor jeder Rechnung den Modus.
   - type: section
     id: idee
@@ -87,15 +87,15 @@ blocks:
         id: welches-verhaeltnis
         text: Gegeben sind die Hypotenuse und der Winkel α, gesucht ist die Ankathete von α. Mit welcher Gleichung rechnest du?
         options:
-          - text: Ankathete = Hypotenuse · cos α
-            correct: true
-            info: Ankathete und Hypotenuse gehören zum Kosinus. Die gesuchte Seite steht im Zähler, also wird multipliziert.
           - text: Ankathete = Hypotenuse · sin α
             correct: false
             info: Der Sinus gehört zur Gegenkathete. Die Ankathete liegt an α an, dafür brauchst du den Kosinus.
           - text: "Ankathete = Hypotenuse : cos α"
             correct: false
             info: "Die richtige Funktion, aber falsch herum. Cos α = Ankathete : Hypotenuse, nach der Ankathete aufgelöst wird multipliziert."
+          - text: Ankathete = Hypotenuse · cos α
+            correct: true
+            info: Ankathete und Hypotenuse gehören zum Kosinus. Die gesuchte Seite steht im Zähler, also wird multipliziert.
         explanation: Die Ankathete liegt an α an. Ankathete und Hypotenuse gehören zum Kosinus.
       - type: ordering
         id: reihenfolge
@@ -117,7 +117,7 @@ blocks:
         answer:
           {
             value: "round(c * sin(alpha), 1)",
-            compare: { number: { format: decimal, decimals: 1, tolerance: 0.1, unit: cm } },
+            compare: { number: { format: decimal, decimals: 1, tolerance: 0.05, unit: cm } },
           }
         mistakes:
           - {
@@ -145,7 +145,7 @@ blocks:
         answer:
           {
             value: "round(c * cos(alpha), 1)",
-            compare: { number: { format: decimal, decimals: 1, tolerance: 0.1, unit: cm } },
+            compare: { number: { format: decimal, decimals: 1, tolerance: 0.05, unit: cm } },
           }
         mistakes:
           - {
@@ -170,7 +170,7 @@ blocks:
         answer:
           {
             value: "round(d * tan(alpha), 1)",
-            compare: { number: { format: decimal, decimals: 1, tolerance: 0.1, unit: m } },
+            compare: { number: { format: decimal, decimals: 1, tolerance: 0.05, unit: m } },
           }
         mistakes:
           - {
@@ -194,7 +194,7 @@ blocks:
         answer:
           {
             value: "round(h / sin(alpha), 1)",
-            compare: { number: { format: decimal, decimals: 1, tolerance: 0.1, unit: m } },
+            compare: { number: { format: decimal, decimals: 1, tolerance: 0.05, unit: m } },
           }
         mistakes:
           - {
