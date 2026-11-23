@@ -78,9 +78,9 @@ blocks:
     blocks:
       - type: true-false
         id: winkel-doppelt
-        text: Ein Dreieck wird mit *k* = 2 gestreckt. Dann sind auch alle Winkel doppelt so groß.
+        text: Ein Dreieck wird mit $k$ = 2 gestreckt. Dann sind auch alle Winkel doppelt so groß.
         answer: false
-        explanation: Die Winkel bleiben bei jeder zentrischen Streckung gleich. Nur die Längen ändern sich, und zwar mit dem Faktor *k*.
+        explanation: Die Winkel bleiben bei jeder zentrischen Streckung gleich. Nur die Längen ändern sich, und zwar mit dem Faktor $k$.
       - type: generated
         id: bildlaenge
         given:

@@ -41,11 +41,11 @@ function onInput(e: Event) {
       <polygon :points="pts(original)" class="orig" />
       <circle :cx="origin.x" :cy="origin.y" r="3.5" class="dot" />
       <text :x="origin.x - 14" :y="origin.y + 14" class="lab">Z</text>
-      <text :x="px.a.x - 14" :y="px.a.y + 14" class="lab">A</text>
+      <text :x="px.a.x - 16" :y="px.a.y + 16" class="lab">A</text>
       <text :x="px.b.x + 4" :y="px.b.y + 14" class="lab">B</text>
       <text :x="px.c.x - 16" :y="px.c.y" class="lab">C</text>
-      <text :x="px.a2.x - 20" :y="px.a2.y + 14" class="lab2">A′</text>
-      <text :x="px.b2.x + 4" :y="px.b2.y + 14" class="lab2">B′</text>
+      <text :x="px.a2.x + 6" :y="px.a2.y - 8" class="lab2">A′</text>
+      <text :x="px.b2.x + 6" :y="px.b2.y - 8" class="lab2">B′</text>
       <text :x="px.c2.x + 6" :y="px.c2.y + 4" class="lab2">C′</text>
     </svg>
 
