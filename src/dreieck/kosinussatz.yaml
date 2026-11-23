@@ -80,8 +80,11 @@ blocks:
           - type: text
             text: |
               Gegeben: $b = 120$ m, $c = 150$ m und $\alpha = 70^\circ$ zwischen ihnen.
+          - type: text
+            text: |
+              Es ist $120^2 = 14400$, $150^2 = 22500$ und $2 \cdot 120 \cdot 150 = 36000$.
           - type: formula
-            formula: 'a^2 = 120^2 + 150^2 - 2 \cdot 120 \cdot 150 \cdot \cos 70^\circ'
+            formula: 'a^2 = 14400 + 22500 - 36000 \cdot \cos 70^\circ'
           - type: formula
             formula: 'a^2 \approx 36900 - 12313'
           - type: formula

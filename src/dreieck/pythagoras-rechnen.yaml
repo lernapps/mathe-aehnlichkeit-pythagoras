@@ -55,7 +55,9 @@ blocks:
             text: |
               Katheten 5 cm und 12 cm.
           - type: formula
-            formula: 'c = \sqrt{5^2 + 12^2} = \sqrt{25 + 144} = \sqrt{169} = 13'
+            formula: 'c = \sqrt{5^2 + 12^2} = \sqrt{25 + 144}'
+          - type: formula
+            formula: 'c = \sqrt{169} = 13'
       - type: example
         title: Kathete gesucht
         blocks:
@@ -63,7 +65,9 @@ blocks:
             text: |
               Hypotenuse 17 cm, eine Kathete 8 cm.
           - type: formula
-            formula: 'a = \sqrt{17^2 - 8^2} = \sqrt{289 - 64} = \sqrt{225} = 15'
+            formula: 'a = \sqrt{17^2 - 8^2} = \sqrt{289 - 64}'
+          - type: formula
+            formula: 'a = \sqrt{225} = 15'
       - type: example
         title: Mit Rundung
         blocks:

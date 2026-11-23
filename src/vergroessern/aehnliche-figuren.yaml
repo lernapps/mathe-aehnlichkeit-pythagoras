@@ -57,7 +57,7 @@ blocks:
             text: |
               Ein Rechteck ist 4 cm breit und 6 cm hoch. Ein anderes ist 10 cm breit und 15 cm hoch. Die Winkel sind in beiden 90°. Prüfe die Faktoren.
           - type: formula
-            formula: 'k_{\text{Breite}} = \frac{10}{4} = 2{,}5 \qquad k_{\text{Höhe}} = \frac{15}{6} = 2{,}5'
+            formula: 'k_{\text{Breite}} = \frac{10}{4} = 2{,}5 \quad k_{\text{Höhe}} = \frac{15}{6} = 2{,}5'
           - type: text
             text: |
               Beide Faktoren sind gleich, die Rechtecke sind ähnlich. Ist das zweite 10 cm breit und 14 cm hoch, ist der Faktor der Höhe $\frac{14}{6}$, also etwa 2,33. Dann sind sie nicht ähnlich.
