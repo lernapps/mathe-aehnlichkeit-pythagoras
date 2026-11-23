@@ -1,0 +1,173 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Turmhöhe und Flussbreite
+description: Mit den Strahlensätzen Höhen und Breiten bestimmen, die man nicht direkt messen kann.
+competencies: [strahlensaetze]
+blocks:
+  - type: section
+    id: einstieg
+    title: Was du hier lernst
+    blocks:
+      - type: text
+        text: |
+          Du wendest die Strahlensätze auf Vermessungen an: auf die Höhe eines Turms mit dem Schatten und auf die Breite eines Flusses. Du erkennst, wo in einer Sachaufgabe die Parallelen und das Zentrum stecken.
+      - type: text
+        text: |
+          Die Klasse von Mira und Jonas misst den Turm im Park. Hinaufklettern geht nicht. Jonas stellt einen Stab von 1,5 m Höhe senkrecht auf. Er verschiebt ihn so lange, bis sein Schatten genau am Ende des Turmschattens aufhört.
+      - type: single-choice
+        id: turm-vorab
+        text: Der Turmschatten ist 8-mal so lang wie der Stabschatten. Was folgt daraus für die Höhen?
+        options:
+          - text: Der Turm ist 8-mal so hoch wie der Stab.
+            correct: true
+            info: Beide Schatten gehören zur gleichen Streckung, mit dem Faktor 8. Dieser Faktor gilt auch für die Höhen.
+          - text: Der Turm ist 8 m höher als der Stab.
+            correct: false
+            info: Das wäre ein Zuschlag. Streckungen arbeiten mit einem Faktor, nicht mit einer Differenz.
+          - text: Turm und Stab sind gleich hoch.
+            correct: false
+            info: Dann wären auch ihre Schatten gleich lang. Ein längerer Schatten gehört zu einem höheren Gegenstand.
+        explanation: Wie bei jeder Streckung wachsen alle Längen mit demselben Faktor, auch die Höhen.
+  - type: section
+    id: idee
+    title: Wo die Strahlensätze stecken
+    blocks:
+      - type: text
+        text: |
+          Im Bild stehen Turm und Stab beide senkrecht, sie sind also parallel. Die Sonnenlinie von der Turmspitze über die Stabspitze bis zum Schattenende Z ist der eine Strahl, der Boden ist der andere. Z ist das Streckzentrum.
+      - type: figure
+        image: images/turm-schatten.svg
+        alt: Ein Turm der gesuchten Höhe und ein 1,5 m hoher Stab stehen senkrecht auf dem Boden. Der Stab hat 3 m Schatten, der Turm 24 m. Die Sonnenlinie geht von der Turmspitze über die Stabspitze zum Schattenende Z.
+        caption: Turm, Stab und Sonnenlinie bilden eine Figur mit Z und zwei Parallelen.
+        source: eigene Zeichnung
+        licence: CC0-1.0
+      - type: text
+        text: |
+          Stab und Turm sind die parallelen Strecken, die Schatten sind die Abstände von Z. Der zweite Strahlensatz sagt: Turmhöhe durch Stabhöhe ist gleich Turmschatten durch Stabschatten.
+      - type: formula
+        formula: '\frac{h}{1{,}5} = \frac{24}{3} \quad | \cdot 1{,}5'
+      - type: formula
+        formula: 'h = \frac{24 \cdot 1{,}5}{3} = 12'
+      - type: text
+        text: |
+          Der Turm ist 12 m hoch.
+      - type: note
+        title: Merke
+        blocks:
+          - type: text
+            text: |
+              Du brauchst zwei parallele Strecken (hier senkrecht stehende Gegenstände) und gemeinsame Strahlen, die von einem Punkt Z ausgehen. Erst dann gelten die Strahlensätze.
+  - type: section
+    id: fluss
+    title: Die Breite eines Flusses
+    blocks:
+      - type: text
+        text: |
+          Ein Baum S steht am anderen Ufer genau gegenüber von P. Du willst die Breite *w* = SP des Flusses wissen. Am nahen Ufer gehst du von P nach Q und steckst dabei in M einen Pflock. Bei Q gehst du im rechten Winkel zum Ufer von dir weg, bis Pflock M und Baum S in einer Linie liegen. Das ist Punkt R. Du misst PM = 30 m, MQ = 10 m und QR = 12 m.
+      - type: figure
+        image: images/fluss-x.svg
+        alt: Ein Fluss liegt zwischen dem Baum S und dem Ufer mit den Punkten P, M und Q. Die Strecken SP und QR sind parallel. Eine Gerade geht von S über M nach R. Gesucht ist die Breite w des Flusses.
+        caption: Die Strecken SP und QR sind parallel, M ist das Zentrum.
+        source: eigene Zeichnung
+        licence: CC0-1.0
+      - type: text
+        text: |
+          Hier liegt M zwischen den Parallelen: Die Figur ist ein X statt eines V. Die Strahlensätze gelten genauso. Die parallelen Strecken SP und QR verhalten sich wie die Abstände ihrer Endpunkte von M.
+      - type: formula
+        formula: '\frac{w}{12} = \frac{30}{10} \quad | \cdot 12'
+      - type: formula
+        formula: 'w = \frac{30 \cdot 12}{10} = 36'
+      - type: text
+        text: |
+          Der Fluss ist 36 m breit.
+  - type: section
+    id: uebung
+    title: Übung
+    blocks:
+      - type: single-choice
+        id: parallel-warum
+        text: Warum darfst du bei Stab und Turm die Strahlensätze benutzen?
+        options:
+          - text: Stab und Turm stehen beide senkrecht, sind also parallel, und die Sonnenlinie geht durch beide Spitzen.
+            correct: true
+            info: Zwei parallele Strecken und zwei Strahlen von Z aus, mehr braucht der Satz nicht.
+          - text: Stab und Turm sind gleich hoch.
+            correct: false
+            info: Sie sind sogar sehr verschieden hoch. Entscheidend ist nicht die Höhe, sondern dass die Strecken parallel sind.
+          - text: Die Sonne steht senkrecht über dem Turm.
+            correct: false
+            info: Dann gäbe es keinen Schatten. Die Sonnenlinie läuft schräg.
+        explanation: Nur Parallelität und ein gemeinsames Zentrum zählen.
+      - type: generated
+        id: turm-hoehe
+        given:
+          hs: { oneOf: [1, 1.5, 2] }
+          ss: { int: [2, 6] }
+          ts: { int: [8, 40] }
+        where:
+          ["ts > ss", "decimals(hs * ts / ss) <= 1", "hs + ts - ss != hs * ts / ss", "hs * ss / ts != hs * ts / ss"]
+        task:
+          text: "Ein Stab von {{hs}} m Höhe wirft einen Schatten von {{ss}} m. Gleichzeitig reicht der Schatten eines Turms bis zum selben Schattenende und ist {{ts}} m lang. Wie hoch ist der Turm?"
+        answer: { value: "hs * ts / ss", compare: { number: { format: decimal, decimals: 1, unit: m } } }
+        mistakes:
+          - {
+              value: "hs + ts - ss",
+              message: "Du hast den Unterschied der Schatten zur Stabhöhe addiert. Höhen und Schatten hängen über einen Faktor zusammen.",
+            }
+          - {
+              value: "hs * ss / ts",
+              message: "Du hast den Faktor umgedreht. Der Turm ist höher als der Stab, weil sein Schatten länger ist.",
+            }
+        hint: "Turmhöhe durch Stabhöhe ist Turmschatten durch Stabschatten."
+        steps:
+          - '$\frac{h}{{{hs}}} = \frac{{{ts}}}{{{ss}}}$, also $h = \frac{{{ts}} \cdot {{hs}}}{{{ss}}} = {{answer}}$ m.'
+      - type: generated
+        id: fluss-breite
+        given:
+          pm: { int: [10, 40], step: 5 }
+          mq: { int: [5, 20], step: 5 }
+          qr: { int: [6, 20] }
+        where: ["decimals(qr * pm / mq) <= 1", "qr * mq / pm != qr * pm / mq", "pm + qr - mq != qr * pm / mq"]
+        task:
+          text: "Am Ufer eines Flusses liegen P, M und Q in einer Reihe, es ist PM = {{pm}} m und MQ = {{mq}} m. Der Baum S steht gegenüber von P. Bei Q geht jemand rechtwinklig zum Ufer, bis M, S und er in einer Linie liegen. Dort ist QR = {{qr}} m. Wie breit ist der Fluss (SP)?"
+        answer: { value: "qr * pm / mq", compare: { number: { format: decimal, decimals: 1, unit: m } } }
+        mistakes:
+          - {
+              value: "qr * mq / pm",
+              message: "Du hast den Faktor umgedreht. PM ist die Strecke zu dem Punkt auf der Seite von S, also gehört PM in den Zähler.",
+            }
+          - {
+              value: "pm + qr - mq",
+              message: "Du hast addiert und subtrahiert. Parallele Strecken verhalten sich wie die Abstände von M, es wird multipliziert und geteilt.",
+            }
+        hint: "Der zweite Strahlensatz mit dem Zentrum M: SP : QR = PM : MQ."
+        steps:
+          - '$\frac{w}{{{qr}}} = \frac{{{pm}}}{{{mq}}}$, also $w = \frac{{{pm}} \cdot {{qr}}}{{{mq}}} = {{answer}}$ m.'
+      - type: generated
+        id: stab-schatten
+        given:
+          h: { int: [6, 30] }
+          hs: { oneOf: [1, 1.5, 2] }
+          ts: { int: [8, 40] }
+        where: ["decimals(hs * ts / h) <= 1", "ts * h / hs != hs * ts / h", "ts - (h - hs) != hs * ts / h"]
+        task:
+          text: "Ein Turm ist {{h}} m hoch und wirft einen Schatten von {{ts}} m. Ein Stab von {{hs}} m Höhe soll so stehen, dass sein Schatten am selben Ende aufhört. Wie lang ist der Schatten des Stabs?"
+        answer: { value: "hs * ts / h", compare: { number: { format: decimal, decimals: 1, unit: m } } }
+        mistakes:
+          - {
+              value: "ts * h / hs",
+              message: "Du hast den Faktor umgedreht. Der Stab ist niedriger als der Turm, also ist sein Schatten kürzer als der Turmschatten.",
+            }
+          - {
+              value: "ts - (h - hs)",
+              message: "Du hast die Höhendifferenz vom Schatten abgezogen. Höhe und Schatten hängen über einen Faktor zusammen.",
+            }
+        hint: "Der Stab verhält sich zum Turm wie sein Schatten zum Turmschatten. Löse nach dem Stabschatten auf."
+        steps:
+          - '$\frac{s}{{{ts}}} = \frac{{{hs}}}{{{h}}}$, also $s = \frac{{{ts}} \cdot {{hs}}}{{{h}}} = {{answer}}$ m.'
+  - type: section
+    id: weiter
+    title: Wie es weitergeht
+    blocks:
+      - type: text
+        text: |
+          Das kannst du jetzt: Parallelen und ein gemeinsames Zentrum erkennen, den Streckfaktor aufstellen und damit unzugängliche Strecken berechnen. Im nächsten Kapitel geht es um das rechtwinklige Dreieck und den Satz des Pythagoras.

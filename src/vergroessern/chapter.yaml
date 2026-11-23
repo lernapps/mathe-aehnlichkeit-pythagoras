@@ -1,4 +1,4 @@
 # yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
 title: Vergrößern und verkleinern
 summary: Eine Figur wächst vom Streckzentrum aus. Winkel bleiben gleich, Längen wachsen mit demselben Faktor. Daraus folgen die Strahlensätze.
-pages: [recap, streckung, aehnliche-figuren, strahlensaetze]
+pages: [recap, streckung, aehnliche-figuren, strahlensaetze, turmhoehe]
