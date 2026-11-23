@@ -25,12 +25,12 @@ blocks:
         blocks:
           - type: text
             text: |
-              Ein Dreieck hat die Seiten 3 cm, 4 cm und 5 cm, ein zweites 5 cm, 3 cm und 4 cm. Alle drei Längen kommen in beiden vor, also sind die Dreiecke nach SSS kongruent.
+              Ein Dreieck hat die Seiten 3 cm, 4 cm und 5 cm, ein zweites 5 cm, 3 cm und 4 cm. Alle drei Längen kommen in beiden vor, also sind die Dreiecke nach SSS kongruent.
       - type: vue-component
         id: test-kongruenz
         component: Kurztest
         props:
-          question: Dreieck 1 hat die Seiten 5 cm, 6 cm und 7 cm. Dreieck 2 hat die Seiten 7 cm, 5 cm und 6 cm. Was gilt?
+          question: Dreieck 1 hat die Seiten 5 cm, 6 cm und 7 cm. Dreieck 2 hat die Seiten 7 cm, 5 cm und 6 cm. Was gilt?
           options:
             - {
                 text: "Die Dreiecke sind kongruent.",
@@ -50,7 +50,7 @@ blocks:
           right: Richtig.
           wrong: Nicht richtig.
         nojs: |
-          Kurztest: Dreieck 1 hat die Seiten 5 cm, 6 cm und 7 cm, Dreieck 2 hat 7 cm, 5 cm und 6 cm. Antwort: Die Dreiecke sind kongruent. Alle drei Seitenlängen stimmen überein, das reicht nach SSS. Die Reihenfolge ist egal.
+          Kurztest: Dreieck 1 hat die Seiten 5 cm, 6 cm und 7 cm, Dreieck 2 hat 7 cm, 5 cm und 6 cm. Antwort: Die Dreiecke sind kongruent. Alle drei Seitenlängen stimmen überein, das reicht nach SSS. Die Reihenfolge ist egal.
       - type: text
         text: |
           Wenn deine Antwort falsch war, schau dir den Baustein „Kongruenz“ auf der [Lernlandkarte](https://lernapps.net/apps/map/mathematik/c/kongruenz/) an.
@@ -96,38 +96,38 @@ blocks:
           Eine Zuordnung ist **proportional**, wenn das Doppelte der einen Größe zum Doppelten der anderen gehört, das Dreifache zum Dreifachen und so weiter. Der Quotient aus beiden Größen ist immer gleich. Er heißt **Proportionalitätsfaktor**.
       - type: definition
         term: Proportionalitätsfaktor
-        explanation: Die feste Zahl, mit der du die eine Größe multiplizierst, um die andere zu bekommen. Kosten 4 Hefte 6 €, ist der Faktor 1,50 € je Heft.
+        explanation: Die feste Zahl, mit der du die eine Größe multiplizierst, um die andere zu bekommen. Kosten 4 Hefte 6 €, ist der Faktor 1,50 € je Heft.
       - type: example
         title: Beispiel
         blocks:
           - type: text
             text: |
-              3 kg Äpfel kosten 4,50 €. Der Faktor ist 4,50 € : 3 = 1,50 € je kg. 7 kg kosten dann 7 · 1,50 € = 10,50 €.
+              3 kg Äpfel kosten 4,50 €. Der Faktor ist 4,50 € : 3 = 1,50 € je kg. 7 kg kosten dann 7 · 1,50 € = 10,50 €.
       - type: vue-component
         id: test-proportional
         component: Kurztest
         props:
-          question: 5 Brötchen kosten 3,50 €. Was kosten 8 Brötchen?
+          question: 5 Brötchen kosten 3,50 €. Was kosten 8 Brötchen?
           options:
             - {
-                text: "5,60 €",
+                text: "5,60 €",
                 correct: true,
-                info: "Ein Brötchen kostet 3,50 € : 5 = 0,70 €. Für 8 Brötchen rechnest du 8 · 0,70 € = 5,60 €.",
+                info: "Ein Brötchen kostet 3,50 € : 5 = 0,70 €. Für 8 Brötchen rechnest du 8 · 0,70 € = 5,60 €.",
               }
             - {
-                text: "6,50 €",
+                text: "6,50 €",
                 correct: false,
-                info: "Du hast 3 € addiert, weil es 3 Brötchen mehr sind. Bei proportionalen Zuordnungen wird multipliziert, nicht addiert.",
+                info: "Du hast 3 € addiert, weil es 3 Brötchen mehr sind. Bei proportionalen Zuordnungen wird multipliziert, nicht addiert.",
               }
             - {
-                text: "2,19 €",
+                text: "2,19 €",
                 correct: false,
                 info: "Du hast mit dem Verhältnis 5 zu 8 statt 8 zu 5 gerechnet. Mehr Brötchen kosten mehr, nicht weniger.",
               }
           right: Richtig.
           wrong: Nicht richtig.
         nojs: |
-          Kurztest: 5 Brötchen kosten 3,50 €. Was kosten 8 Brötchen? Antwort: 5,60 €. Ein Brötchen kostet 3,50 € : 5 = 0,70 €, und 8 · 0,70 € = 5,60 €. Addieren (6,50 €) ist falsch, weil die Zuordnung proportional ist.
+          Kurztest: 5 Brötchen kosten 3,50 €. Was kosten 8 Brötchen? Antwort: 5,60 €. Ein Brötchen kostet 3,50 € : 5 = 0,70 €, und 8 · 0,70 € = 5,60 €. Addieren (6,50 €) ist falsch, weil die Zuordnung proportional ist.
       - type: text
         text: |
           Wenn deine Antwort falsch war, schau dir den Baustein „Proportionale Zuordnungen“ auf der [Lernlandkarte](https://lernapps.net/apps/map/mathematik/c/proportionale-zuordnungen/) an.
@@ -137,7 +137,7 @@ blocks:
     blocks:
       - type: text
         text: |
-          Der **Maßstab** sagt, um welchen Faktor eine Zeichnung gegenüber der Wirklichkeit verkleinert (oder vergrößert) ist. Bei 1 : 500 ist 1 cm auf dem Plan 500 cm in Wirklichkeit.
+          Der **Maßstab** sagt, um welchen Faktor eine Zeichnung gegenüber der Wirklichkeit verkleinert (oder vergrößert) ist. Bei 1 : 500 ist 1 cm auf dem Plan 500 cm in Wirklichkeit.
       - type: definition
         term: Maßstab
         explanation: "Das Verhältnis von Länge in der Zeichnung zu Länge in der Wirklichkeit, geschrieben 1 : 500. Eine Länge im Plan wird mit 500 multipliziert, um die wirkliche Länge zu erhalten."
@@ -146,32 +146,28 @@ blocks:
         blocks:
           - type: text
             text: |
-              Eine Strecke ist auf dem Plan 3 cm lang, der Maßstab ist 1 : 500. Wirklich sind das 3 cm · 500 = 1 500 cm, also 15 m.
+              Eine Strecke ist auf dem Plan 3 cm lang, der Maßstab ist 1 : 500. Wirklich sind das 3 cm · 500 = 1500 cm, also 15 m.
       - type: vue-component
         id: test-massstab
         component: Kurztest
         props:
-          question: "Auf einer Karte im Maßstab 1 : 25 000 ist ein Weg 4,5 cm lang. Wie lang ist er in Wirklichkeit?"
+          question: "Auf einer Karte im Maßstab 1 : 25 000 ist ein Weg 4,5 cm lang. Wie lang ist er in Wirklichkeit?"
           options:
+            - { text: "1,125 km", correct: true, info: "4,5 cm · 25 000 = 112 500 cm. Das sind 1125 m, also 1,125 km." }
             - {
-                text: "1,125 km",
-                correct: true,
-                info: "4,5 cm · 25 000 = 112 500 cm. Das sind 1 125 m, also 1,125 km.",
+                text: "112,5 m",
+                correct: false,
+                info: "112 500 cm sind 1125 m, nicht 112,5 m: Du hast beim Umrechnen eine Stelle verschoben (100 cm sind 1 m).",
               }
             - {
-                text: "112,5 m",
+                text: "11,25 km",
                 correct: false,
-                info: "112 500 cm sind 1 125 m, nicht 112,5 m: Du hast beim Umrechnen eine Stelle verschoben (100 cm sind 1 m).",
-              }
-            - {
-                text: "11,25 km",
-                correct: false,
-                info: "112 500 cm sind 1,125 km. Du hast eine Stelle zu viel verschoben (100 000 cm sind 1 km).",
+                info: "112 500 cm sind 1,125 km. Du hast eine Stelle zu viel verschoben (100 000 cm sind 1 km).",
               }
           right: Richtig.
           wrong: Nicht richtig.
         nojs: |
-          Kurztest: Auf einer Karte im Maßstab 1 : 25 000 ist ein Weg 4,5 cm lang. Antwort: 1,125 km. 4,5 cm · 25 000 = 112 500 cm = 1 125 m = 1,125 km.
+          Kurztest: Auf einer Karte im Maßstab 1 : 25 000 ist ein Weg 4,5 cm lang. Antwort: 1,125 km. 4,5 cm · 25 000 = 112 500 cm = 1125 m = 1,125 km.
       - type: text
         text: |
           Wenn deine Antwort falsch war, schau dir den Baustein „Maßstab“ auf der [Lernlandkarte](https://lernapps.net/apps/map/mathematik/c/massstab/) an.

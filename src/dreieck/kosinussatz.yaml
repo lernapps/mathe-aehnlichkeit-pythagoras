@@ -12,7 +12,7 @@ blocks:
           Du lernst den Kosinussatz. Er ist der Satz des Pythagoras für Dreiecke ohne rechten Winkel. Damit berechnest du die dritte Seite aus zwei Seiten und dem eingeschlossenen Winkel, und Winkel aus drei Seiten. Danach weißt du, wann du Sinussatz und wann Kosinussatz brauchst.
       - type: text
         text: |
-          Zwei gerade Wege führen von der Schule aus zu einem Spielplatz und zu einem Teich. Sie sind 120 m und 150 m lang und schließen einen Winkel von 70° ein. Wie weit liegen Spielplatz und Teich auseinander? Ein Paar aus Seite und gegenüberliegendem Winkel ist nicht bekannt.
+          Zwei gerade Wege führen von der Schule aus zu einem Spielplatz und zu einem Teich. Sie sind 120 m und 150 m lang und schließen einen Winkel von 70° ein. Wie weit liegen Spielplatz und Teich auseinander? Ein Paar aus Seite und gegenüberliegendem Winkel ist nicht bekannt.
       - type: single-choice
         id: warum-nicht-pythagoras
         text: Kannst du den Abstand zwischen Spielplatz und Teich mit dem Satz des Pythagoras ausrechnen?
@@ -82,16 +82,16 @@ blocks:
               Gegeben: $b = 120$ m, $c = 150$ m und $\alpha = 70^\circ$ zwischen ihnen.
           - type: text
             text: |
-              Es ist $120^2 = 14400$, $150^2 = 22500$ und $2 \cdot 120 \cdot 150 = 36000$.
+              Es ist $120^2 = 14\,400$, $150^2 = 22\,500$ und $2 \cdot 120 \cdot 150 = 36\,000$.
           - type: formula
-            formula: 'a^2 = 14400 + 22500 - 36000 \cdot \cos 70^\circ'
+            formula: 'a^2 = 14\,400 + 22\,500 - 36\,000 \cdot \cos 70^\circ'
           - type: formula
-            formula: 'a^2 \approx 36900 - 12313'
+            formula: 'a^2 \approx 36\,900 - 12\,313'
           - type: formula
-            formula: 'a^2 \approx 24587'
+            formula: 'a^2 \approx 24\,587'
           - type: text
             text: |
-              Der Abstand ist $a = \sqrt{24587} \approx 156{,}8$ m. Ohne den Winkel hätte Pythagoras $\sqrt{36900} \approx 192{,}1$ m ergeben.
+              Der Abstand ist $a = \sqrt{24\,587} \approx 156{,}8$ m. Ohne den Winkel hätte Pythagoras $\sqrt{36\,900} \approx 192{,}1$ m ergeben.
       - type: example
         title: Einen Winkel aus drei Seiten
         blocks:
@@ -141,7 +141,7 @@ blocks:
           alpha: { oneOf: [40, 50, 60, 70, 110, 120, 130] }
         where: ["b != c"]
         task:
-          text: "Zwei gerade Wege gehen von der Schule aus. Sie sind {{b}} m und {{c}} m lang und schließen den Winkel α = {{alpha}}° ein. Wie weit sind ihre Enden voneinander entfernt? Runde auf eine Stelle nach dem Komma."
+          text: "Zwei gerade Wege gehen von der Schule aus. Sie sind {{b}} m und {{c}} m lang und schließen den Winkel α = {{alpha}}° ein. Wie weit sind ihre Enden voneinander entfernt? Runde auf eine Stelle nach dem Komma."
         answer:
           {
             value: "round(sqrt(b * b + c * c - 2 * b * c * cos(alpha)), 1)",
@@ -171,7 +171,7 @@ blocks:
           c: { int: [7, 14] }
         where: ["a < b", "b < c", "c < a + b", "(b * b + c * c - a * a) / (2 * b * c) < 0.99"]
         task:
-          text: "Ein Dreieck hat die Seiten a = {{a}} cm, b = {{b}} cm und c = {{c}} cm. Wie groß ist der Winkel α, der der Seite a gegenüberliegt? Runde auf eine Stelle nach dem Komma."
+          text: "Ein Dreieck hat die Seiten a = {{a}} cm, b = {{b}} cm und c = {{c}} cm. Wie groß ist der Winkel α, der der Seite a gegenüberliegt? Runde auf eine Stelle nach dem Komma."
         answer:
           {
             value: "round(acos((b * b + c * c - a * a) / (2 * b * c)), 1)",

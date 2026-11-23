@@ -15,7 +15,7 @@ blocks:
           Mira hält ihr Pappschild vor eine Lampe Z. Der Schatten fällt auf eine Wand. Rückt die Wand weiter weg, wird der Schatten größer, aber die Form bleibt. Ein Punkt des Schilds und sein Schattenpunkt liegen mit Z auf einem Strahl.
       - type: single-choice
         id: faktor-ablesen
-        text: Eine Strecke liegt 4 cm von Z entfernt, ihr Bild liegt 10 cm von Z entfernt. Welcher Streckfaktor gehört dazu?
+        text: Eine Strecke liegt 4 cm von Z entfernt, ihr Bild liegt 10 cm von Z entfernt. Welcher Streckfaktor gehört dazu?
         options:
           - text: "2,5"
             correct: true
@@ -66,7 +66,7 @@ blocks:
         blocks:
           - type: text
             text: |
-              Gegeben sind ZA = 4 cm, ZA′ = 10 cm, ZB = 5 cm und AB = 3 cm. Gesucht sind ZB′ und A′B′. Zuerst der Faktor: $k = \frac{10}{4} = 2{,}5$.
+              Gegeben sind ZA = 4 cm, ZA′ = 10 cm, ZB = 5 cm und AB = 3 cm. Gesucht sind ZB′ und A′B′. Zuerst der Faktor: $k = \frac{10}{4} = 2{,}5$.
           - type: formula
             formula: '\frac{\text{ZB′}}{5} = \frac{10}{4} \quad | \cdot 5'
           - type: formula
@@ -75,7 +75,7 @@ blocks:
             formula: '\frac{\text{A′B′}}{3} = \frac{10}{4} \quad \Rightarrow \quad \text{A′B′} = 3 \cdot 2{,}5 = 7{,}5'
           - type: text
             text: |
-              Also ist ZB′ = 12,5 cm lang und A′B′ = 7,5 cm.
+              Also ist ZB′ = 12,5 cm lang und A′B′ = 7,5 cm.
   - type: section
     id: uebung
     title: Übung
@@ -119,7 +119,7 @@ blocks:
             "a * b / a2 != b * a2 / a",
           ]
         task:
-          text: "Zwei Strahlen gehen von Z aus. Auf dem einen Strahl gilt ZA = {{a}} cm und ZA′ = {{a2}} cm, auf dem anderen ZB = {{b}} cm. AB und A′B′ sind parallel. Wie lang ist ZB′?"
+          text: "Zwei Strahlen gehen von Z aus. Auf dem einen Strahl gilt ZA = {{a}} cm und ZA′ = {{a2}} cm, auf dem anderen ZB = {{b}} cm. AB und A′B′ sind parallel. Wie lang ist ZB′?"
         answer: { value: "b * a2 / a", compare: { number: { format: decimal, decimals: 1, unit: cm } } }
         mistakes:
           - {
@@ -148,7 +148,7 @@ blocks:
             "a * c / a2 != c * a2 / a",
           ]
         task:
-          text: "AB und A′B′ sind parallel. Es gilt ZA = {{a}} cm, ZA′ = {{a2}} cm und AB = {{c}} cm. Wie lang ist A′B′?"
+          text: "AB und A′B′ sind parallel. Es gilt ZA = {{a}} cm, ZA′ = {{a2}} cm und AB = {{c}} cm. Wie lang ist A′B′?"
         answer: { value: "c * a2 / a", compare: { number: { format: decimal, decimals: 1, unit: cm } } }
         mistakes:
           - {
@@ -177,7 +177,7 @@ blocks:
             "b * a / (a + d) != b * (a + d) / a",
           ]
         task:
-          text: "Zwei Strahlen gehen von Z aus, AB und A′B′ sind parallel. Auf dem einen Strahl ist ZA = {{a}} cm, und zwischen A und A′ liegen {{d}} cm. Auf dem anderen Strahl ist ZB = {{b}} cm. Wie lang ist ZB′?"
+          text: "Zwei Strahlen gehen von Z aus, AB und A′B′ sind parallel. Auf dem einen Strahl ist ZA = {{a}} cm, und zwischen A und A′ liegen {{d}} cm. Auf dem anderen Strahl ist ZB = {{b}} cm. Wie lang ist ZB′?"
         answer: { value: "b * (a + d) / a", compare: { number: { format: decimal, decimals: 1, unit: cm } } }
         mistakes:
           - {

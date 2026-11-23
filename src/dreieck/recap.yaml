@@ -53,27 +53,27 @@ blocks:
         id: test-wurzel-quadrat
         component: Kurztest
         props:
-          question: Ein quadratisches Beet hat eine Fläche von 81 m². Wie lang ist eine Seite?
+          question: Ein quadratisches Beet hat eine Fläche von 81 m². Wie lang ist eine Seite?
           options:
             - {
-                text: "9 m",
+                text: "9 m",
                 correct: true,
-                info: "Die Fläche ist Seite mal Seite. 9 · 9 = 81, also ist die Seite die Wurzel aus 81, nämlich 9 m.",
+                info: "Die Fläche ist Seite mal Seite. 9 · 9 = 81, also ist die Seite die Wurzel aus 81, nämlich 9 m.",
               }
             - {
-                text: "40,5 m",
+                text: "40,5 m",
                 correct: false,
                 info: "Du hast 81 halbiert. Seite mal Seite soll 81 ergeben, nicht Seite mal 2.",
               }
             - {
-                text: "9 m²",
+                text: "9 m²",
                 correct: false,
                 info: "Die Zahl stimmt, aber eine Seitenlänge hat die Einheit m, nicht m².",
               }
           right: Richtig.
           wrong: Nicht richtig.
         nojs: |
-          Kurztest: Ein quadratisches Beet hat eine Fläche von 81 m². Wie lang ist eine Seite? Antwort: 9 m, denn 9 · 9 = 81. Die Seite ist die Wurzel aus der Fläche. Die Einheit ist m, nicht m².
+          Kurztest: Ein quadratisches Beet hat eine Fläche von 81 m². Wie lang ist eine Seite? Antwort: 9 m, denn 9 · 9 = 81. Die Seite ist die Wurzel aus der Fläche. Die Einheit ist m, nicht m².
       - type: text
         text: |
           Wenn deine Antwort falsch war, schau dir den Baustein „Quadratwurzeln“ auf der [Lernlandkarte](https://lernapps.net/apps/map/mathematik/c/quadratwurzeln/) an.
@@ -86,59 +86,59 @@ blocks:
           Der **Flächeninhalt** sagt, wie viel Platz eine Figur einnimmt, in Quadrateinheiten wie cm². Der **Umfang** ist die Länge des Randes, in cm. Beim Rechteck mit den Seiten $a$ und $b$ ist $A = a \cdot b$ und $u = 2 \cdot (a + b)$. Beim Quadrat mit der Seite $a$ ist $A = a \cdot a$ und $u = 4 \cdot a$.
       - type: definition
         term: Flächeninhalt
-        explanation: Das Maß dafür, wie viele Einheitsquadrate in eine Figur passen. Ein Rechteck mit 3 cm und 2 cm hat 6 cm², weil 6 Quadrate von 1 cm Seitenlänge hineinpassen.
+        explanation: Das Maß dafür, wie viele Einheitsquadrate in eine Figur passen. Ein Rechteck mit 3 cm und 2 cm hat 6 cm², weil 6 Quadrate von 1 cm Seitenlänge hineinpassen.
       - type: example
         title: Ein Quadrat über einer Strecke
         blocks:
           - type: text
             text: |
-              Über einer Strecke von 4 cm Länge kannst du ein Quadrat zeichnen. Seine Fläche ist $4 \cdot 4 = 16$ cm², sein Umfang $4 \cdot 4 = 16$ cm. Zahl gleich, Einheit verschieden. Diese Quadrate über Seiten brauchst du gleich für Pythagoras.
+              Über einer Strecke von 4 cm Länge kannst du ein Quadrat zeichnen. Seine Fläche ist $4 \cdot 4 = 16$ cm², sein Umfang $4 \cdot 4 = 16$ cm. Zahl gleich, Einheit verschieden. Diese Quadrate über Seiten brauchst du gleich für Pythagoras.
       - type: vue-component
         id: test-flaeche
         component: Kurztest
         props:
-          question: Ein Quadrat hat den Umfang 20 cm. Wie groß ist seine Fläche?
+          question: Ein Quadrat hat den Umfang 20 cm. Wie groß ist seine Fläche?
           options:
             - {
-                text: "25 cm²",
+                text: "25 cm²",
                 correct: true,
-                info: "Eine Seite ist 20 cm : 4 = 5 cm, die Fläche 5 cm · 5 cm = 25 cm².",
+                info: "Eine Seite ist 20 cm : 4 = 5 cm, die Fläche 5 cm · 5 cm = 25 cm².",
               }
             - {
-                text: "400 cm²",
+                text: "400 cm²",
                 correct: false,
-                info: "Du hast den Umfang selbst mal sich selbst genommen. Erst die Seitenlänge bestimmen: 20 cm : 4 = 5 cm.",
+                info: "Du hast den Umfang selbst mal sich selbst genommen. Erst die Seitenlänge bestimmen: 20 cm : 4 = 5 cm.",
               }
             - {
-                text: "5 cm²",
+                text: "5 cm²",
                 correct: false,
-                info: "5 cm ist die Seitenlänge. Die Fläche ist Seite mal Seite, also 25 cm².",
+                info: "5 cm ist die Seitenlänge. Die Fläche ist Seite mal Seite, also 25 cm².",
               }
           right: Richtig.
           wrong: Nicht richtig.
         nojs: |
-          Kurztest: Ein Quadrat hat den Umfang 20 cm. Wie groß ist seine Fläche? Antwort: 25 cm². Eine Seite ist 20 cm : 4 = 5 cm, die Fläche ist 5 cm · 5 cm = 25 cm².
+          Kurztest: Ein Quadrat hat den Umfang 20 cm. Wie groß ist seine Fläche? Antwort: 25 cm². Eine Seite ist 20 cm : 4 = 5 cm, die Fläche ist 5 cm · 5 cm = 25 cm².
       - type: vue-component
         id: test-rechteck
         component: Kurztest
         props:
-          question: Ein Rechteck ist 7 cm lang und 4,5 cm breit. Wie groß ist sein Umfang?
+          question: Ein Rechteck ist 7 cm lang und 4,5 cm breit. Wie groß ist sein Umfang?
           options:
-            - { text: "23 cm", correct: true, info: "Umfang = 2 · (7 cm + 4,5 cm) = 2 · 11,5 cm = 23 cm." }
+            - { text: "23 cm", correct: true, info: "Umfang = 2 · (7 cm + 4,5 cm) = 2 · 11,5 cm = 23 cm." }
             - {
-                text: "31,5 cm",
+                text: "31,5 cm",
                 correct: false,
                 info: "7 · 4,5 = 31,5 ist die Fläche, in cm². Der Umfang ist die Summe aller vier Seiten.",
               }
             - {
-                text: "11,5 cm",
+                text: "11,5 cm",
                 correct: false,
                 info: "Du hast nur zwei Seiten addiert. Ein Rechteck hat vier Seiten, also noch mal 2.",
               }
           right: Richtig.
           wrong: Nicht richtig.
         nojs: |
-          Kurztest: Ein Rechteck ist 7 cm lang und 4,5 cm breit. Wie groß ist sein Umfang? Antwort: 23 cm, denn 2 · (7 + 4,5) = 23. Die Fläche wäre 31,5 cm².
+          Kurztest: Ein Rechteck ist 7 cm lang und 4,5 cm breit. Wie groß ist sein Umfang? Antwort: 23 cm, denn 2 · (7 + 4,5) = 23. Die Fläche wäre 31,5 cm².
       - type: text
         text: |
           Wenn deine Antwort falsch war, schau dir den Baustein „Fläche und Umfang: Rechteck, Quadrat“ auf der [Lernlandkarte](https://lernapps.net/apps/map/mathematik/c/flaeche-umfang-quadrat-rechteck/) an.

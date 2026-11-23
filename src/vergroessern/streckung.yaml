@@ -48,16 +48,16 @@ blocks:
         component: Streckung
         props: {}
         nojs: |
-          Dreieck ABC mit dem rechten Winkel bei A, AB = 3 cm, AC = 4 cm, BC = 5 cm, wird von Z aus gestreckt.
-          Der Abstand von Z zu A ist 5 cm.
-          Bei k = 0,5 sind der Abstand und die Seiten 2,5 cm, 1,5 cm, 2 cm und 2,5 cm. Bei k = 1 bleibt alles gleich.
-          Bei k = 2 sind sie 10 cm, 6 cm, 8 cm und 10 cm. Der Winkel bei A misst in jedem Fall 90°.
+          Dreieck ABC mit dem rechten Winkel bei A, AB = 3 cm, AC = 4 cm, BC = 5 cm, wird von Z aus gestreckt.
+          Der Abstand von Z zu A ist 5 cm.
+          Bei k = 0,5 sind der Abstand und die Seiten 2,5 cm, 1,5 cm, 2 cm und 2,5 cm. Bei k = 1 bleibt alles gleich.
+          Bei k = 2 sind sie 10 cm, 6 cm, 8 cm und 10 cm. Der Winkel bei A misst in jedem Fall 90°.
       - type: note
         title: Merke
         blocks:
           - type: text
             text: |
-              Bei einer zentrischen Streckung mit dem Faktor *k* bleiben alle Winkel gleich. Jede Länge wird mit *k* multipliziert, nicht um *k* verlängert: Bei $k = 2$ wird aus 3 cm die Länge 6 cm, nicht 5 cm.
+              Bei einer zentrischen Streckung mit dem Faktor *k* bleiben alle Winkel gleich. Jede Länge wird mit *k* multipliziert, nicht um *k* verlängert: Bei $k = 2$ wird aus 3 cm die Länge 6 cm, nicht 5 cm.
   - type: section
     id: beispiel
     title: Den Streckfaktor bestimmen
@@ -67,12 +67,12 @@ blocks:
         blocks:
           - type: text
             text: |
-              Eine Strecke AB ist 3 cm lang, ihr Bild A′B′ ist 7,5 cm lang. Der Faktor ist Bildlänge durch Originallänge.
+              Eine Strecke AB ist 3 cm lang, ihr Bild A′B′ ist 7,5 cm lang. Der Faktor ist Bildlänge durch Originallänge.
           - type: formula
             formula: 'k = \frac{7{,}5}{3} = 2{,}5'
           - type: text
             text: |
-              Probe: Rechne mit dem Ergebnis zurück. Mit *k* = 2,5 wird 3 cm zu 2,5 · 3 cm = 7,5 cm. Das stimmt.
+              Probe: Rechne mit dem Ergebnis zurück. Mit *k* = 2,5 wird 3 cm zu 2,5 · 3 cm = 7,5 cm. Das stimmt.
   - type: section
     id: uebung
     title: Übung
@@ -87,9 +87,9 @@ blocks:
           - text: Auch die Winkel werden doppelt so groß.
             correct: false
             info: Aus einem 40°-Winkel würde 80°, die Form wäre eine andere. Beim Strecken bleibt die Form gleich, also bleiben die Winkel gleich.
-          - text: Jede Länge wird um 2 cm größer.
+          - text: Jede Länge wird um 2 cm größer.
             correct: false
-            info: Das wäre Addieren. Beim Strecken wird mit dem Faktor multipliziert, aus 3 cm werden 6 cm, nicht 5 cm.
+            info: Das wäre Addieren. Beim Strecken wird mit dem Faktor multipliziert, aus 3 cm werden 6 cm, nicht 5 cm.
         explanation: Die Winkel bleiben bei jeder zentrischen Streckung gleich. Nur die Längen ändern sich, und zwar mit dem Faktor $k$.
       - type: generated
         id: bildlaenge
@@ -98,14 +98,14 @@ blocks:
           a: { int: [2, 12] }
         where: ["decimals(a * k) <= 1", "a + k != a * k"]
         task:
-          text: "Ein Dreieck wird vom Zentrum Z aus mit dem Faktor k = {{k}} gestreckt. Die Seite AB ist {{a}} cm lang. Wie lang ist die Seite A′B′ des Bildes?"
+          text: "Ein Dreieck wird vom Zentrum Z aus mit dem Faktor k = {{k}} gestreckt. Die Seite AB ist {{a}} cm lang. Wie lang ist die Seite A′B′ des Bildes?"
         answer: { value: "a * k", compare: { number: { format: decimal, decimals: 1, unit: cm } } }
         mistakes:
           - { value: "a + k", message: "Du hast {{k}} addiert. Beim Strecken wird mit dem Faktor multipliziert." }
           - { value: "a / k", message: "Du hast geteilt. Bei k = {{k}} wird die Länge mit {{k}} multipliziert." }
         hint: "Das Bild ist k-mal so lang wie das Original: Länge mal k."
         steps:
-          - '$A'' B'' = k \cdot AB = {{k}} \cdot {{a}} = {{answer}}$, also {{answer}} cm.'
+          - '$A'' B'' = k \cdot AB = {{k}} \cdot {{a}} = {{answer}}$, also {{answer}} cm.'
       - type: generated
         id: faktor-bestimmen
         given:
@@ -113,7 +113,7 @@ blocks:
           b: { int: [1, 30] }
         where: ["b != a", "decimals(b / a) <= 1", "b / a <= 4", "b - a != b / a"]
         task:
-          text: "Die Strecke AB ist {{a}} cm lang, ihr Bild A′B′ ist {{b}} cm lang. Bestimme den Streckfaktor k."
+          text: "Die Strecke AB ist {{a}} cm lang, ihr Bild A′B′ ist {{b}} cm lang. Bestimme den Streckfaktor k."
         answer: { value: "b / a", compare: { number: { format: decimal, decimals: 1 } } }
         mistakes:
           - {
@@ -143,12 +143,12 @@ blocks:
             "zq / zp != a",
           ]
         task:
-          text: "Beim Strecken vom Zentrum Z aus liegt der Punkt P {{zp}} cm von Z entfernt, sein Bildpunkt P′ liegt {{zq}} cm von Z entfernt. Eine Strecke ist {{a}} cm lang. Wie lang ist ihr Bild?"
+          text: "Beim Strecken vom Zentrum Z aus liegt der Punkt P {{zp}} cm von Z entfernt, sein Bildpunkt P′ liegt {{zq}} cm von Z entfernt. Eine Strecke ist {{a}} cm lang. Wie lang ist ihr Bild?"
         answer: { value: "a * zq / zp", compare: { number: { format: decimal, decimals: 1, unit: cm } } }
         mistakes:
           - {
               value: "zq / zp",
-              message: "Das ist der Streckfaktor, noch nicht die Länge. Multipliziere ihn mit {{a}} cm.",
+              message: "Das ist der Streckfaktor, noch nicht die Länge. Multipliziere ihn mit {{a}} cm.",
             }
           - {
               value: "a + zq - zp",
@@ -156,7 +156,7 @@ blocks:
             }
         hint: "Bestimme zuerst den Faktor k aus den Abständen zu Z: Bild-Abstand durch Original-Abstand. Dann multiplizierst du die Länge mit k."
         steps:
-          - '$k = \frac{{{zq}}}{{{zp}}}$, dann $k \cdot {{a}} = {{answer}}$, also {{answer}} cm.'
+          - '$k = \frac{{{zq}}}{{{zp}}}$, dann $k \cdot {{a}} = {{answer}}$, also {{answer}} cm.'
       - type: generated
         id: winkel-schatten
         given:

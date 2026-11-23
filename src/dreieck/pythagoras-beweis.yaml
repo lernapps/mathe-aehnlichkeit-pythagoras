@@ -22,7 +22,7 @@ blocks:
             info: Der rechte Winkel ist der größte Winkel im Dreieck, denn die anderen beiden sind zusammen 90°. Gegenüber dem größten Winkel liegt die längste Seite.
           - text: eine der beiden Seiten am rechten Winkel
             correct: false
-            info: Diese beiden Seiten sind kürzer als die dritte. Probiere es an einem Dreieck mit 3 cm, 4 cm und 5 cm.
+            info: Diese beiden Seiten sind kürzer als die dritte. Probiere es an einem Dreieck mit 3 cm, 4 cm und 5 cm.
           - text: Alle drei Seiten sind gleich lang.
             correct: false
             info: Gleich lange Seiten gibt es nur im gleichseitigen Dreieck, und das hat keinen rechten Winkel.
@@ -51,10 +51,10 @@ blocks:
         component: QuadrateUmlegen
         props: {}
         nojs: |
-          Ein großes Quadrat mit der Seite a + b = 3 cm + 4 cm = 7 cm hat die Fläche 49 cm². In ihm liegen vier rechtwinklige Dreiecke mit den Katheten 3 cm und 4 cm, je 6 cm², zusammen 24 cm².
-          Erste Anordnung: In der Mitte bleibt ein schiefes Quadrat über der Hypotenuse c mit 25 cm² übrig.
-          Zweite Anordnung: Dieselben vier Dreiecke liegen in zwei Rechtecken, übrig bleiben das Quadrat über b mit 16 cm² und das Quadrat über a mit 9 cm².
-          Beide Male bleibt gleich viel übrig, also c² = a² + b², hier 25 cm² = 9 cm² + 16 cm².
+          Ein großes Quadrat mit der Seite a + b = 3 cm + 4 cm = 7 cm hat die Fläche 49 cm². In ihm liegen vier rechtwinklige Dreiecke mit den Katheten 3 cm und 4 cm, je 6 cm², zusammen 24 cm².
+          Erste Anordnung: In der Mitte bleibt ein schiefes Quadrat über der Hypotenuse c mit 25 cm² übrig.
+          Zweite Anordnung: Dieselben vier Dreiecke liegen in zwei Rechtecken, übrig bleiben das Quadrat über b mit 16 cm² und das Quadrat über a mit 9 cm².
+          Beide Male bleibt gleich viel übrig, also c² = a² + b², hier 25 cm² = 9 cm² + 16 cm².
       - type: text
         text: |
           Das große Quadrat ist in beiden Fällen gleich groß, und die vier Dreiecke sind dieselben. Also müssen auch die Reste gleich groß sein.
@@ -113,7 +113,7 @@ blocks:
           A: { oneOf: [4, 9, 16, 25, 36, 49, 64, 81] }
           B: { oneOf: [4, 9, 16, 25, 36, 49, 64, 81] }
         task:
-          text: "In einem rechtwinkligen Dreieck hat das Quadrat über der einen Kathete die Fläche {{A}} cm², das Quadrat über der anderen die Fläche {{B}} cm². Wie groß ist die Fläche des Quadrats über der Hypotenuse in cm²?"
+          text: "In einem rechtwinkligen Dreieck hat das Quadrat über der einen Kathete die Fläche {{A}} cm², das Quadrat über der anderen die Fläche {{B}} cm². Wie groß ist die Fläche des Quadrats über der Hypotenuse in cm²?"
         answer: { value: "A + B", compare: { number: { format: integer, unit: "cm²" } } }
         mistakes:
           - {
@@ -126,14 +126,14 @@ blocks:
             }
         hint: "Das Quadrat über der Hypotenuse ist so groß wie die beiden anderen Quadrate zusammen."
         steps:
-          - "$c^2 = a^2 + b^2 = {{A}} + {{B}} = {{answer}}$, also {{answer}} cm²."
+          - "$c^2 = a^2 + b^2 = {{A}} + {{B}} = {{answer}}$, also {{answer}} cm²."
       - type: generated
         id: quadrate-summe
         given:
           a: { int: [2, 9] }
           b: { int: [2, 9] }
         task:
-          text: "Die Katheten eines rechtwinkligen Dreiecks sind {{a}} cm und {{b}} cm lang. Wie groß ist die Fläche des Quadrats über der Hypotenuse in cm²?"
+          text: "Die Katheten eines rechtwinkligen Dreiecks sind {{a}} cm und {{b}} cm lang. Wie groß ist die Fläche des Quadrats über der Hypotenuse in cm²?"
         answer: { value: "a * a + b * b", compare: { number: { format: integer, unit: "cm²" } } }
         mistakes:
           - {
@@ -146,7 +146,7 @@ blocks:
             }
         hint: "Rechne die Fläche des Quadrats über a und über b aus und addiere sie."
         steps:
-          - "$c^2 = {{a}}^2 + {{b}}^2 = {{answer}}$, also {{answer}} cm²."
+          - "$c^2 = {{a}}^2 + {{b}}^2 = {{answer}}$, also {{answer}} cm²."
   - type: section
     id: weiter
     title: Wie es weitergeht

@@ -12,7 +12,7 @@ blocks:
           Du lernst den Sinussatz: Er verbindet in jedem Dreieck jede Seite mit dem gegenüberliegenden Winkel. Damit berechnest du Seiten und Winkel, auch wenn kein Winkel 90° misst.
       - type: text
         text: |
-          Mira und Jonas wollen wissen, wie weit ein Baum am anderen Ufer des Flusses entfernt ist. Am nahen Ufer messen sie eine Strecke AB von 60 m. Von A aus sehen sie den Baum C unter dem Winkel 52° zu AB, von B aus unter 71°.
+          Mira und Jonas wollen wissen, wie weit ein Baum am anderen Ufer des Flusses entfernt ist. Am nahen Ufer messen sie eine Strecke AB von 60 m. Von A aus sehen sie den Baum C unter dem Winkel 52° zu AB, von B aus unter 71°.
       - type: single-choice
         id: dritter-winkel
         text: Wie groß ist der Winkel γ bei C im Dreieck ABC?
@@ -77,7 +77,7 @@ blocks:
             formula: 'b = \frac{60 \cdot \sin 71^\circ}{\sin 57^\circ} \approx 67{,}6'
           - type: text
             text: |
-              Der Baum ist etwa 67,6 m von A entfernt.
+              Der Baum ist etwa 67,6 m von A entfernt.
   - type: section
     id: uebung
     title: Übung
@@ -110,7 +110,7 @@ blocks:
             "180 - alpha - beta != alpha",
           ]
         task:
-          text: "Am Ufer misst du die Strecke AB = {{c}} m. Von A siehst du einen Baum C am anderen Ufer unter dem Winkel α = {{alpha}}° zu AB, von B aus unter β = {{beta}}°. Wie weit ist der Baum von A entfernt (die Strecke AC)? Runde auf eine Stelle nach dem Komma."
+          text: "Am Ufer misst du die Strecke AB = {{c}} m. Von A siehst du einen Baum C am anderen Ufer unter dem Winkel α = {{alpha}}° zu AB, von B aus unter β = {{beta}}°. Wie weit ist der Baum von A entfernt (die Strecke AC)? Runde auf eine Stelle nach dem Komma."
         answer:
           {
             value: "round(c * sin(beta) / sin(180 - alpha - beta), 1)",
@@ -140,7 +140,7 @@ blocks:
           alpha: { int: [40, 80], step: 5 }
         where: ["a > b", "b * sin(alpha) / a > 0.2"]
         task:
-          text: "In einem Dreieck ist a = {{a}} cm, b = {{b}} cm und α = {{alpha}}°, a liegt α gegenüber. Wie groß ist der Winkel β gegenüber von b? Er ist spitz. Runde auf eine Stelle nach dem Komma."
+          text: "In einem Dreieck ist a = {{a}} cm, b = {{b}} cm und α = {{alpha}}°, a liegt α gegenüber. Wie groß ist der Winkel β gegenüber von b? Er ist spitz. Runde auf eine Stelle nach dem Komma."
         answer:
           {
             value: "round(asin(b * sin(alpha) / a), 1)",

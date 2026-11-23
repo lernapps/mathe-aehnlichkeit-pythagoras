@@ -12,18 +12,18 @@ blocks:
           Du lernst, wann zwei Figuren ähnlich sind: wenn alle Winkel gleich sind und alle Längen mit demselben Faktor wachsen. Damit berechnest du fehlende Längen und die Fläche vergrößerter Figuren.
       - type: text
         text: |
-          Jonas und Mira drucken ein Foto für das Klassenposter. Das Foto ist 9 cm breit und 6 cm hoch. Auf dem Poster soll es 27 cm breit sein, ohne verzerrt zu werden.
+          Jonas und Mira drucken ein Foto für das Klassenposter. Das Foto ist 9 cm breit und 6 cm hoch. Auf dem Poster soll es 27 cm breit sein, ohne verzerrt zu werden.
       - type: single-choice
         id: foto-hoehe
         text: Wie hoch ist das Foto auf dem Poster?
         options:
-          - text: 18 cm
+          - text: 18 cm
             correct: true
-            info: "Die Breite wird mit 27 : 9 = 3 multipliziert. Die Höhe auch, also 3 · 6 cm = 18 cm."
-          - text: 24 cm
+            info: "Die Breite wird mit 27 : 9 = 3 multipliziert. Die Höhe auch, also 3 · 6 cm = 18 cm."
+          - text: 24 cm
             correct: false
-            info: Die Breite wächst um 18 cm, du hast 18 cm zur Höhe addiert. Dann wäre das Foto verzerrt. Die Höhe wird mit demselben Faktor multipliziert wie die Breite.
-          - text: 12 cm
+            info: Die Breite wächst um 18 cm, du hast 18 cm zur Höhe addiert. Dann wäre das Foto verzerrt. Die Höhe wird mit demselben Faktor multipliziert wie die Breite.
+          - text: 12 cm
             correct: false
             info: "Du hast die Höhe mit 2 multipliziert. Der Faktor für die Breite ist aber 27 : 9 = 3."
         explanation: Ohne Verzerrung wachsen Breite und Höhe mit demselben Faktor. Hier ist er 3.
@@ -42,7 +42,7 @@ blocks:
         blocks:
           - type: text
             text: |
-              Bei Rechtecken musst du Breite und Höhe vergleichen: Beide Faktoren müssen gleich sein. Ein Rechteck, das 2 cm breiter und 2 cm höher ist, ist nicht ähnlich, denn 2 cm dazuzählen ist kein Faktor.
+              Bei Rechtecken musst du Breite und Höhe vergleichen: Beide Faktoren müssen gleich sein. Ein Rechteck, das 2 cm breiter und 2 cm höher ist, ist nicht ähnlich, denn 2 cm dazuzählen ist kein Faktor.
       - type: text
         text: |
           Bei Dreiecken genügt es, zwei Winkel zu vergleichen. Den dritten kennst du aus der Winkelsumme von 180°. Stimmen zwei Winkel überein, stimmt auch der dritte überein, und die Dreiecke sind ähnlich.
@@ -55,22 +55,22 @@ blocks:
         blocks:
           - type: text
             text: |
-              Ein Rechteck ist 4 cm breit und 6 cm hoch. Ein anderes ist 10 cm breit und 15 cm hoch. Die Winkel sind in beiden 90°. Prüfe die Faktoren.
+              Ein Rechteck ist 4 cm breit und 6 cm hoch. Ein anderes ist 10 cm breit und 15 cm hoch. Die Winkel sind in beiden 90°. Prüfe die Faktoren.
           - type: formula
             formula: 'k_{\text{Breite}} = \frac{10}{4} = 2{,}5 \quad k_{\text{Höhe}} = \frac{15}{6} = 2{,}5'
           - type: text
             text: |
-              Beide Faktoren sind gleich, die Rechtecke sind ähnlich. Ist das zweite 10 cm breit und 14 cm hoch, ist der Faktor der Höhe $\frac{14}{6}$, also etwa 2,33. Dann sind sie nicht ähnlich.
+              Beide Faktoren sind gleich, die Rechtecke sind ähnlich. Ist das zweite 10 cm breit und 14 cm hoch, ist der Faktor der Höhe $\frac{14}{6}$, also etwa 2,33. Dann sind sie nicht ähnlich.
   - type: section
     id: flaeche
     title: Was mit der Fläche passiert
     blocks:
       - type: text
         text: |
-          Das Bild zeigt ein Quadrat mit der Seite 1 cm und ein Quadrat mit der Seite 2 cm. Das ist eine Streckung mit $k = 2$. Wie viele kleine Quadrate passen in das große? Zähle die Teile.
+          Das Bild zeigt ein Quadrat mit der Seite 1 cm und ein Quadrat mit der Seite 2 cm. Das ist eine Streckung mit $k = 2$. Wie viele kleine Quadrate passen in das große? Zähle die Teile.
       - type: figure
         image: images/flaeche-faktor.svg
-        alt: Links ein kleines Quadrat mit der Seite 1 cm und der Fläche 1 cm². Rechts ein Quadrat mit der Seite 2 cm, das durch gestrichelte Linien in vier kleine Quadrate geteilt ist.
+        alt: Links ein kleines Quadrat mit der Seite 1 cm und der Fläche 1 cm². Rechts ein Quadrat mit der Seite 2 cm, das durch gestrichelte Linien in vier kleine Quadrate geteilt ist.
         caption: Doppelte Seitenlänge, vierfache Fläche.
         source: eigene Zeichnung
         licence: CC0-1.0
@@ -84,7 +84,7 @@ blocks:
         blocks:
           - type: text
             text: |
-              Das Foto hat 54 cm². Das Poster ist eine Streckung mit $k = 3$. Seine Fläche ist $3^2 \cdot 54 = 9 \cdot 54 = 486$ cm².
+              Das Foto hat 54 cm². Das Poster ist eine Streckung mit $k = 3$. Seine Fläche ist $3^2 \cdot 54 = 9 \cdot 54 = 486$ cm².
   - type: section
     id: uebung
     title: Übung
@@ -93,15 +93,15 @@ blocks:
         id: aehnliche-rechtecke
         text: Welche zwei Rechtecke sind ähnlich?
         options:
-          - text: 3 cm × 5 cm und 6 cm × 10 cm
+          - text: 3 cm × 5 cm und 6 cm × 10 cm
             correct: true
-            info: Breite 3 cm wird 6 cm, Höhe 5 cm wird 10 cm. Beide Faktoren sind 2.
-          - text: 3 cm × 5 cm und 6 cm × 8 cm
+            info: Breite 3 cm wird 6 cm, Höhe 5 cm wird 10 cm. Beide Faktoren sind 2.
+          - text: 3 cm × 5 cm und 6 cm × 8 cm
             correct: false
-            info: Die Breite wird mit 2 multipliziert, die Höhe aber nicht, denn 5 cm · 2 = 10 cm. Die Faktoren sind verschieden.
-          - text: 3 cm × 5 cm und 5 cm × 7 cm
+            info: Die Breite wird mit 2 multipliziert, die Höhe aber nicht, denn 5 cm · 2 = 10 cm. Die Faktoren sind verschieden.
+          - text: 3 cm × 5 cm und 5 cm × 7 cm
             correct: false
-            info: "Beide Seiten sind um 2 cm länger. Das ist ein Zuschlag, kein Faktor. Die Faktoren 5 : 3 und 7 : 5 sind verschieden."
+            info: "Beide Seiten sind um 2 cm länger. Das ist ein Zuschlag, kein Faktor. Die Faktoren 5 : 3 und 7 : 5 sind verschieden."
         explanation: Ähnliche Rechtecke haben denselben Faktor für Breite und Höhe.
       - type: single-choice
         id: aehnliche-dreiecke
@@ -133,7 +133,7 @@ blocks:
             "b != a",
           ]
         task:
-          text: "Ein Rechteck ist {{a}} cm breit und {{b}} cm hoch. Ein ähnliches Rechteck ist {{c}} cm breit. Wie hoch ist es?"
+          text: "Ein Rechteck ist {{a}} cm breit und {{b}} cm hoch. Ein ähnliches Rechteck ist {{c}} cm breit. Wie hoch ist es?"
         answer: { value: "b * c / a", compare: { number: { format: decimal, decimals: 1, unit: cm } } }
         mistakes:
           - {
@@ -146,14 +146,14 @@ blocks:
             }
         hint: "Bestimme den Faktor k aus den Breiten (neu durch alt) und multipliziere die Höhe damit."
         steps:
-          - '$k = \frac{{{c}}}{{{a}}}$, dann $k \cdot {{b}} = {{answer}}$, also {{answer}} cm.'
+          - '$k = \frac{{{c}}}{{{a}}}$, dann $k \cdot {{b}} = {{answer}}$, also {{answer}} cm.'
       - type: generated
         id: flaeche-faktor
         given:
           k: { oneOf: [2, 3, 4] }
           A: { int: [3, 25] }
         task:
-          text: "Ein Foto hat eine Fläche von {{A}} cm². Das Poster ist eine Streckung des Fotos mit dem Faktor k = {{k}}. Wie groß ist die Fläche des Posters in cm²?"
+          text: "Ein Foto hat eine Fläche von {{A}} cm². Das Poster ist eine Streckung des Fotos mit dem Faktor k = {{k}}. Wie groß ist die Fläche des Posters in cm²?"
         answer: { value: "A * k * k", compare: { number: { format: integer, unit: "cm²" } } }
         mistakes:
           - {
@@ -163,14 +163,14 @@ blocks:
           - { value: "A + k * k", message: "Du hast k · k addiert. Die Fläche wird mit k · k multipliziert." }
         hint: "Der Flächenfaktor ist k mal k."
         steps:
-          - '$A'' = k^2 \cdot A = {{k}}^2 \cdot {{A}} = {{answer}}$, also {{answer}} cm².'
+          - '$A'' = k^2 \cdot A = {{k}}^2 \cdot {{A}} = {{answer}}$, also {{answer}} cm².'
       - type: generated
         id: modell-flaeche
         given:
           m: { oneOf: [20, 50, 100] }
           A: { int: [10, 60] }
         task:
-          text: "Ein Modellhaus im Maßstab 1 : {{m}} hat eine Grundfläche von {{A}} cm². Wie groß ist die Grundfläche des echten Hauses in m²? Es gilt 1 m² = 10 000 cm²."
+          text: "Ein Modellhaus im Maßstab 1 : {{m}} hat eine Grundfläche von {{A}} cm². Wie groß ist die Grundfläche des echten Hauses in m²? Es gilt 1 m² = 10 000 cm²."
         answer: { value: "A * m * m / 10000", compare: { number: { format: decimal, decimals: 2, unit: "m²" } } }
         mistakes:
           - {
@@ -179,9 +179,9 @@ blocks:
             }
           - {
               value: "A * m * m / 100",
-              message: "Du hast cm² mit 100 in m² umgerechnet. Ein m² sind 100 · 100 = 10 000 cm².",
+              message: "Du hast cm² mit 100 in m² umgerechnet. Ein m² sind 100 · 100 = 10 000 cm².",
             }
-          - { value: "A * m * m", message: "Das sind noch cm². Rechne in m² um: durch 10 000." }
+          - { value: "A * m * m", message: "Das sind noch cm². Rechne in m² um: durch 10 000." }
         hint: "Erst die Fläche in cm² mit dem Quadrat des Faktors vergrößern, dann in m² umrechnen."
         steps:
           - '$A'' = {{m}}^2 \cdot {{A}}$ cm² $= {{answer}}$ m².'

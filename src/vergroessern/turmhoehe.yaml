@@ -12,7 +12,7 @@ blocks:
           Du wendest die Strahlensätze auf Vermessungen an: auf die Höhe eines Turms mit dem Schatten und auf die Breite eines Flusses. Du erkennst, wo in einer Sachaufgabe die Parallelen und das Zentrum stecken.
       - type: text
         text: |
-          Die Klasse von Mira und Jonas misst den Turm im Park. Hinaufklettern geht nicht. Jonas stellt einen Stab von 1,5 m Höhe senkrecht auf. Er verschiebt ihn so lange, bis sein Schatten genau am Ende des Turmschattens aufhört.
+          Die Klasse von Mira und Jonas misst den Turm im Park. Hinaufklettern geht nicht. Jonas stellt einen Stab von 1,5 m Höhe senkrecht auf. Er verschiebt ihn so lange, bis sein Schatten genau am Ende des Turmschattens aufhört.
       - type: single-choice
         id: turm-vorab
         text: Der Turmschatten ist 8-mal so lang wie der Stabschatten. Was folgt daraus für die Höhen?
@@ -20,7 +20,7 @@ blocks:
           - text: Der Turm ist 8-mal so hoch wie der Stab.
             correct: true
             info: Beide Schatten gehören zur gleichen Streckung, mit dem Faktor 8. Dieser Faktor gilt auch für die Höhen.
-          - text: Der Turm ist 8 m höher als der Stab.
+          - text: Der Turm ist 8 m höher als der Stab.
             correct: false
             info: Das wäre ein Zuschlag. Streckungen arbeiten mit einem Faktor, nicht mit einer Differenz.
           - text: Turm und Stab sind gleich hoch.
@@ -36,7 +36,7 @@ blocks:
           Im Bild stehen Turm und Stab beide senkrecht, sie sind also parallel. Die Sonnenlinie von der Turmspitze über die Stabspitze bis zum Schattenende Z ist der eine Strahl, der Boden ist der andere. Z ist das Streckzentrum.
       - type: figure
         image: images/turm-schatten.svg
-        alt: Ein Turm der gesuchten Höhe und ein 1,5 m hoher Stab stehen senkrecht auf dem Boden. Der Stab hat 3 m Schatten, der Turm 24 m. Die Sonnenlinie geht von der Turmspitze über die Stabspitze zum Schattenende Z.
+        alt: Ein Turm der gesuchten Höhe und ein 1,5 m hoher Stab stehen senkrecht auf dem Boden. Der Stab hat 3 m Schatten, der Turm 24 m. Die Sonnenlinie geht von der Turmspitze über die Stabspitze zum Schattenende Z.
         caption: Turm, Stab und Sonnenlinie bilden eine Figur mit Z und zwei Parallelen.
         source: eigene Zeichnung
         licence: CC0-1.0
@@ -49,7 +49,7 @@ blocks:
         formula: 'h = \frac{24 \cdot 1{,}5}{3} = 12'
       - type: text
         text: |
-          Der Turm ist 12 m hoch.
+          Der Turm ist 12 m hoch.
       - type: note
         title: Merke
         blocks:
@@ -62,7 +62,7 @@ blocks:
     blocks:
       - type: text
         text: |
-          Ein Baum S steht am anderen Ufer genau gegenüber von P. Du willst die Breite *w* = SP des Flusses wissen. Am nahen Ufer gehst du von P nach Q und steckst dabei in M einen Pflock. Bei Q gehst du im rechten Winkel zum Ufer von dir weg, bis Pflock M und Baum S in einer Linie liegen. Das ist Punkt R. Du misst PM = 30 m, MQ = 10 m und QR = 12 m.
+          Ein Baum S steht am anderen Ufer genau gegenüber von P. Du willst die Breite *w* = SP des Flusses wissen. Am nahen Ufer gehst du von P nach Q und steckst dabei in M einen Pflock. Bei Q gehst du im rechten Winkel zum Ufer von dir weg, bis Pflock M und Baum S in einer Linie liegen. Das ist Punkt R. Du misst PM = 30 m, MQ = 10 m und QR = 12 m.
       - type: figure
         image: images/fluss-x.svg
         alt: Ein Fluss liegt zwischen dem Baum S und dem Ufer mit den Punkten P, M und Q. Die Strecken SP und QR sind parallel. Eine Gerade geht von S über M nach R. Gesucht ist die Breite w des Flusses.
@@ -78,7 +78,7 @@ blocks:
         formula: 'w = \frac{30 \cdot 12}{10} = 36'
       - type: text
         text: |
-          Der Fluss ist 36 m breit.
+          Der Fluss ist 36 m breit.
   - type: section
     id: uebung
     title: Übung
@@ -106,7 +106,7 @@ blocks:
         where:
           ["ts > ss", "decimals(hs * ts / ss) <= 1", "hs + ts - ss != hs * ts / ss", "hs * ss / ts != hs * ts / ss"]
         task:
-          text: "Ein Stab von {{hs}} m Höhe wirft einen Schatten von {{ss}} m. Gleichzeitig reicht der Schatten eines Turms bis zum selben Schattenende und ist {{ts}} m lang. Wie hoch ist der Turm?"
+          text: "Ein Stab von {{hs}} m Höhe wirft einen Schatten von {{ss}} m. Gleichzeitig reicht der Schatten eines Turms bis zum selben Schattenende und ist {{ts}} m lang. Wie hoch ist der Turm?"
         answer: { value: "hs * ts / ss", compare: { number: { format: decimal, decimals: 1, unit: m } } }
         mistakes:
           - {
@@ -128,7 +128,7 @@ blocks:
           qr: { int: [6, 20] }
         where: ["decimals(qr * pm / mq) <= 1", "qr * mq / pm != qr * pm / mq", "pm + qr - mq != qr * pm / mq"]
         task:
-          text: "Am Ufer eines Flusses liegen P, M und Q in einer Reihe, es ist PM = {{pm}} m und MQ = {{mq}} m. Der Baum S steht gegenüber von P. Bei Q geht jemand rechtwinklig zum Ufer, bis M, S und er in einer Linie liegen. Dort ist QR = {{qr}} m. Wie breit ist der Fluss (SP)?"
+          text: "Am Ufer eines Flusses liegen P, M und Q in einer Reihe, es ist PM = {{pm}} m und MQ = {{mq}} m. Der Baum S steht gegenüber von P. Bei Q geht jemand rechtwinklig zum Ufer, bis M, S und er in einer Linie liegen. Dort ist QR = {{qr}} m. Wie breit ist der Fluss (SP)?"
         answer: { value: "qr * pm / mq", compare: { number: { format: decimal, decimals: 1, unit: m } } }
         mistakes:
           - {
@@ -150,7 +150,7 @@ blocks:
           ts: { int: [8, 40] }
         where: ["decimals(hs * ts / h) <= 1", "ts * h / hs != hs * ts / h", "ts - (h - hs) != hs * ts / h"]
         task:
-          text: "Ein Turm ist {{h}} m hoch und wirft einen Schatten von {{ts}} m. Ein Stab von {{hs}} m Höhe soll so stehen, dass sein Schatten am selben Ende aufhört. Wie lang ist der Schatten des Stabs?"
+          text: "Ein Turm ist {{h}} m hoch und wirft einen Schatten von {{ts}} m. Ein Stab von {{hs}} m Höhe soll so stehen, dass sein Schatten am selben Ende aufhört. Wie lang ist der Schatten des Stabs?"
         answer: { value: "hs * ts / h", compare: { number: { format: decimal, decimals: 1, unit: m } } }
         mistakes:
           - {

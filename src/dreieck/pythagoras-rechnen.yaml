@@ -12,18 +12,18 @@ blocks:
           Du berechnest mit dem Satz des Pythagoras die Hypotenuse und eine Kathete, prüfst mit der Umkehrung, ob ein Dreieck rechtwinklig ist, und löst damit Sachaufgaben.
       - type: text
         text: |
-          Mira zeichnet den Plan für das Beet im Schulgarten: ein rechtwinkliges Dreieck mit den Katheten 6 cm und 8 cm. Wie lang wird die dritte Seite? Sie rechnet erst und misst dann nach.
+          Mira zeichnet den Plan für das Beet im Schulgarten: ein rechtwinkliges Dreieck mit den Katheten 6 cm und 8 cm. Wie lang wird die dritte Seite? Sie rechnet erst und misst dann nach.
       - type: single-choice
         id: hypotenuse-start
-        text: Die Katheten eines rechtwinkligen Dreiecks sind 6 cm und 8 cm lang. Wie lang ist die Hypotenuse?
+        text: Die Katheten eines rechtwinkligen Dreiecks sind 6 cm und 8 cm lang. Wie lang ist die Hypotenuse?
         options:
-          - text: 10 cm
+          - text: 10 cm
             correct: true
             info: 6² + 8² = 36 + 64 = 100. Die Wurzel aus 100 ist 10.
-          - text: 14 cm
+          - text: 14 cm
             correct: false
             info: Du hast die Längen addiert. Der Satz addiert die Quadrate, danach musst du die Wurzel ziehen.
-          - text: 100 cm
+          - text: 100 cm
             correct: false
             info: Das ist c², die Fläche des Quadrats über der Hypotenuse in cm². Die Länge ist die Wurzel daraus.
         explanation: Zuerst die Quadrate addieren, dann die Wurzel ziehen.
@@ -53,7 +53,7 @@ blocks:
         blocks:
           - type: text
             text: |
-              Katheten 5 cm und 12 cm.
+              Katheten 5 cm und 12 cm.
           - type: formula
             formula: 'c = \sqrt{5^2 + 12^2} = \sqrt{25 + 144}'
           - type: formula
@@ -63,7 +63,7 @@ blocks:
         blocks:
           - type: text
             text: |
-              Hypotenuse 17 cm, eine Kathete 8 cm.
+              Hypotenuse 17 cm, eine Kathete 8 cm.
           - type: formula
             formula: 'a = \sqrt{17^2 - 8^2} = \sqrt{289 - 64}'
           - type: formula
@@ -73,12 +73,12 @@ blocks:
         blocks:
           - type: text
             text: |
-              Eine Rampe überwindet 0,6 m Höhe auf einer waagerechten Strecke von 3,2 m. Wie lang ist die Rampe?
+              Eine Rampe überwindet 0,6 m Höhe auf einer waagerechten Strecke von 3,2 m. Wie lang ist die Rampe?
           - type: formula
             formula: 'c = \sqrt{0{,}6^2 + 3{,}2^2} = \sqrt{10{,}6} \approx 3{,}26'
           - type: text
             text: |
-              Die Rampe ist etwa 3,26 m lang.
+              Die Rampe ist etwa 3,26 m lang.
   - type: section
     id: umkehrung
     title: Ist das Dreieck rechtwinklig?
@@ -106,7 +106,7 @@ blocks:
           b: { int: [2, 12] }
         where: ["a > b"]
         task:
-          text: "Die Katheten eines rechtwinkligen Dreiecks sind {{a}} cm und {{b}} cm lang. Wie lang ist die Hypotenuse? Runde auf eine Stelle nach dem Komma."
+          text: "Die Katheten eines rechtwinkligen Dreiecks sind {{a}} cm und {{b}} cm lang. Wie lang ist die Hypotenuse? Runde auf eine Stelle nach dem Komma."
         answer:
           {
             value: "round(sqrt(a * a + b * b), 1)",
@@ -124,7 +124,7 @@ blocks:
             }
         hint: "Rechne a mal a plus b mal b, dann ziehe die Wurzel."
         steps:
-          - '$c = \sqrt{a^2 + b^2} = \sqrt{{{a}}^2 + {{b}}^2} \approx {{answer}}$, also {{answer}} cm.'
+          - '$c = \sqrt{a^2 + b^2} = \sqrt{{{a}}^2 + {{b}}^2} \approx {{answer}}$, also {{answer}} cm.'
       - type: generated
         id: kathete
         given:
@@ -132,7 +132,7 @@ blocks:
           b: { int: [2, 12] }
         where: ["b < c"]
         task:
-          text: "Die Hypotenuse eines rechtwinkligen Dreiecks ist {{c}} cm lang, eine Kathete {{b}} cm. Wie lang ist die andere Kathete? Runde auf eine Stelle nach dem Komma."
+          text: "Die Hypotenuse eines rechtwinkligen Dreiecks ist {{c}} cm lang, eine Kathete {{b}} cm. Wie lang ist die andere Kathete? Runde auf eine Stelle nach dem Komma."
         answer:
           {
             value: "round(sqrt(c * c - b * b), 1)",
@@ -150,18 +150,18 @@ blocks:
           - { value: "c * c - b * b", message: "Das ist das Quadrat der gesuchten Kathete. Zieh noch die Wurzel." }
         hint: "Rechne c mal c minus b mal b, dann ziehe die Wurzel."
         steps:
-          - '$a = \sqrt{c^2 - b^2} = \sqrt{{{c}}^2 - {{b}}^2} \approx {{answer}}$, also {{answer}} cm.'
+          - '$a = \sqrt{c^2 - b^2} = \sqrt{{{c}}^2 - {{b}}^2} \approx {{answer}}$, also {{answer}} cm.'
       - type: single-choice
         id: rechter-winkel
         text: Welche drei Seitenlängen gehören zu einem rechtwinkligen Dreieck?
         options:
-          - text: 7 cm, 24 cm, 25 cm
+          - text: 7 cm, 24 cm, 25 cm
             correct: true
             info: 7² + 24² = 49 + 576 = 625, und 25² = 625. Die Umkehrung des Satzes sagt, dass das Dreieck rechtwinklig ist.
-          - text: 6 cm, 7 cm, 10 cm
+          - text: 6 cm, 7 cm, 10 cm
             correct: false
             info: 6² + 7² = 85, aber 10² = 100. Die Gleichung stimmt nicht.
-          - text: 8 cm, 9 cm, 12 cm
+          - text: 8 cm, 9 cm, 12 cm
             correct: false
             info: 8² + 9² = 145, aber 12² = 144. Das ist knapp daneben, aber nicht gleich.
         explanation: Quadriere die zwei kürzeren Seiten und addiere sie. Ist die Summe das Quadrat der längsten Seite, ist das Dreieck rechtwinklig.
@@ -171,7 +171,7 @@ blocks:
           l: { int: [3, 8] }
           d: { oneOf: [1, 1.5, 2] }
         task:
-          text: "Eine Leiter ist {{l}} m lang. Ihr Fuß steht {{d}} m von der senkrechten Wand entfernt. Wie hoch reicht sie an der Wand? Runde auf eine Stelle nach dem Komma."
+          text: "Eine Leiter ist {{l}} m lang. Ihr Fuß steht {{d}} m von der senkrechten Wand entfernt. Wie hoch reicht sie an der Wand? Runde auf eine Stelle nach dem Komma."
         answer:
           {
             value: "round(sqrt(l * l - d * d), 1)",
@@ -188,7 +188,7 @@ blocks:
             }
         hint: "Die Leiter ist die Hypotenuse. Zeichne das Dreieck und rechne c mal c minus d mal d."
         steps:
-          - '$h = \sqrt{l^2 - d^2} = \sqrt{{{l}}^2 - {{d}}^2} \approx {{answer}}$, also {{answer}} m.'
+          - '$h = \sqrt{l^2 - d^2} = \sqrt{{{l}}^2 - {{d}}^2} \approx {{answer}}$, also {{answer}} m.'
   - type: section
     id: weiter
     title: Wie es weitergeht

@@ -12,7 +12,7 @@ blocks:
           Du berechnest einen Winkel, wenn zwei Seiten eines rechtwinkligen Dreiecks bekannt sind. Dafür nutzt du die Umkehrfunktionen auf dem Taschenrechner.
       - type: text
         text: |
-          Die Rampe der Klasse ist 4 m lang und überwindet 0,5 m Höhe. Wie stark steigt sie? Mira rechnet die Gegenkathete durch die Hypotenuse und bekommt 0,125. Das ist der Sinus des gesuchten Winkels, nicht der Winkel selbst.
+          Die Rampe der Klasse ist 4 m lang und überwindet 0,5 m Höhe. Wie stark steigt sie? Mira rechnet die Gegenkathete durch die Hypotenuse und bekommt 0,125. Das ist der Sinus des gesuchten Winkels, nicht der Winkel selbst.
       - type: single-choice
         id: winkel-aus-sinus
         text: Es gilt sin α = 0,5. Wie groß ist α?
@@ -55,7 +55,7 @@ blocks:
         blocks:
           - type: text
             text: |
-              Die Rampe ist 4 m lang und überwindet 0,5 m. Bekannt sind Gegenkathete und Hypotenuse, also Sinus.
+              Die Rampe ist 4 m lang und überwindet 0,5 m. Bekannt sind Gegenkathete und Hypotenuse, also Sinus.
           - type: formula
             formula: '\alpha = \sin^{-1} \left( \frac{0{,}5}{4} \right) = \sin^{-1}(0{,}125) \approx 7{,}2^\circ'
       - type: example
@@ -63,14 +63,14 @@ blocks:
         blocks:
           - type: text
             text: |
-              Ein rechtwinkliges Dreieck hat die Katheten 5 cm und 12 cm. Der Winkel, der der 12 gegenüberliegt, ist $\tan^{-1}\left(\frac{12}{5}\right) \approx 67{,}4^\circ$. Der andere spitze Winkel ist $90^\circ - 67{,}4^\circ = 22{,}6^\circ$.
+              Ein rechtwinkliges Dreieck hat die Katheten 5 cm und 12 cm. Der Winkel, der der 12 gegenüberliegt, ist $\tan^{-1}\left(\frac{12}{5}\right) \approx 67{,}4^\circ$. Der andere spitze Winkel ist $90^\circ - 67{,}4^\circ = 22{,}6^\circ$.
   - type: section
     id: uebung
     title: Übung
     blocks:
       - type: single-choice
         id: welche-funktion
-        text: Gegeben sind die Ankathete 6 cm und die Hypotenuse 10 cm. Wie berechnest du α?
+        text: Gegeben sind die Ankathete 6 cm und die Hypotenuse 10 cm. Wie berechnest du α?
         options:
           - text: "α = cos⁻¹(6 : 10)"
             correct: true
@@ -88,7 +88,7 @@ blocks:
           g: { int: [4, 8] }
           h: { int: [9, 12] }
         task:
-          text: "In einem rechtwinkligen Dreieck ist die Gegenkathete von α {{g}} cm und die Hypotenuse {{h}} cm lang. Wie groß ist α? Runde auf eine Stelle nach dem Komma."
+          text: "In einem rechtwinkligen Dreieck ist die Gegenkathete von α {{g}} cm und die Hypotenuse {{h}} cm lang. Wie groß ist α? Runde auf eine Stelle nach dem Komma."
         answer:
           { value: "round(asin(g / h), 1)", compare: { number: { format: decimal, decimals: 1, tolerance: 0.1 } } }
         mistakes:
@@ -114,7 +114,7 @@ blocks:
           k: { int: [4, 16] }
         where: ["g < k"]
         task:
-          text: "Eine Treppe steigt auf {{k}} m Länge waagerecht um {{g}} m. Unter welchem Winkel α steigt sie? Runde auf eine Stelle nach dem Komma."
+          text: "Eine Treppe steigt auf {{k}} m Länge waagerecht um {{g}} m. Unter welchem Winkel α steigt sie? Runde auf eine Stelle nach dem Komma."
         answer:
           { value: "round(atan(g / k), 1)", compare: { number: { format: decimal, decimals: 1, tolerance: 0.1 } } }
         mistakes:
@@ -136,7 +136,7 @@ blocks:
           b: { int: [3, 12] }
         where: ["a < b", "atan(a / b) != 45"]
         task:
-          text: "Ein rechtwinkliges Dreieck hat die Katheten {{a}} cm und {{b}} cm. Wie groß ist der größere der beiden spitzen Winkel? Runde auf eine Stelle nach dem Komma."
+          text: "Ein rechtwinkliges Dreieck hat die Katheten {{a}} cm und {{b}} cm. Wie groß ist der größere der beiden spitzen Winkel? Runde auf eine Stelle nach dem Komma."
         answer:
           { value: "round(atan(b / a), 1)", compare: { number: { format: decimal, decimals: 1, tolerance: 0.1 } } }
         mistakes:
