@@ -1,0 +1,167 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Der Sinussatz
+description: In Dreiecken ohne rechten Winkel aus der Höhe den Sinussatz herleiten und damit Seiten und Winkel berechnen.
+competencies: [sinus-kosinussatz]
+blocks:
+  - type: section
+    id: einstieg
+    title: Was du hier lernst
+    blocks:
+      - type: text
+        text: |
+          Du lernst den Sinussatz: Er verbindet in jedem Dreieck jede Seite mit dem gegenüberliegenden Winkel. Damit berechnest du Seiten und Winkel, auch wenn kein Winkel 90° misst.
+      - type: text
+        text: |
+          Mira und Jonas wollen wissen, wie weit ein Baum am anderen Ufer des Flusses entfernt ist. Am nahen Ufer messen sie eine Strecke AB von 60 m. Von A aus sehen sie den Baum C unter dem Winkel 52° zu AB, von B aus unter 71°.
+      - type: single-choice
+        id: dritter-winkel
+        text: Wie groß ist der Winkel γ bei C im Dreieck ABC?
+        options:
+          - text: 57°
+            correct: true
+            info: Die Winkel im Dreieck sind zusammen 180°. 180° − 52° − 71° = 57°.
+          - text: 123°
+            correct: false
+            info: Das ist die Summe von 52° und 71°. Der dritte Winkel ergänzt sie auf 180°.
+          - text: 38°
+            correct: false
+            info: 90° − 52° würde nur im rechtwinkligen Dreieck gelten. Hier ist kein Winkel 90°, du brauchst die Winkelsumme 180°.
+        explanation: Im Dreieck ist der dritte Winkel 180° minus die beiden anderen.
+  - type: section
+    id: idee
+    title: Die Höhe zeigt den Zusammenhang
+    blocks:
+      - type: text
+        text: |
+          Der Sinus aus dem rechtwinkligen Dreieck hilft auch hier. Du zerlegst das Dreieck durch eine Höhe in zwei rechtwinklige Dreiecke. In dem Bild unten fällt die Höhe *h* von C senkrecht auf die Seite *c* im Punkt D. Seite *a* liegt dem Winkel *α* gegenüber, *b* liegt *β* gegenüber, *c* liegt *γ* gegenüber.
+      - type: figure
+        image: images/dreieck-hoehe-c.svg
+        alt: Spitzwinkliges Dreieck ABC mit der gestrichelten Höhe h von C auf die Seite c. Der Winkel bei A ist α, der bei B ist β. Die Seite a liegt A gegenüber, b liegt B gegenüber, c liegt C gegenüber.
+        caption: Die Höhe h teilt das Dreieck in zwei rechtwinklige Dreiecke.
+        source: eigene Zeichnung
+        licence: CC0-1.0
+      - type: text
+        text: |
+          Im Dreieck ADC ist *h* die Gegenkathete von *α*, die Hypotenuse ist *b*. Im Dreieck DBC ist *h* die Gegenkathete von *β*, die Hypotenuse ist *a*. Beide Male kommt dieselbe Höhe vor.
+      - type: formula
+        formula: 'h = b \cdot \sin \alpha \qquad h = a \cdot \sin \beta'
+      - type: formula
+        formula: 'b \cdot \sin \alpha = a \cdot \sin \beta'
+      - type: text
+        text: |
+          Teilst du beide Seiten durch $\sin \alpha \cdot \sin \beta$, steht jede Seite über dem Sinus ihres gegenüberliegenden Winkels. Dasselbe gilt für die dritte Seite.
+      - type: definition
+        term: Sinussatz
+        explanation: In jedem Dreieck ist das Verhältnis einer Seite zum Sinus des gegenüberliegenden Winkels für alle drei Seiten gleich.
+      - type: formula
+        formula: '\frac{a}{\sin \alpha} = \frac{b}{\sin \beta} = \frac{c}{\sin \gamma}'
+      - type: note
+        title: Merke
+        blocks:
+          - type: text
+            text: |
+              Du brauchst ein Paar aus einer Seite und dem gegenüberliegenden Winkel, dazu einen weiteren Winkel oder eine weitere Seite. Gegenüber heißt: Die Seite *a* gehört zu *α*, nicht zu *β*. Sind zwei Seiten und der Winkel gegenüber der kürzeren gegeben, kann es zwei verschiedene Dreiecke geben. Diesen Fall lassen wir hier weg.
+  - type: section
+    id: beispiel
+    title: Die Entfernung zum Baum
+    blocks:
+      - type: example
+        title: Seite aus zwei Winkeln und einer Seite
+        blocks:
+          - type: text
+            text: |
+              Gegeben: $c = 60$ m, $\alpha = 52^\circ$, $\beta = 71^\circ$. Gesucht ist $b$, die Strecke AC. Erst der dritte Winkel: $\gamma = 180^\circ - 52^\circ - 71^\circ = 57^\circ$. Das Paar $c$ und $\gamma$ ist bekannt, $b$ gehört zu $\beta$.
+          - type: formula
+            formula: '\frac{b}{\sin 71^\circ} = \frac{60}{\sin 57^\circ}'
+          - type: formula
+            formula: 'b = \frac{60 \cdot \sin 71^\circ}{\sin 57^\circ} \approx 67{,}6'
+          - type: text
+            text: |
+              Der Baum ist etwa 67,6 m von A entfernt.
+  - type: section
+    id: uebung
+    title: Übung
+    blocks:
+      - type: single-choice
+        id: welche-gleichung
+        text: Im Dreieck ABC liegt a gegenüber von α und b gegenüber von β. Welche Gleichung folgt aus dem Sinussatz?
+        options:
+          - text: "a : sin α = b : sin β"
+            correct: true
+            info: Jede Seite steht über dem Sinus des gegenüberliegenden Winkels. a gehört zu α, b zu β.
+          - text: "a : sin β = b : sin α"
+            correct: false
+            info: Hier stehen Seite und Winkel über Kreuz. a liegt α gegenüber, nicht β.
+          - text: a · sin α = b · sin β
+            correct: false
+            info: Aus dem Sinussatz folgt a · sin β = b · sin α, nicht a · sin α. Die Seite gehört zum Winkel gegenüber.
+        explanation: Der Sinussatz verbindet jede Seite mit dem Winkel, der ihr gegenüberliegt.
+      - type: generated
+        id: baum-entfernung
+        given:
+          c: { int: [40, 90], step: 5 }
+          alpha: { int: [40, 70], step: 5 }
+          beta: { int: [40, 70], step: 5 }
+        where:
+          [
+            "alpha != beta",
+            "alpha + beta < 140",
+            "(alpha + beta < 80 or alpha + beta > 100)",
+            "180 - alpha - beta != alpha",
+          ]
+        task:
+          text: "Am Ufer misst du die Strecke AB = {{c}} m. Von A siehst du einen Baum C am anderen Ufer unter dem Winkel α = {{alpha}}° zu AB, von B aus unter β = {{beta}}°. Wie weit ist der Baum von A entfernt (die Strecke AC)? Runde auf eine Stelle nach dem Komma."
+        answer:
+          {
+            value: "round(c * sin(beta) / sin(180 - alpha - beta), 1)",
+            compare: { number: { format: decimal, decimals: 1, tolerance: 0.1, unit: m } },
+          }
+        mistakes:
+          - {
+              value: "round(c * sin(alpha) / sin(180 - alpha - beta), 1)",
+              message: "Du hast den Winkel α statt β verwendet. Die gesuchte Strecke AC liegt dem Winkel β bei B gegenüber.",
+            }
+          - {
+              value: "round(c * sin(beta) / sin(alpha), 1)",
+              message: "Die Seite c = AB liegt dem Winkel γ bei C gegenüber, nicht α. Berechne erst γ = 180° − α − β.",
+            }
+          - {
+              value: "round(c * sin(beta), 1)",
+              message: "Du hast nicht durch sin γ geteilt. Der Sinussatz braucht das Paar aus c und sin γ.",
+            }
+        hint: "Berechne zuerst γ = 180° − α − β. Dann gilt AC : sin β = AB : sin γ."
+        steps:
+          - '$\gamma = 180^\circ - {{alpha}}^\circ - {{beta}}^\circ$, dann $b = \frac{{{c}} \cdot \sin {{beta}}^\circ}{\sin \gamma} \approx {{answer}}$ m.'
+      - type: generated
+        id: winkel-aus-seiten
+        given:
+          a: { int: [10, 20] }
+          b: { int: [5, 9] }
+          alpha: { int: [40, 80], step: 5 }
+        where: ["a > b", "b * sin(alpha) / a > 0.2"]
+        task:
+          text: "In einem Dreieck ist a = {{a}} cm, b = {{b}} cm und α = {{alpha}}°, a liegt α gegenüber. Wie groß ist der Winkel β gegenüber von b? Er ist spitz. Runde auf eine Stelle nach dem Komma."
+        answer:
+          {
+            value: "round(asin(b * sin(alpha) / a), 1)",
+            compare: { number: { format: decimal, decimals: 1, tolerance: 0.1 } },
+          }
+        mistakes:
+          - {
+              value: "round(acos(b * sin(alpha) / a), 1)",
+              message: "Du hast cos⁻¹ statt sin⁻¹ benutzt. Aus dem Sinussatz folgt sin β, also brauchst du die Umkehrfunktion des Sinus.",
+            }
+          - {
+              value: "round(b * sin(alpha) / a, 1)",
+              message: "Das ist sin β, noch nicht der Winkel. Wende sin⁻¹ darauf an.",
+            }
+        hint: "Aus a : sin α = b : sin β folgt sin β = b · sin α : a. Dann sin⁻¹."
+        steps:
+          - '$\sin \beta = \frac{{{b}} \cdot \sin {{alpha}}^\circ}{{{a}}}$, also $\beta \approx {{answer}}^\circ$.'
+  - type: section
+    id: weiter
+    title: Wie es weitergeht
+    blocks:
+      - type: text
+        text: |
+          Das kannst du jetzt: Mit dem Sinussatz Seiten und Winkel berechnen, wenn ein Paar aus Seite und gegenüberliegendem Winkel bekannt ist. Auf der nächsten Seite kommt der Kosinussatz für die Fälle dazu, in denen dir ein solches Paar fehlt.
