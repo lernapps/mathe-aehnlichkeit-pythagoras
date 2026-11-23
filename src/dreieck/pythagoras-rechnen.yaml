@@ -75,7 +75,9 @@ blocks:
             text: |
               Eine Rampe überwindet 0,6 m Höhe auf einer waagerechten Strecke von 3,2 m. Wie lang ist die Rampe?
           - type: formula
-            formula: 'c = \sqrt{0{,}6^2 + 3{,}2^2} = \sqrt{10{,}6} \approx 3{,}26'
+            formula: 'c = \sqrt{0{,}6^2 + 3{,}2^2}'
+          - type: formula
+            formula: 'c = \sqrt{10{,}6} \approx 3{,}26'
           - type: text
             text: |
               Die Rampe ist etwa 3,26 m lang.

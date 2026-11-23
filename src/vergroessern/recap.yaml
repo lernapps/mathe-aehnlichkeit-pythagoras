@@ -245,7 +245,9 @@ blocks:
             text: |
               Löse $3x + 5 = 20$. Erst auf beiden Seiten 5 subtrahieren: $3x = 15$. Dann durch 3 teilen: $x = 5$.
           - type: formula
-            formula: '\frac{x}{6} = \frac{10}{4} \quad | \cdot 6 \quad \Rightarrow \quad x = \frac{10 \cdot 6}{4} = 15'
+            formula: '\frac{x}{6} = \frac{10}{4} \quad | \cdot 6'
+          - type: formula
+            formula: 'x = \frac{10 \cdot 6}{4} = 15'
       - type: vue-component
         id: test-gleichung
         component: Kurztest

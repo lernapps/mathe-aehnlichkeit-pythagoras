@@ -57,7 +57,9 @@ blocks:
             text: |
               Die Rampe ist 4 m lang und überwindet 0,5 m. Bekannt sind Gegenkathete und Hypotenuse, also Sinus.
           - type: formula
-            formula: '\alpha = \sin^{-1} \left( \frac{0{,}5}{4} \right) = \sin^{-1}(0{,}125) \approx 7{,}2^\circ'
+            formula: '\alpha = \sin^{-1} \left( \frac{0{,}5}{4} \right)'
+          - type: formula
+            formula: '\alpha = \sin^{-1}(0{,}125) \approx 7{,}2^\circ'
       - type: example
         title: Beide Winkel eines Dreiecks
         blocks:

@@ -42,9 +42,11 @@ blocks:
         licence: CC0-1.0
       - type: text
         text: |
-          Im Dreieck DBC ist *a* die Hypotenuse, mit Pythagoras gilt $a^2 = h^2 + (b - x)^2$. Setze *h* und *x* ein und multipliziere aus.
+          Im Dreieck DBC ist *a* die Hypotenuse, mit Pythagoras gilt $a^2 = h^2 + (b - x)^2$. Setze *h* und *x* ein (erste Zeile). Multiplizierst du die Klammer aus und sammelst die Glieder mit *c*², entsteht die zweite Zeile.
       - type: formula
-        formula: 'a^2 = c^2 \sin^2 \alpha + b^2 - 2 b c \cos \alpha + c^2 \cos^2 \alpha'
+        formula: 'a^2 = c^2 \sin^2 \alpha + (b - c \cos \alpha)^2'
+      - type: formula
+        formula: 'a^2 = b^2 - 2bc \cos \alpha + c^2 (\sin^2 \alpha + \cos^2 \alpha)'
       - type: text
         text: |
           Es gilt $\sin^2 \alpha + \cos^2 \alpha = 1$. Das folgt aus dem Satz des Pythagoras im Dreieck ABD mit $h^2 + x^2 = c^2$, geteilt durch $c^2$: $\left(\frac{h}{c}\right)^2 + \left(\frac{x}{c}\right)^2 = 1$, und $\frac{h}{c} = \sin \alpha$, $\frac{x}{c} = \cos \alpha$. Dann bleibt:
@@ -84,7 +86,7 @@ blocks:
             text: |
               Es ist $120^2 = 14\,400$, $150^2 = 22\,500$ und $2 \cdot 120 \cdot 150 = 36\,000$.
           - type: formula
-            formula: 'a^2 = 14\,400 + 22\,500 - 36\,000 \cdot \cos 70^\circ'
+            formula: 'a^2 = 14\,400 + 22\,500 - 36\,000 \cos 70^\circ'
           - type: formula
             formula: 'a^2 \approx 36\,900 - 12\,313'
           - type: formula

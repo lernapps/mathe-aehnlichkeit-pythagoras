@@ -72,7 +72,9 @@ blocks:
           - type: formula
             formula: '\text{ZB′} = \frac{10 \cdot 5}{4} = 12{,}5'
           - type: formula
-            formula: '\frac{\text{A′B′}}{3} = \frac{10}{4} \quad \Rightarrow \quad \text{A′B′} = 3 \cdot 2{,}5 = 7{,}5'
+            formula: '\frac{\text{A′B′}}{3} = \frac{10}{4}'
+          - type: formula
+            formula: '\text{A′B′} = 3 \cdot 2{,}5 = 7{,}5'
           - type: text
             text: |
               Also ist ZB′ = 12,5 cm lang und A′B′ = 7,5 cm.
