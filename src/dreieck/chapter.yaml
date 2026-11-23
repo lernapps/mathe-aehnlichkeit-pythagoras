@@ -12,3 +12,24 @@ pages:
     sinussatz,
     kosinussatz,
   ]
+# Die Selbsteinschätzung des Kapitels: erzeugte Aufgaben, die ohne ihre Seite verständlich sind.
+selfAssessment:
+  pages:
+    - exercises:
+        - /dreieck/pythagoras-beweis/#quadrate-summe
+        - /dreieck/pythagoras-beweis/#quadrate-summe
+        - /dreieck/pythagoras-rechnen/#hypotenuse
+        - /dreieck/pythagoras-rechnen/#kathete
+    - exercises:
+        - /dreieck/verhaeltnisse/#sinus-verhaeltnis
+        - /dreieck/verhaeltnisse/#gleicher-winkel
+        - /dreieck/seiten-berechnen/#gegenkathete
+    - exercises:
+        - /dreieck/seiten-berechnen/#hoehe-tangens
+        - /dreieck/winkel-berechnen/#winkel-sinus
+        - /dreieck/winkel-berechnen/#beide-winkel
+    - exercises:
+        - /dreieck/sinussatz/#baum-entfernung
+        - /dreieck/sinussatz/#baum-entfernung
+        - /dreieck/kosinussatz/#dritte-seite
+        - /dreieck/kosinussatz/#winkel-drei-seiten

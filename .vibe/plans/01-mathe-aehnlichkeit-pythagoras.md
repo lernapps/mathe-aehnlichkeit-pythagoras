@@ -40,7 +40,7 @@ Sinus- und Kosinussatz). Auftrag: lernapps/apps#399, Schicht 3 des Mathe-Epics #
 - Winkel mit Unicode ∠ (kein `\angle`), griechische Buchstaben als `\alpha` usw. (Fund W14).
 - Keine `links:` an Aufgaben, keine Dritt-Inhalte, keine Videos (Regeln 4 und 9.6).
 - Kein `scope` in `src/app.yaml`: keine `open-task`, kein eigenes Material des Auftraggebers.
-- Keine Selbsteinschätzung (`selfAssessment`) in dieser Version (guess): sie ist laut README der Vorlage optional, der Auftrag nennt sie nicht, die Recaps haben Kurztests. Kann als Inkrement folgen. (Die Plan-Aufgabe dazu habe ich abgehakt, bevor ich diese Entscheidung aufgeschrieben habe.)
+- Selbsteinschätzung in beiden Kapiteln (`selfAssessment` in `chapter.yaml`): nur erzeugte Aufgaben, die ohne ihre Seite verständlich sind; 8 im ersten, 14 im zweiten Kapitel (Nachbesserung auf Wunsch des Orchestrators, nach dem Skill `lernapps-explainer-self-assessment`).
 - `links:` an Aufgaben weggelassen: `lernapps check` besteht ohne (Fund: Skill verlangt sie, Schema nicht; W4/W45).
 
 ## Notes
@@ -229,6 +229,7 @@ page, which a link. -->
   - *Nach dem Gesamtlauf geändert:* alle Umsetzungen oben, Stand f679190. Ein Nachprüf-Lauf (Unteragent) auf genau diese Änderungen ist gestartet, sein Ergebnis steht unten.
   - *Nachprüf-Lauf (Unteragent, fachlich und als Lernender, auf das Diff seit dem Gesamtlauf, Stand fff984c):* Begründung der Umkehrung, Quadrat in der Mitte, sin²+cos²=1, stumpfe Winkel, X-Fall-Formel, neue Kurztests, gemischte Antwortreihenfolge (13 oben, 13 Mitte, 12 unten), alle Zahlenaufgaben: in Ordnung. Neue Befunde: Kurztest „SWS“ mit unmöglichem Dreieck 2; Fehlermeldung „Bild weiter weg“ falsch bei k < 1; Beschriftungen in drei Zeichnungen verdeckt oder abgeschnitten; ungenauer Satz zum stumpfen Winkel; Hinweis der Leiter mit alter Variable; „Er heißt“ ohne Bezug; „Wurzel aus 9 + 16“ mehrdeutig; X-Fall mit „andere Seite von M“; Fluss über 60 m, Leiter über 75°, Winkelaufgaben noch mit Toleranz 0,1.
   - *Danach geändert (nicht erneut durch einen Prüfer geprüft, Build mit 200 Seeds je Aufgabe grün, Bilder angesehen):* alle diese Befunde umgesetzt (Commit nach fff984c).
+  - *Selbsteinschätzung (nachträglich):* verwendet nur bereits geprüfte `generated`-Aufgaben der Seiten; keine neue Aufgabe, daher kein neuer Rechenlauf nötig. `lernapps check` einschließlich der End-to-End-Läufe der Selbsteinschätzung ohne Fehler. Meine eigenen Läufe im Browser unter `/einschaetzung/` und mit `?via=tutor` habe ich nicht gemacht; nur die automatischen Tests.
   - *Vermerk:* Die Plan-Aufgabe „Prüfer“ wurde beim Weiterschalten des Plans vor Abschluss der Läufe abgehakt (Fehler von mir); die Läufe sind hier festgehalten.
 - Gesamtprüfung der Seiten (Lernenden-Check, Aufgabe „whole-app“): durch die drei Prüfer-Unteragenten und den Nachprüf-Lauf erledigt; was behoben wurde, steht oben. Alle 13 Seiten, die Startseite und Bildschirmfotos bei 360 und 1280 px habe ich angesehen.
 - Laufzeit-Funde (nicht behoben): Zahlenfeld lehnt „50°“, „5 cm“ ab mit „Antworte zuerst“ (W6/W11/W20); Aufgabennummer beginnt zufällig (W12); Standardrückmeldung „Lies dazu noch einmal den Text“ bei Wahr/Falsch (W13); Skill verlangt `links` je Frage, Schema nicht (W4/W45).
@@ -331,7 +332,7 @@ Keine Nachricht des Menschen nach dem Plan. Nachrichten des Orchestrators nach d
 ### Where I had to guess
 
 - Nur Deutsch (nicht im Issue genannt).
-- Keine Selbsteinschätzung (siehe Key decisions).
+- Selbsteinschätzung zuerst weggelassen (guess), dann auf Wunsch des Orchestrators ergänzt; ihre Aufgaben sind schon geprüfte Aufgaben der Seiten, es gibt keine neuen Aufgaben.
 - Keine `links:` an Aufgaben; Skill verlangt sie, Schema und Build nicht.
 - Format der Kurztests: Antwortreihenfolge von Hand gemischt, weil die Laufzeit nicht mischt.
 - Toleranz der Zahlenaufgaben 0,05 (eigene Wahl, damit falsche Funktionen nicht durchgehen).

@@ -65,7 +65,8 @@ Lernlandkarte Mathematik; eigene Herleitungen. Nachgeschlagenes (Satz des Pythag
 1. Baustein in der Karte prüfen (`requires`); fehlende Voraussetzungen als Recap-Abschnitt.
 2. Seiten als `src/<kapitel>/<seite>.yaml` anlegen, in `chapter.yaml` unter `pages`, Kapitel in `src/app.yaml` unter `chapters`.
 3. Aufgaben nach den Mustern oben; mindestens drei je Baustein, steigend; Musterlösungen unabhängig nachrechnen.
-4. `npx vp check --fix`, `npx --no -- lernapps check`, Commit.
+4. 1 bis 3 ihrer Übungen in `selfAssessment` aufnehmen, wie Skill `lernapps-explainer-self-assessment` sagt (nur erzeugte Aufgaben, die ohne ihre Seite verständlich sind; die Selbsteinschätzung steht in `chapter.yaml`).
+5. `npx vp check --fix`, `npx --no -- lernapps check`, Commit.
 
 ## Rules learned from mistakes
 
