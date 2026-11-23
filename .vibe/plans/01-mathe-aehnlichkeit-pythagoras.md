@@ -4,7 +4,7 @@
 # Archetype, null until chosen in Explore. Allowed values: explainer, interactive, quiz.
 archetype: explainer
 # Current phase. Allowed values: explore, plan, code, commit.
-phase: explore
+phase: plan
 # prePushFailures: failed pre-push runs, written by the hook.
 prePushFailures: 0
 # failedChecks: failed rules and runs, written by lernapps check and the hooks.
@@ -135,9 +135,10 @@ Prerequisites, die die App nicht übt: Seite 2-3: `kongruenz`, `massstab`, `prop
       off), and which misconception the feedback catches.
 - [x] Write under "Notes" the scope: what is in, what is out and why, the data range (for example "all main-group
       elements", never a silent "1–20"), the languages.
-- [ ] **Checkpoint:** research. Show in plain words: the strand or why none, the competencies by chapter, the didactic
+- [x] **Checkpoint:** research. Show in plain words: the strand or why none, the competencies by chapter, the didactic
       approach, the scope, every "(guess)", the sources and what is unchecked, the archetype and its reason. Stop and
       wait. Changes: change them, then ask again.
+      Creator: Recherche freigegeben, weiter mit dem Plan (Orchestrator). Winkelsumme/Winkelmessen im Recap kurz als Begriffe erklären; Musterseite streckung.
 
 ### Answers
 
@@ -163,12 +164,12 @@ Prerequisites, die die App nicht übt: Seite 2-3: `kongruenz`, `massstab`, `prop
 
 ### Tasks
 
-- [ ] Map the content as "Map the content" of skill `lernapps-explainer-design` says, and write the result under
+- [x] Map the content as "Map the content" of skill `lernapps-explainer-design` says, and write the result under
       "Content method".
-- [ ] Choose a pattern per competency as skill `lernapps-exercise-patterns` says, and add it to "Content method".
-- [ ] Add to "Content method" one line per page, as "Engagement" of skill `lernapps-explainer-design` says: the
+- [x] Choose a pattern per competency as skill `lernapps-exercise-patterns` says, and add it to "Content method".
+- [x] Add to "Content method" one line per page, as "Engagement" of skill `lernapps-explainer-design` says: the
       opening task, the change of activity, the reward, the story.
-- [ ] Add the tasks of Code, each one a piece of work that ends in a commit. First the pattern: one complete page or
+- [x] Add the tasks of Code, each one a piece of work that ends in a commit. First the pattern: one complete page or
       screen, `npx --no -- lernapps plan add --at pattern "<task>"`. Then the others, one call each:
       `npx --no -- lernapps plan add --at pages "<task>"`. Each task says what it builds and what it shows.
 - [ ] Draw a sketch of each screen, component or interactive exercise: a static SVG or image, or the steps with what
@@ -185,6 +186,36 @@ checks and what it cannot; how a later agent adds a chapter. It becomes the cont
 <!-- An explainer: per figure, model and component its learning action in two to four sentences
 (`explainer-representation-explained`); per page its prerequisites the app does not practise, and which get a recap
 page, which a link. -->
+
+**Seitenaufbau:** feste Abschnitts-ids `einstieg`, `idee`, `beispiel`, `uebung` (Titel sagen, was der Abschnitt tut; „Ausprobieren“ nur über einer Bedienung). Jede Seite beginnt mit „Was du hier lernst“ (regeln 9.1) und endet mit „Wie es weitergeht“. Aufgaben: erkennen (single-choice/true-false mit Grund) → anwenden (`generated`, Zahlen gezogen, typische Fehler mit Meldung) → neue Situation (Sachaufgabe, Umkehrfrage). Mindestens 3 Aufgaben je Baustein, die erste ohne Vorwissen aus dem Kapitel lösbar. Schreibweisen nach regeln.md Abschnitt 2 (Komma, −, ·, :, ∠, Einheiten mit geschütztem Leerzeichen).
+
+**Muster:**
+- *Berechnen mit Rechenprobe:* `generated` (Ausdruck, `compare.number` mit Einheit und Rundung, `mistakes` mit Grund). Fehler: Pythagoras a + b = c bzw. Wurzel vergessen; Trigonometrie Gegen-/Ankathete, Bogenmaß, sin⁻¹ als 1 : sin; Strahlensatz Verhältnis vertauscht; Streckung plus statt mal; Fläche mal k statt k². Rechenprobe: Seed-Test der Laufzeit plus ein unabhängiges Skript im Scratchpad (nicht im Repo), das die Musterlösungen nachrechnet.
+- *Erkennen/Begründen:* `single-choice`, `true-false`, `matching`; jede Option mit `info`.
+- *Ablesen:* statische SVG-Figur (`image`) mit Text und Frage zur Figur.
+- *Zugmodus:* Vue-Komponenten, je mit Tastatur (`input type=range`, Pfeiltasten), `nojs` mit Werten für drei Stellungen und statischer Form (Bild der Stellungen). `Streckung` (Regler k, Zentrum Z, Dreieck ABC → A′B′C′, zeigt Längen, Winkel, Flächenverhältnis), `QuadrateUmlegen` (Schritt-für-Schritt-Knopf: Katheten-Quadrate werden in das Hypotenusen-Quadrat zerlegt), `WinkelRegler` (Winkel α ändern, Verhältnisse Gegenkathete : Hypotenuse usw. bleiben bei gleichem Winkel gleich). Grund: kein Block zeigt eine vom Lernenden veränderte Figur (`prefer-built-in-block`).
+- *Kurztest* (Recap): Vorlage aus `docs/mathe-epic/components/` (mit W42-Korrektur) nach `src/components/`.
+- *Figuren:* alle selbst als SVG, `alt` und Beschriftung; „eigene Zeichnung, CC0“.
+
+**Engagement je Seite:**
+- Geschichte (Klasse 9-10, Situation in Nachrichten): eine Klasse vermisst Schulhof, Turm und Fluss; erfundene, gemischte Namen. Jede Seite nimmt den Fall der Seite davor auf.
+- 1 `recap` K1: Eröffnung „Kannst du das?“ je Baustein; Begriffe Winkelmessen und Winkelsumme im Dreieck zusätzlich (Hinweis Orchestrator).
+- 2 `streckung`: Eröffnung Schatten einer Lampe an der Wand („Was passiert mit dem Schatten, wenn die Lampe näher kommt?“); Regler; Belohnung: sie sagen k aus zwei Längen.
+- 3 `aehnliche-figuren`: ähnlich oder nicht (Rechtecke, Dreiecke), Faktor k, Flächen mal k².
+- 4 `strahlensaetze`: V-Figur aus der Streckfigur; Verhältnisse selbst aufstellen.
+- 5 `turmhoehe`: Turm und Schatten, Flussbreite; Rechenweg in Schritten.
+- 6 `recap` K2: Quadratwurzeln, Fläche und Umfang.
+- 7 `pythagoras-beweis`: Quadrate umlegen als Vorgang, Satz in Worten.
+- 8 `pythagoras-rechnen`: Hypotenuse, Kathete, Umkehrung (3-4-5), Rampe/Diagonale.
+- 9 `verhaeltnisse`: gleicher Winkel, gleiche Verhältnisse; Winkelregler; Seiten vom Winkel aus benennen.
+- 10 `seiten-berechnen`, 11 `winkel-berechnen`: Rechenpfade, Rampenneigung, Taschenrechner auf DEG.
+- 12 `sinussatz`, 13 `kosinussatz`: Höhe einzeichnen als Herleitung; Wahl des Satzes (matching). Rückblick „Das kannst du jetzt“ am Ende.
+
+**Recap (regeln 7):** Je Baustein eigener Abschnitt, fette Begriffe mit Beispiel und Zahlen, ein bis zwei `Kurztest` (nicht zu leicht), Satz mit Name und Kartenseite des Bausteins als Text, Kopf „Das brauchst du für dieses Kapitel“, Schluss Checkliste „Du bist bereit, wenn du …“. Begriffe auch im Glossar (`definition`, je Begriff nur einmal, W34).
+
+**Prerequisites je Seite:** siehe „Baustein → Seite“ unter Notes.
+
+**Review:** wird in Code gefüllt.
 
 ## Code
 
@@ -209,11 +240,23 @@ page, which a link. -->
       `references/language-tasks.md` in the same folder. A component in the plan: also `references/components.md`.
 - [ ] Decide whether the app needs `scope`, as "`scope`" in
       `.agents/skills/lernapps-explainer/references/structure.md` says. Write the choice under "Key decisions".
-<!-- tasks: pattern: the one page or screen that is the pattern for the others -->
+- [ ] Musterseite streckung (Kapitel 1, Seite 2): Komponente Streckung (Regler, Tastatur, nojs, Test), Einstieg, Idee, Beispiel, Aufgaben (erkennen, generated, Sachaufgabe); Lernenden-Prüfer (Klasse 9-10) spielt sie durch; app.yaml, chapter.yaml, Gerüst
+<!-- tasks: pattern (1 added): the one page or screen that is the pattern for the others -->
 - [ ] **Checkpoint:** the pattern page. Load skill `lernapps-learner-check` and do its learner check on the page. Fix
       what it finds. Then show the creator the page and ask whether the others may follow it. Stop and wait. A
       change: change the pattern first.
-<!-- tasks: pages: the other pages or screens, after the pattern -->
+- [ ] Kapitel 1 Recap: Seite recap mit Kurztest-Komponente (Kopie der Vorlage), Abschnitte Kongruenz, Proportionale Zuordnungen, Maßstab, Lineare Gleichungen, Winkelmessen und Winkelsumme; Glossar; Push
+- [ ] Kapitel 1: Seite aehnliche-figuren (ähnlich erkennen, Faktor k, Maßstab, Flächen mal k²) mit Aufgaben
+- [ ] Kapitel 1: Seite strahlensaetze (V- und X-Figur, erster und zweiter Strahlensatz) mit Aufgaben
+- [ ] Kapitel 1: Seite turmhoehe (Turm und Schatten, Flussbreite) mit Aufgaben; Push von Kapitel 1
+- [ ] Kapitel 2 Recap: Seite recap mit Quadratwurzeln und Fläche und Umfang: Rechteck, Quadrat, je mit Kurztest
+- [ ] Kapitel 2: Seite pythagoras-beweis mit Komponente QuadrateUmlegen und Aufgaben
+- [ ] Kapitel 2: Seite pythagoras-rechnen (Hypotenuse, Kathete, Umkehrung, Anwendungen) mit Aufgaben
+- [ ] Kapitel 2: Seite verhaeltnisse mit Komponente WinkelRegler (sin, cos, tan) und Aufgaben
+- [ ] Kapitel 2: Seiten seiten-berechnen und winkel-berechnen (Trigonometrie) mit Aufgaben
+- [ ] Kapitel 2: Seiten sinussatz und kosinussatz mit Aufgaben; Push von Kapitel 2
+- [ ] Prüfer: Lernenden-Prüfer und fachlicher Prüfer (Unteragenten) über alle Seiten; Befunde unter Review; Änderungen danach festhalten
+<!-- tasks: pages (11 added): the other pages or screens, after the pattern -->
 - [ ] Update the content guide so that it describes the app as built (`app-content-matches`).
 - [ ] Run `npx --no -- lernapps check` until it passes.
 - [ ] Look at every screen and state, at 360 px and on a desktop, as "Look at the app" of skill `lernapps-cli` says.
