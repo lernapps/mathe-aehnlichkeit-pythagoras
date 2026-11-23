@@ -147,7 +147,7 @@ blocks:
         answer:
           {
             value: "round(asin(b * sin(alpha) / a), 1)",
-            compare: { number: { format: decimal, decimals: 1, tolerance: 0.1 } },
+            compare: { number: { format: decimal, decimals: 1, tolerance: 0.05 } },
           }
         mistakes:
           - {

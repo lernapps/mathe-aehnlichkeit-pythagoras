@@ -153,7 +153,7 @@ blocks:
             }
           - {
               value: "a * zp / zq",
-              message: "Du hast den Faktor umgedreht. Das Bild ist weiter von Z entfernt, also wird die Strecke länger, nicht kürzer.",
+              message: "Du hast den Faktor umgedreht. Er ist Bild-Abstand durch Original-Abstand, die Strecke wird mit diesem Faktor multipliziert.",
             }
           - {
               value: "a + zq - zp",

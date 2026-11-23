@@ -55,7 +55,7 @@ blocks:
         id: test-kongruenz-sws
         component: Kurztest
         props:
-          question: Dreieck 1 hat die Seiten 4 cm und 6 cm, dazwischen den Winkel 50°. Dreieck 2 hat auch die Seiten 4 cm und 6 cm und einen Winkel von 50°, der aber an der 6 cm langen Seite gegenüber der 4 cm langen Seite liegt, also nicht zwischen den beiden Seiten. Was gilt?
+          question: Dreieck 1 hat die Seiten 4 cm und 6 cm, dazwischen den Winkel 50°. Dreieck 2 hat auch die Seiten 4 cm und 6 cm und einen Winkel von 50°, der aber nicht zwischen den beiden Seiten liegt, sondern der 6 cm langen Seite gegenüber. Was gilt?
           options:
             - text: Die Dreiecke sind kongruent nach SWS.
               correct: false
@@ -131,7 +131,7 @@ blocks:
     blocks:
       - type: text
         text: |
-          Eine Zuordnung ist **proportional**, wenn das Doppelte der einen Größe zum Doppelten der anderen gehört, das Dreifache zum Dreifachen und so weiter. Teilst du die eine Größe durch die andere, kommt immer dieselbe Zahl heraus. Er heißt **Proportionalitätsfaktor**.
+          Eine Zuordnung ist **proportional**, wenn das Doppelte der einen Größe zum Doppelten der anderen gehört, das Dreifache zum Dreifachen und so weiter. Teilst du die eine Größe durch die andere, kommt immer dieselbe Zahl heraus. Diese Zahl heißt **Proportionalitätsfaktor**.
       - type: definition
         term: Proportionalitätsfaktor
         explanation: Die feste Zahl, mit der du die eine Größe multiplizierst, um die andere zu bekommen. Kosten 4 Hefte 6 €, ist der Faktor 1,50 € je Heft.

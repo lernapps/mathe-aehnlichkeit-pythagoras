@@ -7,8 +7,9 @@
   <circle cx="290" cy="150" r="3.5" fill="#1a1a1a"/>
   <g font-family="sans-serif" font-size="13" fill="#1a1a1a">
     <text x="60" y="80">Turm: h = ?</text>
-    <text x="150" y="186">Stab: 1,5 m hoch, Schatten 3 m</text>
-    <text x="286" y="170">Z</text>
+    <text x="215" y="166">Stab 1,5 m,</text>
+    <text x="215" y="181">Schatten 3 m</text>
+    <text x="286" y="140">Z</text>
     <text x="58" y="170">Schatten des Turms: 24 m</text>
   </g>
 </svg>

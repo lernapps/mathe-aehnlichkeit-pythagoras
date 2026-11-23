@@ -170,6 +170,7 @@ blocks:
         given:
           l: { int: [4, 8] }
           d: { oneOf: [1, 1.5, 2] }
+        where: ["d / l >= 0.25"]
         task:
           text: "Eine Leiter ist l = {{l}} m lang. Ihr Fuß steht d = {{d}} m von der senkrechten Wand entfernt. Wie hoch reicht sie an der Wand? Runde auf eine Stelle nach dem Komma."
         answer:
@@ -186,7 +187,7 @@ blocks:
               value: "l - d",
               message: "Du hast die Längen subtrahiert. Erst quadrieren, dann subtrahieren, dann die Wurzel.",
             }
-        hint: "Die Leiter ist die Hypotenuse. Zeichne das Dreieck und rechne c mal c minus d mal d."
+        hint: "Die Leiter ist die Hypotenuse. Zeichne das Dreieck und rechne l mal l minus d mal d."
         steps:
           - '$h = \sqrt{l^2 - d^2} = \sqrt{{{l}}^2 - {{d}}^2} \approx {{answer}}$, also {{answer}} m.'
   - type: section

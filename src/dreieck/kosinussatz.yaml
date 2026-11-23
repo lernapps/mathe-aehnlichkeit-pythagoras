@@ -55,7 +55,7 @@ blocks:
         formula: 'a^2 = b^2 + c^2 - 2bc \cdot \cos \alpha'
       - type: text
         text: |
-          Der Winkel *α* liegt zwischen den Seiten *b* und *c*. Bei *α* = 90° ist der Kosinus 0, und der Kosinussatz wird zum Satz des Pythagoras. Bei stumpfem Winkel ist der Kosinus negativ, dann wird die Seite *a* größer. Das Bild zeigt ein spitzwinkliges Dreieck. Ist ein Winkel stumpf, liegt der Fußpunkt D außerhalb der Seite. Die Rechnung bleibt dieselbe, nur ist dann der Kosinus negativ.
+          Der Winkel *α* liegt zwischen den Seiten *b* und *c*. Bei *α* = 90° ist der Kosinus 0, und der Kosinussatz wird zum Satz des Pythagoras. Bei stumpfem Winkel ist der Kosinus negativ, dann wird die Seite *a* größer. Das Bild zeigt ein spitzwinkliges Dreieck. Ist α stumpf, liegt der Fußpunkt D außerhalb der Seite *b*, und cos α ist negativ. Die Rechnung bleibt dieselbe.
       - type: note
         title: Merke
         blocks:
@@ -175,7 +175,7 @@ blocks:
         answer:
           {
             value: "round(acos((b * b + c * c - a * a) / (2 * b * c)), 1)",
-            compare: { number: { format: decimal, decimals: 1, tolerance: 0.1 } },
+            compare: { number: { format: decimal, decimals: 1, tolerance: 0.05 } },
           }
         mistakes:
           - {

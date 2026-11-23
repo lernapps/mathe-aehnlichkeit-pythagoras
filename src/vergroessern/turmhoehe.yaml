@@ -65,13 +65,13 @@ blocks:
           Ein Baum S steht am anderen Ufer genau gegenüber von P. Du willst die Breite *w* = SP des Flusses wissen. Am nahen Ufer gehst du von P nach Q und steckst dabei in M einen Pflock. Bei Q gehst du im rechten Winkel zum Ufer von dir weg, bis Pflock M und Baum S in einer Linie liegen. Das ist Punkt R. Du misst PM = 30 m, MQ = 10 m und QR = 12 m.
       - type: figure
         image: images/fluss-x.svg
-        alt: Ein Fluss liegt zwischen dem Baum S und dem Ufer mit den Punkten P, M und Q. Die Strecken SP und QR sind parallel. Eine Gerade geht von S über M nach R. Gesucht ist die Breite w des Flusses.
+        alt: Ein Fluss liegt zwischen dem Baum S und dem Ufer mit den Punkten P, M und Q. Die Strecken SP und QR sind parallel. Eine Gerade geht von S über M nach R. Gesucht ist die Breite w des Flusses. Es ist PM = 30 m, MQ = 10 m und QR = 12 m.
         caption: "Skizze, nicht maßstabsgetreu: Die Strecken SP und QR sind parallel, M ist das Zentrum."
         source: eigene Zeichnung
         licence: CC0-1.0
       - type: text
         text: |
-          Hier liegt M zwischen den Parallelen: Die Figur ist ein X statt eines V. Die Strahlensätze gelten genauso: Die Streckung geht dann auf die andere Seite von M, die Rechnung mit den Abständen bleibt gleich. Die parallelen Strecken SP und QR verhalten sich wie die Abstände MP und MQ der Fußpunkte von M: SP : QR = MP : MQ.
+          Hier liegt M zwischen den Parallelen: Die Figur ist ein X statt eines V. Die Strahlensätze gelten genauso: Die Dreiecke MPS und MQR sind ähnlich, es gelten dieselben Verhältnisse. Die parallelen Strecken SP und QR verhalten sich wie die Abstände MP und MQ der Fußpunkte von M: SP : QR = MP : MQ.
       - type: formula
         formula: '\frac{w}{12} = \frac{30}{10} \quad | \cdot 12'
       - type: formula
@@ -136,6 +136,7 @@ blocks:
         where:
           [
             "qr * pm / mq >= 6",
+            "qr * pm / mq <= 60",
             "decimals(qr * pm / mq) <= 1",
             "qr * mq / pm != qr * pm / mq",
             "pm + qr - mq != qr * pm / mq",

@@ -53,7 +53,7 @@ blocks:
         id: test-wurzel-summe
         component: Kurztest
         props:
-          question: Wie groß ist die Wurzel aus 9 + 16?
+          question: Wie groß ist die Wurzel aus der Summe 9 + 16?
           options:
             - text: "7"
               correct: false

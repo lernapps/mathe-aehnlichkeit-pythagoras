@@ -171,7 +171,7 @@ blocks:
       - type: generated
         id: modell-flaeche
         given:
-          m: { oneOf: [20, 50, 200] }
+          m: { oneOf: [50, 200] }
           A: { int: [10, 60] }
         where: ["A * m * m / 10000 >= 10"]
         task:
