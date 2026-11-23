@@ -97,6 +97,16 @@ blocks:
             correct: false
             info: "Die richtige Funktion, aber falsch herum. Cos α = Ankathete : Hypotenuse, nach der Ankathete aufgelöst wird multipliziert."
         explanation: Die Ankathete liegt an α an. Ankathete und Hypotenuse gehören zum Kosinus.
+      - type: ordering
+        id: reihenfolge
+        text: Bringe die Schritte einer Rechnung mit Winkel und Seite in die richtige Reihenfolge.
+        items:
+          - Skizze zeichnen und die Seiten vom Winkel aus benennen
+          - Das Verhältnis wählen, in dem gegebene und gesuchte Seite vorkommen
+          - Die Gleichung nach der gesuchten Seite umstellen
+          - Den Taschenrechner auf Grad (DEG) stellen und einsetzen
+          - Das Ergebnis mit Einheit angeben und prüfen, ob es zur Skizze passt
+        explanation: Erst die Skizze und das passende Verhältnis, dann umstellen, dann rechnen. Zum Schluss prüfst du, ob die Seite zur Skizze passt, zum Beispiel ob die Hypotenuse die längste ist.
       - type: generated
         id: gegenkathete
         given:

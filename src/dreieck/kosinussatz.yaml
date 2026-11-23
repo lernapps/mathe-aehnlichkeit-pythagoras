@@ -1,0 +1,197 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Der Kosinussatz
+description: Den Kosinussatz aus Pythagoras herleiten und damit Seiten und Winkel berechnen, wenn kein Paar aus Seite und gegenüberliegendem Winkel bekannt ist.
+competencies: [sinus-kosinussatz]
+blocks:
+  - type: section
+    id: einstieg
+    title: Was du hier lernst
+    blocks:
+      - type: text
+        text: |
+          Du lernst den Kosinussatz. Er ist der Satz des Pythagoras für Dreiecke ohne rechten Winkel. Damit berechnest du die dritte Seite aus zwei Seiten und dem eingeschlossenen Winkel, und Winkel aus drei Seiten. Danach weißt du, wann du Sinussatz und wann Kosinussatz brauchst.
+      - type: text
+        text: |
+          Zwei gerade Wege führen von der Schule aus zu einem Spielplatz und zu einem Teich. Sie sind 120 m und 150 m lang und schließen einen Winkel von 70° ein. Wie weit liegen Spielplatz und Teich auseinander? Ein Paar aus Seite und gegenüberliegendem Winkel ist nicht bekannt.
+      - type: single-choice
+        id: warum-nicht-pythagoras
+        text: Kannst du den Abstand zwischen Spielplatz und Teich mit dem Satz des Pythagoras ausrechnen?
+        options:
+          - text: Nein, der Winkel zwischen den Wegen ist nicht 90°.
+            correct: true
+            info: Der Satz gilt nur im rechtwinkligen Dreieck. Hier misst der Winkel 70°, die Rechnung √(120² + 150²) wäre zu groß.
+          - text: Ja, die beiden Wege sind die Katheten.
+            correct: false
+            info: Nur wenn sie senkrecht aufeinander stehen. Bei 70° ist der Abstand kleiner als √(120² + 150²).
+          - text: Ja, aber man muss zuerst die Wege addieren.
+            correct: false
+            info: Die Wege addieren gibt die Länge des Umwegs über die Schule, nicht den Abstand.
+        explanation: Pythagoras braucht einen rechten Winkel. Für beliebige Winkel brauchst du den Kosinussatz.
+  - type: section
+    id: idee
+    title: Pythagoras mit einem Korrekturglied
+    blocks:
+      - type: text
+        text: |
+          Du zerlegst das Dreieck wieder mit einer Höhe. Im Bild unten fällt die Höhe *h* von B senkrecht auf die Seite *b*. Der Punkt D teilt *b* in *x* und *b* − *x*. Im Dreieck ABD gilt $x = c \cdot \cos \alpha$ und $h = c \cdot \sin \alpha$.
+      - type: figure
+        image: images/dreieck-hoehe-b.svg
+        alt: Spitzwinkliges Dreieck ABC mit der gestrichelten Höhe h von B auf die Seite b. Der Fußpunkt D teilt b in die Strecken x und b minus x. Der Winkel bei A ist α.
+        caption: Die Höhe h von B teilt b in x und b − x.
+        source: eigene Zeichnung
+        licence: CC0-1.0
+      - type: text
+        text: |
+          Im Dreieck DBC ist *a* die Hypotenuse, mit Pythagoras gilt $a^2 = h^2 + (b - x)^2$. Setze *h* und *x* ein und multipliziere aus.
+      - type: formula
+        formula: 'a^2 = c^2 \sin^2 \alpha + b^2 - 2 b c \cos \alpha + c^2 \cos^2 \alpha'
+      - type: text
+        text: |
+          Es gilt $\sin^2 \alpha + \cos^2 \alpha = 1$. Das folgt aus dem Satz des Pythagoras, geteilt durch *c*²: $\left(\frac{G}{c}\right)^2 + \left(\frac{A}{c}\right)^2 = 1$. Dann bleibt:
+      - type: definition
+        term: Kosinussatz
+        explanation: In jedem Dreieck ist das Quadrat einer Seite gleich der Summe der Quadrate der beiden anderen Seiten minus dem doppelten Produkt dieser Seiten und dem Kosinus des eingeschlossenen Winkels.
+      - type: formula
+        formula: 'a^2 = b^2 + c^2 - 2bc \cdot \cos \alpha'
+      - type: text
+        text: |
+          Der Winkel *α* liegt zwischen den Seiten *b* und *c*. Bei *α* = 90° ist der Kosinus 0, und der Kosinussatz wird zum Satz des Pythagoras. Bei stumpfem Winkel ist der Kosinus negativ, dann wird die Seite *a* größer.
+      - type: note
+        title: Merke
+        blocks:
+          - type: text
+            text: |
+              Im Kosinussatz steht auf der linken Seite die Seite *a* gegenüber von *α*. Rechts stehen die beiden anderen Seiten und der Winkel dazwischen. Willst du den Winkel, stellst du nach dem Kosinus um und nutzt cos⁻¹.
+      - type: table
+        caption: Welcher Satz passt zu welcher Angabe?
+        header: [Gegeben, Satz]
+        rows:
+          - [Zwei Winkel und eine Seite, Sinussatz]
+          - [Zwei Seiten und der Winkel gegenüber einer von ihnen, Sinussatz]
+          - [Zwei Seiten und der eingeschlossene Winkel, Kosinussatz]
+          - [Alle drei Seiten, Kosinussatz]
+  - type: section
+    id: beispiel
+    title: Zwei Beispiele
+    blocks:
+      - type: example
+        title: Abstand von Spielplatz und Teich
+        blocks:
+          - type: text
+            text: |
+              Gegeben: $b = 120$ m, $c = 150$ m und $\alpha = 70^\circ$ zwischen ihnen.
+          - type: formula
+            formula: 'a^2 = 120^2 + 150^2 - 2 \cdot 120 \cdot 150 \cdot \cos 70^\circ'
+          - type: formula
+            formula: 'a^2 \approx 36900 - 12313'
+          - type: formula
+            formula: 'a^2 \approx 24587'
+          - type: text
+            text: |
+              Der Abstand ist $a = \sqrt{24587} \approx 156{,}8$ m. Ohne den Winkel hätte Pythagoras $\sqrt{36900} \approx 192{,}1$ m ergeben.
+      - type: example
+        title: Einen Winkel aus drei Seiten
+        blocks:
+          - type: text
+            text: |
+              Ein Dreieck hat die Seiten $a = 7$ cm, $b = 8$ cm und $c = 9$ cm. Gesucht ist $\alpha$. Im Zähler steht $64 + 81 - 49 = 96$, im Nenner $2 \cdot 8 \cdot 9 = 144$.
+          - type: formula
+            formula: '\cos \alpha = \frac{b^2 + c^2 - a^2}{2bc}'
+          - type: formula
+            formula: '\cos \alpha = \frac{96}{144} \approx 0{,}667'
+          - type: formula
+            formula: '\alpha = \cos^{-1}(0{,}667) \approx 48{,}2^\circ'
+  - type: section
+    id: uebung
+    title: Übung
+    blocks:
+      - type: single-choice
+        id: welcher-satz
+        text: Von einem Dreieck sind zwei Seiten und der Winkel bekannt, den diese beiden Seiten einschließen. Du suchst die dritte Seite. Welchen Satz nimmst du?
+        options:
+          - text: den Kosinussatz
+            correct: true
+            info: Zwei Seiten und der eingeschlossene Winkel sind genau die Angaben, für die der Kosinussatz gebaut ist.
+          - text: den Sinussatz
+            correct: false
+            info: Der Sinussatz braucht ein Paar aus Seite und gegenüberliegendem Winkel. Das gibt es hier nicht, der Winkel liegt zwischen den Seiten.
+          - text: den Satz des Pythagoras
+            correct: false
+            info: Der gilt nur im rechtwinkligen Dreieck. Ist der Winkel nicht 90°, gibt er einen falschen Wert.
+        explanation: Zwei Seiten und der eingeschlossene Winkel führen zum Kosinussatz.
+      - type: matching
+        id: satz-zuordnen
+        text: Ordne jeder Aufgabe den passenden Satz zu.
+        pairs:
+          - left: Zwei Winkel und eine Seite gegeben (Seite liegt einem Winkel gegenüber)
+            right: Sinussatz mit Seite und Gegenwinkel
+          - left: Zwei Seiten und der Winkel dazwischen gegeben (dritte Seite gesucht)
+            right: Kosinussatz für die dritte Seite
+          - left: Alle drei Seiten gegeben (Winkel gesucht)
+            right: Kosinussatz nach dem Winkel umgestellt
+        explanation: Ein Paar aus Seite und gegenüberliegendem Winkel führt zum Sinussatz. Fehlt es, brauchst du den Kosinussatz.
+      - type: generated
+        id: dritte-seite
+        given:
+          b: { int: [40, 120], step: 10 }
+          c: { int: [50, 150], step: 10 }
+          alpha: { oneOf: [40, 50, 60, 70, 110, 120, 130] }
+        where: ["b != c"]
+        task:
+          text: "Zwei gerade Wege gehen von der Schule aus. Sie sind {{b}} m und {{c}} m lang und schließen den Winkel α = {{alpha}}° ein. Wie weit sind ihre Enden voneinander entfernt? Runde auf eine Stelle nach dem Komma."
+        answer:
+          {
+            value: "round(sqrt(b * b + c * c - 2 * b * c * cos(alpha)), 1)",
+            compare: { number: { format: decimal, decimals: 1, tolerance: 0.1, unit: m } },
+          }
+        mistakes:
+          - {
+              value: "round(sqrt(b * b + c * c), 1)",
+              message: "Das ist der Satz des Pythagoras. Er gilt nur bei 90°. Beim Kosinussatz kommt noch minus 2 · b · c · cos α dazu.",
+            }
+          - {
+              value: "round(sqrt(b * b + c * c + 2 * b * c * cos(alpha)), 1)",
+              message: "Das Vorzeichen stimmt nicht. Im Kosinussatz wird 2 · b · c · cos α subtrahiert.",
+            }
+          - {
+              value: "round(b * b + c * c - 2 * b * c * cos(alpha), 1)",
+              message: "Das ist a², noch nicht a. Zieh die Wurzel.",
+            }
+        hint: "Kosinussatz: a² = b² + c² − 2 · b · c · cos α. Am Ende die Wurzel ziehen."
+        steps:
+          - '$a^2 = {{b}}^2 + {{c}}^2 - 2 \cdot {{b}} \cdot {{c}} \cdot \cos {{alpha}}^\circ$, also $a \approx {{answer}}$ m.'
+      - type: generated
+        id: winkel-drei-seiten
+        given:
+          a: { int: [5, 10] }
+          b: { int: [6, 12] }
+          c: { int: [7, 14] }
+        where: ["a < b", "b < c", "c < a + b", "(b * b + c * c - a * a) / (2 * b * c) < 0.99"]
+        task:
+          text: "Ein Dreieck hat die Seiten a = {{a}} cm, b = {{b}} cm und c = {{c}} cm. Wie groß ist der Winkel α, der der Seite a gegenüberliegt? Runde auf eine Stelle nach dem Komma."
+        answer:
+          {
+            value: "round(acos((b * b + c * c - a * a) / (2 * b * c)), 1)",
+            compare: { number: { format: decimal, decimals: 1, tolerance: 0.1 } },
+          }
+        mistakes:
+          - {
+              value: "round(asin((b * b + c * c - a * a) / (2 * b * c)), 1)",
+              message: "Du hast sin⁻¹ statt cos⁻¹ benutzt. Der Kosinussatz liefert den Kosinus des Winkels.",
+            }
+          - {
+              value: "round(acos((a * a + b * b - c * c) / (2 * a * b)), 1)",
+              message: "Das ist der Winkel γ gegenüber von c. Gesucht ist α gegenüber von a, also steht a² allein und wird subtrahiert.",
+            }
+        hint: "Stelle den Kosinussatz nach cos α um: cos α = (b² + c² − a²) : (2 · b · c). Dann cos⁻¹."
+        steps:
+          - '$\cos \alpha = \frac{{{b}}^2 + {{c}}^2 - {{a}}^2}{2 \cdot {{b}} \cdot {{c}}}$, also $\alpha \approx {{answer}}^\circ$.'
+  - type: section
+    id: rueckblick
+    title: Das kannst du jetzt
+    blocks:
+      - type: text
+        text: |
+          - Du erkennst im rechtwinkligen Dreieck Katheten und Hypotenuse und rechnest mit dem Satz des Pythagoras.
+          - Du kennst Sinus, Kosinus und Tangens als Seitenverhältnisse und berechnest damit Seiten und Winkel.
+          - In Dreiecken ohne rechten Winkel wählst du zwischen Sinussatz und Kosinussatz und berechnest Seiten und Winkel.
