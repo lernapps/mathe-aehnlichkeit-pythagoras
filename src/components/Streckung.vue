@@ -5,7 +5,7 @@ import { computed, ref } from "vue";
 import { describeState, original, readout, snap, stretchTriangle, type Point } from "./Streckung.ts";
 
 const k = ref(1);
-const unit = 15;
+const unit = 13;
 const origin = { x: 30, y: 255 };
 const toPx = (p: Point) => ({ x: origin.x + p.x * unit, y: origin.y - p.y * unit });
 const pts = (t: { A: Point; B: Point; C: Point }) =>
@@ -57,8 +57,8 @@ function onInput(e: Event) {
         id="streckung-k"
         type="range"
         min="0.5"
-        max="3"
-        step="0.5"
+        max="2.5"
+        step="0.1"
         :value="k"
         aria-describedby="streckung-live"
         @input="onInput"
@@ -78,6 +78,11 @@ function onInput(e: Event) {
         </tr>
       </thead>
       <tbody>
+        <tr>
+          <th scope="row">Abstand von Z zu A</th>
+          <td>{{ r.za }} cm</td>
+          <td>{{ r.zaImage }} cm</td>
+        </tr>
         <tr>
           <th scope="row">Länge AB</th>
           <td>{{ r.ab }} cm</td>
@@ -156,6 +161,8 @@ function onInput(e: Event) {
   flex: 1 1 10rem;
   min-height: 44px;
   min-width: 0;
+  max-width: calc(100% - 8px);
+  margin: 0 4px;
 }
 .reset {
   min-height: 44px;

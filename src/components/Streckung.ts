@@ -3,11 +3,12 @@
 export type Point = { x: number; y: number };
 export type Triangle = { A: Point; B: Point; C: Point };
 
-/** The original triangle: A(2|1), B(5|1), C(2|5); AB = 3 cm, AC = 4 cm, BC = 5 cm, area 6 cm². */
-export const original: Triangle = { A: { x: 2, y: 1 }, B: { x: 5, y: 1 }, C: { x: 2, y: 5 } };
+/** The original triangle: A(4|3), B(7|3), C(4|7); AB = 3 cm, AC = 4 cm, BC = 5 cm, ZA = 5 cm, area 6 cm². */
+export const original: Triangle = { A: { x: 4, y: 3 }, B: { x: 7, y: 3 }, C: { x: 4, y: 7 } };
 
-/** The factors the slider offers: 0.5 to 3 in steps of 0.5. */
-export const factors: number[] = [0.5, 1, 1.5, 2, 2.5, 3];
+/** The slider offers 0.5 to 2.5 in steps of 0.1. */
+export const kMin = 0.5;
+export const kMax = 2.5;
 
 /** The point stretched from the centre Z (0|0) by k. */
 export function stretch(p: Point, k: number): Point {
@@ -17,6 +18,8 @@ export function stretch(p: Point, k: number): Point {
 export function stretchTriangle(t: Triangle, k: number): Triangle {
   return { A: stretch(t.A, k), B: stretch(t.B, k), C: stretch(t.C, k) };
 }
+
+const origin: Point = { x: 0, y: 0 };
 
 export function distance(p: Point, q: Point): number {
   return Math.hypot(p.x - q.x, p.y - q.y);
@@ -42,6 +45,8 @@ export function fmt(x: number): string {
 
 export type Readout = {
   k: string;
+  za: string;
+  zaImage: string;
   ab: string;
   ac: string;
   bc: string;
@@ -58,6 +63,8 @@ export function readout(k: number): Readout {
   const s = stretchTriangle(t, k);
   return {
     k: fmt(k),
+    za: fmt(distance(origin, t.A)),
+    zaImage: fmt(distance(origin, s.A)),
     ab: fmt(distance(t.A, t.B)),
     ac: fmt(distance(t.A, t.C)),
     bc: fmt(distance(t.B, t.C)),
@@ -73,13 +80,13 @@ export function readout(k: number): Readout {
 export function describeState(k: number): string {
   const r = readout(k);
   return (
-    `Streckfaktor k = ${r.k}. Die Strecke AB ist ${r.ab} cm lang, ihr Bild A′B′ ${r.abImage} cm. ` +
+    `Streckfaktor k = ${r.k}. Der Abstand von Z zu A ist ${r.za} cm, zu A′ ${r.zaImage} cm. Die Strecke AB ist ${r.ab} cm lang, ihr Bild A′B′ ${r.abImage} cm. ` +
     `Der Winkel bei A misst vorher ${r.angleA}° und nachher ${r.angleAImage}°.`
   );
 }
 
-/** The next value of the slider by arrow keys is the browser's; this keeps a typed or dragged value on the offered steps. */
+/** The next value of the slider by arrow keys is the browser's; this keeps a typed or dragged value on the offered steps (0.1). */
 export function snap(value: number): number {
-  const clamped = Math.min(factors[factors.length - 1]!, Math.max(factors[0]!, value));
-  return Math.round(clamped * 2) / 2;
+  const clamped = Math.min(kMax, Math.max(kMin, value));
+  return Math.round(clamped * 10) / 10;
 }
