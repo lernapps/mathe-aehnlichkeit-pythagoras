@@ -53,3 +53,9 @@ Lernlandkarte Mathematik; eigene Herleitungen. Nachgeschlagenes (Satz des Pythag
 2. Seiten als `src/<kapitel>/<seite>.yaml` anlegen, in `chapter.yaml` unter `pages`, Kapitel in `src/app.yaml` unter `chapters`.
 3. Aufgaben nach den Mustern oben; mindestens drei je Baustein, steigend; Musterlösungen unabhängig nachrechnen.
 4. `npx vp check --fix`, `npx --no -- lernapps check`, Commit.
+
+## Rules learned from mistakes
+
+- Keine `links:` an Aufgaben (Epic-Regel); `lernapps check` besteht ohne.
+- Formeln: kein `\angle`, `\overline`, `\ldots`; Winkel mit ∠ im Text. Dezimalzahlen in `formula` mit `{,}`.
+- Komponenten brauchen `min-width: 0` und Umbruch (360 px), `nojs`-Text mit Werten.

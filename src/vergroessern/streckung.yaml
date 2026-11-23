@@ -1,0 +1,132 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Zentrische Streckung
+description: Eine Figur vom Streckzentrum aus vergrößern oder verkleinern und sehen, was dabei gleich bleibt.
+competencies: [aehnlichkeit]
+blocks:
+  - type: section
+    id: einstieg
+    title: Was du hier lernst
+    blocks:
+      - type: text
+        text: |
+          Du lernst, wie eine Figur von einem Punkt aus vergrößert oder verkleinert wird. Du erkennst, was dabei gleich bleibt und was sich ändert, und kannst aus zwei Längen den Streckfaktor bestimmen.
+      - type: text
+        text: |
+          Mira hält ein Pappdreieck vor eine kleine Lampe. An der Wand erscheint der Schatten: ein größeres Dreieck mit derselben Form.
+      - type: single-choice
+        id: schatten-gleich
+        text: Was ist im Pappdreieck und in seinem Schatten gleich?
+        options:
+          - text: die Winkel
+            correct: true
+            info: Der Schatten hat dieselbe Form wie die Pappe. Die Ecken sind gleich spitz oder stumpf.
+          - text: die Seitenlängen
+            correct: false
+            info: Der Schatten ist größer, also sind seine Seiten länger als die der Pappe.
+          - text: der Umfang
+            correct: false
+            info: Wenn alle Seiten länger sind, ist auch der Umfang größer.
+        explanation: Schatten und Pappe haben dieselbe Form. Die Winkel bleiben gleich, die Längen ändern sich.
+  - type: section
+    id: idee
+    title: So wird gestreckt
+    blocks:
+      - type: text
+        text: |
+          Die Lampe ist das **Streckzentrum** Z. Von Z aus geht ein Strahl durch jede Ecke der Pappe. Der Schatten dieser Ecke liegt auf demselben Strahl, weiter weg von Z. Das Verhältnis der Abstände zu Z ist für alle Ecken gleich. Es heißt **Streckfaktor** *k*.
+      - type: definition
+        term: Zentrische Streckung
+        explanation: Eine Abbildung, die jeden Punkt $P$ auf dem Strahl von $Z$ durch $P$ nach $P'$ verschiebt, sodass $ZP'$ das $k$-Fache von $ZP$ ist.
+      - type: definition
+        term: Streckfaktor
+        explanation: Die Zahl $k$, mit der alle Abstände zum Streckzentrum multipliziert werden. Bei $k > 1$ wird die Figur größer, bei $k < 1$ kleiner.
+      - type: text
+        text: |
+          Das Bild unten zeigt ein Dreieck ABC mit dem rechten Winkel bei A (durchgezogen) und sein Bild A′B′C′ (gestrichelt). Die grauen Strahlen gehen von Z durch die Ecken. Mit dem Regler stellst du den Streckfaktor *k* ein. Beobachte in der Tabelle, was sich ändert und was nicht.
+      - type: vue-component
+        id: streckung-bild
+        component: Streckung
+        props: {}
+        nojs: |
+          Dreieck ABC mit dem rechten Winkel bei A, AB = 3 cm, AC = 4 cm, BC = 5 cm, wird von Z aus gestreckt.
+          Bei k = 0,5 sind die Längen 1,5 cm, 2 cm und 2,5 cm. Bei k = 1 bleibt alles gleich.
+          Bei k = 2 sind sie 6 cm, 8 cm und 10 cm. Der Winkel bei A misst in jedem Fall 90°.
+      - type: note
+        title: Merke
+        blocks:
+          - type: text
+            text: |
+              Bei einer zentrischen Streckung mit dem Faktor *k* bleiben alle Winkel gleich. Jede Länge wird mit *k* multipliziert, nicht um *k* verlängert.
+  - type: section
+    id: beispiel
+    title: Den Streckfaktor bestimmen
+    blocks:
+      - type: example
+        title: Aus zwei Längen den Faktor berechnen
+        blocks:
+          - type: text
+            text: |
+              Eine Strecke AB ist 3 cm lang, ihr Bild A′B′ ist 7,5 cm lang. Der Faktor ist Bildlänge durch Originallänge.
+          - type: formula
+            formula: 'k = \frac{7{,}5}{3} = 2{,}5'
+          - type: text
+            text: |
+              Probe: Mit *k* = 2,5 wird 3 cm zu 2,5 · 3 cm = 7,5 cm. Stimmt.
+  - type: section
+    id: uebung
+    title: Übung
+    blocks:
+      - type: true-false
+        id: winkel-doppelt
+        text: Ein Dreieck wird mit *k* = 2 gestreckt. Dann sind auch alle Winkel doppelt so groß.
+        answer: false
+        explanation: Die Winkel bleiben bei jeder zentrischen Streckung gleich. Nur die Längen ändern sich, und zwar mit dem Faktor *k*.
+      - type: generated
+        id: bildlaenge
+        given:
+          k: { oneOf: [0.5, 1.5, 2, 2.5, 3] }
+          a: { int: [2, 12] }
+        where: ["decimals(a * k) <= 1", "a + k != a * k"]
+        task:
+          text: "Ein Dreieck wird vom Zentrum Z aus mit dem Faktor k = {{k}} gestreckt. Die Seite AB ist {{a}} cm lang. Wie lang ist die Seite A′B′ des Bildes?"
+        answer: { value: "a * k", compare: { number: { format: decimal, decimals: 1, unit: cm } } }
+        mistakes:
+          - { value: "a + k", message: "Du hast {{k}} addiert. Beim Strecken wird mit dem Faktor multipliziert." }
+          - { value: "a / k", message: "Du hast geteilt. Bei k = {{k}} wird die Länge mit {{k}} multipliziert." }
+        hint: "Das Bild ist k-mal so lang wie das Original: Länge mal k."
+        steps:
+          - '$A'' B'' = k \cdot AB = {{k}} \cdot {{a}} = {{answer}}$, also {{answer}} cm.'
+      - type: generated
+        id: faktor-bestimmen
+        given:
+          a: { int: [2, 10] }
+          b: { int: [1, 30] }
+        where: ["b != a", "decimals(b / a) <= 1", "b / a <= 4", "b - a != b / a"]
+        task:
+          text: "Die Strecke AB ist {{a}} cm lang, ihr Bild A′B′ ist {{b}} cm lang. Bestimme den Streckfaktor k."
+        answer: { value: "b / a", compare: { number: { format: decimal, decimals: 1 } } }
+        mistakes:
+          - {
+              value: "a / b",
+              message: "Du hast das Original durch das Bild geteilt. Der Faktor ist Bildlänge durch Originallänge.",
+            }
+          - {
+              value: "b - a",
+              message: "Du hast die Längen subtrahiert. Der Faktor ist ein Verhältnis: Bildlänge durch Originallänge.",
+            }
+        hint: "Teile die Länge des Bildes durch die Länge des Originals."
+        steps:
+          - '$k = \frac{A''B''}{AB} = \frac{{{b}}}{{{a}}} = {{answer}}$'
+      - type: number
+        id: schatten-winkel
+        text: Miras Pappdreieck hat bei einer Ecke einen Winkel von 50°. Sein Schatten ist 2,5-mal so groß wie die Pappe. Wie groß ist der Winkel an der entsprechenden Ecke des Schattens (in Grad)?
+        answer: 50
+        tolerance: 0
+        explanation: Die Winkel bleiben bei der Streckung gleich, auch wenn der Schatten größer ist. Der Faktor 2,5 gilt nur für Längen.
+  - type: section
+    id: weiter
+    title: Wie es weitergeht
+    blocks:
+      - type: text
+        text: |
+          Du kannst jetzt strecken und den Faktor bestimmen. Auf der nächsten Seite fragst du, wann zwei Figuren ähnlich sind, und was mit den Flächen passiert.
