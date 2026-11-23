@@ -42,7 +42,7 @@ blocks:
         blocks:
           - type: text
             text: |
-              Bei Rechtecken musst du Breite und Höhe vergleichen: Beide Faktoren müssen gleich sein. Ein Rechteck, das 2 cm breiter und 2 cm höher ist, ist nicht ähnlich, denn 2 cm dazuzählen ist kein Faktor.
+              Bei Rechtecken musst du Breite und Höhe vergleichen: Beide Faktoren müssen gleich sein. Ein Rechteck von 3 cm × 5 cm und eines von 5 cm × 7 cm (beide Seiten 2 cm länger) sind nicht ähnlich, denn 2 cm dazuzählen ist kein Faktor.
       - type: text
         text: |
           Bei Dreiecken genügt es, zwei Winkel zu vergleichen. Den dritten kennst du aus der Winkelsumme von 180°. Stimmen zwei Winkel überein, stimmt auch der dritte überein, und die Dreiecke sind ähnlich.
@@ -152,6 +152,7 @@ blocks:
         given:
           k: { oneOf: [2, 3, 4] }
           A: { int: [3, 25] }
+        where: ["A + k * k != A * k"]
         task:
           text: "Ein Foto hat eine Fläche von {{A}} cm². Das Poster ist eine Streckung des Fotos mit dem Faktor k = {{k}}. Wie groß ist die Fläche des Posters in cm²?"
         answer: { value: "A * k * k", compare: { number: { format: integer, unit: "cm²" } } }
@@ -169,6 +170,7 @@ blocks:
         given:
           m: { oneOf: [20, 50, 100] }
           A: { int: [10, 60] }
+        where: ["A * m * m / 10000 >= 10"]
         task:
           text: "Ein Modellhaus im Maßstab 1 : {{m}} hat eine Grundfläche von {{A}} cm². Wie groß ist die Grundfläche des echten Hauses in m²? Es gilt 1 m² = 10 000 cm²."
         answer: { value: "A * m * m / 10000", compare: { number: { format: decimal, decimals: 2, unit: "m²" } } }

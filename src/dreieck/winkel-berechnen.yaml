@@ -33,7 +33,7 @@ blocks:
     blocks:
       - type: text
         text: |
-          Der Sinus macht aus einem Winkel ein Verhältnis. Die Umkehrfunktion macht aus dem Verhältnis wieder den Winkel. Auf dem Taschenrechner heißt sie sin⁻¹, cos⁻¹ und tan⁻¹ (oft über den Tasten sin, cos, tan, erreichbar mit SHIFT oder 2nd). Es gilt: Ist $\sin \alpha = x$, dann ist $\alpha = \sin^{-1}(x)$.
+          Der Sinus macht aus einem Winkel ein Verhältnis. Die Umkehrfunktion macht aus dem Verhältnis wieder den Winkel. Auf dem Taschenrechner heißt sie sin⁻¹, cos⁻¹ und tan⁻¹ (oft über den Tasten sin, cos, tan, erreichbar mit SHIFT oder 2nd). Für spitze Winkel gilt: Ist $\sin \alpha = x$, dann ist $\alpha = \sin^{-1}(x)$.
       - type: formula
         formula: '\alpha = \sin^{-1} \left( \frac{\text{Gegenkathete}}{\text{Hypotenuse}} \right)'
       - type: formula
@@ -110,11 +110,11 @@ blocks:
       - type: generated
         id: winkel-tangens
         given:
-          g: { int: [3, 15] }
-          k: { int: [4, 16] }
+          g: { int: [3, 6] }
+          k: { int: [5, 10] }
         where: ["g < k"]
         task:
-          text: "Eine Treppe steigt auf {{k}} m Länge waagerecht um {{g}} m. Unter welchem Winkel α steigt sie? Runde auf eine Stelle nach dem Komma."
+          text: "Ein Pultdach steigt auf {{k}} m waagerechter Länge um {{g}} m an. Welchen Winkel α bildet das Dach mit der Waagerechten? Runde auf eine Stelle nach dem Komma."
         answer:
           { value: "round(atan(g / k), 1)", compare: { number: { format: decimal, decimals: 1, tolerance: 0.1 } } }
         mistakes:
@@ -126,7 +126,7 @@ blocks:
               value: "round(asin(g / k), 1)",
               message: "Du hast sin⁻¹ benutzt. Die Länge k ist waagerecht gemessen, nicht die Hypotenuse. Höhe und waagerechte Länge gehören zum Tangens.",
             }
-        hint: "Höhe ist die Gegenkathete, die waagerechte Länge die Ankathete: Tangens."
+        hint: "Der Anstieg ist die Gegenkathete, die waagerechte Länge die Ankathete: Tangens."
         steps:
           - '$\alpha = \tan^{-1}\left(\frac{{{g}}}{{{k}}}\right) \approx {{answer}}^\circ$'
       - type: generated

@@ -71,7 +71,7 @@ blocks:
         licence: CC0-1.0
       - type: text
         text: |
-          Hier liegt M zwischen den Parallelen: Die Figur ist ein X statt eines V. Die Strahlensätze gelten genauso. Die parallelen Strecken SP und QR verhalten sich wie die Abstände ihrer Endpunkte von M.
+          Hier liegt M zwischen den Parallelen: Die Figur ist ein X statt eines V. Die Strahlensätze gelten genauso: Die Streckung geht dann auf die andere Seite von M, die Rechnung mit den Abständen bleibt gleich. Die parallelen Strecken SP und QR verhalten sich wie die Abstände ihrer Endpunkte von M.
       - type: formula
         formula: '\frac{w}{12} = \frac{30}{10} \quad | \cdot 12'
       - type: formula
@@ -104,7 +104,14 @@ blocks:
           ss: { int: [2, 6] }
           ts: { int: [8, 40] }
         where:
-          ["ts > ss", "decimals(hs * ts / ss) <= 1", "hs + ts - ss != hs * ts / ss", "hs * ss / ts != hs * ts / ss"]
+          [
+            "ts > ss",
+            "hs * ts / ss >= 6",
+            "hs * ts / ss <= 60",
+            "decimals(hs * ts / ss) <= 1",
+            "hs + ts - ss != hs * ts / ss",
+            "hs * ss / ts != hs * ts / ss",
+          ]
         task:
           text: "Ein Stab von {{hs}} m Höhe wirft einen Schatten von {{ss}} m. Gleichzeitig reicht der Schatten eines Turms bis zum selben Schattenende und ist {{ts}} m lang. Wie hoch ist der Turm?"
         answer: { value: "hs * ts / ss", compare: { number: { format: decimal, decimals: 1, unit: m } } }
@@ -126,7 +133,13 @@ blocks:
           pm: { int: [10, 40], step: 5 }
           mq: { int: [5, 20], step: 5 }
           qr: { int: [6, 20] }
-        where: ["decimals(qr * pm / mq) <= 1", "qr * mq / pm != qr * pm / mq", "pm + qr - mq != qr * pm / mq"]
+        where:
+          [
+            "qr * pm / mq >= 6",
+            "decimals(qr * pm / mq) <= 1",
+            "qr * mq / pm != qr * pm / mq",
+            "pm + qr - mq != qr * pm / mq",
+          ]
         task:
           text: "Am Ufer eines Flusses liegen P, M und Q in einer Reihe, es ist PM = {{pm}} m und MQ = {{mq}} m. Der Baum S steht gegenüber von P. Bei Q geht jemand rechtwinklig zum Ufer, bis M, S und er in einer Linie liegen. Dort ist QR = {{qr}} m. Wie breit ist der Fluss (SP)?"
         answer: { value: "qr * pm / mq", compare: { number: { format: decimal, decimals: 1, unit: m } } }
@@ -148,7 +161,8 @@ blocks:
           h: { int: [6, 30] }
           hs: { oneOf: [1, 1.5, 2] }
           ts: { int: [8, 40] }
-        where: ["decimals(hs * ts / h) <= 1", "ts * h / hs != hs * ts / h", "ts - (h - hs) != hs * ts / h"]
+        where:
+          ["ts <= 5 * h", "decimals(hs * ts / h) <= 1", "ts * h / hs != hs * ts / h", "ts - (h - hs) != hs * ts / h"]
         task:
           text: "Ein Turm ist {{h}} m hoch und wirft einen Schatten von {{ts}} m. Ein Stab von {{hs}} m Höhe soll so stehen, dass sein Schatten am selben Ende aufhört. Wie lang ist der Schatten des Stabs?"
         answer: { value: "hs * ts / h", compare: { number: { format: decimal, decimals: 1, unit: m } } }

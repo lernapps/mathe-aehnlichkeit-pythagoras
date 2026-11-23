@@ -2,8 +2,8 @@
 // learner changes alpha and the size c; the ratios of the sides depend on alpha only. Lengths in cm, y points up.
 export type Point = { x: number; y: number };
 
-export const alphaMin = 5;
-export const alphaMax = 85;
+export const alphaMin = 10;
+export const alphaMax = 80;
 export const sizeMin = 4;
 export const sizeMax = 10;
 

@@ -85,7 +85,7 @@ blocks:
     blocks:
       - type: text
         text: |
-          Der Satz lässt sich umkehren. Stimmt für drei Seitenlängen die Gleichung $a^2 + b^2 = c^2$, wobei *c* die längste Seite ist, dann ist das Dreieck rechtwinklig. Stimmt sie nicht, ist es nicht rechtwinklig. Damit prüfst du auch das Seil mit den Knoten vom Schulgarten.
+          Der Satz lässt sich umkehren. Stimmt für drei Seitenlängen die Gleichung $a^2 + b^2 = c^2$, wobei *c* die längste Seite ist, dann ist das Dreieck rechtwinklig. Stimmt sie nicht, ist es nicht rechtwinklig. Damit prüfst du auch das Seil mit den Knoten vom Schulgarten. Warum das stimmt: Zeichne ein rechtwinkliges Dreieck mit den Katheten *a* und *b*. Seine Hypotenuse *c*′ erfüllt $a^2 + b^2 = c'^2$. Gilt auch $a^2 + b^2 = c^2$, ist *c*′ = *c*. Beide Dreiecke haben dann drei gleiche Seiten, sie sind kongruent, und das gegebene Dreieck hat denselben rechten Winkel.
       - type: definition
         term: Umkehrung des Satzes des Pythagoras
         explanation: Gilt in einem Dreieck $a^2 + b^2 = c^2$ für die längste Seite $c$, dann liegt dem $c$ ein rechter Winkel gegenüber.
@@ -168,7 +168,7 @@ blocks:
       - type: generated
         id: leiter
         given:
-          l: { int: [3, 8] }
+          l: { int: [4, 8] }
           d: { oneOf: [1, 1.5, 2] }
         task:
           text: "Eine Leiter ist {{l}} m lang. Ihr Fuß steht {{d}} m von der senkrechten Wand entfernt. Wie hoch reicht sie an der Wand? Runde auf eine Stelle nach dem Komma."

@@ -164,6 +164,7 @@ blocks:
         given:
           d: { int: [20, 80], step: 5 }
           alpha: { oneOf: [20, 25, 30, 35, 40, 50, 55, 60] }
+        where: ["d * tan(alpha) <= 60"]
         task:
           text: "Du stehst {{d}} m von einem Turm entfernt auf ebenem Boden. Die Turmspitze siehst du unter dem Höhenwinkel α = {{alpha}}°. Wie hoch ist der Turm über deiner Augenhöhe? Runde auf eine Stelle nach dem Komma."
         answer:

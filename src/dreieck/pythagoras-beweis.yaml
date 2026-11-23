@@ -25,7 +25,7 @@ blocks:
             info: Diese beiden Seiten sind kürzer als die dritte. Probiere es an einem Dreieck mit 3 cm, 4 cm und 5 cm.
           - text: Alle drei Seiten sind gleich lang.
             correct: false
-            info: Gleich lange Seiten gibt es nur im gleichseitigen Dreieck, und das hat keinen rechten Winkel.
+            info: Drei gleich lange Seiten gibt es nur im gleichseitigen Dreieck, und das hat keinen rechten Winkel.
         explanation: Gegenüber dem größten Winkel liegt die längste Seite, im rechtwinkligen Dreieck also gegenüber dem rechten Winkel.
   - type: section
     id: idee
@@ -33,7 +33,7 @@ blocks:
     blocks:
       - type: text
         text: |
-          Die beiden Seiten am rechten Winkel heißen **Katheten**, die Seite gegenüber heißt **Hypotenuse**. Wir nennen die Katheten *a* und *b* und die Hypotenuse *c*.
+          Die beiden Seiten am rechten Winkel heißen **Katheten**, die Seite gegenüber heißt **Hypotenuse**. Nenne die Katheten *a* und *b* und die Hypotenuse *c*.
       - type: definition
         term: Hypotenuse
         explanation: Die längste Seite eines rechtwinkligen Dreiecks. Sie liegt dem rechten Winkel gegenüber.
@@ -57,7 +57,7 @@ blocks:
           Beide Male bleibt gleich viel übrig, also c² = a² + b², hier 25 cm² = 9 cm² + 16 cm².
       - type: text
         text: |
-          Das große Quadrat ist in beiden Fällen gleich groß, und die vier Dreiecke sind dieselben. Also müssen auch die Reste gleich groß sein.
+          Das große Quadrat ist in beiden Fällen gleich groß, und die vier Dreiecke sind dieselben. Also müssen auch die Reste gleich groß sein. Die Mitte in Schritt 1 ist wirklich ein Quadrat: Alle vier Seiten sind *c* lang, und an jeder Ecke ergänzen sich die Winkel *α*, *β* und der Winkel der Mitte zu 180°. Weil *α* + *β* = 90° ist, bleiben 90° für die Mitte.
       - type: definition
         term: Satz des Pythagoras
         explanation: In jedem rechtwinkligen Dreieck ist das Quadrat über der Hypotenuse so groß wie die beiden Quadrate über den Katheten zusammen, $a^2 + b^2 = c^2$.

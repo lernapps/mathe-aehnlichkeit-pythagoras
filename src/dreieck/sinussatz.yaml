@@ -50,6 +50,9 @@ blocks:
       - type: text
         text: |
           Teilst du beide Seiten durch $\sin \alpha \cdot \sin \beta$, steht jede Seite über dem Sinus ihres gegenüberliegenden Winkels. Dasselbe gilt für die dritte Seite.
+      - type: text
+        text: |
+          Das Bild zeigt ein spitzwinkliges Dreieck. Bei einem stumpfen Winkel gilt dieselbe Herleitung, denn der Sinus eines stumpfen Winkels ist gleich dem Sinus seines spitzen Nebenwinkels: $\sin(180^\circ - \alpha) = \sin \alpha$.
       - type: definition
         term: Sinussatz
         explanation: In jedem Dreieck ist das Verhältnis einer Seite zum Sinus des gegenüberliegenden Winkels für alle drei Seiten gleich.
@@ -60,7 +63,7 @@ blocks:
         blocks:
           - type: text
             text: |
-              Du brauchst ein Paar aus einer Seite und dem gegenüberliegenden Winkel, dazu einen weiteren Winkel oder eine weitere Seite. Gegenüber heißt: Die Seite *a* gehört zu *α*, nicht zu *β*. Sind zwei Seiten und der Winkel gegenüber der kürzeren gegeben, kann es zwei verschiedene Dreiecke geben. Diesen Fall lassen wir hier weg.
+              Du brauchst ein Paar aus einer Seite und dem gegenüberliegenden Winkel, dazu einen weiteren Winkel oder eine weitere Seite. Gegenüber heißt: Die Seite *a* gehört zu *α*, nicht zu *β*. Sind zwei Seiten und der Winkel gegenüber der kürzeren gegeben, kann es zwei verschiedene Dreiecke geben. Diesen Fall behandelt diese Seite nicht.
   - type: section
     id: beispiel
     title: Die Entfernung zum Baum

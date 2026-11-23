@@ -15,7 +15,7 @@ blocks:
           Mira hält ihr Pappschild vor eine Lampe Z. Der Schatten fällt auf eine Wand. Rückt die Wand weiter weg, wird der Schatten größer, aber die Form bleibt. Ein Punkt des Schilds und sein Schattenpunkt liegen mit Z auf einem Strahl.
       - type: single-choice
         id: faktor-ablesen
-        text: Eine Strecke liegt 4 cm von Z entfernt, ihr Bild liegt 10 cm von Z entfernt. Welcher Streckfaktor gehört dazu?
+        text: Ein Punkt liegt 4 cm von Z entfernt, sein Bildpunkt liegt 10 cm von Z entfernt. Welcher Streckfaktor gehört dazu?
         options:
           - text: "2,5"
             correct: true

@@ -47,7 +47,7 @@ blocks:
         formula: 'a^2 = c^2 \sin^2 \alpha + b^2 - 2 b c \cos \alpha + c^2 \cos^2 \alpha'
       - type: text
         text: |
-          Es gilt $\sin^2 \alpha + \cos^2 \alpha = 1$. Das folgt aus dem Satz des Pythagoras, geteilt durch *c*²: $\left(\frac{G}{c}\right)^2 + \left(\frac{A}{c}\right)^2 = 1$. Dann bleibt:
+          Es gilt $\sin^2 \alpha + \cos^2 \alpha = 1$. Das folgt aus dem Satz des Pythagoras im Dreieck ABD mit $h^2 + x^2 = c^2$, geteilt durch $c^2$: $\left(\frac{h}{c}\right)^2 + \left(\frac{x}{c}\right)^2 = 1$, und $\frac{h}{c} = \sin \alpha$, $\frac{x}{c} = \cos \alpha$. Dann bleibt:
       - type: definition
         term: Kosinussatz
         explanation: In jedem Dreieck ist das Quadrat einer Seite gleich der Summe der Quadrate der beiden anderen Seiten minus dem doppelten Produkt dieser Seiten und dem Kosinus des eingeschlossenen Winkels.
@@ -55,7 +55,7 @@ blocks:
         formula: 'a^2 = b^2 + c^2 - 2bc \cdot \cos \alpha'
       - type: text
         text: |
-          Der Winkel *α* liegt zwischen den Seiten *b* und *c*. Bei *α* = 90° ist der Kosinus 0, und der Kosinussatz wird zum Satz des Pythagoras. Bei stumpfem Winkel ist der Kosinus negativ, dann wird die Seite *a* größer.
+          Der Winkel *α* liegt zwischen den Seiten *b* und *c*. Bei *α* = 90° ist der Kosinus 0, und der Kosinussatz wird zum Satz des Pythagoras. Bei stumpfem Winkel ist der Kosinus negativ, dann wird die Seite *a* größer. Das Bild zeigt ein spitzwinkliges Dreieck. Ist ein Winkel stumpf, liegt der Fußpunkt D außerhalb der Seite. Die Rechnung bleibt dieselbe, nur ist dann der Kosinus negativ.
       - type: note
         title: Merke
         blocks:

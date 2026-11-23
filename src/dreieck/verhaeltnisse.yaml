@@ -92,7 +92,7 @@ blocks:
     title: Übung
     blocks:
       - type: single-choice
-        id: ankathete-von-alpha
+        id: gegenkathete-von-alpha
         text: Das Dreieck ABC hat bei C den rechten Winkel. Welche Seite ist die Gegenkathete von α?
         material:
           - type: figure

@@ -51,7 +51,7 @@ Eigene Zeichnungen (Quelle `eigene Zeichnung`, Lizenz `CC0-1.0`), jede mit `alt`
 Komponenten in `src/components/` (je `.vue`, `.ts` Logik, `.test.ts`; Zugmodus mit Tastatur, `nojs`-Text im Block, Textalternative live):
 - `Streckung`: Regler k von 0,5 bis 2,5 in Schritten von 0,1, Dreieck 3-4-5 mit Abstand ZA = 5 cm, Tabelle vorher/nachher (Seite `streckung`).
 - `QuadrateUmlegen`: Regler a und b (1 bis 6 cm), drei Schritte mit „Zurück“, „Nächster Schritt“, „Von vorn“; vier Dreiecke nummeriert, Quadrate c² oder a² und b² (Seite `pythagoras-beweis`).
-- `WinkelRegler`: Regler α (5° bis 85°) und Hypotenuse (4 bis 10 cm), Tabelle mit Gegenkathete, Ankathete und den drei Verhältnissen (Seite `verhaeltnisse`).
+- `WinkelRegler`: Regler α (10° bis 80°) und Hypotenuse (4 bis 10 cm), Tabelle mit Gegenkathete, Ankathete und den drei Verhältnissen (Seite `verhaeltnisse`).
 - `Kurztest`: eine Frage mit Auswahl und sofortiger Rückmeldung, nur in den Recap-Seiten (Kopie der Vorlage des Epics, mit Korrektur für 360 px).
 
 Formeln: einzeilige `formula`-Blöcke dürfen bei 360 px nicht überlaufen; lange Rechnungen auf mehrere Blöcke verteilen.

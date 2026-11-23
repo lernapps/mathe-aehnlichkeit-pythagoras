@@ -42,7 +42,7 @@ blocks:
         explanation: Die Zahl $k$, mit der alle Abstände zum Streckzentrum multipliziert werden. Bei $k > 1$ wird die Figur größer, bei $k < 1$ kleiner. Bei $k = 1$ liegt das Bild genau auf dem Original.
       - type: text
         text: |
-          Das Bild unten zeigt ein Dreieck ABC mit dem rechten Winkel bei A (durchgezogen) und sein Bild A′B′C′ (gestrichelt). Die grauen Strahlen gehen von Z durch die Ecken. Mit dem Regler stellst du den Streckfaktor *k* ein (0,5 bis 2,5). Die Tabelle zeigt den Abstand von Z zu A, drei Seitenlängen und den Winkel bei A, jeweils vorher und nachher. Beobachte, was sich ändert und was nicht.
+          Das Bild unten zeigt ein Dreieck ABC mit dem rechten Winkel bei A (durchgezogen) und sein Bild A′B′C′ (gestrichelt). Die grauen Linien verbinden Z mit den Ecken des Bildes. Mit dem Regler stellst du den Streckfaktor *k* ein (0,5 bis 2,5). Die Tabelle zeigt den Abstand von Z zu A, drei Seitenlängen und den Winkel bei A, jeweils vorher und nachher. Beobachte, was sich ändert und was nicht.
       - type: vue-component
         id: streckung-bild
         component: Streckung
