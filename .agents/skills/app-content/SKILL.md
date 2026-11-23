@@ -41,7 +41,20 @@ Wörter der Karte. Dezimalkomma, `−` (U+2212), `·` und `:`, Einheit mit gesch
 
 ## Figures
 
-Eigene SVG-Zeichnungen und Vue-Komponenten (Zugmodus: `Streckung`, `QuadrateUmlegen`, `WinkelRegler`), je mit `alt`, Beschriftung, Tastaturbedienung, `nojs`-Text und statischer Form. Farben nur über Variablen der Laufzeit, nie Farbe allein als Information. Quelle: eigene Zeichnung, CC0-1.0.
+Eigene Zeichnungen (Quelle `eigene Zeichnung`, Lizenz `CC0-1.0`), jede mit `alt` und Beschriftung, auf weißem Grund mit dunkler Schrift (gleiche Lesbarkeit im Dunkelmodus), Zusatzmarke zur Farbe (gestrichelt, Beschriftung):
+- `src/images/flaeche-faktor.svg`: Quadrat k = 2, Fläche ×4 (Seite `aehnliche-figuren`).
+- `src/images/strahlensatz-v.svg`: V-Figur mit AB durchgezogen, A′B′ gestrichelt (Seite `strahlensaetze`).
+- `src/images/turm-schatten.svg` und `src/images/fluss-x.svg`: Turm/Stab und Flussbreite (Seite `turmhoehe`).
+- `src/images/dreieck-seiten.svg`: Dreieck ABC mit a, b, c, α, β (Seite `verhaeltnisse`).
+- `src/images/dreieck-hoehe-c.svg` und `dreieck-hoehe-b.svg`: Höhe zur Herleitung von Sinus- und Kosinussatz.
+
+Komponenten in `src/components/` (je `.vue`, `.ts` Logik, `.test.ts`; Zugmodus mit Tastatur, `nojs`-Text im Block, Textalternative live):
+- `Streckung`: Regler k von 0,5 bis 2,5 in Schritten von 0,1, Dreieck 3-4-5 mit Abstand ZA = 5 cm, Tabelle vorher/nachher (Seite `streckung`).
+- `QuadrateUmlegen`: Regler a und b (1 bis 6 cm), drei Schritte mit „Zurück“, „Nächster Schritt“, „Von vorn“; vier Dreiecke nummeriert, Quadrate c² oder a² und b² (Seite `pythagoras-beweis`).
+- `WinkelRegler`: Regler α (5° bis 85°) und Hypotenuse (4 bis 10 cm), Tabelle mit Gegenkathete, Ankathete und den drei Verhältnissen (Seite `verhaeltnisse`).
+- `Kurztest`: eine Frage mit Auswahl und sofortiger Rückmeldung, nur in den Recap-Seiten (Kopie der Vorlage des Epics, mit Korrektur für 360 px).
+
+Formeln: einzeilige `formula`-Blöcke dürfen bei 360 px nicht überlaufen; lange Rechnungen auf mehrere Blöcke verteilen.
 
 ## Sources
 

@@ -255,13 +255,13 @@ page, which a link. -->
 - [x] Kapitel 1: Seite aehnliche-figuren (ähnlich erkennen, Faktor k, Maßstab, Flächen mal k²) mit Aufgaben
 - [x] Kapitel 1: Seite strahlensaetze (V- und X-Figur, erster und zweiter Strahlensatz) mit Aufgaben
 - [x] Kapitel 1: Seite turmhoehe (Turm und Schatten, Flussbreite) mit Aufgaben; Push von Kapitel 1
-- [ ] Kapitel 2 Recap: Seite recap mit Quadratwurzeln und Fläche und Umfang: Rechteck, Quadrat, je mit Kurztest
-- [ ] Kapitel 2: Seite pythagoras-beweis mit Komponente QuadrateUmlegen und Aufgaben
-- [ ] Kapitel 2: Seite pythagoras-rechnen (Hypotenuse, Kathete, Umkehrung, Anwendungen) mit Aufgaben
-- [ ] Kapitel 2: Seite verhaeltnisse mit Komponente WinkelRegler (sin, cos, tan) und Aufgaben
-- [ ] Kapitel 2: Seiten seiten-berechnen und winkel-berechnen (Trigonometrie) mit Aufgaben
-- [ ] Kapitel 2: Seiten sinussatz und kosinussatz mit Aufgaben; Push von Kapitel 2
-- [ ] Prüfer: Lernenden-Prüfer und fachlicher Prüfer (Unteragenten) über alle Seiten; Befunde unter Review; Änderungen danach festhalten
+- [x] Kapitel 2 Recap: Seite recap mit Quadratwurzeln und Fläche und Umfang: Rechteck, Quadrat, je mit Kurztest
+- [x] Kapitel 2: Seite pythagoras-beweis mit Komponente QuadrateUmlegen und Aufgaben
+- [x] Kapitel 2: Seite pythagoras-rechnen (Hypotenuse, Kathete, Umkehrung, Anwendungen) mit Aufgaben
+- [x] Kapitel 2: Seite verhaeltnisse mit Komponente WinkelRegler (sin, cos, tan) und Aufgaben
+- [x] Kapitel 2: Seiten seiten-berechnen und winkel-berechnen (Trigonometrie) mit Aufgaben
+- [x] Kapitel 2: Seiten sinussatz und kosinussatz mit Aufgaben; Push von Kapitel 2
+- [x] Prüfer: Lernenden-Prüfer und fachlicher Prüfer (Unteragenten) über alle Seiten; Befunde unter Review; Änderungen danach festhalten
 <!-- tasks: pages (11 added): the other pages or screens, after the pattern -->
 - [ ] Update the content guide so that it describes the app as built (`app-content-matches`).
 - [ ] Run `npx --no -- lernapps check` until it passes.
