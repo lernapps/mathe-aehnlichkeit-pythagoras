@@ -1,4 +1,4 @@
 # yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
 title: Das rechtwinklige Dreieck
 summary: Quadrate an den Seiten führen zum Satz des Pythagoras. Gleiche Winkel bedeuten gleiche Verhältnisse, daraus entstehen Sinus, Kosinus und Tangens. Sinus- und Kosinussatz erweitern das auf jedes Dreieck.
-pages: [recap]
+pages: [recap, pythagoras-beweis]

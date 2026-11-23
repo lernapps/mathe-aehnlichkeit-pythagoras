@@ -1,0 +1,156 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Der Satz des Pythagoras
+description: Quadrate an den Seiten eines rechtwinkligen Dreiecks umlegen und daraus den Satz des Pythagoras ablesen.
+competencies: [satz-des-pythagoras]
+blocks:
+  - type: section
+    id: einstieg
+    title: Was du hier lernst
+    blocks:
+      - type: text
+        text: |
+          Du lernst die Seiten eines rechtwinkligen Dreiecks zu benennen und siehst durch Umlegen von Flächen, wie ihre Längen zusammenhängen: der Satz des Pythagoras.
+      - type: text
+        text: |
+          Jonas und Mira stecken im Schulgarten ein Beet ab. Eine Ecke soll genau rechtwinklig sein. Sie haben ein Seil mit zwölf gleich weit entfernten Knoten und legen es zu einem Dreieck mit den Seiten 3, 4 und 5 Abschnitten. Ob das wirklich einen rechten Winkel gibt, klärst du auf der nächsten Seite.
+      - type: single-choice
+        id: laengste-seite
+        text: Welche Seite eines rechtwinkligen Dreiecks ist die längste?
+        options:
+          - text: die Seite gegenüber dem rechten Winkel
+            correct: true
+            info: Der rechte Winkel ist der größte Winkel im Dreieck, denn die anderen beiden sind zusammen 90°. Gegenüber dem größten Winkel liegt die längste Seite.
+          - text: eine der beiden Seiten am rechten Winkel
+            correct: false
+            info: Diese beiden Seiten sind kürzer als die dritte. Probiere es an einem Dreieck mit 3 cm, 4 cm und 5 cm.
+          - text: Alle drei Seiten sind gleich lang.
+            correct: false
+            info: Gleich lange Seiten gibt es nur im gleichseitigen Dreieck, und das hat keinen rechten Winkel.
+        explanation: Gegenüber dem größten Winkel liegt die längste Seite, im rechtwinkligen Dreieck also gegenüber dem rechten Winkel.
+  - type: section
+    id: idee
+    title: Quadrate an den Seiten
+    blocks:
+      - type: text
+        text: |
+          Die beiden Seiten am rechten Winkel heißen **Katheten**, die Seite gegenüber heißt **Hypotenuse**. Wir nennen die Katheten *a* und *b* und die Hypotenuse *c*.
+      - type: definition
+        term: Hypotenuse
+        explanation: Die längste Seite eines rechtwinkligen Dreiecks. Sie liegt dem rechten Winkel gegenüber.
+      - type: definition
+        term: Katheten
+        explanation: Die beiden Seiten eines rechtwinkligen Dreiecks, die den rechten Winkel einschließen.
+      - type: text
+        text: |
+          Über jeder Seite kannst du ein Quadrat zeichnen. Die Fläche des Quadrats über *a* ist *a* · *a*, über *b* ist es *b* · *b*, über *c* ist es *c* · *c*. Die Frage ist: Wie hängen diese drei Flächen zusammen?
+      - type: text
+        text: |
+          Das Bild unten beantwortet sie in drei Schritten. Mit den Reglern stellst du die Katheten *a* und *b* ein. Ein großes Quadrat mit der Seite *a* + *b* enthält vier gleiche Dreiecke mit den Katheten *a* und *b*, grau gestrichelt und von 1 bis 4 nummeriert. In Schritt 1 bleibt in der Mitte ein schiefes Quadrat über *c* übrig. In Schritt 2 liegen dieselben vier Dreiecke anders, und es bleiben zwei Quadrate über *a* und *b* übrig. Mit „Nächster Schritt“ gehst du weiter, mit „Zurück“ und „Von vorn“ wieder zurück.
+      - type: vue-component
+        id: quadrate-bild
+        component: QuadrateUmlegen
+        props: {}
+        nojs: |
+          Ein großes Quadrat mit der Seite a + b = 3 cm + 4 cm = 7 cm hat die Fläche 49 cm². In ihm liegen vier rechtwinklige Dreiecke mit den Katheten 3 cm und 4 cm, je 6 cm², zusammen 24 cm².
+          Erste Anordnung: In der Mitte bleibt ein schiefes Quadrat über der Hypotenuse c mit 25 cm² übrig.
+          Zweite Anordnung: Dieselben vier Dreiecke liegen in zwei Rechtecken, übrig bleiben das Quadrat über b mit 16 cm² und das Quadrat über a mit 9 cm².
+          Beide Male bleibt gleich viel übrig, also c² = a² + b², hier 25 cm² = 9 cm² + 16 cm².
+      - type: text
+        text: |
+          Das große Quadrat ist in beiden Fällen gleich groß, und die vier Dreiecke sind dieselben. Also müssen auch die Reste gleich groß sein.
+      - type: definition
+        term: Satz des Pythagoras
+        explanation: In jedem rechtwinkligen Dreieck ist das Quadrat über der Hypotenuse so groß wie die beiden Quadrate über den Katheten zusammen, $a^2 + b^2 = c^2$.
+      - type: formula
+        formula: "a^2 + b^2 = c^2"
+      - type: note
+        title: Merke
+        blocks:
+          - type: text
+            text: |
+              Der Satz gilt nur im rechtwinkligen Dreieck. *c* ist immer die Hypotenuse, also die Seite gegenüber dem rechten Winkel. Du addierst die Flächen der Quadrate, nicht die Seitenlängen.
+  - type: section
+    id: beispiel
+    title: Das Seil mit den Knoten
+    blocks:
+      - type: example
+        title: Die Seiten 3, 4 und 5 prüfen
+        blocks:
+          - type: text
+            text: |
+              Das Dreieck mit den Seiten 3, 4 und 5 hat $3^2 + 4^2 = 9 + 16 = 25$ und $5^2 = 25$. Die Gleichung stimmt. Das spricht dafür, dass das Seildreieck einen rechten Winkel hat. Warum daraus wirklich ein rechter Winkel folgt (die Umkehrung des Satzes), zeigt die nächste Seite.
+          - type: formula
+            formula: "3^2 + 4^2 = 9 + 16 = 25 = 5^2"
+  - type: section
+    id: uebung
+    title: Übung
+    blocks:
+      - type: matching
+        id: begriffe
+        text: Ordne die Begriffe ihrer Bedeutung zu.
+        pairs:
+          - { left: Hypotenuse, right: die Seite gegenüber dem rechten Winkel }
+          - { left: Kathete, right: eine Seite am rechten Winkel }
+          - { left: Quadrat über der Hypotenuse, right: hat so viel Fläche wie beide Kathetenquadrate zusammen }
+        explanation: Die Hypotenuse liegt dem rechten Winkel gegenüber, die Katheten bilden ihn. Der Satz des Pythagoras vergleicht die Quadrate über diesen Seiten.
+      - type: single-choice
+        id: welche-gleichung
+        text: Ein rechtwinkliges Dreieck hat die Katheten p und q und die Hypotenuse r. Welche Gleichung gilt?
+        options:
+          - text: "p² + q² = r²"
+            correct: true
+            info: Die Quadrate über den Katheten zusammen sind so groß wie das Quadrat über der Hypotenuse.
+          - text: "p + q = r"
+            correct: false
+            info: Das addiert die Seitenlängen. Der Satz addiert die Flächen der Quadrate. Außerdem ist r immer kürzer als p + q.
+          - text: "p² + r² = q²"
+            correct: false
+            info: Hier steht die Hypotenuse bei den Summanden. Allein auf der anderen Seite steht aber immer die Hypotenuse, hier also r.
+        explanation: Die Hypotenuse steht allein auf einer Seite der Gleichung, und es wird quadriert.
+      - type: generated
+        id: flaeche-c
+        given:
+          A: { oneOf: [4, 9, 16, 25, 36, 49, 64, 81] }
+          B: { oneOf: [4, 9, 16, 25, 36, 49, 64, 81] }
+        task:
+          text: "In einem rechtwinkligen Dreieck hat das Quadrat über der einen Kathete die Fläche {{A}} cm², das Quadrat über der anderen die Fläche {{B}} cm². Wie groß ist die Fläche des Quadrats über der Hypotenuse in cm²?"
+        answer: { value: "A + B", compare: { number: { format: integer, unit: "cm²" } } }
+        mistakes:
+          - {
+              value: "A * B",
+              message: "Du hast die Flächen multipliziert. Der Satz sagt: Die Flächen der Kathetenquadrate werden addiert.",
+            }
+          - {
+              value: "round(sqrt(A + B), 1)",
+              message: "Das ist die Länge der Hypotenuse. Gefragt ist die Fläche des Quadrats über ihr, also noch nicht die Wurzel.",
+            }
+        hint: "Das Quadrat über der Hypotenuse ist so groß wie die beiden anderen Quadrate zusammen."
+        steps:
+          - "$c^2 = a^2 + b^2 = {{A}} + {{B}} = {{answer}}$, also {{answer}} cm²."
+      - type: generated
+        id: quadrate-summe
+        given:
+          a: { int: [2, 9] }
+          b: { int: [2, 9] }
+        task:
+          text: "Die Katheten eines rechtwinkligen Dreiecks sind {{a}} cm und {{b}} cm lang. Wie groß ist die Fläche des Quadrats über der Hypotenuse in cm²?"
+        answer: { value: "a * a + b * b", compare: { number: { format: integer, unit: "cm²" } } }
+        mistakes:
+          - {
+              value: "a + b",
+              message: "Du hast die Seitenlängen addiert. Erst quadrieren, dann addieren: a mal a plus b mal b.",
+            }
+          - {
+              value: "(a + b) * (a + b)",
+              message: "Du hast erst addiert und dann quadriert. Das Quadrat über a und das über b werden einzeln berechnet und dann addiert.",
+            }
+        hint: "Rechne die Fläche des Quadrats über a und über b aus und addiere sie."
+        steps:
+          - "$c^2 = {{a}}^2 + {{b}}^2 = {{answer}}$, also {{answer}} cm²."
+  - type: section
+    id: weiter
+    title: Wie es weitergeht
+    blocks:
+      - type: text
+        text: |
+          Das kannst du jetzt: Katheten und Hypotenuse benennen und erklären, warum $a^2 + b^2 = c^2$ gilt. Auf der nächsten Seite berechnest du damit Längen und prüfst, ob ein Dreieck rechtwinklig ist.
