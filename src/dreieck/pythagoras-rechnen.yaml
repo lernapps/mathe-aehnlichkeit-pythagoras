@@ -1,0 +1,194 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Mit Pythagoras rechnen
+description: Hypotenuse und Katheten berechnen, mit der Umkehrung rechte Winkel prüfen und den Satz in Sachaufgaben nutzen.
+competencies: [satz-des-pythagoras]
+blocks:
+  - type: section
+    id: einstieg
+    title: Was du hier lernst
+    blocks:
+      - type: text
+        text: |
+          Du berechnest mit dem Satz des Pythagoras die Hypotenuse und eine Kathete, prüfst mit der Umkehrung, ob ein Dreieck rechtwinklig ist, und löst damit Sachaufgaben.
+      - type: text
+        text: |
+          Mira zeichnet den Plan für das Beet im Schulgarten: ein rechtwinkliges Dreieck mit den Katheten 6 cm und 8 cm. Wie lang wird die dritte Seite? Sie rechnet erst und misst dann nach.
+      - type: single-choice
+        id: hypotenuse-start
+        text: Die Katheten eines rechtwinkligen Dreiecks sind 6 cm und 8 cm lang. Wie lang ist die Hypotenuse?
+        options:
+          - text: 10 cm
+            correct: true
+            info: 6² + 8² = 36 + 64 = 100. Die Wurzel aus 100 ist 10.
+          - text: 14 cm
+            correct: false
+            info: Du hast die Längen addiert. Der Satz addiert die Quadrate, danach musst du die Wurzel ziehen.
+          - text: 100 cm
+            correct: false
+            info: Das ist c², die Fläche des Quadrats über der Hypotenuse in cm². Die Länge ist die Wurzel daraus.
+        explanation: Zuerst die Quadrate addieren, dann die Wurzel ziehen.
+  - type: section
+    id: idee
+    title: Eine Seite ausrechnen
+    blocks:
+      - type: text
+        text: |
+          Aus $a^2 + b^2 = c^2$ folgt durch Wurzelziehen die Hypotenuse. Ist die Hypotenuse bekannt und eine Kathete, stellst du um: Du subtrahierst das Quadrat der bekannten Kathete.
+      - type: formula
+        formula: 'c = \sqrt{a^2 + b^2}'
+      - type: formula
+        formula: 'a = \sqrt{c^2 - b^2}'
+      - type: note
+        title: Merke
+        blocks:
+          - type: text
+            text: |
+              Suchst du die Hypotenuse, wird addiert. Suchst du eine Kathete, wird subtrahiert, denn *c*² ist das größte Quadrat. Am Ende steht immer die Wurzel.
+  - type: section
+    id: beispiel
+    title: Drei Beispiele
+    blocks:
+      - type: example
+        title: Hypotenuse gesucht
+        blocks:
+          - type: text
+            text: |
+              Katheten 5 cm und 12 cm.
+          - type: formula
+            formula: 'c = \sqrt{5^2 + 12^2} = \sqrt{25 + 144} = \sqrt{169} = 13'
+      - type: example
+        title: Kathete gesucht
+        blocks:
+          - type: text
+            text: |
+              Hypotenuse 17 cm, eine Kathete 8 cm.
+          - type: formula
+            formula: 'a = \sqrt{17^2 - 8^2} = \sqrt{289 - 64} = \sqrt{225} = 15'
+      - type: example
+        title: Mit Rundung
+        blocks:
+          - type: text
+            text: |
+              Eine Rampe überwindet 0,6 m Höhe auf einer waagerechten Strecke von 3,2 m. Wie lang ist die Rampe?
+          - type: formula
+            formula: 'c = \sqrt{0{,}6^2 + 3{,}2^2} = \sqrt{10{,}6} \approx 3{,}26'
+          - type: text
+            text: |
+              Die Rampe ist etwa 3,26 m lang.
+  - type: section
+    id: umkehrung
+    title: Ist das Dreieck rechtwinklig?
+    blocks:
+      - type: text
+        text: |
+          Der Satz lässt sich umkehren. Stimmt für drei Seitenlängen die Gleichung $a^2 + b^2 = c^2$, wobei *c* die längste Seite ist, dann ist das Dreieck rechtwinklig. Stimmt sie nicht, ist es nicht rechtwinklig. Damit prüfst du auch das Seil mit den Knoten vom Schulgarten.
+      - type: definition
+        term: Umkehrung des Satzes des Pythagoras
+        explanation: Gilt in einem Dreieck $a^2 + b^2 = c^2$ für die längste Seite $c$, dann liegt dem $c$ ein rechter Winkel gegenüber.
+      - type: example
+        title: Zwei Dreiecke prüfen
+        blocks:
+          - type: text
+            text: |
+              Seiten 3, 4, 5: $3^2 + 4^2 = 25 = 5^2$, also rechtwinklig. Das Seil im Garten gibt einen rechten Winkel. Seiten 5, 6, 8: $5^2 + 6^2 = 61$, aber $8^2 = 64$. Das Dreieck ist nicht rechtwinklig.
+  - type: section
+    id: uebung
+    title: Übung
+    blocks:
+      - type: generated
+        id: hypotenuse
+        given:
+          a: { int: [2, 12] }
+          b: { int: [2, 12] }
+        where: ["a > b"]
+        task:
+          text: "Die Katheten eines rechtwinkligen Dreiecks sind {{a}} cm und {{b}} cm lang. Wie lang ist die Hypotenuse? Runde auf eine Stelle nach dem Komma."
+        answer:
+          {
+            value: "round(sqrt(a * a + b * b), 1)",
+            compare: { number: { format: decimal, decimals: 1, tolerance: 0.1, unit: cm } },
+          }
+        mistakes:
+          - {
+              value: "a + b",
+              message: "Du hast die Katheten addiert. Du musst erst quadrieren, addieren und dann die Wurzel ziehen.",
+            }
+          - { value: "a * a + b * b", message: "Das ist c², noch nicht c. Zieh aus der Summe die Wurzel." }
+          - {
+              value: "round(sqrt(a * a - b * b), 1)",
+              message: "Du hast subtrahiert. Die Hypotenuse suchst du mit der Summe der Quadrate.",
+            }
+        hint: "Rechne a mal a plus b mal b, dann ziehe die Wurzel."
+        steps:
+          - '$c = \sqrt{a^2 + b^2} = \sqrt{{{a}}^2 + {{b}}^2} \approx {{answer}}$, also {{answer}} cm.'
+      - type: generated
+        id: kathete
+        given:
+          c: { int: [8, 20] }
+          b: { int: [2, 12] }
+        where: ["b < c"]
+        task:
+          text: "Die Hypotenuse eines rechtwinkligen Dreiecks ist {{c}} cm lang, eine Kathete {{b}} cm. Wie lang ist die andere Kathete? Runde auf eine Stelle nach dem Komma."
+        answer:
+          {
+            value: "round(sqrt(c * c - b * b), 1)",
+            compare: { number: { format: decimal, decimals: 1, tolerance: 0.1, unit: cm } },
+          }
+        mistakes:
+          - {
+              value: "round(sqrt(c * c + b * b), 1)",
+              message: "Du hast addiert. Ist die Hypotenuse bekannt, wird das Quadrat der Kathete subtrahiert.",
+            }
+          - {
+              value: "c - b",
+              message: "Du hast die Längen subtrahiert. Erst quadrieren, dann subtrahieren, dann die Wurzel.",
+            }
+          - { value: "c * c - b * b", message: "Das ist das Quadrat der gesuchten Kathete. Zieh noch die Wurzel." }
+        hint: "Rechne c mal c minus b mal b, dann ziehe die Wurzel."
+        steps:
+          - '$a = \sqrt{c^2 - b^2} = \sqrt{{{c}}^2 - {{b}}^2} \approx {{answer}}$, also {{answer}} cm.'
+      - type: single-choice
+        id: rechter-winkel
+        text: Welche drei Seitenlängen gehören zu einem rechtwinkligen Dreieck?
+        options:
+          - text: 7 cm, 24 cm, 25 cm
+            correct: true
+            info: 7² + 24² = 49 + 576 = 625, und 25² = 625. Die Umkehrung des Satzes sagt, dass das Dreieck rechtwinklig ist.
+          - text: 6 cm, 7 cm, 10 cm
+            correct: false
+            info: 6² + 7² = 85, aber 10² = 100. Die Gleichung stimmt nicht.
+          - text: 8 cm, 9 cm, 12 cm
+            correct: false
+            info: 8² + 9² = 145, aber 12² = 144. Das ist knapp daneben, aber nicht gleich.
+        explanation: Quadriere die zwei kürzeren Seiten und addiere sie. Ist die Summe das Quadrat der längsten Seite, ist das Dreieck rechtwinklig.
+      - type: generated
+        id: leiter
+        given:
+          l: { int: [3, 8] }
+          d: { oneOf: [1, 1.5, 2] }
+        task:
+          text: "Eine Leiter ist {{l}} m lang. Ihr Fuß steht {{d}} m von der senkrechten Wand entfernt. Wie hoch reicht sie an der Wand? Runde auf eine Stelle nach dem Komma."
+        answer:
+          {
+            value: "round(sqrt(l * l - d * d), 1)",
+            compare: { number: { format: decimal, decimals: 1, tolerance: 0.1, unit: m } },
+          }
+        mistakes:
+          - {
+              value: "round(sqrt(l * l + d * d), 1)",
+              message: "Du hast addiert. Die Leiter ist die Hypotenuse, die Wandhöhe eine Kathete, also wird subtrahiert.",
+            }
+          - {
+              value: "l - d",
+              message: "Du hast die Längen subtrahiert. Erst quadrieren, dann subtrahieren, dann die Wurzel.",
+            }
+        hint: "Die Leiter ist die Hypotenuse. Zeichne das Dreieck und rechne c mal c minus d mal d."
+        steps:
+          - '$h = \sqrt{l^2 - d^2} = \sqrt{{{l}}^2 - {{d}}^2} \approx {{answer}}$, also {{answer}} m.'
+  - type: section
+    id: weiter
+    title: Wie es weitergeht
+    blocks:
+      - type: text
+        text: |
+          Das kannst du jetzt: Mit Pythagoras Hypotenuse und Katheten berechnen und prüfen, ob ein Dreieck rechtwinklig ist. Auf der nächsten Seite fragst du, was gleiche Winkel in rechtwinkligen Dreiecken über ihre Seitenverhältnisse verraten.
