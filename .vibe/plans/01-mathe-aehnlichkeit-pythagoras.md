@@ -40,6 +40,7 @@ Sinus- und Kosinussatz). Auftrag: lernapps/apps#399, Schicht 3 des Mathe-Epics #
 - Winkel mit Unicode ∠ (kein `\angle`), griechische Buchstaben als `\alpha` usw. (Fund W14).
 - Keine `links:` an Aufgaben, keine Dritt-Inhalte, keine Videos (Regeln 4 und 9.6).
 - Kein `scope` in `src/app.yaml`: keine `open-task`, kein eigenes Material des Auftraggebers.
+- Keine Selbsteinschätzung (`selfAssessment`) in dieser Version (guess): sie ist laut README der Vorlage optional, der Auftrag nennt sie nicht, die Recaps haben Kurztests. Kann als Inkrement folgen. (Die Plan-Aufgabe dazu habe ich abgehakt, bevor ich diese Entscheidung aufgeschrieben habe.)
 - `links:` an Aufgaben weggelassen: `lernapps check` besteht ohne (Fund: Skill verlangt sie, Schema nicht; W4/W45).
 
 ## Notes
@@ -290,11 +291,11 @@ page, which a link. -->
 
 ### Tasks
 
-- [ ] Load skill `lernapps-explainer-self-assessment`. Add the self-assessment as it says, or write under "Key
+- [x] Load skill `lernapps-explainer-self-assessment`. Add the self-assessment as it says, or write under "Key
       decisions" why the app has none. Commit.
-- [ ] Load skill `lernapps-github`. Set up the repository and Pages as it says. Ask for the repository's name and
+- [x] Load skill `lernapps-github`. Set up the repository and Pages as it says. Ask for the repository's name and
       every click only the creator can make, in one message.
-- [ ] Push `work`, open the preview pull request and see its checks to green, as skill `lernapps-github` says.
+- [x] Push `work`, open the preview pull request and see its checks to green, as skill `lernapps-github` says.
 - [ ] **Checkpoint:** publish. Show what the app does and the preview link from the comment "Vorschau der App". Ask
       whether it may go online. Stop and wait for the yes.
 - [ ] Load skill `lernapps-commit`. Publish as skill `lernapps-github` says: `work` into `main` as one squash commit,
@@ -321,12 +322,18 @@ page, which a link. -->
 
 ### Phases reached
 
-<!-- Last phase completed, checkpoints passed. E.g. "commit; confirmed, published". -->
+Commit, bis zum Vorschau-PR (#1, grün). Checkpoints bestanden: Recherche, Plan, Musterseite (jeweils Antwort des Orchestrators in Vertretung des Menschen). Veröffentlichen steht aus, nicht gemergt.
 
 ### Creator turns after the plan
 
-<!-- Number of creator messages after the confirmation, topic of each. Target: at most 3. -->
+Keine Nachricht des Menschen nach dem Plan. Nachrichten des Orchestrators nach der Plan-Bestätigung: 1 (Antwort zur Musterseite, Freigabe der übrigen Seiten und Hinweis auf den fachlichen Prüfer). Vorher: Freigabe von `init` durch den Menschen (eine Nachricht).
 
 ### Where I had to guess
 
-<!-- Each gap in plan, skills, messages or answers, and your choice. "None" if none. -->
+- Nur Deutsch (nicht im Issue genannt).
+- Keine Selbsteinschätzung (siehe Key decisions).
+- Keine `links:` an Aufgaben; Skill verlangt sie, Schema und Build nicht.
+- Format der Kurztests: Antwortreihenfolge von Hand gemischt, weil die Laufzeit nicht mischt.
+- Toleranz der Zahlenaufgaben 0,05 (eigene Wahl, damit falsche Funktionen nicht durchgehen).
+- Breite Formeln: In der CI-Schrift lief eine Formel über, obwohl lokal alles passte; ich habe danach mit vergrößerter Schrift geprüft und mehrere Formeln geteilt.
+- Plan-Aufgaben „Prüfer“ und „Selbsteinschätzung“ habe ich zu früh abgehakt (Fehler beim Weiterschalten), die Arbeit steht im Plan.
