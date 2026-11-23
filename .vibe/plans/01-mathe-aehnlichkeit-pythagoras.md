@@ -251,10 +251,10 @@ page, which a link. -->
       what it finds. Then show the creator the page and ask whether the others may follow it. Stop and wait. A
       change: change the pattern first.
       Creator: Musterseite angenommen, übrige Seiten dürfen dem Muster folgen (Orchestrator).
-- [ ] Kapitel 1 Recap: Seite recap mit Kurztest-Komponente (Kopie der Vorlage), Abschnitte Kongruenz, Proportionale Zuordnungen, Maßstab, Lineare Gleichungen, Winkelmessen und Winkelsumme; Glossar; Push
-- [ ] Kapitel 1: Seite aehnliche-figuren (ähnlich erkennen, Faktor k, Maßstab, Flächen mal k²) mit Aufgaben
-- [ ] Kapitel 1: Seite strahlensaetze (V- und X-Figur, erster und zweiter Strahlensatz) mit Aufgaben
-- [ ] Kapitel 1: Seite turmhoehe (Turm und Schatten, Flussbreite) mit Aufgaben; Push von Kapitel 1
+- [x] Kapitel 1 Recap: Seite recap mit Kurztest-Komponente (Kopie der Vorlage), Abschnitte Kongruenz, Proportionale Zuordnungen, Maßstab, Lineare Gleichungen, Winkelmessen und Winkelsumme; Glossar; Push
+- [x] Kapitel 1: Seite aehnliche-figuren (ähnlich erkennen, Faktor k, Maßstab, Flächen mal k²) mit Aufgaben
+- [x] Kapitel 1: Seite strahlensaetze (V- und X-Figur, erster und zweiter Strahlensatz) mit Aufgaben
+- [x] Kapitel 1: Seite turmhoehe (Turm und Schatten, Flussbreite) mit Aufgaben; Push von Kapitel 1
 - [ ] Kapitel 2 Recap: Seite recap mit Quadratwurzeln und Fläche und Umfang: Rechteck, Quadrat, je mit Kurztest
 - [ ] Kapitel 2: Seite pythagoras-beweis mit Komponente QuadrateUmlegen und Aufgaben
 - [ ] Kapitel 2: Seite pythagoras-rechnen (Hypotenuse, Kathete, Umkehrung, Anwendungen) mit Aufgaben

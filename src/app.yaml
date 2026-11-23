@@ -4,4 +4,4 @@ strand: mathematik/geometrie
 title: Ähnlichkeit, Pythagoras und Trigonometrie
 intro: Du vergrößerst und verkleinerst Figuren, nutzt Strahlensätze und lernst, wie das rechtwinklige Dreieck Längen und Winkel verbindet.
 languages: [de]
-chapters: [vergroessern]
+chapters: [vergroessern, dreieck]
