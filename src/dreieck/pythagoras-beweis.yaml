@@ -97,12 +97,12 @@ blocks:
         id: welche-gleichung
         text: Ein rechtwinkliges Dreieck hat die Katheten p und q und die Hypotenuse r. Welche Gleichung gilt?
         options:
-          - text: "p² + q² = r²"
-            correct: true
-            info: Die Quadrate über den Katheten zusammen sind so groß wie das Quadrat über der Hypotenuse.
           - text: "p + q = r"
             correct: false
             info: Das addiert die Seitenlängen. Der Satz addiert die Flächen der Quadrate. Außerdem ist r immer kürzer als p + q.
+          - text: "p² + q² = r²"
+            correct: true
+            info: Die Quadrate über den Katheten zusammen sind so groß wie das Quadrat über der Hypotenuse.
           - text: "p² + r² = q²"
             correct: false
             info: Hier steht die Hypotenuse bei den Summanden. Allein auf der anderen Seite steht aber immer die Hypotenuse, hier also r.

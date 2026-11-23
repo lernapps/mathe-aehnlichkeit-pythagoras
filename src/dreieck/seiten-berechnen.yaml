@@ -17,15 +17,15 @@ blocks:
         id: rechner-modus
         text: Du tippst sin 30° in den Taschenrechner. Er steht auf Grad (DEG). Was zeigt er?
         options:
-          - text: "0,5"
-            correct: true
-            info: In einem Dreieck mit 30° ist die Gegenkathete halb so lang wie die Hypotenuse. Der Sinus ist 0,5.
           - text: "−0,988"
             correct: false
             info: Das zeigt ein Rechner im Bogenmaß (RAD), wenn du 30 eintippst. Stelle ihn auf DEG.
           - text: "30"
             correct: false
             info: Der Rechner liefert nicht den Winkel zurück, sondern das Verhältnis Gegenkathete durch Hypotenuse.
+          - text: "0,5"
+            correct: true
+            info: In einem Dreieck mit 30° ist die Gegenkathete halb so lang wie die Hypotenuse. Der Sinus ist 0,5.
         explanation: Im Gradmaß (DEG) ist sin 30° = 0,5. Prüfe vor jeder Rechnung den Modus.
   - type: section
     id: idee

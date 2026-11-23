@@ -31,14 +31,14 @@ blocks:
           question: Zwischen welchen zwei ganzen Zahlen liegt die Wurzel aus 75?
           options:
             - {
-                text: "zwischen 8 und 9",
-                correct: true,
-                info: "8 · 8 = 64 und 9 · 9 = 81. Die Zahl 75 liegt dazwischen, also auch ihre Wurzel.",
-              }
-            - {
                 text: "zwischen 7 und 8",
                 correct: false,
                 info: "7 · 7 = 49 und 8 · 8 = 64. Beide Quadrate sind kleiner als 75, also ist die Wurzel größer als 8.",
+              }
+            - {
+                text: "zwischen 8 und 9",
+                correct: true,
+                info: "8 · 8 = 64 und 9 · 9 = 81. Die Zahl 75 liegt dazwischen, also auch ihre Wurzel.",
               }
             - {
                 text: "zwischen 37 und 38",
@@ -56,11 +56,6 @@ blocks:
           question: Ein quadratisches Beet hat eine Fläche von 81 m². Wie lang ist eine Seite?
           options:
             - {
-                text: "9 m",
-                correct: true,
-                info: "Die Fläche ist Seite mal Seite. 9 · 9 = 81, also ist die Seite die Wurzel aus 81, nämlich 9 m.",
-              }
-            - {
                 text: "40,5 m",
                 correct: false,
                 info: "Du hast 81 halbiert. Seite mal Seite soll 81 ergeben, nicht Seite mal 2.",
@@ -70,13 +65,18 @@ blocks:
                 correct: false,
                 info: "Die Zahl stimmt, aber eine Seitenlänge hat die Einheit m, nicht m².",
               }
+            - {
+                text: "9 m",
+                correct: true,
+                info: "Die Fläche ist Seite mal Seite. 9 · 9 = 81, also ist die Seite die Wurzel aus 81, nämlich 9 m.",
+              }
           right: Richtig.
           wrong: Nicht richtig.
         nojs: |
           Kurztest: Ein quadratisches Beet hat eine Fläche von 81 m². Wie lang ist eine Seite? Antwort: 9 m, denn 9 · 9 = 81. Die Seite ist die Wurzel aus der Fläche. Die Einheit ist m, nicht m².
       - type: text
         text: |
-          Wenn deine Antwort falsch war, schau dir den Baustein „Quadratwurzeln“ auf der [Lernlandkarte](https://lernapps.net/apps/map/mathematik/c/quadratwurzeln/) an.
+          Warst du unsicher oder war deine Antwort falsch? Dann schau dir den Baustein „Quadratwurzeln“ auf der [Lernlandkarte](https://lernapps.net/apps/map/mathematik/c/quadratwurzeln/) an.
   - type: section
     id: flaeche
     title: "Fläche und Umfang: Rechteck, Quadrat"
@@ -124,12 +124,12 @@ blocks:
         props:
           question: Ein Rechteck ist 7 cm lang und 4,5 cm breit. Wie groß ist sein Umfang?
           options:
-            - { text: "23 cm", correct: true, info: "Umfang = 2 · (7 cm + 4,5 cm) = 2 · 11,5 cm = 23 cm." }
             - {
                 text: "31,5 cm",
                 correct: false,
                 info: "7 · 4,5 = 31,5 ist die Fläche, in cm². Der Umfang ist die Summe aller vier Seiten.",
               }
+            - { text: "23 cm", correct: true, info: "Umfang = 2 · (7 cm + 4,5 cm) = 2 · 11,5 cm = 23 cm." }
             - {
                 text: "11,5 cm",
                 correct: false,
@@ -141,7 +141,7 @@ blocks:
           Kurztest: Ein Rechteck ist 7 cm lang und 4,5 cm breit. Wie groß ist sein Umfang? Antwort: 23 cm, denn 2 · (7 + 4,5) = 23. Die Fläche wäre 31,5 cm².
       - type: text
         text: |
-          Wenn deine Antwort falsch war, schau dir den Baustein „Fläche und Umfang: Rechteck, Quadrat“ auf der [Lernlandkarte](https://lernapps.net/apps/map/mathematik/c/flaeche-umfang-quadrat-rechteck/) an.
+          Warst du unsicher oder war deine Antwort falsch? Dann schau dir den Baustein „Fläche und Umfang: Rechteck, Quadrat“ auf der [Lernlandkarte](https://lernapps.net/apps/map/mathematik/c/flaeche-umfang-quadrat-rechteck/) an.
   - type: section
     id: bereit
     title: Du bist bereit, wenn du …

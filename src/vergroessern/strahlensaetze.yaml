@@ -17,12 +17,12 @@ blocks:
         id: faktor-ablesen
         text: Ein Punkt liegt 4 cm von Z entfernt, sein Bildpunkt liegt 10 cm von Z entfernt. Welcher Streckfaktor gehört dazu?
         options:
-          - text: "2,5"
-            correct: true
-            info: "Der Faktor ist der Abstand des Bildes durch den Abstand des Originals, also 10 : 4 = 2,5."
           - text: "0,4"
             correct: false
             info: "Du hast Original durch Bild geteilt, 4 : 10. Das Bild ist weiter weg, der Faktor ist größer als 1."
+          - text: "2,5"
+            correct: true
+            info: "Der Faktor ist der Abstand des Bildes durch den Abstand des Originals, also 10 : 4 = 2,5."
           - text: "6"
             correct: false
             info: Du hast subtrahiert, 10 − 4. Ein Faktor entsteht durch Teilen, nicht durch Subtrahieren.
@@ -66,7 +66,7 @@ blocks:
         blocks:
           - type: text
             text: |
-              Gegeben sind ZA = 4 cm, ZA′ = 10 cm, ZB = 5 cm und AB = 3 cm. Gesucht sind ZB′ und A′B′. Zuerst der Faktor: $k = \frac{10}{4} = 2{,}5$.
+              Gegeben sind ZA = 4 cm, ZA′ = 10 cm, ZB = 5 cm und AB = 3 cm. Gesucht sind ZB′ und A′B′. Zuerst der Faktor: $k = \frac{10}{4} = 2{,}5$. Der Strich | · 5 in der nächsten Zeile heißt: beide Seiten werden mit 5 multipliziert.
           - type: formula
             formula: '\frac{\text{ZB′}}{5} = \frac{10}{4} \quad | \cdot 5'
           - type: formula
@@ -91,18 +91,18 @@ blocks:
             source: eigene Zeichnung
             licence: CC0-1.0
         options:
-          - text: "ZA′ : ZA = A′B′ : AB"
-            correct: true
-            info: Das ist der zweite Strahlensatz. Beide Seiten sind der Streckfaktor.
           - text: "ZA′ : ZA = AB : A′B′"
             correct: false
             info: Rechts steht der Kehrwert. Die Strecke A′B′ ist länger, der Quotient muss größer als 1 sein.
           - text: "AA′ : ZA = A′B′ : AB"
             correct: false
-            info: AA′ ist nur das Stück zwischen den Parallelen, nicht der Abstand von Z. Dieser Quotient ist um 1 kleiner als der Faktor.
+            info: AA′ ist nur das Stück zwischen den Parallelen, nicht der Abstand von Z. Dieser Quotient ist kleiner als der Faktor, bei Faktor 2,5 wäre er 1,5.
+          - text: "ZA′ : ZA = A′B′ : AB"
+            correct: true
+            info: Das ist der zweite Strahlensatz. Beide Seiten sind der Streckfaktor.
           - text: "ZA : ZB′ = ZA′ : ZB"
             correct: false
-            info: "Hier stehen auf beiden Seiten Strecken von verschiedenen Strahlen über Kreuz. Es gilt ZA : ZB = ZA′ : ZB′."
+            info: "Hier sind die Paare falsch zugeordnet. ZA und ZA′ liegen auf dem einen Strahl, ZB und ZB′ auf dem anderen. Richtig ist ZA : ZB = ZA′ : ZB′."
         explanation: Quotienten müssen aus gleichen Strecken von Z aus gebildet sein, und der Faktor kommt auf beiden Seiten gleich heraus.
       - type: generated
         id: erster-satz
@@ -130,7 +130,7 @@ blocks:
               value: "a * b / a2",
               message: "Du hast den Faktor umgedreht. ZB′ ist länger als ZB, weil ZA′ länger ist als ZA.",
             }
-        hint: "Stelle die Gleichung ZB′ : ZB = ZA′ : ZA auf und multipliziere mit ZB."
+        hint: "Zeichne eine Skizze. Stelle die Gleichung ZB′ : ZB = ZA′ : ZA auf und multipliziere mit ZB."
         steps:
           - '$\frac{\text{ZB′}}{{{b}}} = \frac{{{a2}}}{{{a}}}$, also $\text{ZB′} = \frac{{{a2}} \cdot {{b}}}{{{a}}} = {{answer}}$ cm.'
       - type: generated

@@ -33,7 +33,7 @@ blocks:
     blocks:
       - type: text
         text: |
-          Die Lampe ist das **Streckzentrum** Z. Von Z aus geht ein Strahl durch jede Ecke der Pappe. Der Schatten dieser Ecke liegt auf demselben Strahl, weiter weg von Z. Ist der Schatten einer Ecke doppelt so weit von Z entfernt wie die Ecke selbst, gilt das für jede Ecke. Diese Zahl, hier 2, heißt **Streckfaktor** *k*: Bild-Abstand zu Z durch Original-Abstand zu Z.
+          Die Lampe ist das **Streckzentrum** Z. Von Z aus geht ein Strahl (eine Linie, die in Z beginnt und unbegrenzt weiterläuft) durch jede Ecke der Pappe. Der Schatten dieser Ecke liegt auf demselben Strahl, weiter weg von Z. Ist der Schatten einer Ecke doppelt so weit von Z entfernt wie die Ecke selbst, gilt das für jede Ecke. Diese Zahl, hier 2, heißt **Streckfaktor** *k*: Bild-Abstand zu Z durch Original-Abstand zu Z.
       - type: definition
         term: Zentrische Streckung
         explanation: Jedem Punkt $P$ wird ein Bildpunkt $P'$ auf dem Strahl von $Z$ durch $P$ zugeordnet. Seine Entfernung von $Z$ ist das $k$-Fache der Entfernung von $P$.
@@ -81,12 +81,12 @@ blocks:
         id: winkel-streckung
         text: Ein Dreieck wird mit $k = 2$ gestreckt. Was ist richtig?
         options:
-          - text: Die Winkel bleiben gleich, die Längen werden doppelt so groß.
-            correct: true
-            info: Das ist die Eigenschaft der zentrischen Streckung. Winkel ändern sich nicht, Längen werden mit $k$ multipliziert.
           - text: Auch die Winkel werden doppelt so groß.
             correct: false
             info: Aus einem 40°-Winkel würde 80°, die Form wäre eine andere. Beim Strecken bleibt die Form gleich, also bleiben die Winkel gleich.
+          - text: Die Winkel bleiben gleich, die Längen werden doppelt so groß.
+            correct: true
+            info: Das ist die Eigenschaft der zentrischen Streckung. Winkel ändern sich nicht, Längen werden mit $k$ multipliziert.
           - text: Jede Länge wird um 2 cm größer.
             correct: false
             info: Das wäre Addieren. Beim Strecken wird mit dem Faktor multipliziert, aus 3 cm werden 6 cm, nicht 5 cm.
@@ -141,6 +141,7 @@ blocks:
             "decimals(a * zq / zp) <= 1",
             "a + zq - zp != a * zq / zp",
             "zq / zp != a",
+            "a * zp / zq != a * zq / zp",
           ]
         task:
           text: "Beim Strecken vom Zentrum Z aus liegt der Punkt P {{zp}} cm von Z entfernt, sein Bildpunkt P′ liegt {{zq}} cm von Z entfernt. Eine Strecke ist {{a}} cm lang. Wie lang ist ihr Bild?"
@@ -151,8 +152,12 @@ blocks:
               message: "Das ist der Streckfaktor, noch nicht die Länge. Multipliziere ihn mit {{a}} cm.",
             }
           - {
+              value: "a * zp / zq",
+              message: "Du hast den Faktor umgedreht. Das Bild ist weiter von Z entfernt, also wird die Strecke länger, nicht kürzer.",
+            }
+          - {
               value: "a + zq - zp",
-              message: "Du hast die Differenz der Abstände addiert. Gestreckt wird mit einem Faktor, nicht mit einem Zuschlag.",
+              message: "Du hast die Differenz der Abstände addiert. Gestreckt wird mit einem Faktor, nicht durch Dazuzählen.",
             }
         hint: "Bestimme zuerst den Faktor k aus den Abständen zu Z: Bild-Abstand durch Original-Abstand. Dann multiplizierst du die Länge mit k."
         steps:

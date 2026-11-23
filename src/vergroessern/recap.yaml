@@ -33,14 +33,14 @@ blocks:
           question: Dreieck 1 hat die Seiten 5 cm, 6 cm und 7 cm. Dreieck 2 hat die Seiten 7 cm, 5 cm und 6 cm. Was gilt?
           options:
             - {
-                text: "Die Dreiecke sind kongruent.",
-                correct: true,
-                info: "Alle drei Seitenlängen stimmen überein, nach SSS reicht das. Auf die Reihenfolge der Angaben kommt es nicht an.",
-              }
-            - {
                 text: "Die Dreiecke sind nicht kongruent, weil die Reihenfolge der Seiten anders ist.",
                 correct: false,
                 info: "Die Reihenfolge, in der du die Seiten nennst, ändert das Dreieck nicht. Du kannst es drehen.",
+              }
+            - {
+                text: "Die Dreiecke sind kongruent.",
+                correct: true,
+                info: "Alle drei Seitenlängen stimmen überein, nach SSS reicht das. Auf die Reihenfolge der Angaben kommt es nicht an.",
               }
             - {
                 text: "Das lässt sich nur mit den Winkeln entscheiden.",
@@ -51,9 +51,28 @@ blocks:
           wrong: Nicht richtig.
         nojs: |
           Kurztest: Dreieck 1 hat die Seiten 5 cm, 6 cm und 7 cm, Dreieck 2 hat 7 cm, 5 cm und 6 cm. Antwort: Die Dreiecke sind kongruent. Alle drei Seitenlängen stimmen überein, das reicht nach SSS. Die Reihenfolge ist egal.
+      - type: vue-component
+        id: test-kongruenz-sws
+        component: Kurztest
+        props:
+          question: Dreieck 1 hat die Seiten 4 cm und 6 cm, dazwischen den Winkel 50°. Dreieck 2 hat auch die Seiten 4 cm und 6 cm und einen Winkel von 50°, der aber an der 6 cm langen Seite gegenüber der 4 cm langen Seite liegt, also nicht zwischen den beiden Seiten. Was gilt?
+          options:
+            - text: Die Dreiecke sind kongruent nach SWS.
+              correct: false
+              info: SWS verlangt den Winkel zwischen den beiden Seiten. Hier liegt der 50°-Winkel nicht dazwischen.
+            - text: Die Dreiecke sind kongruent, weil zwei Seiten und ein Winkel übereinstimmen.
+              correct: false
+              info: Zwei Seiten und irgendein Winkel reichen nicht. Entscheidend ist, wo der Winkel liegt.
+            - text: Die Dreiecke sind nicht automatisch kongruent.
+              correct: true
+              info: Der Satz SWS gilt nur, wenn der Winkel zwischen den beiden Seiten liegt. Liegt er woanders, können die Dreiecke verschieden sein.
+          right: Richtig.
+          wrong: Nicht richtig.
+        nojs: |
+          Kurztest: Dreieck 1 hat die Seiten 4 cm und 6 cm mit dem Winkel 50° dazwischen, Dreieck 2 hat die Seiten 4 cm und 6 cm und einen Winkel 50°, der nicht zwischen ihnen liegt. Antwort: nicht automatisch kongruent, denn SWS verlangt den eingeschlossenen Winkel.
       - type: text
         text: |
-          Wenn deine Antwort falsch war, schau dir den Baustein „Kongruenz“ auf der [Lernlandkarte](https://lernapps.net/apps/map/mathematik/c/kongruenz/) an.
+          Warst du unsicher oder war deine Antwort falsch? Dann schau dir den Baustein „Kongruenz“ auf der [Lernlandkarte](https://lernapps.net/apps/map/mathematik/c/kongruenz/) an.
   - type: section
     id: winkel
     title: Winkel messen und Winkelsumme
@@ -87,13 +106,32 @@ blocks:
           wrong: Nicht richtig.
         nojs: |
           Kurztest: In einem Dreieck sind zwei Winkel 48° und 67° groß. Antwort: Der dritte Winkel ist 65°, denn 48° + 67° = 115° und 180° − 115° = 65°.
+      - type: vue-component
+        id: test-winkelart
+        component: Kurztest
+        props:
+          question: Ein Winkel misst 123°. Wie heißt er?
+          options:
+            - text: spitz
+              correct: false
+              info: Spitz heißt kleiner als 90°. Ein Winkel von 123° ist größer als ein rechter Winkel.
+            - text: stumpf
+              correct: true
+              info: Ein Winkel zwischen 90° und 180° heißt stumpf, 123° liegt dazwischen.
+            - text: gestreckt
+              correct: false
+              info: Gestreckt ist ein Winkel von genau 180°, er bildet eine gerade Linie.
+          right: Richtig.
+          wrong: Nicht richtig.
+        nojs: |
+          Kurztest: Ein Winkel misst 123°. Antwort: stumpf, denn er liegt zwischen 90° und 180°. Spitz wäre kleiner als 90°, gestreckt genau 180°.
   - type: section
     id: proportional
     title: Proportionale Zuordnungen
     blocks:
       - type: text
         text: |
-          Eine Zuordnung ist **proportional**, wenn das Doppelte der einen Größe zum Doppelten der anderen gehört, das Dreifache zum Dreifachen und so weiter. Der Quotient aus beiden Größen ist immer gleich. Er heißt **Proportionalitätsfaktor**.
+          Eine Zuordnung ist **proportional**, wenn das Doppelte der einen Größe zum Doppelten der anderen gehört, das Dreifache zum Dreifachen und so weiter. Teilst du die eine Größe durch die andere, kommt immer dieselbe Zahl heraus. Er heißt **Proportionalitätsfaktor**.
       - type: definition
         term: Proportionalitätsfaktor
         explanation: Die feste Zahl, mit der du die eine Größe multiplizierst, um die andere zu bekommen. Kosten 4 Hefte 6 €, ist der Faktor 1,50 € je Heft.
@@ -110,11 +148,6 @@ blocks:
           question: 5 Brötchen kosten 3,50 €. Was kosten 8 Brötchen?
           options:
             - {
-                text: "5,60 €",
-                correct: true,
-                info: "Ein Brötchen kostet 3,50 € : 5 = 0,70 €. Für 8 Brötchen rechnest du 8 · 0,70 € = 5,60 €.",
-              }
-            - {
                 text: "6,50 €",
                 correct: false,
                 info: "Du hast 3 € addiert, weil es 3 Brötchen mehr sind. Bei proportionalen Zuordnungen wird multipliziert, nicht addiert.",
@@ -124,13 +157,37 @@ blocks:
                 correct: false,
                 info: "Du hast mit dem Verhältnis 5 zu 8 statt 8 zu 5 gerechnet. Mehr Brötchen kosten mehr, nicht weniger.",
               }
+            - {
+                text: "5,60 €",
+                correct: true,
+                info: "Ein Brötchen kostet 3,50 € : 5 = 0,70 €. Für 8 Brötchen rechnest du 8 · 0,70 € = 5,60 €.",
+              }
           right: Richtig.
           wrong: Nicht richtig.
         nojs: |
           Kurztest: 5 Brötchen kosten 3,50 €. Was kosten 8 Brötchen? Antwort: 5,60 €. Ein Brötchen kostet 3,50 € : 5 = 0,70 €, und 8 · 0,70 € = 5,60 €. Addieren (6,50 €) ist falsch, weil die Zuordnung proportional ist.
+      - type: vue-component
+        id: test-proportional-erkennen
+        component: Kurztest
+        props:
+          question: Welche Zuordnung ist proportional?
+          options:
+            - text: Seitenlänge eines Quadrats zu seinem Umfang
+              correct: true
+              info: Doppelte Seitenlänge, doppelter Umfang. Der Faktor ist immer 4.
+            - text: Seitenlänge eines Quadrats zu seinem Flächeninhalt
+              correct: false
+              info: Doppelte Seitenlänge ergibt die vierfache Fläche, nicht die doppelte. Das ist nicht proportional.
+            - text: Alter eines Kindes zu seiner Körpergröße
+              correct: false
+              info: Mit doppeltem Alter ist ein Kind nicht doppelt so groß. Die Zuordnung ist nicht proportional.
+          right: Richtig.
+          wrong: Nicht richtig.
+        nojs: |
+          Kurztest: Welche Zuordnung ist proportional? Antwort: Seitenlänge eines Quadrats zu seinem Umfang, denn doppelte Seite ergibt doppelten Umfang, der Faktor ist 4. Seitenlänge zu Fläche ist nicht proportional (doppelte Seite, vierfache Fläche), Alter zu Körpergröße auch nicht.
       - type: text
         text: |
-          Wenn deine Antwort falsch war, schau dir den Baustein „Proportionale Zuordnungen“ auf der [Lernlandkarte](https://lernapps.net/apps/map/mathematik/c/proportionale-zuordnungen/) an.
+          Warst du unsicher oder war deine Antwort falsch? Dann schau dir den Baustein „Proportionale Zuordnungen“ auf der [Lernlandkarte](https://lernapps.net/apps/map/mathematik/c/proportionale-zuordnungen/) an.
   - type: section
     id: massstab
     title: Maßstab
@@ -153,12 +210,12 @@ blocks:
         props:
           question: "Auf einer Karte im Maßstab 1 : 25 000 ist ein Weg 4,5 cm lang. Wie lang ist er in Wirklichkeit?"
           options:
-            - { text: "1,125 km", correct: true, info: "4,5 cm · 25 000 = 112 500 cm. Das sind 1125 m, also 1,125 km." }
             - {
                 text: "112,5 m",
                 correct: false,
                 info: "112 500 cm sind 1125 m, nicht 112,5 m: Du hast beim Umrechnen eine Stelle verschoben (100 cm sind 1 m).",
               }
+            - { text: "1,125 km", correct: true, info: "4,5 cm · 25 000 = 112 500 cm. Das sind 1125 m, also 1,125 km." }
             - {
                 text: "11,25 km",
                 correct: false,
@@ -170,14 +227,14 @@ blocks:
           Kurztest: Auf einer Karte im Maßstab 1 : 25 000 ist ein Weg 4,5 cm lang. Antwort: 1,125 km. 4,5 cm · 25 000 = 112 500 cm = 1125 m = 1,125 km.
       - type: text
         text: |
-          Wenn deine Antwort falsch war, schau dir den Baustein „Maßstab“ auf der [Lernlandkarte](https://lernapps.net/apps/map/mathematik/c/massstab/) an.
+          Warst du unsicher oder war deine Antwort falsch? Dann schau dir den Baustein „Maßstab“ auf der [Lernlandkarte](https://lernapps.net/apps/map/mathematik/c/massstab/) an.
   - type: section
     id: gleichungen
     title: Lineare Gleichungen
     blocks:
       - type: text
         text: |
-          Eine **lineare Gleichung** hat die gesuchte Zahl *x* nur in der ersten Potenz. Du löst sie mit **Äquivalenzumformungen**: Du tust auf beiden Seiten dasselbe, bis *x* allein steht. Dasselbe machst du, wenn zwei Verhältnisse gleich sind: Du multiplizierst beide Seiten mit dem Nenner.
+          Bei einer **linearen Gleichung** kommt die gesuchte Zahl *x* nur einfach vor, nie als *x*² oder *x* · *x*. Du löst sie mit **Äquivalenzumformungen**: Du tust auf beiden Seiten dasselbe, bis *x* allein steht. Ein Strich wie | · 6 am Zeilenende heißt: beide Seiten werden mit 6 multipliziert. So löst du auch eine Gleichung aus zwei gleichen Verhältnissen. *x* : 6 ist dasselbe wie der Bruch *x* über 6, und mit 6 multipliziert steht *x* allein.
       - type: definition
         term: Äquivalenzumformung
         explanation: Eine Umformung, die beide Seiten einer Gleichung gleich verändert (dieselbe Zahl addieren, subtrahieren, mit ihr multiplizieren oder durch sie teilen), ohne die Lösung zu ändern.
@@ -196,16 +253,16 @@ blocks:
           question: Löse die Gleichung 4x − 7 = 2x + 9. Welches x ist richtig?
           options:
             - {
-                text: "x = 8",
-                correct: true,
-                info: "Subtrahiere 2x und addiere 7: 2x = 16. Dann durch 2: x = 8. Probe: 4 · 8 − 7 = 25 und 2 · 8 + 9 = 25.",
-              }
-            - {
                 text: "x = 1",
                 correct: false,
                 info: "Du hast 9 − 7 = 2 gerechnet. Die 7 steht links mit Minus: Beim Wechsel auf die rechte Seite wird sie addiert, also 9 + 7 = 16.",
               }
             - { text: "x = 16", correct: false, info: "Du bist bei 2x = 16 stehen geblieben. Noch durch 2 teilen." }
+            - {
+                text: "x = 8",
+                correct: true,
+                info: "Subtrahiere 2x und addiere 7: 2x = 16. Dann durch 2: x = 8. Probe: 4 · 8 − 7 = 25 und 2 · 8 + 9 = 25.",
+              }
           right: Richtig.
           wrong: Nicht richtig.
         nojs: |
@@ -237,7 +294,7 @@ blocks:
           Kurztest: Für welches x gilt x : 6 = 10 : 4? Antwort: x = 15, denn x = 10 · 6 : 4 = 15. Beide Seiten mit 6 multiplizieren.
       - type: text
         text: |
-          Wenn deine Antwort falsch war, schau dir den Baustein „Lineare Gleichungen“ auf der [Lernlandkarte](https://lernapps.net/apps/map/mathematik/c/lineare-gleichungen/) an.
+          Warst du unsicher oder war deine Antwort falsch? Dann schau dir den Baustein „Lineare Gleichungen“ auf der [Lernlandkarte](https://lernapps.net/apps/map/mathematik/c/lineare-gleichungen/) an.
   - type: section
     id: bereit
     title: Du bist bereit, wenn du …

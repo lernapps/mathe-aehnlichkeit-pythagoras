@@ -17,15 +17,15 @@ blocks:
         id: hypotenuse-start
         text: Die Katheten eines rechtwinkligen Dreiecks sind 6 cm und 8 cm lang. Wie lang ist die Hypotenuse?
         options:
-          - text: 10 cm
-            correct: true
-            info: 6² + 8² = 36 + 64 = 100. Die Wurzel aus 100 ist 10.
           - text: 14 cm
             correct: false
             info: Du hast die Längen addiert. Der Satz addiert die Quadrate, danach musst du die Wurzel ziehen.
           - text: 100 cm
             correct: false
             info: Das ist c², die Fläche des Quadrats über der Hypotenuse in cm². Die Länge ist die Wurzel daraus.
+          - text: 10 cm
+            correct: true
+            info: 6² + 8² = 36 + 64 = 100. Die Wurzel aus 100 ist 10.
         explanation: Zuerst die Quadrate addieren, dann die Wurzel ziehen.
   - type: section
     id: idee

@@ -102,12 +102,12 @@ blocks:
             source: eigene Zeichnung
             licence: CC0-1.0
         options:
-          - text: die Seite a
-            correct: true
-            info: Die Seite a liegt gegenüber von A, also gegenüber von α.
           - text: die Seite b
             correct: false
             info: Die Seite b liegt am Winkel α an, sie ist die Ankathete von α.
+          - text: die Seite a
+            correct: true
+            info: Die Seite a liegt gegenüber von A, also gegenüber von α.
           - text: die Seite c
             correct: false
             info: Die Seite c liegt dem rechten Winkel gegenüber, sie ist die Hypotenuse.
@@ -123,15 +123,15 @@ blocks:
             source: eigene Zeichnung
             licence: CC0-1.0
         options:
-          - text: die Seite b
-            correct: true
-            info: Die Seite b liegt gegenüber von B, also gegenüber von β. Für β ist a die Ankathete.
           - text: die Seite a
             correct: false
             info: Das ist die Gegenkathete von α. Für β tauschen die Katheten ihre Rolle.
           - text: die Seite c
             correct: false
             info: Die Seite c ist immer die Hypotenuse, egal von welchem Winkel du ausgehst.
+          - text: die Seite b
+            correct: true
+            info: Die Seite b liegt gegenüber von B, also gegenüber von β. Für β ist a die Ankathete.
         explanation: Für β liegt b gegenüber, a liegt an.
       - type: generated
         id: sinus-verhaeltnis

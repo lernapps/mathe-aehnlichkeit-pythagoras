@@ -14,6 +14,16 @@ const pts = (t: { A: Point; B: Point; C: Point }) =>
     .map((p) => `${p.x},${p.y}`)
     .join(" ");
 
+const rightAngle = computed(() =>
+  [
+    { x: original.A.x + 0.7, y: original.A.y },
+    { x: original.A.x + 0.7, y: original.A.y + 0.7 },
+    { x: original.A.x, y: original.A.y + 0.7 },
+  ]
+    .map(toPx)
+    .map((q) => `${q.x},${q.y}`)
+    .join(" "),
+);
 const image = computed(() => stretchTriangle(original, k.value));
 const r = computed(() => readout(k.value));
 const summary = computed(() => describeState(k.value));
@@ -39,6 +49,7 @@ function onInput(e: Event) {
       <line :x1="origin.x" :y1="origin.y" :x2="px.c2.x" :y2="px.c2.y" class="ray" />
       <polygon :points="pts(image)" class="image" />
       <polygon :points="pts(original)" class="orig" />
+      <polyline :points="rightAngle" class="rechts" />
       <circle :cx="origin.x" :cy="origin.y" r="3.5" class="dot" />
       <text :x="origin.x - 14" :y="origin.y + 14" class="lab">Z</text>
       <text :x="px.a.x - 16" :y="px.a.y + 16" class="lab">A</text>
@@ -138,6 +149,11 @@ function onInput(e: Event) {
 .ray {
   stroke: var(--page-muted);
   stroke-width: 1;
+}
+.rechts {
+  fill: none;
+  stroke: var(--page-text);
+  stroke-width: 1.5;
 }
 .dot {
   fill: var(--page-text);

@@ -72,12 +72,12 @@ blocks:
         id: welche-funktion
         text: Gegeben sind die Ankathete 6 cm und die Hypotenuse 10 cm. Wie berechnest du α?
         options:
-          - text: "α = cos⁻¹(6 : 10)"
-            correct: true
-            info: "Ankathete und Hypotenuse gehören zum Kosinus. Das Verhältnis 6 : 10 ist 0,6, und cos⁻¹(0,6) ist etwa 53,1°."
           - text: "α = sin⁻¹(6 : 10)"
             correct: false
             info: Der Sinus gehört zur Gegenkathete. Hier ist die Ankathete gegeben, also brauchst du den Kosinus.
+          - text: "α = cos⁻¹(6 : 10)"
+            correct: true
+            info: "Ankathete und Hypotenuse gehören zum Kosinus. Das Verhältnis 6 : 10 ist 0,6, und cos⁻¹(0,6) ist etwa 53,1°."
           - text: "α = 10 : 6 · cos"
             correct: false
             info: So kommt kein Winkel heraus. Du bildest das Verhältnis der Seiten und wendest dann die Umkehrfunktion an.

@@ -17,12 +17,12 @@ blocks:
         id: warum-nicht-pythagoras
         text: Kannst du den Abstand zwischen Spielplatz und Teich mit dem Satz des Pythagoras ausrechnen?
         options:
-          - text: Nein, der Winkel zwischen den Wegen ist nicht 90°.
-            correct: true
-            info: Der Satz gilt nur im rechtwinkligen Dreieck. Hier misst der Winkel 70°, die Rechnung √(120² + 150²) wäre zu groß.
           - text: Ja, die beiden Wege sind die Katheten.
             correct: false
             info: Nur wenn sie senkrecht aufeinander stehen. Bei 70° ist der Abstand kleiner als √(120² + 150²).
+          - text: Nein, der Winkel zwischen den Wegen ist nicht 90°.
+            correct: true
+            info: Der Satz gilt nur im rechtwinkligen Dreieck. Hier misst der Winkel 70°, die Rechnung √(120² + 150²) wäre zu groß.
           - text: Ja, aber man muss zuerst die Wege addieren.
             correct: false
             info: Die Wege addieren gibt die Länge des Umwegs über die Schule, nicht den Abstand.
@@ -112,15 +112,15 @@ blocks:
         id: welcher-satz
         text: Von einem Dreieck sind zwei Seiten und der Winkel bekannt, den diese beiden Seiten einschließen. Du suchst die dritte Seite. Welchen Satz nimmst du?
         options:
-          - text: den Kosinussatz
-            correct: true
-            info: Zwei Seiten und der eingeschlossene Winkel sind genau die Angaben, für die der Kosinussatz gebaut ist.
           - text: den Sinussatz
             correct: false
             info: Der Sinussatz braucht ein Paar aus Seite und gegenüberliegendem Winkel. Das gibt es hier nicht, der Winkel liegt zwischen den Seiten.
           - text: den Satz des Pythagoras
             correct: false
             info: Der gilt nur im rechtwinkligen Dreieck. Ist der Winkel nicht 90°, gibt er einen falschen Wert.
+          - text: den Kosinussatz
+            correct: true
+            info: Zwei Seiten und der eingeschlossene Winkel sind genau die Angaben, für die der Kosinussatz gebaut ist.
         explanation: Zwei Seiten und der eingeschlossene Winkel führen zum Kosinussatz.
       - type: matching
         id: satz-zuordnen

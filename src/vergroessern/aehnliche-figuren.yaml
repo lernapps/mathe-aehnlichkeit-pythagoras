@@ -17,12 +17,12 @@ blocks:
         id: foto-hoehe
         text: Wie hoch ist das Foto auf dem Poster?
         options:
-          - text: 18 cm
-            correct: true
-            info: "Die Breite wird mit 27 : 9 = 3 multipliziert. Die Höhe auch, also 3 · 6 cm = 18 cm."
           - text: 24 cm
             correct: false
             info: Die Breite wächst um 18 cm, du hast 18 cm zur Höhe addiert. Dann wäre das Foto verzerrt. Die Höhe wird mit demselben Faktor multipliziert wie die Breite.
+          - text: 18 cm
+            correct: true
+            info: "Die Breite wird mit 27 : 9 = 3 multipliziert. Die Höhe auch, also 3 · 6 cm = 18 cm."
           - text: 12 cm
             correct: false
             info: "Du hast die Höhe mit 2 multipliziert. Der Faktor für die Breite ist aber 27 : 9 = 3."
@@ -36,7 +36,7 @@ blocks:
           Das Foto und das Poster haben dieselbe Form, nur eine andere Größe. Eine Figur ist die zentrische Streckung der anderen, vielleicht noch verschoben, gedreht oder gespiegelt. Solche Figuren heißen **ähnlich**.
       - type: definition
         term: ähnlich
-        explanation: Zwei Figuren sind ähnlich, wenn alle Winkel übereinstimmen und alle Längen mit demselben Faktor $k$ zusammenhängen. Das Zeichen dafür ist ∼.
+        explanation: Zwei Figuren sind ähnlich, wenn alle Winkel übereinstimmen und alle Längen mit demselben Faktor $k$ zusammenhängen.
       - type: note
         title: Merke
         blocks:
@@ -79,6 +79,9 @@ blocks:
           Es sind vier. Die Fläche wächst nicht mit $k$, sondern mit $k \cdot k$, denn sie hat zwei Längen: Breite und Höhe werden beide mit $k$ multipliziert.
       - type: formula
         formula: "A' = k^2 \\cdot A"
+      - type: text
+        text: |
+          Auch ein Maßstab ist eine Streckung: Bei 1 : 100 wird vom Plan zur Wirklichkeit mit $k = 100$ gestreckt. Längen werden mit 100 multipliziert, Flächen mit $100^2$.
       - type: example
         title: Fläche eines Posters
         blocks:
@@ -93,15 +96,15 @@ blocks:
         id: aehnliche-rechtecke
         text: Welche zwei Rechtecke sind ähnlich?
         options:
-          - text: 3 cm × 5 cm und 6 cm × 10 cm
-            correct: true
-            info: Breite 3 cm wird 6 cm, Höhe 5 cm wird 10 cm. Beide Faktoren sind 2.
           - text: 3 cm × 5 cm und 6 cm × 8 cm
             correct: false
             info: Die Breite wird mit 2 multipliziert, die Höhe aber nicht, denn 5 cm · 2 = 10 cm. Die Faktoren sind verschieden.
           - text: 3 cm × 5 cm und 5 cm × 7 cm
             correct: false
             info: "Beide Seiten sind um 2 cm länger. Das ist ein Zuschlag, kein Faktor. Die Faktoren 5 : 3 und 7 : 5 sind verschieden."
+          - text: 3 cm × 5 cm und 6 cm × 10 cm
+            correct: true
+            info: Breite 3 cm wird 6 cm, Höhe 5 cm wird 10 cm. Beide Faktoren sind 2.
         explanation: Ähnliche Rechtecke haben denselben Faktor für Breite und Höhe.
       - type: single-choice
         id: aehnliche-dreiecke
@@ -168,7 +171,7 @@ blocks:
       - type: generated
         id: modell-flaeche
         given:
-          m: { oneOf: [20, 50, 100] }
+          m: { oneOf: [20, 50, 200] }
           A: { int: [10, 60] }
         where: ["A * m * m / 10000 >= 10"]
         task:

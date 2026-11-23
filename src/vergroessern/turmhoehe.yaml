@@ -17,15 +17,15 @@ blocks:
         id: turm-vorab
         text: Der Turmschatten ist 8-mal so lang wie der Stabschatten. Was folgt daraus für die Höhen?
         options:
-          - text: Der Turm ist 8-mal so hoch wie der Stab.
-            correct: true
-            info: Beide Schatten gehören zur gleichen Streckung, mit dem Faktor 8. Dieser Faktor gilt auch für die Höhen.
           - text: Der Turm ist 8 m höher als der Stab.
             correct: false
             info: Das wäre ein Zuschlag. Streckungen arbeiten mit einem Faktor, nicht mit einer Differenz.
           - text: Turm und Stab sind gleich hoch.
             correct: false
             info: Dann wären auch ihre Schatten gleich lang. Ein längerer Schatten gehört zu einem höheren Gegenstand.
+          - text: Der Turm ist 8-mal so hoch wie der Stab.
+            correct: true
+            info: Beide Schatten gehören zur gleichen Streckung, mit dem Faktor 8. Dieser Faktor gilt auch für die Höhen.
         explanation: Wie bei jeder Streckung wachsen alle Längen mit demselben Faktor, auch die Höhen.
   - type: section
     id: idee
@@ -37,12 +37,12 @@ blocks:
       - type: figure
         image: images/turm-schatten.svg
         alt: Ein Turm der gesuchten Höhe und ein 1,5 m hoher Stab stehen senkrecht auf dem Boden. Der Stab hat 3 m Schatten, der Turm 24 m. Die Sonnenlinie geht von der Turmspitze über die Stabspitze zum Schattenende Z.
-        caption: Turm, Stab und Sonnenlinie bilden eine Figur mit Z und zwei Parallelen.
+        caption: "Skizze, nicht maßstabsgetreu: Turm, Stab und Sonnenlinie bilden eine Figur mit Z und zwei Parallelen."
         source: eigene Zeichnung
         licence: CC0-1.0
       - type: text
         text: |
-          Stab und Turm sind die parallelen Strecken, die Schatten sind die Abstände von Z. Der zweite Strahlensatz sagt: Turmhöhe durch Stabhöhe ist gleich Turmschatten durch Stabschatten.
+          Gegeben sind der Stab mit 1,5 m und 3 m Schatten und der Turmschatten mit 24 m. Stab und Turm sind die parallelen Strecken, die Schatten sind die Abstände von Z. Der zweite Strahlensatz sagt: Turmhöhe durch Stabhöhe ist gleich Turmschatten durch Stabschatten.
       - type: formula
         formula: '\frac{h}{1{,}5} = \frac{24}{3} \quad | \cdot 1{,}5'
       - type: formula
@@ -66,12 +66,12 @@ blocks:
       - type: figure
         image: images/fluss-x.svg
         alt: Ein Fluss liegt zwischen dem Baum S und dem Ufer mit den Punkten P, M und Q. Die Strecken SP und QR sind parallel. Eine Gerade geht von S über M nach R. Gesucht ist die Breite w des Flusses.
-        caption: Die Strecken SP und QR sind parallel, M ist das Zentrum.
+        caption: "Skizze, nicht maßstabsgetreu: Die Strecken SP und QR sind parallel, M ist das Zentrum."
         source: eigene Zeichnung
         licence: CC0-1.0
       - type: text
         text: |
-          Hier liegt M zwischen den Parallelen: Die Figur ist ein X statt eines V. Die Strahlensätze gelten genauso: Die Streckung geht dann auf die andere Seite von M, die Rechnung mit den Abständen bleibt gleich. Die parallelen Strecken SP und QR verhalten sich wie die Abstände ihrer Endpunkte von M.
+          Hier liegt M zwischen den Parallelen: Die Figur ist ein X statt eines V. Die Strahlensätze gelten genauso: Die Streckung geht dann auf die andere Seite von M, die Rechnung mit den Abständen bleibt gleich. Die parallelen Strecken SP und QR verhalten sich wie die Abstände MP und MQ der Fußpunkte von M: SP : QR = MP : MQ.
       - type: formula
         formula: '\frac{w}{12} = \frac{30}{10} \quad | \cdot 12'
       - type: formula
@@ -118,7 +118,7 @@ blocks:
         mistakes:
           - {
               value: "hs + ts - ss",
-              message: "Du hast den Unterschied der Schatten zur Stabhöhe addiert. Höhen und Schatten hängen über einen Faktor zusammen.",
+              message: "Du hast addiert und subtrahiert. Höhen und Schatten hängen über einen Faktor zusammen: Es wird multipliziert und geteilt.",
             }
           - {
               value: "hs * ss / ts",
@@ -146,7 +146,7 @@ blocks:
         mistakes:
           - {
               value: "qr * mq / pm",
-              message: "Du hast den Faktor umgedreht. PM ist die Strecke zu dem Punkt auf der Seite von S, also gehört PM in den Zähler.",
+              message: "Du hast den Bruch umgedreht. Es gilt SP : QR = PM : MQ, also SP = QR · PM : MQ.",
             }
           - {
               value: "pm + qr - mq",
