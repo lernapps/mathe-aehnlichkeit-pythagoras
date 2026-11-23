@@ -39,6 +39,8 @@ Sinus- und Kosinussatz). Auftrag: lernapps/apps#399, Schicht 3 des Mathe-Epics #
   (`recap`) mit `Kurztest`-Komponente (regeln.md Abschnitt 7).
 - Winkel mit Unicode ∠ (kein `\angle`), griechische Buchstaben als `\alpha` usw. (Fund W14).
 - Keine `links:` an Aufgaben, keine Dritt-Inhalte, keine Videos (Regeln 4 und 9.6).
+- Kein `scope` in `src/app.yaml`: keine `open-task`, kein eigenes Material des Auftraggebers.
+- `links:` an Aufgaben weggelassen: `lernapps check` besteht ohne (Fund: Skill verlangt sie, Schema nicht; W4/W45).
 
 ## Notes
 
@@ -216,7 +218,9 @@ page, which a link. -->
 
 **Prerequisites je Seite:** siehe „Baustein → Seite“ unter Notes.
 
-**Review:** wird in Code gefüllt.
+**Review:**
+- Lernenden-Prüfer (Unteragent, Klasse 9-10) auf der Musterseite `streckung`: unklare Sätze (Verhältnis der Abstände, „verschiebt“, k = 1), Regler nur 0,5er-Schritte, Beschriftungen A/A′ überlagern, Aufgaben zu leicht, Zentrum nie nachgerechnet, kein Schlusskasten. Umgesetzt: Sätze neu, Regler 0,5 bis 2,5 in 0,1, Abstand Z–A in der Tabelle, Beschriftung versetzt, Aufgabe mit Abständen zu Z (zweistufig), Winkelaufgabe als `generated` mit Fehlerhinweis, Fehlertyp-Frage statt true-false, Schlusskasten „Das kannst du jetzt“. Nach dem Lauf geändert: nur diese Umsetzung (noch nicht erneut geprüft).
+- Laufzeit-Funde (nicht behoben): Zahlenfeld lehnt „50°“, „5 cm“ ab mit „Antworte zuerst“ (W6/W11/W20); Aufgabennummer beginnt zufällig (W12); Standardrückmeldung „Lies dazu noch einmal den Text“ bei Wahr/Falsch (W13); Skill verlangt `links` je Frage, Schema nicht (W4/W45).
 
 ## Code
 
@@ -235,13 +239,13 @@ page, which a link. -->
 - [x] Fill the content guide `.agents/skills/app-content/SKILL.md` from "Notes" and "Content method": every heading,
       no "FILL IN" left. Commit it before any content.
 - [x] Load skill `lernapps-explainer`.
-- [ ] Load skill `lernapps-content-questions`. Read whole, with your file tool:
+- [x] Load skill `lernapps-content-questions`. Read whole, with your file tool:
       `.agents/skills/lernapps-explainer/references/blocks.md` and
       `.agents/skills/lernapps-explainer/references/exercises.md`. A foreign language: also
       `references/language-tasks.md` in the same folder. A component in the plan: also `references/components.md`.
-- [ ] Decide whether the app needs `scope`, as "`scope`" in
+- [x] Decide whether the app needs `scope`, as "`scope`" in
       `.agents/skills/lernapps-explainer/references/structure.md` says. Write the choice under "Key decisions".
-- [ ] Musterseite streckung (Kapitel 1, Seite 2): Komponente Streckung (Regler, Tastatur, nojs, Test), Einstieg, Idee, Beispiel, Aufgaben (erkennen, generated, Sachaufgabe); Lernenden-Prüfer (Klasse 9-10) spielt sie durch; app.yaml, chapter.yaml, Gerüst
+- [x] Musterseite streckung (Kapitel 1, Seite 2): Komponente Streckung (Regler, Tastatur, nojs, Test), Einstieg, Idee, Beispiel, Aufgaben (erkennen, generated, Sachaufgabe); Lernenden-Prüfer (Klasse 9-10) spielt sie durch; app.yaml, chapter.yaml, Gerüst
 <!-- tasks: pattern (1 added): the one page or screen that is the pattern for the others -->
 - [ ] **Checkpoint:** the pattern page. Load skill `lernapps-learner-check` and do its learner check on the page. Fix
       what it finds. Then show the creator the page and ask whether the others may follow it. Stop and wait. A
