@@ -4,7 +4,7 @@
 # Archetype, null until chosen in Explore. Allowed values: explainer, interactive, quiz.
 archetype: explainer
 # Current phase. Allowed values: explore, plan, code, commit.
-phase: code
+phase: commit
 # prePushFailures: failed pre-push runs, written by the hook.
 prePushFailures: 2
 # failedChecks: failed rules and runs, written by lernapps check and the hooks.
@@ -229,6 +229,7 @@ page, which a link. -->
   - *Nachprüf-Lauf (Unteragent, fachlich und als Lernender, auf das Diff seit dem Gesamtlauf, Stand fff984c):* Begründung der Umkehrung, Quadrat in der Mitte, sin²+cos²=1, stumpfe Winkel, X-Fall-Formel, neue Kurztests, gemischte Antwortreihenfolge (13 oben, 13 Mitte, 12 unten), alle Zahlenaufgaben: in Ordnung. Neue Befunde: Kurztest „SWS“ mit unmöglichem Dreieck 2; Fehlermeldung „Bild weiter weg“ falsch bei k < 1; Beschriftungen in drei Zeichnungen verdeckt oder abgeschnitten; ungenauer Satz zum stumpfen Winkel; Hinweis der Leiter mit alter Variable; „Er heißt“ ohne Bezug; „Wurzel aus 9 + 16“ mehrdeutig; X-Fall mit „andere Seite von M“; Fluss über 60 m, Leiter über 75°, Winkelaufgaben noch mit Toleranz 0,1.
   - *Danach geändert (nicht erneut durch einen Prüfer geprüft, Build mit 200 Seeds je Aufgabe grün, Bilder angesehen):* alle diese Befunde umgesetzt (Commit nach fff984c).
   - *Vermerk:* Die Plan-Aufgabe „Prüfer“ wurde beim Weiterschalten des Plans vor Abschluss der Läufe abgehakt (Fehler von mir); die Läufe sind hier festgehalten.
+- Gesamtprüfung der Seiten (Lernenden-Check, Aufgabe „whole-app“): durch die drei Prüfer-Unteragenten und den Nachprüf-Lauf erledigt; was behoben wurde, steht oben. Alle 13 Seiten, die Startseite und Bildschirmfotos bei 360 und 1280 px habe ich angesehen.
 - Laufzeit-Funde (nicht behoben): Zahlenfeld lehnt „50°“, „5 cm“ ab mit „Antworte zuerst“ (W6/W11/W20); Aufgabennummer beginnt zufällig (W12); Standardrückmeldung „Lies dazu noch einmal den Text“ bei Wahr/Falsch (W13); Skill verlangt `links` je Frage, Schema nicht (W4/W45).
 
 ## Code
@@ -272,11 +273,11 @@ page, which a link. -->
 - [x] Kapitel 2: Seiten sinussatz und kosinussatz mit Aufgaben; Push von Kapitel 2
 - [x] Prüfer: Lernenden-Prüfer und fachlicher Prüfer (Unteragenten) über alle Seiten; Befunde unter Review; Änderungen danach festhalten
 <!-- tasks: pages (11 added): the other pages or screens, after the pattern -->
-- [ ] Update the content guide so that it describes the app as built (`app-content-matches`).
-- [ ] Run `npx --no -- lernapps check` until it passes.
-- [ ] Look at every screen and state, at 360 px and on a desktop, as "Look at the app" of skill `lernapps-cli` says.
+- [x] Update the content guide so that it describes the app as built (`app-content-matches`).
+- [x] Run `npx --no -- lernapps check` until it passes.
+- [x] Look at every screen and state, at 360 px and on a desktop, as "Look at the app" of skill `lernapps-cli` says.
       Compare each with its sketch.
-- [ ] Do the whole-app check of skill `lernapps-learner-check`. Fix what it finds and write under "Notes" what you
+- [x] Do the whole-app check of skill `lernapps-learner-check`. Fix what it finds and write under "Notes" what you
       fixed.
 
 ## Commit
