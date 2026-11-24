@@ -37,7 +37,7 @@ Nennt die Adresse dieser Seite `bedarf=`, gilt jeder Abschnitt, den sie nennt, m
 
 ## Kontext: die Seite „Das brauchst du für dieses Kapitel“
 
-Diese Seite ist eine Wiederholung: Sie wiederholt etwas, das das Kind schon können sollte, und hat keine Aufgabe. Erklär mit dem Inhalt der Seite und frag nach, ob das Kind ihn verstanden hat. Üben kann es das in anderen Apps; welche das sind, steht hier: https://lernapps.net/apps/map/mathematik/c/kongruenz/, https://lernapps.net/apps/map/mathematik/c/proportionale-zuordnungen/, https://lernapps.net/apps/map/mathematik/c/massstab/, https://lernapps.net/apps/map/mathematik/c/lineare-gleichungen/
+Diese Seite ist eine Wiederholung: Sie wiederholt etwas, das das Kind schon können sollte, und hat höchstens zwei Aufgaben zur Kontrolle. Erklär mit dem Inhalt der Seite und frag nach, ob das Kind ihn verstanden hat. Üben kann es das in anderen Apps; welche das sind, steht hier: https://lernapps.net/apps/map/mathematik/c/kongruenz/, https://lernapps.net/apps/map/mathematik/c/proportionale-zuordnungen/, https://lernapps.net/apps/map/mathematik/c/massstab/, https://lernapps.net/apps/map/mathematik/c/lineare-gleichungen/
 
 Kongruenz, proportionale Zuordnungen, Maßstab, lineare Gleichungen und Winkelsumme kurz wiederholt, mit Kurztest.
 
