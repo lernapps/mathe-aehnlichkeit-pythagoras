@@ -51,7 +51,7 @@ Die Klasse von Mira und Jonas misst den Turm im Park. Hinaufklettern geht nicht.
 
 ### Wo die Strahlensätze stecken
 
-Wenn du eine Sachaufgabe siehst, suchst du zuerst die Parallelen und das Zentrum. Im Bild stehen Turm und Stab beide senkrecht, sie sind also parallel. Die Sonnenlinie von der Turmspitze über die Stabspitze bis zum Schattenende Z ist der eine Strahl, der Boden ist der andere. Z ist das Streckzentrum.
+Damit die Strahlensätze greifen, suchst du in jeder Sachaufgabe zuerst zwei Parallelen und das Zentrum Z. Im Bild stehen Turm und Stab beide senkrecht, sie sind also parallel. Die Sonnenlinie von der Turmspitze über die Stabspitze bis zum Schattenende Z ist der eine Strahl, der Boden ist der andere. Z ist das Streckzentrum.
 
 Bild: Ein Turm der gesuchten Höhe und ein 1,5 m hoher Stab stehen senkrecht auf dem Boden. Der Stab hat 3 m Schatten, der Turm 24 m. Die Sonnenlinie geht von der Turmspitze über die Stabspitze zum Schattenende Z. Bildunterschrift: Skizze, nicht maßstabsgetreu: Turm, Stab und Sonnenlinie bilden eine Figur mit Z und zwei Parallelen.
 

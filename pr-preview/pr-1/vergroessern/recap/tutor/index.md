@@ -57,7 +57,7 @@ Ein Dreieck hat die Seiten 3 cm, 4 cm und 5 cm, ein zweites 5 cm, 3 cm und 
 
 ### Winkel messen und Winkelsumme
 
-Wenn du in einem Dreieck einen Winkel brauchst, den du nicht messen kannst, helfen die Winkelsumme und ein paar Wörter für Winkel. Mit dem Geodreieck misst du einen Winkel: Lege den Nullpunkt auf den Scheitel, einen Schenkel auf die Nulllinie und lies am anderen Schenkel ab. Ein Winkel zwischen 0° und 90° heißt spitz, bei genau 90° rechter Winkel, zwischen 90° und 180° stumpf.
+Wenn in einem Dreieck ein Winkel fehlt, rechnest du ihn aus den anderen aus. Dazu brauchst du die Winkelsumme und ein paar Wörter für Winkel. Mit dem Geodreieck misst du einen Winkel: Lege den Nullpunkt auf den Scheitel, einen Schenkel auf die Nulllinie und lies am anderen Schenkel ab. Ein Winkel zwischen 0° und 90° heißt spitz, bei genau 90° rechter Winkel, zwischen 90° und 180° stumpf.
 
 - **Winkelsumme im Dreieck**: In jedem Dreieck sind die drei Innenwinkel zusammen 180°. Sind zwei Winkel bekannt, ist der dritte 180° minus ihre Summe.
 
@@ -87,7 +87,7 @@ Eine Strecke ist auf dem Plan 3 cm lang, der Maßstab ist 1 : 500. Wirklich sin
 
 ### Lineare Gleichungen
 
-Wenn du eine unbekannte Länge aus gleichen Verhältnissen oder aus einer Rechnung bestimmen willst, stellst du eine Gleichung auf und löst sie. Bei einer **linearen Gleichung** kommt die gesuchte Zahl *x* nur einfach vor, nie als *x*² oder *x* · *x*. Du löst sie mit **Äquivalenzumformungen**: Du tust auf beiden Seiten dasselbe, bis *x* allein steht. Ein Strich wie | · 6 am Zeilenende heißt: beide Seiten werden mit 6 multipliziert. So löst du auch eine Gleichung aus zwei gleichen Verhältnissen. *x* : 6 ist dasselbe wie der Bruch *x* über 6, und mit 6 multipliziert steht *x* allein.
+Wenn du eine unbekannte Länge aus gleichen Verhältnissen oder aus einer Rechnung bestimmen willst, stellst du eine Gleichung auf und löst sie. Bei einer **linearen Gleichung** kommt die gesuchte Zahl *x* nur einfach vor, nie als *x*² oder *x* · *x*. Du löst sie mit **Äquivalenzumformungen**: Du tust auf beiden Seiten dasselbe, bis *x* allein steht. Ein Strich wie | · 6 am Zeilenende heißt: beide Seiten werden mit 6 multipliziert. So löst du auch eine Gleichung aus zwei gleichen Verhältnissen. *x* : 6 ist dasselbe wie ein Bruch mit *x* im Zähler und 6 im Nenner, und mit 6 multipliziert steht *x* allein.
 
 - **Äquivalenzumformung**: Eine Umformung, die beide Seiten einer Gleichung gleich verändert (dieselbe Zahl addieren, subtrahieren, mit ihr multiplizieren oder durch sie teilen), ohne die Lösung zu ändern.
 
@@ -119,7 +119,7 @@ Warst du bei einem Punkt unsicher? Schau dir die Bausteine auf der Lernlandkarte
 
 ### Aufgabe voraussetzungen
 
-- Aufgabe: Welche Aussagen stimmen? Wähle alle richtigen.
+- Aufgabe: Welche Aussagen stimmen? Wähle alle richtigen. Kongruent heißt deckungsgleich.
 - Antwortformat: alle richtigen Antworten wählen
 - Antworten zur Wahl (✓ richtig, ✗ falsch, mit der Meldung der App):
   - ✓ Zwei Dreiecke mit den Seiten 5 cm, 6 cm, 7 cm und 7 cm, 5 cm, 6 cm sind kongruent. – Alle drei Seitenlängen stimmen überein, nach SSS reicht das. Auf die Reihenfolge der Angaben kommt es nicht an.
@@ -128,7 +128,9 @@ Warst du bei einem Punkt unsicher? Schau dir die Bausteine auf der Lernlandkarte
   - ✗ Die Zuordnung „Seitenlänge eines Quadrats → Flächeninhalt“ ist proportional. – Doppelte Seitenlänge ergibt die vierfache Fläche, nicht die doppelte. Proportional ist zum Beispiel „Seitenlänge → Umfang“.
   - ✓ Auf einer Karte im Maßstab 1 : 25 000 sind 4,5 cm in Wirklichkeit 1,125 km. – 4,5 cm · 25 000 = 112 500 cm. Das sind 1125 m, also 1,125 km.
   - ✗ Die Gleichung x : 6 = 10 : 4 hat die Lösung x = 12. – Beide Seiten mit 6 multiplizieren, x = 10 · 6 : 4 = 15. Die 12 kommt aus 6 + 10 − 4. Bei gleichen Verhältnissen wird multipliziert und geteilt, nicht addiert.
-- Lösung: Zwei Dreiecke mit den Seiten 5 cm, 6 cm, 7 cm und 7 cm, 5 cm, 6 cm sind kongruent.; In einem Dreieck sind zwei Winkel 48° und 67° groß. Der dritte Winkel ist 65°.; Auf einer Karte im Maßstab 1 : 25 000 sind 4,5 cm in Wirklichkeit 1,125 km.
+  - ✓ Ein Winkel von 123° heißt stumpf. – Ein Winkel zwischen 90° und 180° heißt stumpf. Spitz wäre kleiner als 90°, ein rechter Winkel misst genau 90°.
+  - ✗ Die Gleichung 3x + 5 = 20 hat die Lösung x = 25. – Erst auf beiden Seiten 5 subtrahieren, 3x = 15, dann durch 3 teilen, x = 5. Die 25 kommt davon, dass die 5 addiert statt subtrahiert wurde.
+- Lösung: Zwei Dreiecke mit den Seiten 5 cm, 6 cm, 7 cm und 7 cm, 5 cm, 6 cm sind kongruent.; In einem Dreieck sind zwei Winkel 48° und 67° groß. Der dritte Winkel ist 65°.; Auf einer Karte im Maßstab 1 : 25 000 sind 4,5 cm in Wirklichkeit 1,125 km.; Ein Winkel von 123° heißt stumpf.
 - Erklärung: Jede Aussage gehört zu einem der Bausteine. Bei jeder falschen findest du oben den Abschnitt dazu.
 - Link: [../?via=tutor#voraussetzungen](../?via=tutor#voraussetzungen)
 

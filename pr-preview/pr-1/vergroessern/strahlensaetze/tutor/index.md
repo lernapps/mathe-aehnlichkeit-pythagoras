@@ -69,7 +69,7 @@ Zähler und Nenner sind Strecken von Z aus: ZA′ ist die ganze Strecke von Z bi
 
 **Beispiel: ZB′ und A′B′ bestimmen**
 
-Wenn dir zwei Strecken fehlen, die du aus anderen ableiten kannst, stellst du ein Verhältnis auf. Gegeben sind ZA = 4 cm, ZA′ = 10 cm, ZB = 5 cm und AB = 3 cm. Gesucht sind ZB′ und A′B′. Zuerst der Faktor: $k = \frac{10}{4} = 2{,}5$. Der Strich | · 5 in der nächsten Zeile heißt: beide Seiten werden mit 5 multipliziert.
+Wenn du eine fehlende Strecke aus bekannten Strecken berechnen willst, stellst du ein Verhältnis auf. Gegeben sind ZA = 4 cm, ZA′ = 10 cm, ZB = 5 cm und AB = 3 cm. Gesucht sind ZB′ und A′B′. Zuerst der Faktor: $k = \frac{10}{4} = 2{,}5$. Der Strich | · 5 in der nächsten Zeile heißt: beide Seiten werden mit 5 multipliziert.
 
 $\frac{\text{ZB′}}{5} = \frac{10}{4} \quad | \cdot 5$
 
