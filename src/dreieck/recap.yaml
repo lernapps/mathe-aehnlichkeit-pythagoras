@@ -17,7 +17,7 @@ blocks:
           Wenn du aus einer Fläche die Seitenlänge eines Quadrats brauchst, fragst du: Welche Zahl mal sich selbst ergibt diese Fläche? Eine **Quadratzahl** entsteht, wenn du eine Zahl mit sich selbst multiplizierst: $7 \cdot 7 = 49$. Die **Quadratwurzel** kehrt das um.
       - type: definition
         term: Quadratwurzel
-        explanation: Die Quadratwurzel $\sqrt{a}$ einer Zahl $a \ge 0$ ist die nicht negative Zahl, deren Quadrat $a$ ergibt. Zum Beispiel ist $\sqrt{49} = 7$, denn $7 \cdot 7 = 49$.
+        explanation: Die Quadratwurzel $\sqrt{a}$ einer Zahl $a \ge 0$ ist die Zahl, die nicht negativ ist (0 oder größer) und deren Quadrat $a$ ergibt. Zum Beispiel ist $\sqrt{49} = 7$, denn $7 \cdot 7 = 49$.
       - type: example
         title: Näherungswert bestimmen
         blocks:
@@ -66,7 +66,7 @@ blocks:
           - text: Ein Rechteck mit der Fläche 54 cm² und der Länge 9 cm ist 6 cm breit.
             correct: true
             info: "Fläche = Länge mal Breite, also Breite = 54 cm² : 9 cm = 6 cm."
-        explanation: Die ersten Aussagen prüfen Wurzeln, die anderen Fläche und Umfang. Bei jeder falschen findest du oben den Abschnitt dazu.
+        explanation: Die ersten beiden Aussagen prüfen Wurzeln, die anderen Fläche und Umfang. Hast du eine falsch beurteilt, lies oben den Abschnitt dazu noch einmal.
       - type: generated
         id: quadrat-umfang
         given:

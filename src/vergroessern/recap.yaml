@@ -129,7 +129,7 @@ blocks:
           - text: "Die Gleichung 3x + 5 = 20 hat die Lösung x = 25."
             correct: false
             info: "Erst auf beiden Seiten 5 subtrahieren, 3x = 15, dann durch 3 teilen, x = 5. Die 25 kommt davon, dass die 5 addiert statt subtrahiert wurde."
-        explanation: Jede Aussage gehört zu einem der Bausteine. Bei jeder falschen findest du oben den Abschnitt dazu.
+        explanation: Jede Aussage gehört zu einem der Bausteine. Hast du eine falsch beurteilt, lies oben den Abschnitt dazu noch einmal.
       - type: generated
         id: karte-weg
         given:

@@ -64,6 +64,9 @@ blocks:
           - type: text
             text: |
               Im Kosinussatz steht auf der linken Seite die Seite *a* gegenüber von *α*. Rechts stehen die beiden anderen Seiten und der Winkel dazwischen. Willst du den Winkel, stellst du nach dem Kosinus um und nutzt cos⁻¹.
+      - type: text
+        text: |
+          Damit du bei einer Aufgabe nicht raten musst, welcher der beiden Sätze passt, hilft diese Übersicht.
       - type: table
         caption: Welcher Satz passt zu welcher Angabe?
         header: [Gegeben, Satz]
@@ -76,6 +79,9 @@ blocks:
     id: beispiel
     title: Zwei Beispiele
     blocks:
+      - type: text
+        text: |
+          Wenn du den Kosinussatz anwenden willst, brauchst du zwei Fälle: die dritte Seite aus zwei Seiten und dem Winkel dazwischen und einen Winkel aus drei Seiten.
       - type: example
         title: Abstand von Spielplatz und Teich
         blocks:
@@ -99,7 +105,7 @@ blocks:
         blocks:
           - type: text
             text: |
-              Ein Dreieck hat die Seiten $a = 7$ cm, $b = 8$ cm und $c = 9$ cm. Gesucht ist $\alpha$. Im Zähler steht $64 + 81 - 49 = 96$, im Nenner $2 \cdot 8 \cdot 9 = 144$.
+              Wenn alle drei Seiten bekannt sind und du einen Winkel brauchst, stellst du den Kosinussatz nach dem Kosinus um. Ein Dreieck hat die Seiten $a = 7$ cm, $b = 8$ cm und $c = 9$ cm. Gesucht ist $\alpha$. Im Zähler steht $64 + 81 - 49 = 96$, im Nenner $2 \cdot 8 \cdot 9 = 144$.
           - type: formula
             formula: '\cos \alpha = \frac{b^2 + c^2 - a^2}{2bc}'
           - type: formula

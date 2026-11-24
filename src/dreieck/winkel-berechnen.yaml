@@ -50,6 +50,9 @@ blocks:
     id: beispiel
     title: Beispiele
     blocks:
+      - type: text
+        text: |
+          Wenn du sehen willst, wie die Umkehrfunktion einen Winkel liefert, helfen zwei Fälle: die Neigung einer Rampe und beide Winkel eines Dreiecks.
       - type: example
         title: Neigung der Rampe
         blocks:
@@ -65,7 +68,7 @@ blocks:
         blocks:
           - type: text
             text: |
-              Ein rechtwinkliges Dreieck hat die Katheten 5 cm und 12 cm. Der Winkel, der der 12 gegenüberliegt, ist $\tan^{-1}\left(\frac{12}{5}\right) \approx 67{,}4^\circ$. Der andere spitze Winkel ist $90^\circ - 67{,}4^\circ = 22{,}6^\circ$.
+              Wenn du beide spitzen Winkel brauchst, berechnest du einen und ergänzt den anderen zu 90°. Ein rechtwinkliges Dreieck hat die Katheten 5 cm und 12 cm. Der Winkel, der der 12 gegenüberliegt, ist $\tan^{-1}\left(\frac{12}{5}\right) \approx 67{,}4^\circ$. Der andere spitze Winkel ist $90^\circ - 67{,}4^\circ = 22{,}6^\circ$.
   - type: section
     id: uebung
     title: Übung
