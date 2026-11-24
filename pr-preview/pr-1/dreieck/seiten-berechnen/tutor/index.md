@@ -43,7 +43,7 @@ Mit dem Taschenrechner aus einem Winkel und einer Seite eine fehlende Seite eine
 
 ### Was du hier lernst
 
-Du berechnest aus einem Winkel und einer Seite eine fehlende Seite eines rechtwinkligen Dreiecks. Du wählst dafür Sinus, Kosinus oder Tangens und bedienst den Taschenrechner richtig.
+Wenn du eine Höhe oder Länge brauchst, die du nicht messen kannst, aber einen Winkel kennst (zum Beispiel wie hoch eine Rampe steigt), berechnest du aus Winkel und Seite die fehlende Seite eines rechtwinkligen Dreiecks. Du wählst dafür Sinus, Kosinus oder Tangens und bedienst den Taschenrechner richtig.
 
 Die Klasse will die Höhe einer Rampe wissen. Gemessen sind die Länge der Rampe und der Winkel, den sie mit dem Boden bildet. Den Sinus eines Winkels liefert der Taschenrechner. Er muss dafür auf Grad stehen, im Display steht oft DEG. Umstellen kannst du das meist mit der Taste MODE, SETUP oder DRG.
 
@@ -51,7 +51,7 @@ Die Klasse will die Höhe einer Rampe wissen. Gemessen sind die Länge der Rampe
 
 ### Das passende Verhältnis wählen
 
-Du kennst den Winkel *α* und eine Seite und willst eine zweite Seite. Welches Verhältnis du brauchst, hängt davon ab, welche zwei Seiten im Spiel sind: die gegebene und die gesuchte.
+Wenn du aus Winkel und Seite eine zweite Seite berechnen willst, musst du entscheiden, welches der drei Verhältnisse passt. Du kennst den Winkel *α* und eine Seite und willst eine zweite Seite. Welches Verhältnis du brauchst, hängt davon ab, welche zwei Seiten im Spiel sind: die gegebene und die gesuchte.
 
 Welches Verhältnis passt zu welchen Seiten?:
 - Seiten im Spiel | Verhältnis

@@ -43,7 +43,7 @@ Erkennen, wann zwei Figuren ähnlich sind, und mit dem Streckfaktor Längen und 
 
 ### Was du hier lernst
 
-Du lernst, wann zwei Figuren ähnlich sind: wenn alle Winkel gleich sind und alle Längen mit demselben Faktor wachsen. Damit berechnest du fehlende Längen und die Fläche vergrößerter Figuren.
+Wenn du ein Foto auf ein Poster vergrößerst, ohne es zu verzerren, müssen Foto und Poster ähnlich sein. Du lernst, wann zwei Figuren ähnlich sind: wenn alle Winkel gleich sind und alle Längen mit demselben Faktor wachsen. Damit berechnest du fehlende Längen und die Fläche vergrößerter Figuren.
 
 Jonas und Mira drucken ein Foto für das Klassenposter. Das Foto ist 9 cm breit und 6 cm hoch. Auf dem Poster soll es 27 cm breit sein, ohne verzerrt zu werden.
 
@@ -51,7 +51,7 @@ Jonas und Mira drucken ein Foto für das Klassenposter. Das Foto ist 9 cm breit
 
 ### Wann Figuren ähnlich sind
 
-Das Foto und das Poster haben dieselbe Form, nur eine andere Größe. Eine Figur ist die zentrische Streckung der anderen, vielleicht noch verschoben, gedreht oder gespiegelt. Solche Figuren heißen **ähnlich**.
+Wenn du prüfen willst, ob ein Bild verzerrt wurde, vergleichst du Winkel und Faktoren. Das Foto und das Poster haben dieselbe Form, nur eine andere Größe. Eine Figur ist die zentrische Streckung der anderen, vielleicht noch verschoben, gedreht oder gespiegelt. Solche Figuren heißen **ähnlich**.
 
 - **ähnlich**: Zwei Figuren sind ähnlich, wenn alle Winkel übereinstimmen und alle Längen mit demselben Faktor $k$ zusammenhängen.
 
@@ -65,7 +65,7 @@ Bei Dreiecken genügt es, zwei Winkel zu vergleichen. Den dritten kennst du aus 
 
 **Beispiel: Zwei Rechtecke prüfen**
 
-Ein Rechteck ist 4 cm breit und 6 cm hoch. Ein anderes ist 10 cm breit und 15 cm hoch. Die Winkel sind in beiden 90°. Prüfe die Faktoren.
+Wenn die Maße zweier Rechtecke gegeben sind und du wissen willst, ob sie ähnlich sind, rechnest du beide Faktoren aus. Ein Rechteck ist 4 cm breit und 6 cm hoch. Ein anderes ist 10 cm breit und 15 cm hoch. Die Winkel sind in beiden 90°. Prüfe die Faktoren.
 
 $k_{\text{Breite}} = \frac{10}{4} = 2{,}5$
 
@@ -75,7 +75,7 @@ Beide Faktoren sind gleich, die Rechtecke sind ähnlich. Ist das zweite 10 cm b
 
 ### Was mit der Fläche passiert
 
-Das Bild zeigt ein Quadrat mit der Seite 1 cm und ein Quadrat mit der Seite 2 cm. Das ist eine Streckung mit $k = 2$. Wie viele kleine Quadrate passen in das große? Zähle die Teile.
+Wenn du wissen willst, wie viel Fläche ein vergrößertes Bild braucht (zum Beispiel Farbe für das Poster), brauchst du den Flächenfaktor. Das Bild zeigt ein Quadrat mit der Seite 1 cm und ein Quadrat mit der Seite 2 cm. Das ist eine Streckung mit $k = 2$. Wie viele kleine Quadrate passen in das große? Zähle die Teile.
 
 Bild: Links ein kleines Quadrat mit der Seite 1 cm und der Fläche 1 cm². Rechts ein Quadrat mit der Seite 2 cm, das durch gestrichelte Linien in vier kleine Quadrate geteilt ist. Bildunterschrift: Doppelte Seitenlänge, vierfache Fläche.
 

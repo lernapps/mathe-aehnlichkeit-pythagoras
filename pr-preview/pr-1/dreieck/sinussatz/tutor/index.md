@@ -43,15 +43,13 @@ In Dreiecken ohne rechten Winkel aus der Höhe den Sinussatz herleiten und damit
 
 ### Was du hier lernst
 
-Du lernst den Sinussatz: Er verbindet in jedem Dreieck jede Seite mit dem gegenüberliegenden Winkel. Damit berechnest du Seiten und Winkel, auch wenn kein Winkel 90° misst.
+Wenn du in einem Dreieck ohne rechten Winkel eine Entfernung brauchst, zum Beispiel zu einem Baum am anderen Ufer, hilft der Sinussatz. Du lernst den Sinussatz: Er verbindet in jedem Dreieck jede Seite mit dem gegenüberliegenden Winkel. Damit berechnest du Seiten und Winkel, auch wenn kein Winkel 90° misst.
 
 Mira und Jonas wollen wissen, wie weit ein Baum am anderen Ufer des Flusses entfernt ist. Am nahen Ufer messen sie eine Strecke AB von 60 m. Von A aus sehen sie den Baum C unter dem Winkel 52° zu AB, von B aus unter 71°.
 
-- Aufgabe `dritter-winkel` (unten)
-
 ### Die Höhe zeigt den Zusammenhang
 
-Der Sinus aus dem rechtwinkligen Dreieck hilft auch hier. Du zerlegst das Dreieck durch eine Höhe in zwei rechtwinklige Dreiecke. In dem Bild unten fällt die Höhe *h* von C senkrecht auf die Seite *c* im Punkt D. Seite *a* liegt dem Winkel *α* gegenüber, *b* liegt *β* gegenüber, *c* liegt *γ* gegenüber.
+Wenn kein Winkel 90° misst, teilst du das Dreieck so, dass rechtwinklige Dreiecke entstehen. Der Sinus aus dem rechtwinkligen Dreieck hilft auch hier. Du zerlegst das Dreieck durch eine Höhe in zwei rechtwinklige Dreiecke. In dem Bild unten fällt die Höhe *h* von C senkrecht auf die Seite *c* im Punkt D. Seite *a* liegt dem Winkel *α* gegenüber, *b* liegt *β* gegenüber, *c* liegt *γ* gegenüber.
 
 Bild: Spitzwinkliges Dreieck ABC mit der gestrichelten Höhe h von C auf die Seite c. Der Winkel bei A ist α, der bei B ist β. Die Seite a liegt A gegenüber, b liegt B gegenüber, c liegt C gegenüber. Bildunterschrift: Die Höhe h teilt das Dreieck in zwei rechtwinklige Dreiecke.
 
@@ -77,7 +75,7 @@ Du brauchst ein Paar aus einer Seite und dem gegenüberliegenden Winkel, dazu ei
 
 **Beispiel: Seite aus zwei Winkeln und einer Seite**
 
-Gegeben: $c = 60$ m, $\alpha = 52^\circ$, $\beta = 71^\circ$. Gesucht ist $b$, die Strecke AC. Erst der dritte Winkel: $\gamma = 180^\circ - 52^\circ - 71^\circ = 57^\circ$. Das Paar $c$ und $\gamma$ ist bekannt, $b$ gehört zu $\beta$.
+Wenn du eine Seite aus zwei Winkeln und einer Seite brauchst, setzt du die Werte in den Sinussatz ein. Gegeben: $c = 60$ m, $\alpha = 52^\circ$, $\beta = 71^\circ$. Gesucht ist $b$, die Strecke AC. Erst der dritte Winkel: $\gamma = 180^\circ - 52^\circ - 71^\circ = 57^\circ$. Das Paar $c$ und $\gamma$ ist bekannt, $b$ gehört zu $\beta$.
 
 $\frac{b}{\sin 71^\circ} = \frac{60}{\sin 57^\circ}$
 
@@ -96,18 +94,6 @@ Der Baum ist etwa 67,6 m von A entfernt.
 ### Wie es weitergeht
 
 Das kannst du jetzt: Mit dem Sinussatz Seiten und Winkel berechnen, wenn ein Paar aus Seite und gegenüberliegendem Winkel bekannt ist. Auf der nächsten Seite kommt der Kosinussatz für die Fälle dazu, in denen dir ein solches Paar fehlt.
-
-### Aufgabe dritter-winkel
-
-- Aufgabe: Wie groß ist der Winkel γ bei C im Dreieck ABC?
-- Antwortformat: eine Antwort wählen
-- Antworten zur Wahl (✓ richtig, ✗ falsch, mit der Meldung der App):
-  - ✓ 57° – Die Winkel im Dreieck sind zusammen 180°. 180° − 52° − 71° = 57°.
-  - ✗ 123° – Das ist die Summe von 52° und 71°. Der dritte Winkel ergänzt sie auf 180°.
-  - ✗ 38° – 90° − 52° würde nur im rechtwinkligen Dreieck gelten. Hier ist kein Winkel 90°, du brauchst die Winkelsumme 180°.
-- Lösung: 57°
-- Erklärung: Im Dreieck ist der dritte Winkel 180° minus die beiden anderen.
-- Link: [../?via=tutor#dritter-winkel](../?via=tutor#dritter-winkel)
 
 ### Aufgabe welche-gleichung
 

@@ -20,9 +20,11 @@ Eltern und Lehrkräfte sehen hier, was der Tutor bekommt. [Zur Seite](../)
 
 ## Wo das Kind gerade ist
 
+- Die erste Nachricht des Kindes nennt diese Seite und je Aufgabe die Nummer, die das Kind gerade vor sich hat, z. B. `?quadrat-umfang=12`. Schlag die Nummern unten bei den Aufgaben nach. Kommt das Kind mit „Hilfe“, nennt `uebung=` die Aufgabe und `abschnitt=` ihren Abschnitt.
 - Steht in der Nachricht „Die App sagt: …“, hat die App das zur Eingabe des Kindes gemeldet. Setz dort an, ohne es zu wiederholen.
 - Eine Zeile wie „…, Nr. 16: richtig im 2. Versuch.“ kommt von „Zurück“ in der App: Aufgabe, Nummer und wie weit das Kind damit kam.
 - „Ich habe auf … geübt:“ kommt von „Zurück zum Tutor“: diese Seite mit den Nummern, dann je geübter Aufgabe, wie es lief, bei einer falschen mit Eingabe und Meldung der App. Setz bei den falschen an, eine nach der anderen.
+- Jede Nummer hat einen Link: die Adresse der Seite, also dieser Tutor-Seite ohne `tutor/` und ohne `?…`, mit der Nummer und `via=tutor`, z. B. `…/dreieck/recap/?quadrat-umfang=12&via=tutor#quadrat-umfang`. Schick ihn immer als volle Adresse, mit Schema und Host dieser Tutor-Seite (z. B. `https://`). Zum Weiterüben nimm eine andere Nummer der Aufgabe und nenn ihren Text. Sag dazu: „Löse sie in der App und drück dann ‚Zurück‘. Füg die Zeile hier ein.“
 
 ## Besondere Anforderungen
 
@@ -39,13 +41,13 @@ Nennt die Adresse dieser Seite `bedarf=`, gilt jeder Abschnitt, den sie nennt, m
 
 Diese Seite ist eine Wiederholung: Sie wiederholt etwas, das das Kind schon können sollte, und hat höchstens zwei Aufgaben zur Kontrolle. Erklär mit dem Inhalt der Seite und frag nach, ob das Kind ihn verstanden hat. Üben kann es das in anderen Apps; welche das sind, steht hier: https://lernapps.net/apps/map/mathematik/c/quadratwurzeln/, https://lernapps.net/apps/map/mathematik/c/flaeche-umfang-quadrat-rechteck/
 
-Quadratwurzeln sowie Fläche und Umfang von Quadrat und Rechteck kurz wiederholt, mit Kurztest.
+Quadratwurzeln sowie Fläche und Umfang von Quadrat und Rechteck kurz wiederholt, mit zwei Übungen zum Prüfen.
 
-Für den Satz des Pythagoras brauchst du Quadratwurzeln und die Fläche von Quadrat und Rechteck. Dazu gehören ein paar Begriffe, die hier kurz erklärt werden. Mach nach jedem Abschnitt den Kurztest. Er zählt nichts und speichert nichts.
+Wenn du eine Länge in einem rechtwinkligen Dreieck ausrechnen willst, brauchst du Quadratwurzeln und die Fläche von Quadrat und Rechteck. Dazu gehören ein paar Begriffe, die hier kurz erklärt werden. Löse am Ende die zwei Übungen. Sie zeigen dir, ob du bereit bist.
 
 ### Quadratwurzeln
 
-Eine **Quadratzahl** entsteht, wenn du eine Zahl mit sich selbst multiplizierst: $7 \cdot 7 = 49$. Die **Quadratwurzel** kehrt das um. Sie fragt, welche nicht negative Zahl mit sich selbst mal genommen die gegebene ergibt.
+Wenn du aus einer Fläche die Seitenlänge eines Quadrats brauchst, fragst du: Welche Zahl mal sich selbst ergibt diese Fläche? Eine **Quadratzahl** entsteht, wenn du eine Zahl mit sich selbst multiplizierst: $7 \cdot 7 = 49$. Die **Quadratwurzel** kehrt das um.
 
 - **Quadratwurzel**: Die Quadratwurzel $\sqrt{a}$ einer Zahl $a \ge 0$ ist die nicht negative Zahl, deren Quadrat $a$ ergibt. Zum Beispiel ist $\sqrt{49} = 7$, denn $7 \cdot 7 = 49$.
 
@@ -53,17 +55,9 @@ Eine **Quadratzahl** entsteht, wenn du eine Zahl mit sich selbst multiplizierst:
 
 Wie groß ist $\sqrt{20}$? Es ist $4 \cdot 4 = 16$ und $5 \cdot 5 = 25$, also liegt die Wurzel zwischen 4 und 5. Mit $4{,}5 \cdot 4{,}5 = 20{,}25$ ist sie etwas kleiner als 4,5. Der Taschenrechner zeigt $\sqrt{20} \approx 4{,}47$.
 
-Interaktiv: Kurztest: Zwischen welchen zwei ganzen Zahlen liegt die Wurzel aus 75? Antwort: zwischen 8 und 9, denn 8 · 8 = 64 und 9 · 9 = 81, und 75 liegt dazwischen.
-
-Interaktiv: Kurztest: Wie groß ist die Wurzel aus 9 + 16? Antwort: 5, denn 9 + 16 = 25 und die Wurzel aus 25 ist 5. Die Wurzeln einzeln zu ziehen (3 + 4 = 7) ist falsch.
-
-Interaktiv: Kurztest: Ein quadratisches Beet hat eine Fläche von 81 m². Wie lang ist eine Seite? Antwort: 9 m, denn 9 · 9 = 81. Die Seite ist die Wurzel aus der Fläche. Die Einheit ist m, nicht m².
-
-Warst du unsicher oder war deine Antwort falsch? Dann schau dir den Baustein „Quadratwurzeln“ auf der [Lernlandkarte](https://lernapps.net/apps/map/mathematik/c/quadratwurzeln/) an.
-
 ### Fläche und Umfang: Rechteck, Quadrat
 
-Der **Flächeninhalt** sagt, wie viel Platz eine Figur einnimmt, in Quadrateinheiten wie cm². Der **Umfang** ist die Länge des Randes, in cm. Beim Rechteck mit den Seiten $a$ und $b$ ist $A = a \cdot b$ und $u = 2 \cdot (a + b)$. Beim Quadrat mit der Seite $a$ ist $A = a \cdot a$ und $u = 4 \cdot a$.
+Wenn du wissen willst, wie viel Platz eine Figur braucht oder wie lang ihr Rand ist, brauchst du Flächeninhalt und Umfang. Der **Flächeninhalt** sagt, wie viel Platz eine Figur einnimmt, in Quadrateinheiten wie cm². Der **Umfang** ist die Länge des Randes, in cm. Beim Rechteck mit den Seiten $a$ und $b$ ist $A = a \cdot b$ und $u = 2 \cdot (a + b)$. Beim Quadrat mit der Seite $a$ ist $A = a \cdot a$ und $u = 4 \cdot a$.
 
 - **Flächeninhalt**: Das Maß dafür, wie viele Einheitsquadrate in eine Figur passen. Ein Rechteck mit 3 cm und 2 cm hat 6 cm², weil 6 Quadrate von 1 cm Seitenlänge hineinpassen.
 
@@ -71,15 +65,57 @@ Der **Flächeninhalt** sagt, wie viel Platz eine Figur einnimmt, in Quadrateinhe
 
 Über einer Strecke von 4 cm Länge kannst du ein Quadrat zeichnen. Seine Fläche ist $4 \cdot 4 = 16$ cm², sein Umfang $4 \cdot 4 = 16$ cm. Zahl gleich, Einheit verschieden. Diese Quadrate über Seiten brauchst du gleich für Pythagoras.
 
-Interaktiv: Kurztest: Ein Quadrat hat den Umfang 20 cm. Wie groß ist seine Fläche? Antwort: 25 cm². Eine Seite ist 20 cm : 4 = 5 cm, die Fläche ist 5 cm · 5 cm = 25 cm².
+### Kannst du das?
 
-Interaktiv: Kurztest: Ein Rechteck ist 7 cm lang und 4,5 cm breit. Wie groß ist sein Umfang? Antwort: 23 cm, denn 2 · (7 + 4,5) = 23. Die Fläche wäre 31,5 cm².
+Wenn du wissen willst, ob du bereit bist, löse diese zwei Übungen. Du bekommst sofort eine Rückmeldung mit Begründung.
 
-Interaktiv: Kurztest: Ein Rechteck hat die Fläche 54 cm² und ist 9 cm lang. Wie breit ist es? Antwort: 6 cm, denn Breite = 54 cm² : 9 cm = 6 cm.
+- Aufgabe `voraussetzungen` (unten)
 
-Warst du unsicher oder war deine Antwort falsch? Dann schau dir den Baustein „Fläche und Umfang: Rechteck, Quadrat“ auf der [Lernlandkarte](https://lernapps.net/apps/map/mathematik/c/flaeche-umfang-quadrat-rechteck/) an.
+- Aufgabe `quadrat-umfang` (unten)
 
 ### Du bist bereit, wenn du …
 
 - Quadratwurzeln erklären und Näherungswerte bestimmen kannst (Quadratwurzeln),
 - Flächeninhalt und Umfang von Quadrat und Rechteck berechnen kannst (Fläche und Umfang: Rechteck, Quadrat).
+
+Warst du bei einem Punkt unsicher? Schau dir die Bausteine auf der Lernlandkarte an: [Quadratwurzeln](https://lernapps.net/apps/map/mathematik/c/quadratwurzeln/) und [Fläche und Umfang: Rechteck, Quadrat](https://lernapps.net/apps/map/mathematik/c/flaeche-umfang-quadrat-rechteck/).
+
+### Aufgabe voraussetzungen
+
+- Aufgabe: Welche Aussagen stimmen? Wähle alle richtigen.
+- Antwortformat: alle richtigen Antworten wählen
+- Antworten zur Wahl (✓ richtig, ✗ falsch, mit der Meldung der App):
+  - ✓ Die Wurzel aus 75 liegt zwischen 8 und 9. – 8 · 8 = 64 und 9 · 9 = 81. Die Zahl 75 liegt dazwischen, also auch ihre Wurzel.
+  - ✗ Die Wurzel aus der Summe 9 + 16 ist 7. – Erst addieren, 9 + 16 = 25, dann die Wurzel, also 5. Die Wurzeln einzeln zu ziehen und zu addieren (3 + 4 = 7) ist falsch.
+  - ✓ Ein Rechteck von 7 cm mal 4,5 cm hat den Umfang 23 cm. – Umfang = 2 · (7 cm + 4,5 cm) = 2 · 11,5 cm = 23 cm. Die Fläche wäre 31,5 cm².
+  - ✗ Ein Quadrat mit dem Umfang 20 cm hat die Fläche 400 cm². – Erst die Seite, 20 cm : 4 = 5 cm, dann die Fläche, 5 cm · 5 cm = 25 cm². Die 400 kommt vom Quadrat des Umfangs.
+  - ✓ Ein Rechteck mit der Fläche 54 cm² und der Länge 9 cm ist 6 cm breit. – Fläche = Länge mal Breite, also Breite = 54 cm² : 9 cm = 6 cm.
+- Lösung: Die Wurzel aus 75 liegt zwischen 8 und 9.; Ein Rechteck von 7 cm mal 4,5 cm hat den Umfang 23 cm.; Ein Rechteck mit der Fläche 54 cm² und der Länge 9 cm ist 6 cm breit.
+- Erklärung: Die ersten Aussagen prüfen Wurzeln, die anderen Fläche und Umfang. Bei jeder falschen findest du oben den Abschnitt dazu.
+- Link: [../?via=tutor#voraussetzungen](../?via=tutor#voraussetzungen)
+
+### Aufgabe quadrat-umfang
+
+- Aufgabe: „Ein quadratisches Beet hat eine Fläche von {A} m². Wie lang ist sein Rand (der Umfang) in m?“
+- Antwortformat: eine Zahl eintippen (m)
+- Tipp der App: „Bestimme zuerst die Seitenlänge: Welche Zahl mal sich selbst ergibt die Fläche?“
+- Lösungsweg:
+  - $\sqrt{{A}}$ ist die Seite, mal 4 gibt {answer} m.
+- Typische Fehler und was die App sagt:
+  - F1: „Das ist die Seitenlänge. Der Rand besteht aus vier Seiten, also noch mal 4.“
+  - F2: „Du hast die Fläche mal 4 genommen. Erst die Seite aus der Fläche bestimmen, das ist die Wurzel, dann mal 4.“
+  - F3: „Das sind nur zwei Seiten. Ein Quadrat hat vier gleich lange Seiten.“
+- Link zu Nummer n: `../?quadrat-umfang=n&via=tutor#quadrat-umfang`
+- Aufgaben nach Nummer: die Werte für `{…}`, die Lösung und was bei den Fehlern herauskommt. Ein Fehler ohne Spalte hat keinen festen Wert; die Meldung der App sagt, ob er vorliegt. `{answer}` ist die Lösung.
+
+```
+Nr. | A | Lösung | F1 | F2 | F3
+1 | 36 | 24 m | 6 | 144 | 12
+2 | 144 | 48 m | 12 | 576 | 24
+3 | 64 | 32 m | 8 | 256 | 16
+4 | 100 | 40 m | 10 | 400 | 20
+5 | 16 | 16 m | 4 | 64 | 8
+6 | 49 | 28 m | 7 | 196 | 14
+7 | 81 | 36 m | 9 | 324 | 18
+8 | 25 | 20 m | 5 | 100 | 10
+```

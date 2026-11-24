@@ -43,7 +43,7 @@ Mit den Strahlensätzen Höhen und Breiten bestimmen, die man nicht direkt messe
 
 ### Was du hier lernst
 
-Du wendest die Strahlensätze auf Vermessungen an: auf die Höhe eines Turms mit dem Schatten und auf die Breite eines Flusses. Du erkennst, wo in einer Sachaufgabe die Parallelen und das Zentrum stecken.
+Wie hoch ist ein Turm, wie breit ist ein Fluss, ohne hinaufzuklettern oder hinüberzuschwimmen? Mit den Strahlensätzen rechnest du es aus. Du wendest die Strahlensätze auf Vermessungen an: auf die Höhe eines Turms mit dem Schatten und auf die Breite eines Flusses. Du erkennst, wo in einer Sachaufgabe die Parallelen und das Zentrum stecken.
 
 Die Klasse von Mira und Jonas misst den Turm im Park. Hinaufklettern geht nicht. Jonas stellt einen Stab von 1,5 m Höhe senkrecht auf. Er verschiebt ihn so lange, bis sein Schatten genau am Ende des Turmschattens aufhört.
 
@@ -51,7 +51,7 @@ Die Klasse von Mira und Jonas misst den Turm im Park. Hinaufklettern geht nicht.
 
 ### Wo die Strahlensätze stecken
 
-Im Bild stehen Turm und Stab beide senkrecht, sie sind also parallel. Die Sonnenlinie von der Turmspitze über die Stabspitze bis zum Schattenende Z ist der eine Strahl, der Boden ist der andere. Z ist das Streckzentrum.
+Wenn du eine Sachaufgabe siehst, suchst du zuerst die Parallelen und das Zentrum. Im Bild stehen Turm und Stab beide senkrecht, sie sind also parallel. Die Sonnenlinie von der Turmspitze über die Stabspitze bis zum Schattenende Z ist der eine Strahl, der Boden ist der andere. Z ist das Streckzentrum.
 
 Bild: Ein Turm der gesuchten Höhe und ein 1,5 m hoher Stab stehen senkrecht auf dem Boden. Der Stab hat 3 m Schatten, der Turm 24 m. Die Sonnenlinie geht von der Turmspitze über die Stabspitze zum Schattenende Z. Bildunterschrift: Skizze, nicht maßstabsgetreu: Turm, Stab und Sonnenlinie bilden eine Figur mit Z und zwei Parallelen.
 
@@ -69,7 +69,7 @@ Du brauchst zwei parallele Strecken (hier senkrecht stehende Gegenstände) und g
 
 ### Die Breite eines Flusses
 
-Ein Baum S steht am anderen Ufer genau gegenüber von P. Du willst die Breite *w* = SP des Flusses wissen. Am nahen Ufer gehst du von P nach Q und steckst dabei in M einen Pflock. Bei Q gehst du im rechten Winkel zum Ufer von dir weg, bis Pflock M und Baum S in einer Linie liegen. Das ist Punkt R. Du misst PM = 30 m, MQ = 10 m und QR = 12 m.
+Wenn du die Breite eines Flusses brauchst, ohne ihn zu überqueren, misst du am Ufer und nutzt ähnliche Dreiecke. Ein Baum S steht am anderen Ufer genau gegenüber von P. Du willst die Breite *w* = SP des Flusses wissen. Am nahen Ufer gehst du von P nach Q und steckst dabei in M einen Pflock. Bei Q gehst du im rechten Winkel zum Ufer von dir weg, bis Pflock M und Baum S in einer Linie liegen. Das ist Punkt R. Du misst PM = 30 m, MQ = 10 m und QR = 12 m.
 
 Bild: Ein Fluss liegt zwischen dem Baum S und dem Ufer mit den Punkten P, M und Q. Die Strecken SP und QR sind parallel. Eine Gerade geht von S über M nach R. Gesucht ist die Breite w des Flusses. Es ist PM = 30 m, MQ = 10 m und QR = 12 m. Bildunterschrift: Skizze, nicht maßstabsgetreu: Die Strecken SP und QR sind parallel, M ist das Zentrum.
 

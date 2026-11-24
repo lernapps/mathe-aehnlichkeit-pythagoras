@@ -43,7 +43,7 @@ Eine Figur vom Streckzentrum aus vergrößern oder verkleinern und sehen, was da
 
 ### Was du hier lernst
 
-Du lernst, wie eine Figur von einem Punkt aus vergrößert oder verkleinert wird. Du erkennst, was dabei gleich bleibt und was sich ändert, und kannst aus zwei Längen den Streckfaktor bestimmen.
+Wenn ein Foto größer wird oder dein Schatten an der Wand wächst, fragst du: Was bleibt gleich, und wie hängen die Längen zusammen? Die zentrische Streckung beantwortet das. Du lernst, wie eine Figur von einem Punkt aus vergrößert oder verkleinert wird. Du erkennst, was dabei gleich bleibt und was sich ändert, und kannst aus zwei Längen den Streckfaktor bestimmen.
 
 Mira hält ein Pappdreieck vor eine kleine Lampe. An der Wand erscheint der Schatten: ein größeres Dreieck mit derselben Form.
 
@@ -51,7 +51,7 @@ Mira hält ein Pappdreieck vor eine kleine Lampe. An der Wand erscheint der Scha
 
 ### So wird gestreckt
 
-Die Lampe ist das **Streckzentrum** Z. Von Z aus geht ein Strahl (eine Linie, die in Z beginnt und unbegrenzt weiterläuft) durch jede Ecke der Pappe. Der Schatten dieser Ecke liegt auf demselben Strahl, weiter weg von Z. Ist der Schatten einer Ecke doppelt so weit von Z entfernt wie die Ecke selbst, gilt das für jede Ecke. Diese Zahl, hier 2, heißt **Streckfaktor** *k*: Bild-Abstand zu Z durch Original-Abstand zu Z.
+Wenn du genau beschreiben willst, wie eine Figur von einem Punkt aus größer oder kleiner wird, brauchst du diesen Punkt und eine Zahl. Die Lampe ist das **Streckzentrum** Z. Von Z aus geht ein Strahl (eine Linie, die in Z beginnt und unbegrenzt weiterläuft) durch jede Ecke der Pappe. Der Schatten dieser Ecke liegt auf demselben Strahl, weiter weg von Z. Ist der Schatten einer Ecke doppelt so weit von Z entfernt wie die Ecke selbst, gilt das für jede Ecke. Diese Zahl, hier 2, heißt **Streckfaktor** *k*: Bild-Abstand zu Z durch Original-Abstand zu Z.
 
 - **Zentrische Streckung**: Jedem Punkt $P$ wird ein Bildpunkt $P'$ auf dem Strahl von $Z$ durch $P$ zugeordnet. Seine Entfernung von $Z$ ist das $k$-Fache der Entfernung von $P$.
 
@@ -69,7 +69,7 @@ Bei einer zentrischen Streckung mit dem Faktor *k* bleiben alle Winkel gleich. J
 
 **Beispiel: Aus zwei Längen den Faktor berechnen**
 
-Eine Strecke AB ist 3 cm lang, ihr Bild A′B′ ist 7,5 cm lang. Der Faktor ist Bildlänge durch Originallänge.
+Wenn Original und Bild gegeben sind und du wissen willst, wie stark gestreckt wurde, bestimmst du den Faktor. Eine Strecke AB ist 3 cm lang, ihr Bild A′B′ ist 7,5 cm lang. Der Faktor ist Bildlänge durch Originallänge.
 
 $k = \frac{7{,}5}{3} = 2{,}5$
 

@@ -43,7 +43,7 @@ Hypotenuse und Katheten berechnen, mit der Umkehrung rechte Winkel prüfen und d
 
 ### Was du hier lernst
 
-Du berechnest mit dem Satz des Pythagoras die Hypotenuse und eine Kathete, prüfst mit der Umkehrung, ob ein Dreieck rechtwinklig ist, und löst damit Sachaufgaben.
+Wenn du die Länge einer Rampe, einer Leiter oder einer Diagonale brauchst, die du nicht messen kannst, berechnest du sie mit dem Satz des Pythagoras. Du berechnest mit dem Satz des Pythagoras die Hypotenuse und eine Kathete, prüfst mit der Umkehrung, ob ein Dreieck rechtwinklig ist, und löst damit Sachaufgaben.
 
 Mira zeichnet den Plan für das Beet im Schulgarten: ein rechtwinkliges Dreieck mit den Katheten 6 cm und 8 cm. Wie lang wird die dritte Seite? Sie rechnet erst und misst dann nach.
 
@@ -51,7 +51,7 @@ Mira zeichnet den Plan für das Beet im Schulgarten: ein rechtwinkliges Dreieck 
 
 ### Eine Seite ausrechnen
 
-Aus $a^2 + b^2 = c^2$ folgt durch Wurzelziehen die Hypotenuse. Ist die Hypotenuse bekannt und eine Kathete, stellst du um: Du subtrahierst das Quadrat der bekannten Kathete.
+Wenn zwei Seiten bekannt sind und eine fehlt, gibt es zwei Fälle: Die Hypotenuse fehlt oder eine Kathete. Aus $a^2 + b^2 = c^2$ folgt durch Wurzelziehen die Hypotenuse. Ist die Hypotenuse bekannt und eine Kathete, stellst du um: Du subtrahierst das Quadrat der bekannten Kathete.
 
 $c = \sqrt{a^2 + b^2}$
 
@@ -91,7 +91,7 @@ Die Rampe ist etwa 3,26 m lang.
 
 ### Ist das Dreieck rechtwinklig?
 
-Der Satz lässt sich umkehren. Stimmt für drei Seitenlängen die Gleichung $a^2 + b^2 = c^2$, wobei *c* die längste Seite ist, dann ist das Dreieck rechtwinklig. Stimmt sie nicht, ist es nicht rechtwinklig. Damit prüfst du auch das Seil mit den Knoten vom Schulgarten. Warum das stimmt: Zeichne ein rechtwinkliges Dreieck mit den Katheten *a* und *b*. Seine Hypotenuse *c*′ erfüllt $a^2 + b^2 = c'^2$. Gilt auch $a^2 + b^2 = c^2$, ist *c*′ = *c*. Beide Dreiecke haben dann drei gleiche Seiten, sie sind kongruent, und das gegebene Dreieck hat denselben rechten Winkel.
+Wenn du prüfen willst, ob eine Ecke rechtwinklig ist (zum Beispiel beim Abstecken eines Beetes), drehst du den Satz um. Der Satz lässt sich umkehren. Stimmt für drei Seitenlängen die Gleichung $a^2 + b^2 = c^2$, wobei *c* die längste Seite ist, dann ist das Dreieck rechtwinklig. Stimmt sie nicht, ist es nicht rechtwinklig. Damit prüfst du auch das Seil mit den Knoten vom Schulgarten. Warum das stimmt: Zeichne ein rechtwinkliges Dreieck mit den Katheten *a* und *b*. Seine Hypotenuse *c*′ erfüllt $a^2 + b^2 = c'^2$. Gilt auch $a^2 + b^2 = c^2$, ist *c*′ = *c*. Beide Dreiecke haben dann drei gleiche Seiten, sie sind kongruent, und das gegebene Dreieck hat denselben rechten Winkel.
 
 - **Umkehrung des Satzes des Pythagoras**: Gilt in einem Dreieck $a^2 + b^2 = c^2$ für die längste Seite $c$, dann liegt dem $c$ ein rechter Winkel gegenüber.
 

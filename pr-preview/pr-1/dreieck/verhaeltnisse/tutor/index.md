@@ -43,15 +43,13 @@ Gleicher Winkel, gleiche Verhältnisse. Daraus entstehen Sinus, Kosinus und Tang
 
 ### Was du hier lernst
 
-Du lernst, warum in rechtwinkligen Dreiecken mit demselben Winkel die Seitenverhältnisse gleich sind, und wie diese Verhältnisse heißen: Sinus, Kosinus und Tangens.
+Wenn du die Neigung einer Rampe beschreiben willst, ohne die Rampe zu vermessen, brauchst du Seitenverhältnisse, die nur vom Winkel abhängen. Du lernst, warum in rechtwinkligen Dreiecken mit demselben Winkel die Seitenverhältnisse gleich sind, und wie diese Verhältnisse heißen: Sinus, Kosinus und Tangens.
 
-Die Klasse will die Neigung einer Rampe beschreiben, ohne die Rampe zu vermessen. Mira zeichnet zwei rechtwinklige Dreiecke mit dem Winkel 35° bei A. Das erste hat die Hypotenuse 5 cm und die Gegenkathete 2,87 cm. Das zweite hat die Hypotenuse 10 cm.
-
-- Aufgabe `gegenkathete-doppelt` (unten)
+Die Klasse will die Neigung einer Rampe beschreiben, ohne die Rampe zu vermessen. Mira zeichnet zwei rechtwinklige Dreiecke mit dem Winkel 35° bei A. Das erste hat die Hypotenuse 5 cm und die Gegenkathete 2,87 cm. Das zweite hat die Hypotenuse 10 cm. Wie lang ist dessen Gegenkathete? Das klärst du auf dieser Seite.
 
 ### Gleicher Winkel, gleiche Verhältnisse
 
-Zwei rechtwinklige Dreiecke mit demselben spitzen Winkel *α* haben zwei gleiche Winkel. Sie sind ähnlich, ihre Seiten wachsen mit demselben Faktor. Dann sind auch die Verhältnisse zweier Seiten in beiden Dreiecken gleich. Sie hängen nur vom Winkel *α* ab.
+Wenn du Winkel und Seitenlängen verbinden willst, brauchst du Verhältnisse, die nur vom Winkel abhängen. Zwei rechtwinklige Dreiecke mit demselben spitzen Winkel *α* haben zwei gleiche Winkel. Sie sind ähnlich, ihre Seiten wachsen mit demselben Faktor. Dann sind auch die Verhältnisse zweier Seiten in beiden Dreiecken gleich. Sie hängen nur vom Winkel *α* ab.
 
 Dafür brauchst du Namen, die vom Winkel *α* ausgehen. Die **Gegenkathete** liegt *α* gegenüber, die **Ankathete** liegt an *α* an, und die Hypotenuse bleibt die Seite gegenüber dem rechten Winkel.
 
@@ -79,7 +77,7 @@ Die Namen Gegenkathete und Ankathete gehören zu einem Winkel. Wechselst du zum 
 
 **Beispiel: Die drei Verhältnisse bei 30°**
 
-Ein Dreieck hat den Winkel $\alpha = 30^\circ$ und die Hypotenuse 8 cm. Die Gegenkathete ist 4 cm, die Ankathete etwa 6,93 cm.
+Wenn du die drei Verhältnisse an einem Winkel ausrechnen willst, brauchst du nur ein Dreieck mit diesem Winkel. Ein Dreieck hat den Winkel $\alpha = 30^\circ$ und die Hypotenuse 8 cm. Die Gegenkathete ist 4 cm, die Ankathete etwa 6,93 cm.
 
 $\sin 30^\circ = \frac{4}{8} = 0{,}5$
 
@@ -102,18 +100,6 @@ $\tan 30^\circ = \frac{4}{6{,}93} \approx 0{,}577$
 ### Wie es weitergeht
 
 Das kannst du jetzt: Gegenkathete, Ankathete und Hypotenuse vom Winkel aus benennen und Sinus, Kosinus und Tangens als Seitenverhältnisse bestimmen. Auf der nächsten Seite berechnest du mit dem Taschenrechner fehlende Seiten.
-
-### Aufgabe gegenkathete-doppelt
-
-- Aufgabe: Wie lang ist die Gegenkathete des zweiten Dreiecks?
-- Antwortformat: eine Antwort wählen
-- Antworten zur Wahl (✓ richtig, ✗ falsch, mit der Meldung der App):
-  - ✗ 7,87 cm – Du hast 5 cm addiert, weil die Hypotenuse um 5 cm länger ist. Ähnliche Dreiecke wachsen mit einem Faktor, nicht mit einem Zuschlag.
-  - ✗ 2,87 cm – Das zweite Dreieck ist doppelt so groß, seine Gegenkathete ist es auch.
-  - ✓ 5,74 cm – Beide Dreiecke haben den Winkel 35° und den rechten Winkel, sie sind ähnlich. Die Hypotenuse wird mit 2 multipliziert, also auch die Gegenkathete, 2 · 2,87 cm.
-- Lösung: 5,74 cm
-- Erklärung: Zwei rechtwinklige Dreiecke mit gleichem Winkel sind ähnlich. Alle Längen wachsen mit demselben Faktor.
-- Link: [../?via=tutor#gegenkathete-doppelt](../?via=tutor#gegenkathete-doppelt)
 
 ### Aufgabe gegenkathete-von-alpha
 

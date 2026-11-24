@@ -43,7 +43,7 @@ Den Kosinussatz aus Pythagoras herleiten und damit Seiten und Winkel berechnen, 
 
 ### Was du hier lernst
 
-Du lernst den Kosinussatz. Er ist der Satz des Pythagoras für Dreiecke ohne rechten Winkel. Damit berechnest du die dritte Seite aus zwei Seiten und dem eingeschlossenen Winkel, und Winkel aus drei Seiten. Danach weißt du, wann du Sinussatz und wann Kosinussatz brauchst.
+Wenn du in einem Dreieck zwei Seiten und den Winkel dazwischen kennst, aber kein Paar aus Seite und Gegenwinkel, brauchst du den Kosinussatz. Du lernst den Kosinussatz. Er ist der Satz des Pythagoras für Dreiecke ohne rechten Winkel. Damit berechnest du die dritte Seite aus zwei Seiten und dem eingeschlossenen Winkel, und Winkel aus drei Seiten. Danach weißt du, wann du Sinussatz und wann Kosinussatz brauchst.
 
 Zwei gerade Wege führen von der Schule aus zu einem Spielplatz und zu einem Teich. Sie sind 120 m und 150 m lang und schließen einen Winkel von 70° ein. Wie weit liegen Spielplatz und Teich auseinander? Ein Paar aus Seite und gegenüberliegendem Winkel ist nicht bekannt.
 
@@ -51,7 +51,7 @@ Zwei gerade Wege führen von der Schule aus zu einem Spielplatz und zu einem Tei
 
 ### Pythagoras mit einem Korrekturglied
 
-Du zerlegst das Dreieck wieder mit einer Höhe. Im Bild unten fällt die Höhe *h* von B senkrecht auf die Seite *b*. Der Punkt D teilt *b* in *x* und *b* − *x*. Im Dreieck ABD gilt $x = c \cdot \cos \alpha$ und $h = c \cdot \sin \alpha$.
+Wenn der Winkel nicht 90° ist, stimmt Pythagoras nicht mehr. Der Kosinussatz sagt, wie viel fehlt. Du zerlegst das Dreieck wieder mit einer Höhe. Im Bild unten fällt die Höhe *h* von B senkrecht auf die Seite *b*. Der Punkt D teilt *b* in *x* und *b* − *x*. Im Dreieck ABD gilt $x = c \cdot \cos \alpha$ und $h = c \cdot \sin \alpha$.
 
 Bild: Spitzwinkliges Dreieck ABC mit der gestrichelten Höhe h von B auf die Seite b. Der Fußpunkt D teilt b in die Strecken x und b minus x. Der Winkel bei A ist α. Bildunterschrift: Die Höhe h von B teilt b in x und b − x.
 
@@ -84,7 +84,7 @@ Welcher Satz passt zu welcher Angabe?:
 
 **Beispiel: Abstand von Spielplatz und Teich**
 
-Gegeben: $b = 120$ m, $c = 150$ m und $\alpha = 70^\circ$ zwischen ihnen.
+Wenn du den Abstand zweier Orte brauchst und nur die Wege und den Winkel kennst, setzt du sie in den Kosinussatz ein. Gegeben: $b = 120$ m, $c = 150$ m und $\alpha = 70^\circ$ zwischen ihnen.
 
 Es ist $120^2 = 14\,400$, $150^2 = 22\,500$ und $2 \cdot 120 \cdot 150 = 36\,000$.
 

@@ -43,7 +43,7 @@ Aus zwei Seiten eines rechtwinkligen Dreiecks mit den Umkehrfunktionen des Tasch
 
 ### Was du hier lernst
 
-Du berechnest einen Winkel, wenn zwei Seiten eines rechtwinkligen Dreiecks bekannt sind. Dafür nutzt du die Umkehrfunktionen auf dem Taschenrechner.
+Wenn du wissen willst, wie steil etwas ist (eine Rampe, ein Dach), brauchst du den Winkel. Du berechnest einen Winkel, wenn zwei Seiten eines rechtwinkligen Dreiecks bekannt sind. Dafür nutzt du die Umkehrfunktionen auf dem Taschenrechner.
 
 Die Rampe der Klasse ist 4 m lang und überwindet 0,5 m Höhe. Wie stark steigt sie? Mira rechnet die Gegenkathete durch die Hypotenuse und bekommt 0,125. Das ist der Sinus des gesuchten Winkels, nicht der Winkel selbst.
 
@@ -51,7 +51,7 @@ Die Rampe der Klasse ist 4 m lang und überwindet 0,5 m Höhe. Wie stark steig
 
 ### Die Umkehrfunktionen
 
-Der Sinus macht aus einem Winkel ein Verhältnis. Die Umkehrfunktion macht aus dem Verhältnis wieder den Winkel. Auf dem Taschenrechner heißt sie sin⁻¹, cos⁻¹ und tan⁻¹ (oft über den Tasten sin, cos, tan, erreichbar mit SHIFT oder 2nd). Für spitze Winkel gilt: Ist $\sin \alpha = x$, dann ist $\alpha = \sin^{-1}(x)$.
+Wenn zwei Seiten bekannt sind und der Winkel gesucht wird, kehrst du Sinus, Kosinus oder Tangens um. Der Sinus macht aus einem Winkel ein Verhältnis. Die Umkehrfunktion macht aus dem Verhältnis wieder den Winkel. Auf dem Taschenrechner heißt sie sin⁻¹, cos⁻¹ und tan⁻¹ (oft über den Tasten sin, cos, tan, erreichbar mit SHIFT oder 2nd). Für spitze Winkel gilt: Ist $\sin \alpha = x$, dann ist $\alpha = \sin^{-1}(x)$.
 
 $\alpha = \sin^{-1} \left( \frac{\text{Gegenkathete}}{\text{Hypotenuse}} \right)$
 
