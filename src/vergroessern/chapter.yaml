@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Vergrößern und verkleinern
+summary: Eine Figur wächst vom Streckzentrum aus. Winkel bleiben gleich, Längen wachsen mit demselben Faktor. Daraus folgen die Strahlensätze.
+pages: [recap, streckung, aehnliche-figuren, strahlensaetze, turmhoehe]
+# Die Selbsteinschätzung des Kapitels: erzeugte Aufgaben, die ohne ihre Seite verständlich sind (je Seite zwei).
+selfAssessment:
+  pages:
+    - exercises:
+        - /vergroessern/streckung/#bildlaenge
+        - /vergroessern/streckung/#faktor-bestimmen
+        - /vergroessern/aehnliche-figuren/#aehnliches-rechteck
+    - exercises:
+        - /vergroessern/aehnliche-figuren/#flaeche-faktor
+        - /vergroessern/strahlensaetze/#erster-satz
+        - /vergroessern/strahlensaetze/#teilstueck
+    - exercises:
+        - /vergroessern/turmhoehe/#turm-hoehe
+        - /vergroessern/turmhoehe/#fluss-breite

@@ -1,0 +1,220 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Seiten mit Sinus, Kosinus und Tangens berechnen
+description: Mit dem Taschenrechner aus einem Winkel und einer Seite eine fehlende Seite eines rechtwinkligen Dreiecks bestimmen.
+competencies: [trigonometrie]
+blocks:
+  - type: section
+    id: einstieg
+    title: Was du hier lernst
+    blocks:
+      - type: text
+        text: |
+          Wenn du eine Höhe oder Länge brauchst, die du nicht messen kannst, aber einen Winkel kennst (zum Beispiel wie hoch eine Rampe steigt), berechnest du aus Winkel und Seite die fehlende Seite eines rechtwinkligen Dreiecks. Du wählst dafür Sinus, Kosinus oder Tangens und bedienst den Taschenrechner richtig.
+      - type: text
+        text: |
+          Die Klasse will die Höhe einer Rampe wissen. Gemessen sind die Länge der Rampe und der Winkel, den sie mit dem Boden bildet. Dafür brauchst du den Sinus eines Winkels, und den liefert der Taschenrechner. Er muss dabei auf Grad stehen, im Display steht oft DEG. Umstellen kannst du das meist mit der Taste MODE, SETUP oder DRG.
+      - type: single-choice
+        id: rechner-modus
+        text: Du tippst sin 30° in den Taschenrechner. Er steht auf Grad (DEG). Was zeigt er?
+        options:
+          - text: "−0,988"
+            correct: false
+            info: Das zeigt ein Rechner im Bogenmaß (RAD), wenn du 30 eintippst. Stelle ihn auf DEG.
+          - text: "0,5"
+            correct: true
+            info: In einem Dreieck mit 30° ist die Gegenkathete halb so lang wie die Hypotenuse. Der Sinus ist 0,5.
+          - text: "30"
+            correct: false
+            info: Der Rechner liefert nicht den Winkel zurück, sondern das Verhältnis Gegenkathete durch Hypotenuse.
+        explanation: Im Gradmaß (DEG) ist sin 30° = 0,5. Prüfe vor jeder Rechnung den Modus.
+  - type: section
+    id: idee
+    title: Das passende Verhältnis wählen
+    blocks:
+      - type: text
+        text: |
+          Wenn du aus Winkel und Seite eine zweite Seite berechnen willst, musst du entscheiden, welches der drei Verhältnisse passt. Du kennst den Winkel *α* und eine Seite und willst eine zweite Seite. Welches Verhältnis du brauchst, hängt davon ab, welche zwei Seiten im Spiel sind: die gegebene und die gesuchte.
+      - type: table
+        caption: Welches Verhältnis passt zu welchen Seiten?
+        header: [Seiten im Spiel, Verhältnis]
+        rows:
+          - [Gegenkathete und Hypotenuse, Sinus]
+          - [Ankathete und Hypotenuse, Kosinus]
+          - [Gegenkathete und Ankathete, Tangens]
+      - type: text
+        text: |
+          Dann stellst du die Gleichung nach der gesuchten Seite um. Ist die gesuchte Seite im Zähler, multiplizierst du. Steht sie im Nenner, teilst du.
+      - type: formula
+        formula: '\text{Gegenkathete} = \text{Hypotenuse} \cdot \sin \alpha'
+      - type: formula
+        formula: '\text{Ankathete} = \text{Hypotenuse} \cdot \cos \alpha'
+      - type: formula
+        formula: '\text{Gegenkathete} = \text{Ankathete} \cdot \tan \alpha'
+      - type: note
+        title: Merke
+        blocks:
+          - type: text
+            text: |
+              Zeichne zuerst eine Skizze und benenne die Seiten vom Winkel *α* aus. Schreibe dann das passende Verhältnis auf, bevor du rechnest. Der Rechner muss auf Grad (DEG) stehen.
+  - type: section
+    id: beispiel
+    title: Beispiele
+    blocks:
+      - type: text
+        text: |
+          Wenn du sehen willst, wie du das passende Verhältnis wählst, helfen zwei Fälle: Die Höhe einer Rampe ist gesucht, und ihre Länge ist gesucht.
+      - type: example
+        title: Rampenhöhe
+        blocks:
+          - type: text
+            text: |
+              Eine Rampe ist 5 m lang und bildet mit dem Boden den Winkel 8°. Gesucht ist die Höhe, also die Gegenkathete. Die Rampe ist die Hypotenuse, also gilt Sinus.
+          - type: formula
+            formula: 'h = 5 \cdot \sin 8^\circ \approx 5 \cdot 0{,}139 = 0{,}70'
+          - type: text
+            text: |
+              Die Rampe überwindet etwa 0,70 m Höhe.
+      - type: example
+        title: Hypotenuse gesucht
+        blocks:
+          - type: text
+            text: |
+              Eine Rampe soll 0,8 m Höhe überwinden und 6° steigen. Die gesuchte Hypotenuse steht im Nenner, also wird geteilt.
+          - type: formula
+            formula: 'c = \frac{0{,}8}{\sin 6^\circ} \approx 7{,}65'
+  - type: section
+    id: uebung
+    title: Übung
+    blocks:
+      - type: single-choice
+        id: welches-verhaeltnis
+        text: Gegeben sind die Hypotenuse und der Winkel α, gesucht ist die Ankathete von α. Mit welcher Gleichung rechnest du?
+        options:
+          - text: Ankathete = Hypotenuse · sin α
+            correct: false
+            info: Der Sinus gehört zur Gegenkathete. Die Ankathete liegt an α an, dafür brauchst du den Kosinus.
+          - text: "Ankathete = Hypotenuse : cos α"
+            correct: false
+            info: "Die richtige Funktion, aber falsch herum. Cos α = Ankathete : Hypotenuse, nach der Ankathete aufgelöst wird multipliziert."
+          - text: Ankathete = Hypotenuse · cos α
+            correct: true
+            info: Ankathete und Hypotenuse gehören zum Kosinus. Die gesuchte Seite steht im Zähler, also wird multipliziert.
+        explanation: Die Ankathete liegt an α an. Ankathete und Hypotenuse gehören zum Kosinus.
+      - type: ordering
+        id: reihenfolge
+        text: Bringe die Schritte einer Rechnung mit Winkel und Seite in die richtige Reihenfolge.
+        items:
+          - Skizze zeichnen und die Seiten vom Winkel aus benennen
+          - Das Verhältnis wählen, in dem gegebene und gesuchte Seite vorkommen
+          - Die Gleichung nach der gesuchten Seite umstellen
+          - Den Taschenrechner auf Grad (DEG) stellen und einsetzen
+          - Das Ergebnis mit Einheit angeben und prüfen, ob es zur Skizze passt
+        explanation: Erst die Skizze und das passende Verhältnis, dann umstellen, dann rechnen. Zum Schluss prüfst du, ob die Seite zur Skizze passt, zum Beispiel ob die Hypotenuse die längste ist.
+      - type: generated
+        id: gegenkathete
+        given:
+          c: { int: [4, 20] }
+          alpha: { oneOf: [15, 20, 25, 30, 35, 40, 50, 55, 60, 65, 70, 75] }
+        task:
+          text: "In einem rechtwinkligen Dreieck ist die Hypotenuse c = {{c}} cm lang und der Winkel α = {{alpha}}°. Wie lang ist die Gegenkathete von α? Runde auf eine Stelle nach dem Komma."
+        answer:
+          {
+            value: "round(c * sin(alpha), 1)",
+            compare: { number: { format: decimal, decimals: 1, tolerance: 0.05, unit: cm } },
+          }
+        mistakes:
+          - {
+              value: "round(c * cos(alpha), 1)",
+              message: "Das ist die Ankathete. Die Gegenkathete liegt α gegenüber, dafür brauchst du den Sinus.",
+            }
+          - {
+              value: "round(c / sin(alpha), 1)",
+              message: "Du hast geteilt. Sin α = Gegenkathete : Hypotenuse, nach der Gegenkathete aufgelöst wird multipliziert.",
+            }
+          - {
+              value: "round(c * sin(alpha * 57.29578), 1)",
+              message: "Dein Taschenrechner rechnet im Bogenmaß (RAD). Stelle ihn auf Grad (DEG).",
+            }
+        hint: "Gegenkathete und Hypotenuse gehören zum Sinus. Rechne Hypotenuse mal sin α."
+        steps:
+          - '$a = c \cdot \sin \alpha = {{c}} \cdot \sin {{alpha}}^\circ \approx {{answer}}$, also {{answer}} cm.'
+      - type: generated
+        id: ankathete
+        given:
+          c: { int: [4, 20] }
+          alpha: { oneOf: [15, 20, 25, 30, 35, 40, 50, 55, 60, 65, 70, 75] }
+        task:
+          text: "In einem rechtwinkligen Dreieck ist die Hypotenuse c = {{c}} cm lang und der Winkel α = {{alpha}}°. Wie lang ist die Ankathete von α? Runde auf eine Stelle nach dem Komma."
+        answer:
+          {
+            value: "round(c * cos(alpha), 1)",
+            compare: { number: { format: decimal, decimals: 1, tolerance: 0.05, unit: cm } },
+          }
+        mistakes:
+          - {
+              value: "round(c * sin(alpha), 1)",
+              message: "Das ist die Gegenkathete. Die Ankathete liegt an α an, dafür brauchst du den Kosinus.",
+            }
+          - {
+              value: "round(c / cos(alpha), 1)",
+              message: "Du hast geteilt. Cos α = Ankathete : Hypotenuse, nach der Ankathete aufgelöst wird multipliziert.",
+            }
+        hint: "Ankathete und Hypotenuse gehören zum Kosinus."
+        steps:
+          - '$b = c \cdot \cos \alpha = {{c}} \cdot \cos {{alpha}}^\circ \approx {{answer}}$, also {{answer}} cm.'
+      - type: generated
+        id: hoehe-tangens
+        given:
+          d: { int: [20, 80], step: 5 }
+          alpha: { oneOf: [20, 25, 30, 35, 40, 50, 55, 60] }
+        where: ["d * tan(alpha) <= 60"]
+        task:
+          text: "Du stehst {{d}} m von einem Turm entfernt auf ebenem Boden. Die Turmspitze siehst du unter dem Höhenwinkel α = {{alpha}}°. Wie hoch ist der Turm über deiner Augenhöhe? Runde auf eine Stelle nach dem Komma."
+        answer:
+          {
+            value: "round(d * tan(alpha), 1)",
+            compare: { number: { format: decimal, decimals: 1, tolerance: 0.05, unit: m } },
+          }
+        mistakes:
+          - {
+              value: "round(d * sin(alpha), 1)",
+              message: "Der Sinus braucht die Hypotenuse. Hier sind Entfernung (Ankathete) und Höhe (Gegenkathete) im Spiel, das ist der Tangens.",
+            }
+          - {
+              value: "round(d / tan(alpha), 1)",
+              message: "Du hast geteilt. Tan α = Höhe : Entfernung, nach der Höhe aufgelöst wird multipliziert.",
+            }
+        hint: "Entfernung ist die Ankathete, Höhe die Gegenkathete: Tangens."
+        steps:
+          - '$h = d \cdot \tan \alpha = {{d}} \cdot \tan {{alpha}}^\circ \approx {{answer}}$, also {{answer}} m.'
+      - type: generated
+        id: rampe-laenge
+        given:
+          h: { oneOf: [0.4, 0.6, 0.8, 1, 1.2] }
+          alpha: { oneOf: [4, 5, 6, 8, 10] }
+        task:
+          text: "Eine Rampe soll {{h}} m Höhe überwinden und mit dem Boden den Winkel α = {{alpha}}° bilden. Wie lang wird die Rampe? Runde auf eine Stelle nach dem Komma."
+        answer:
+          {
+            value: "round(h / sin(alpha), 1)",
+            compare: { number: { format: decimal, decimals: 1, tolerance: 0.05, unit: m } },
+          }
+        mistakes:
+          - {
+              value: "round(h * sin(alpha), 1)",
+              message: "Du hast multipliziert. Die gesuchte Rampe ist die Hypotenuse, sie steht im Nenner: Länge = Höhe durch sin α.",
+            }
+          - {
+              value: "round(h / cos(alpha), 1)",
+              message: "Der Kosinus gehört zur Ankathete. Die Höhe ist die Gegenkathete, also brauchst du den Sinus.",
+            }
+        hint: "Höhe ist die Gegenkathete, die Rampe die Hypotenuse. Löse sin α = Höhe : Länge nach der Länge auf."
+        steps:
+          - '$c = \frac{h}{\sin \alpha} = \frac{{{h}}}{\sin {{alpha}}^\circ} \approx {{answer}}$, also {{answer}} m.'
+  - type: section
+    id: weiter
+    title: Wie es weitergeht
+    blocks:
+      - type: text
+        text: |
+          Das kannst du jetzt: Aus einem Winkel und einer Seite eine zweite Seite berechnen. Auf der nächsten Seite drehst du die Frage um: Du kennst zwei Seiten und suchst den Winkel.

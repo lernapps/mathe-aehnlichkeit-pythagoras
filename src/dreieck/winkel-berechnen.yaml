@@ -1,0 +1,165 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Winkel mit Sinus, Kosinus und Tangens berechnen
+description: Aus zwei Seiten eines rechtwinkligen Dreiecks mit den Umkehrfunktionen des Taschenrechners einen Winkel bestimmen.
+competencies: [trigonometrie]
+blocks:
+  - type: section
+    id: einstieg
+    title: Was du hier lernst
+    blocks:
+      - type: text
+        text: |
+          Wenn du wissen willst, wie steil etwas ist (eine Rampe, ein Dach), brauchst du den Winkel. Du berechnest einen Winkel, wenn zwei Seiten eines rechtwinkligen Dreiecks bekannt sind. Dafür nutzt du die Umkehrfunktionen auf dem Taschenrechner.
+      - type: text
+        text: |
+          Die Rampe der Klasse ist 4 m lang und überwindet 0,5 m Höhe. Wie stark steigt sie? Mira rechnet die Gegenkathete durch die Hypotenuse und bekommt 0,125. Das ist der Sinus des gesuchten Winkels, nicht der Winkel selbst.
+      - type: single-choice
+        id: winkel-aus-sinus
+        text: Es gilt sin α = 0,5. Wie groß ist α?
+        options:
+          - text: 0,5°
+            correct: false
+            info: Die Zahl 0,5 ist das Seitenverhältnis, nicht der Winkel. Den Winkel liefert die Umkehrfunktion sin⁻¹.
+          - text: 60°
+            correct: false
+            info: Bei 60° ist der Sinus 0,866. 60° ist der andere spitze Winkel des 30°-Dreiecks, für ihn ist 0,5 der Kosinus.
+          - text: 30°
+            correct: true
+            info: In einem Dreieck mit 30° ist die Gegenkathete halb so lang wie die Hypotenuse. Der Rechner liefert mit sin⁻¹ (0,5) genau 30°.
+        explanation: Die Umkehrfunktion sin⁻¹ gibt den Winkel zurück, dessen Sinus bekannt ist.
+  - type: section
+    id: idee
+    title: Die Umkehrfunktionen
+    blocks:
+      - type: text
+        text: |
+          Wenn zwei Seiten bekannt sind und der Winkel gesucht wird, kehrst du Sinus, Kosinus oder Tangens um. Der Sinus macht aus einem Winkel ein Verhältnis. Die Umkehrfunktion macht aus dem Verhältnis wieder den Winkel. Auf dem Taschenrechner heißt sie sin⁻¹, cos⁻¹ und tan⁻¹ (oft über den Tasten sin, cos, tan, erreichbar mit SHIFT oder 2nd). Für spitze Winkel gilt: Ist $\sin \alpha = x$, dann ist $\alpha = \sin^{-1}(x)$.
+      - type: formula
+        formula: '\alpha = \sin^{-1} \left( \frac{\text{Gegenkathete}}{\text{Hypotenuse}} \right)'
+      - type: formula
+        formula: '\alpha = \cos^{-1} \left( \frac{\text{Ankathete}}{\text{Hypotenuse}} \right)'
+      - type: formula
+        formula: '\alpha = \tan^{-1} \left( \frac{\text{Gegenkathete}}{\text{Ankathete}} \right)'
+      - type: note
+        title: Merke
+        blocks:
+          - type: text
+            text: |
+              sin⁻¹ ist keine Division. Es bedeutet nicht 1 durch sin, sondern die Umkehrfunktion. Wähle wie bei den Seiten das Verhältnis, in dem die beiden bekannten Seiten vorkommen.
+  - type: section
+    id: beispiel
+    title: Beispiele
+    blocks:
+      - type: text
+        text: |
+          Wenn du sehen willst, wie die Umkehrfunktion einen Winkel liefert, helfen zwei Fälle: die Neigung einer Rampe und beide Winkel eines Dreiecks.
+      - type: example
+        title: Neigung der Rampe
+        blocks:
+          - type: text
+            text: |
+              Die Rampe ist 4 m lang und überwindet 0,5 m. Bekannt sind Gegenkathete und Hypotenuse, also Sinus.
+          - type: formula
+            formula: '\alpha = \sin^{-1} \left( \frac{0{,}5}{4} \right)'
+          - type: formula
+            formula: '\alpha = \sin^{-1}(0{,}125) \approx 7{,}2^\circ'
+      - type: example
+        title: Beide Winkel eines Dreiecks
+        blocks:
+          - type: text
+            text: |
+              Wenn du beide spitzen Winkel brauchst, berechnest du einen und ergänzt den anderen zu 90°. Ein rechtwinkliges Dreieck hat die Katheten 5 cm und 12 cm. Der Winkel, der der 12 gegenüberliegt, ist $\tan^{-1}\left(\frac{12}{5}\right) \approx 67{,}4^\circ$. Der andere spitze Winkel ist $90^\circ - 67{,}4^\circ = 22{,}6^\circ$.
+  - type: section
+    id: uebung
+    title: Übung
+    blocks:
+      - type: single-choice
+        id: welche-funktion
+        text: Gegeben sind die Ankathete 6 cm und die Hypotenuse 10 cm. Wie berechnest du α?
+        options:
+          - text: "α = cos⁻¹(6 : 10)"
+            correct: true
+            info: "Ankathete und Hypotenuse gehören zum Kosinus. Das Verhältnis 6 : 10 ist 0,6, und cos⁻¹(0,6) ist etwa 53,1°."
+          - text: "α = sin⁻¹(6 : 10)"
+            correct: false
+            info: Der Sinus gehört zur Gegenkathete. Hier ist die Ankathete gegeben, also brauchst du den Kosinus.
+          - text: "α = 10 : 6 · cos"
+            correct: false
+            info: So kommt kein Winkel heraus. Du bildest das Verhältnis der Seiten und wendest dann die Umkehrfunktion an.
+        explanation: Zu Ankathete und Hypotenuse gehört der Kosinus, für den Winkel die Umkehrfunktion cos⁻¹.
+      - type: generated
+        id: winkel-sinus
+        given:
+          g: { int: [4, 8] }
+          h: { int: [9, 12] }
+        task:
+          text: "In einem rechtwinkligen Dreieck ist die Gegenkathete von α {{g}} cm und die Hypotenuse {{h}} cm lang. Wie groß ist α? Runde auf eine Stelle nach dem Komma."
+        answer:
+          { value: "round(asin(g / h), 1)", compare: { number: { format: decimal, decimals: 1, tolerance: 0.05 } } }
+        mistakes:
+          - {
+              value: "round(acos(g / h), 1)",
+              message: "Du hast cos⁻¹ benutzt. Gegenkathete und Hypotenuse gehören zum Sinus, also sin⁻¹. Cos⁻¹ liefert hier den anderen spitzen Winkel.",
+            }
+          - {
+              value: "round(atan(g / h), 1)",
+              message: "Du hast tan⁻¹ benutzt. Der Tangens teilt Gegenkathete durch Ankathete, hier ist die Hypotenuse gegeben.",
+            }
+          - {
+              value: "round(g / h, 1)",
+              message: "Das ist nur das Verhältnis, noch nicht der Winkel. Wende sin⁻¹ darauf an.",
+            }
+        hint: "Gegenkathete durch Hypotenuse ist sin α. Drücke dann sin⁻¹."
+        steps:
+          - '$\alpha = \sin^{-1}\left(\frac{{{g}}}{{{h}}}\right) \approx {{answer}}^\circ$'
+      - type: generated
+        id: winkel-tangens
+        given:
+          g: { int: [3, 6] }
+          k: { int: [5, 10] }
+        where: ["g < k"]
+        task:
+          text: "Ein Pultdach steigt auf {{k}} m waagerechter Länge um {{g}} m an. Welchen Winkel α bildet das Dach mit der Waagerechten? Runde auf eine Stelle nach dem Komma."
+        answer:
+          { value: "round(atan(g / k), 1)", compare: { number: { format: decimal, decimals: 1, tolerance: 0.05 } } }
+        mistakes:
+          - {
+              value: "round(atan(k / g), 1)",
+              message: "Du hast den Bruch umgedreht. Der Tangens ist Höhe durch waagerechte Länge, und das ist der Winkel zur Waagerechten.",
+            }
+          - {
+              value: "round(asin(g / k), 1)",
+              message: "Du hast sin⁻¹ benutzt. Die waagerechte Länge ist nicht die Hypotenuse. Anstieg und waagerechte Länge gehören zum Tangens.",
+            }
+        hint: "Der Anstieg ist die Gegenkathete, die waagerechte Länge die Ankathete: Tangens."
+        steps:
+          - '$\alpha = \tan^{-1}\left(\frac{{{g}}}{{{k}}}\right) \approx {{answer}}^\circ$'
+      - type: generated
+        id: beide-winkel
+        given:
+          a: { int: [3, 12] }
+          b: { int: [3, 12] }
+        where: ["a < b", "atan(a / b) != 45"]
+        task:
+          text: "Ein rechtwinkliges Dreieck hat die Katheten {{a}} cm und {{b}} cm. Wie groß ist der größere der beiden spitzen Winkel? Runde auf eine Stelle nach dem Komma."
+        answer:
+          { value: "round(atan(b / a), 1)", compare: { number: { format: decimal, decimals: 1, tolerance: 0.05 } } }
+        mistakes:
+          - {
+              value: "round(atan(a / b), 1)",
+              message: "Das ist der kleinere Winkel, er liegt der kürzeren Kathete gegenüber. Der größere liegt der längeren Kathete gegenüber.",
+            }
+          - {
+              value: "round(90 - atan(b / a), 1)",
+              message: "Das ist der kleinere Winkel. Du hast ihn aus 90° minus dem größeren berechnet, aber die Frage war nach dem größeren.",
+            }
+        hint: "Der größere Winkel liegt der längeren Kathete gegenüber. Welches Verhältnis passt zu den Katheten?"
+        steps:
+          - '$\alpha = \tan^{-1}\left(\frac{{{b}}}{{{a}}}\right) \approx {{answer}}^\circ$'
+  - type: section
+    id: weiter
+    title: Wie es weitergeht
+    blocks:
+      - type: text
+        text: |
+          Das kannst du jetzt: Aus zwei Seiten eines rechtwinkligen Dreiecks einen Winkel berechnen. Auf der nächsten Seite arbeitest du in Dreiecken ohne rechten Winkel.

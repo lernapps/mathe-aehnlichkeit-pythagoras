@@ -1,0 +1,188 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Strahlensätze
+description: Aus der Streckfigur mit zwei Parallelen Verhältnisse aufstellen und fehlende Strecken berechnen.
+competencies: [strahlensaetze]
+blocks:
+  - type: section
+    id: einstieg
+    title: Was du hier lernst
+    blocks:
+      - type: text
+        text: |
+          Wenn du eine Strecke brauchst, die du nicht messen kannst (zum Beispiel wie hoch ein Turm ist, ohne hinaufzuklettern), helfen dir Parallelen und Strahlen. Du lernst, in einer Figur mit zwei Parallelen Verhältnisse aufzustellen und damit fehlende Strecken zu berechnen. Die Sätze dafür heißen Strahlensätze. Du leitest sie aus der Streckung her.
+      - type: text
+        text: |
+          Mira hält ihr Pappschild vor eine Lampe Z. Der Schatten fällt auf eine Wand. Rückt die Wand weiter weg, wird der Schatten größer, aber die Form bleibt. Ein Punkt des Schilds und sein Schattenpunkt liegen mit Z auf einem Strahl.
+  - type: section
+    id: idee
+    title: Zwei Strahlen, zwei Parallelen
+    blocks:
+      - type: text
+        text: |
+          Wenn zwei parallele Strecken von denselben Strahlen aus geschnitten werden, kannst du ihre Längen miteinander verbinden. Das Bild zeigt zwei Strahlen, die von Z ausgehen. Die durchgezogene Strecke AB und die gestrichelte Strecke A′B′ liegen auf zwei parallelen Geraden. A und A′ liegen auf dem unteren Strahl, B und B′ auf dem oberen. Die Skizze ist nicht maßstabsgetreu.
+      - type: figure
+        image: images/strahlensatz-v.svg
+        alt: Von Z gehen zwei Strahlen nach rechts. Eine durchgezogene Strecke AB verbindet beide Strahlen nahe bei Z, eine längere gestrichelte Strecke A′B′ verbindet sie weiter rechts. Beide Strecken sind parallel.
+        caption: Zwei Strahlen von Z und zwei Parallelen.
+        source: eigene Zeichnung
+        licence: CC0-1.0
+      - type: text
+        text: |
+          Sind AB und A′B′ parallel, ist A′B′ das Bild von AB bei einer Streckung von Z aus. Der Streckfaktor $k$ ist für alle Abstände derselbe. Daraus liest du die beiden Strahlensätze ab.
+      - type: formula
+        formula: 'k = \frac{\text{ZA′}}{\text{ZA}} = \frac{\text{ZB′}}{\text{ZB}} = \frac{\text{A′B′}}{\text{AB}}'
+      - type: definition
+        term: Erster Strahlensatz
+        explanation: "Auf den beiden Strahlen verhalten sich die Abstände von Z gleich, $ZA' : ZA = ZB' : ZB$. Gemessen wird immer von Z aus bis zum Punkt."
+      - type: definition
+        term: Zweiter Strahlensatz
+        explanation: "Die parallelen Strecken verhalten sich wie die Abstände von Z, $A'B' : AB = ZA' : ZA$."
+      - type: note
+        title: Merke
+        blocks:
+          - type: text
+            text: |
+              Zähler und Nenner sind Strecken von Z aus: ZA′ ist die ganze Strecke von Z bis A′, nicht nur das Stück zwischen A und A′. Ist nur das Stück AA′ gegeben, rechne erst ZA′ = ZA + AA′.
+  - type: section
+    id: beispiel
+    title: Eine Strecke berechnen
+    blocks:
+      - type: example
+        title: ZB′ und A′B′ bestimmen
+        blocks:
+          - type: text
+            text: |
+              Wenn du eine fehlende Strecke aus bekannten Strecken berechnen willst, stellst du ein Verhältnis auf. Gegeben sind ZA = 4 cm, ZA′ = 10 cm, ZB = 5 cm und AB = 3 cm. Gesucht sind ZB′ und A′B′. Zuerst der Faktor: $k = \frac{10}{4} = 2{,}5$. Der Strich | · 5 in der nächsten Zeile heißt: beide Seiten werden mit 5 multipliziert.
+          - type: formula
+            formula: '\frac{\text{ZB′}}{5} = \frac{10}{4} \quad | \cdot 5'
+          - type: formula
+            formula: '\text{ZB′} = \frac{10 \cdot 5}{4} = 12{,}5'
+          - type: formula
+            formula: '\frac{\text{A′B′}}{3} = \frac{10}{4}'
+          - type: formula
+            formula: '\text{A′B′} = 3 \cdot 2{,}5 = 7{,}5'
+          - type: text
+            text: |
+              Also ist ZB′ = 12,5 cm lang und A′B′ = 7,5 cm.
+  - type: section
+    id: uebung
+    title: Übung
+    blocks:
+      - type: single-choice
+        id: welche-gleichung
+        text: Die Figur ist die Skizze von oben, AB und A′B′ sind parallel. Welche Gleichung stimmt?
+        material:
+          - type: figure
+            image: images/strahlensatz-v.svg
+            alt: Von Z gehen zwei Strahlen nach rechts. Eine durchgezogene Strecke AB und eine längere gestrichelte Strecke A′B′ verbinden die beiden Strahlen und sind parallel.
+            caption: Dieselbe Skizze wie oben.
+            source: eigene Zeichnung
+            licence: CC0-1.0
+        options:
+          - text: "ZA′ : ZA = AB : A′B′"
+            correct: false
+            info: Rechts steht der Kehrwert. Die Strecke A′B′ ist länger, der Quotient muss größer als 1 sein.
+          - text: "AA′ : ZA = A′B′ : AB"
+            correct: false
+            info: AA′ ist nur das Stück zwischen den Parallelen, nicht der Abstand von Z. Dieser Quotient ist kleiner als der Faktor, bei Faktor 2,5 wäre er 1,5.
+          - text: "ZA′ : ZA = A′B′ : AB"
+            correct: true
+            info: Das ist der zweite Strahlensatz. Beide Seiten sind der Streckfaktor.
+          - text: "ZA : ZB′ = ZA′ : ZB"
+            correct: false
+            info: "Hier sind die Paare falsch zugeordnet. ZA und ZA′ liegen auf dem einen Strahl, ZB und ZB′ auf dem anderen. Richtig ist ZA : ZB = ZA′ : ZB′."
+        explanation: Quotienten müssen aus gleichen Strecken von Z aus gebildet sein, und der Faktor kommt auf beiden Seiten gleich heraus.
+      - type: generated
+        id: erster-satz
+        given:
+          a: { int: [2, 8] }
+          a2: { int: [3, 24] }
+          b: { int: [2, 10] }
+        where:
+          [
+            "a2 > a",
+            "decimals(a2 / a) <= 1",
+            "decimals(b * a2 / a) <= 1",
+            "b + a2 - a != b * a2 / a",
+            "a * b / a2 != b * a2 / a",
+          ]
+        task:
+          text: "Zwei Strahlen gehen von Z aus. Auf dem einen Strahl gilt ZA = {{a}} cm und ZA′ = {{a2}} cm, auf dem anderen ZB = {{b}} cm. AB und A′B′ sind parallel. Wie lang ist ZB′?"
+        answer: { value: "b * a2 / a", compare: { number: { format: decimal, decimals: 1, unit: cm } } }
+        mistakes:
+          - {
+              value: "b + a2 - a",
+              message: "Du hast den Zuwachs auf dem ersten Strahl zu ZB addiert. Auf beiden Strahlen gilt derselbe Faktor, mit dem multipliziert wird.",
+            }
+          - {
+              value: "a * b / a2",
+              message: "Du hast den Faktor umgedreht. ZB′ ist länger als ZB, weil ZA′ länger ist als ZA.",
+            }
+        hint: "Zeichne eine Skizze. Stelle die Gleichung ZB′ : ZB = ZA′ : ZA auf und multipliziere mit ZB."
+        steps:
+          - '$\frac{\text{ZB′}}{{{b}}} = \frac{{{a2}}}{{{a}}}$, also $\text{ZB′} = \frac{{{a2}} \cdot {{b}}}{{{a}}} = {{answer}}$ cm.'
+      - type: generated
+        id: zweiter-satz
+        given:
+          a: { int: [2, 8] }
+          a2: { int: [3, 24] }
+          c: { int: [2, 10] }
+        where:
+          [
+            "a2 > a",
+            "decimals(a2 / a) <= 1",
+            "decimals(c * a2 / a) <= 1",
+            "c + a2 - a != c * a2 / a",
+            "a * c / a2 != c * a2 / a",
+          ]
+        task:
+          text: "AB und A′B′ sind parallel. Es gilt ZA = {{a}} cm, ZA′ = {{a2}} cm und AB = {{c}} cm. Wie lang ist A′B′?"
+        answer: { value: "c * a2 / a", compare: { number: { format: decimal, decimals: 1, unit: cm } } }
+        mistakes:
+          - {
+              value: "c + a2 - a",
+              message: "Du hast die Differenz der Abstände addiert. Die parallelen Strecken verhalten sich wie die Abstände, also wird multipliziert.",
+            }
+          - {
+              value: "a * c / a2",
+              message: "Du hast den Quotienten umgedreht. A′B′ ist länger als AB, weil ZA′ länger ist als ZA.",
+            }
+        hint: "Der zweite Strahlensatz: A′B′ : AB = ZA′ : ZA."
+        steps:
+          - '$\frac{\text{A′B′}}{{{c}}} = \frac{{{a2}}}{{{a}}}$, also $\text{A′B′} = \frac{{{a2}} \cdot {{c}}}{{{a}}} = {{answer}}$ cm.'
+      - type: generated
+        id: teilstueck
+        given:
+          a: { int: [2, 8] }
+          d: { int: [2, 12] }
+          b: { int: [2, 10] }
+        where:
+          [
+            "decimals((a + d) / a) <= 1",
+            "decimals(b * (a + d) / a) <= 1",
+            "b * d / a != b * (a + d) / a",
+            "b + d != b * (a + d) / a",
+            "b * a / (a + d) != b * (a + d) / a",
+          ]
+        task:
+          text: "Zwei Strahlen gehen von Z aus, AB und A′B′ sind parallel. Auf dem einen Strahl ist ZA = {{a}} cm, und zwischen A und A′ liegen {{d}} cm. Auf dem anderen Strahl ist ZB = {{b}} cm. Wie lang ist ZB′?"
+        answer: { value: "b * (a + d) / a", compare: { number: { format: decimal, decimals: 1, unit: cm } } }
+        mistakes:
+          - {
+              value: "b * d / a",
+              message: "Du hast das Stück AA′ statt der ganzen Strecke ZA′ genommen. ZA′ ist ZA + AA′.",
+            }
+          - {
+              value: "b + d",
+              message: "Du hast das Stück zwischen den Parallelen auf dem anderen Strahl dazugerechnet. Dort ist es nicht gleich lang. Rechne mit dem Faktor.",
+            }
+        hint: "Bestimme erst ZA′ = ZA + AA′. Dann ist der Faktor ZA′ durch ZA."
+        steps:
+          - '$\text{ZA′} = {{a}} + {{d}}$, dann $\text{ZB′} = \frac{({{a}} + {{d}}) \cdot {{b}}}{{{a}}} = {{answer}}$ cm.'
+  - type: section
+    id: weiter
+    title: Wie es weitergeht
+    blocks:
+      - type: text
+        text: |
+          Das kannst du jetzt: Aus Z, zwei Strahlen und zwei Parallelen stellst du Verhältnisse auf und berechnest Strecken. Auf der nächsten Seite wendest du das auf einen Turm und einen Fluss an.

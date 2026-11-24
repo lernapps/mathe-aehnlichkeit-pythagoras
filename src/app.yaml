@@ -1,0 +1,7 @@
+# yaml-language-server: $schema=../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+format: 2
+strand: mathematik/geometrie
+title: Ähnlichkeit, Pythagoras und Trigonometrie
+intro: Du vergrößerst und verkleinerst Figuren, nutzt Strahlensätze und lernst, wie das rechtwinklige Dreieck Längen und Winkel verbindet.
+languages: [de]
+chapters: [vergroessern, dreieck]

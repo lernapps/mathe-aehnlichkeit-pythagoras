@@ -1,0 +1,97 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Das brauchst du für dieses Kapitel
+description: Quadratwurzeln sowie Fläche und Umfang von Quadrat und Rechteck kurz wiederholt, mit zwei Übungen zum Prüfen.
+recap:
+  - mathematik/quadratwurzeln
+  - mathematik/flaeche-umfang-quadrat-rechteck
+blocks:
+  - type: text
+    text: |
+      Wenn du eine Länge in einem rechtwinkligen Dreieck ausrechnen willst, brauchst du Quadratwurzeln und die Fläche von Quadrat und Rechteck. Dazu gehören ein paar Begriffe, die hier kurz erklärt werden. Löse am Ende die zwei Übungen. Sie zeigen dir, ob du bereit bist.
+  - type: section
+    id: quadratwurzeln
+    title: Quadratwurzeln
+    blocks:
+      - type: text
+        text: |
+          Wenn du aus einer Fläche die Seitenlänge eines Quadrats brauchst, fragst du: Welche Zahl mal sich selbst ergibt diese Fläche? Eine **Quadratzahl** entsteht, wenn du eine Zahl mit sich selbst multiplizierst: $7 \cdot 7 = 49$. Die **Quadratwurzel** kehrt das um.
+      - type: definition
+        term: Quadratwurzel
+        explanation: Die Quadratwurzel $\sqrt{a}$ einer Zahl $a \ge 0$ ist die Zahl, die nicht negativ ist (0 oder größer) und deren Quadrat $a$ ergibt. Zum Beispiel ist $\sqrt{49} = 7$, denn $7 \cdot 7 = 49$.
+      - type: example
+        title: Näherungswert bestimmen
+        blocks:
+          - type: text
+            text: |
+              Wie groß ist $\sqrt{20}$? Es ist $4 \cdot 4 = 16$ und $5 \cdot 5 = 25$, also liegt die Wurzel zwischen 4 und 5. Mit $4{,}5 \cdot 4{,}5 = 20{,}25$ ist sie etwas kleiner als 4,5. Der Taschenrechner zeigt $\sqrt{20} \approx 4{,}47$.
+  - type: section
+    id: flaeche
+    title: "Fläche und Umfang: Rechteck, Quadrat"
+    blocks:
+      - type: text
+        text: |
+          Wenn du wissen willst, wie viel Platz eine Figur braucht oder wie lang ihr Rand ist, brauchst du Flächeninhalt und Umfang. Der **Flächeninhalt** sagt, wie viel Platz eine Figur einnimmt, in Quadrateinheiten wie cm². Der **Umfang** ist die Länge des Randes, in cm. Beim Rechteck mit den Seiten $a$ und $b$ ist $A = a \cdot b$ und $u = 2 \cdot (a + b)$. Beim Quadrat mit der Seite $a$ ist $A = a \cdot a$ und $u = 4 \cdot a$.
+      - type: definition
+        term: Flächeninhalt
+        explanation: Das Maß dafür, wie viele Einheitsquadrate in eine Figur passen. Ein Rechteck mit 3 cm und 2 cm hat 6 cm², weil 6 Quadrate von 1 cm Seitenlänge hineinpassen.
+      - type: example
+        title: Ein Quadrat über einer Strecke
+        blocks:
+          - type: text
+            text: |
+              Über einer Strecke von 4 cm Länge kannst du ein Quadrat zeichnen. Seine Fläche ist $4 \cdot 4 = 16$ cm², sein Umfang $4 \cdot 4 = 16$ cm. Zahl gleich, Einheit verschieden. Diese Quadrate über Seiten brauchst du gleich für Pythagoras.
+  - type: section
+    id: selbsttest
+    title: Kannst du das?
+    blocks:
+      - type: text
+        text: |
+          Wenn du wissen willst, ob du bereit bist, löse diese zwei Übungen. Du bekommst sofort eine Rückmeldung mit Begründung.
+      - type: multiple-choice
+        id: voraussetzungen
+        text: Welche Aussagen stimmen? Wähle alle richtigen.
+        options:
+          - text: Die Wurzel aus 75 liegt zwischen 8 und 9.
+            correct: true
+            info: 8 · 8 = 64 und 9 · 9 = 81. Die Zahl 75 liegt dazwischen, also auch ihre Wurzel.
+          - text: Die Wurzel aus der Summe 9 + 16 ist 7.
+            correct: false
+            info: Erst addieren, 9 + 16 = 25, dann die Wurzel, also 5. Die Wurzeln einzeln zu ziehen und zu addieren (3 + 4 = 7) ist falsch.
+          - text: Ein Rechteck von 7 cm mal 4,5 cm hat den Umfang 23 cm.
+            correct: true
+            info: Umfang = 2 · (7 cm + 4,5 cm) = 2 · 11,5 cm = 23 cm. Die Fläche wäre 31,5 cm².
+          - text: Ein Quadrat mit dem Umfang 20 cm hat die Fläche 400 cm².
+            correct: false
+            info: "Erst die Seite, 20 cm : 4 = 5 cm, dann die Fläche, 5 cm · 5 cm = 25 cm². Die 400 kommt vom Quadrat des Umfangs."
+          - text: Ein Rechteck mit der Fläche 54 cm² und der Länge 9 cm ist 6 cm breit.
+            correct: true
+            info: "Fläche = Länge mal Breite, also Breite = 54 cm² : 9 cm = 6 cm."
+        explanation: Die ersten beiden Aussagen prüfen Wurzeln, die anderen Fläche und Umfang. Hast du eine falsch beurteilt, lies oben den Abschnitt dazu noch einmal.
+      - type: generated
+        id: quadrat-umfang
+        given:
+          A: { oneOf: [16, 25, 36, 49, 64, 81, 100, 144] }
+        task:
+          text: "Ein quadratisches Beet hat eine Fläche von {{A}} m². Wie lang ist sein Rand (der Umfang) in m?"
+        answer: { value: "4 * sqrt(A)", compare: { number: { format: integer, unit: m } } }
+        mistakes:
+          - { value: "sqrt(A)", message: "Das ist die Seitenlänge. Der Rand besteht aus vier Seiten, also noch mal 4." }
+          - {
+              value: "4 * A",
+              message: "Du hast die Fläche mal 4 genommen. Erst die Seite aus der Fläche bestimmen, das ist die Wurzel, dann mal 4.",
+            }
+          - { value: "2 * sqrt(A)", message: "Das sind nur zwei Seiten. Ein Quadrat hat vier gleich lange Seiten." }
+        hint: "Bestimme zuerst die Seitenlänge: Welche Zahl mal sich selbst ergibt die Fläche?"
+        steps:
+          - '$\sqrt{{{A}}}$ ist die Seite, mal 4 gibt {{answer}} m.'
+  - type: section
+    id: bereit
+    title: Du bist bereit, wenn du …
+    blocks:
+      - type: text
+        text: |
+          - Quadratwurzeln erklären und Näherungswerte bestimmen kannst (Quadratwurzeln),
+          - Flächeninhalt und Umfang von Quadrat und Rechteck berechnen kannst (Fläche und Umfang: Rechteck, Quadrat).
+      - type: text
+        text: |
+          Warst du bei einem Punkt unsicher? Schau dir die Bausteine auf der Lernlandkarte an: [Quadratwurzeln](https://lernapps.net/apps/map/mathematik/c/quadratwurzeln/) und [Fläche und Umfang: Rechteck, Quadrat](https://lernapps.net/apps/map/mathematik/c/flaeche-umfang-quadrat-rechteck/).

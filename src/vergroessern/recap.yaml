@@ -1,0 +1,164 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title: Das brauchst du für dieses Kapitel
+description: Kongruenz, Winkelsumme, proportionale Zuordnungen, Maßstab und lineare Gleichungen kurz wiederholt, mit zwei Übungen zum Prüfen.
+recap:
+  - mathematik/kongruenz
+  - mathematik/proportionale-zuordnungen
+  - mathematik/massstab
+  - mathematik/lineare-gleichungen
+blocks:
+  - type: text
+    text: |
+      Wenn du Figuren vergrößern willst, ohne sie zu verzerren, und Strecken berechnen willst, die du nicht messen kannst, brauchst du fünf Dinge: Kongruenz, Winkel messen und Winkelsumme, proportionale Zuordnungen, Maßstab und lineare Gleichungen. Lies die Abschnitte und löse am Ende die zwei Übungen. Sie zeigen dir, ob du bereit bist.
+  - type: section
+    id: kongruenz
+    title: Kongruenz
+    blocks:
+      - type: text
+        text: |
+          Wenn du begründen willst, dass zwei Figuren genau gleich sind, fragst du nach Kongruenz. Zwei Figuren sind **kongruent** (deckungsgleich), wenn man sie durch Verschieben, Drehen und Spiegeln genau aufeinanderlegen kann. Dann stimmen alle Längen und alle Winkel überein. Bei Dreiecken reichen drei passende Angaben. Ein **Kongruenzsatz** sagt, welche das sind.
+      - type: definition
+        term: Kongruenzsatz SSS
+        explanation: Stimmen zwei Dreiecke in allen drei Seitenlängen überein, sind sie kongruent. Die Reihenfolge, in der die Seiten genannt werden, ist egal.
+      - type: example
+        title: Beispiel
+        blocks:
+          - type: text
+            text: |
+              Ein Dreieck hat die Seiten 3 cm, 4 cm und 5 cm, ein zweites 5 cm, 3 cm und 4 cm. Alle drei Längen kommen in beiden vor, also sind die Dreiecke nach SSS kongruent. Der Satz **SWS** braucht zwei Seiten und den Winkel, der zwischen ihnen liegt. Liegt der Winkel woanders, gilt er nicht.
+  - type: section
+    id: winkel
+    title: Winkel messen und Winkelsumme
+    blocks:
+      - type: text
+        text: |
+          Wenn in einem Dreieck ein Winkel fehlt, rechnest du ihn aus den anderen aus. Dazu brauchst du die Winkelsumme und ein paar Wörter für Winkel. Mit dem Geodreieck misst du einen Winkel: Lege den Nullpunkt auf den Scheitel, einen Schenkel auf die Nulllinie und lies am anderen Schenkel ab. Ein Winkel zwischen 0° und 90° heißt spitz, bei genau 90° rechter Winkel, zwischen 90° und 180° stumpf.
+      - type: definition
+        term: Winkelsumme im Dreieck
+        explanation: In jedem Dreieck sind die drei Innenwinkel zusammen 180°. Sind zwei Winkel bekannt, ist der dritte 180° minus ihre Summe.
+      - type: example
+        title: Beispiel
+        blocks:
+          - type: text
+            text: |
+              In einem Dreieck sind zwei Winkel 50° und 60° groß. Der dritte ist 180° − (50° + 60°) = 70°.
+  - type: section
+    id: proportional
+    title: Proportionale Zuordnungen
+    blocks:
+      - type: text
+        text: |
+          Wenn du aus einem Wert den doppelten, dreifachen oder halben berechnen willst, prüfst du, ob die Zuordnung proportional ist. Eine Zuordnung ist **proportional**, wenn das Doppelte der einen Größe zum Doppelten der anderen gehört, das Dreifache zum Dreifachen und so weiter. Teilst du die eine Größe durch die andere, kommt immer dieselbe Zahl heraus. Diese Zahl heißt **Proportionalitätsfaktor**.
+      - type: definition
+        term: Proportionalitätsfaktor
+        explanation: Die feste Zahl, mit der du die eine Größe multiplizierst, um die andere zu bekommen. Kosten 4 Hefte 6 €, ist der Faktor 1,50 € je Heft.
+      - type: example
+        title: Beispiel
+        blocks:
+          - type: text
+            text: |
+              3 kg Äpfel kosten 4,50 €. Der Faktor ist 4,50 € : 3 = 1,50 € je kg. 7 kg kosten dann 7 · 1,50 € = 10,50 €.
+  - type: section
+    id: massstab
+    title: Maßstab
+    blocks:
+      - type: text
+        text: |
+          Wenn du aus einer Karte oder einem Plan wirkliche Längen ablesen willst, brauchst du den Maßstab. Der **Maßstab** sagt, um welchen Faktor eine Zeichnung gegenüber der Wirklichkeit verkleinert (oder vergrößert) ist. Bei 1 : 500 ist 1 cm auf dem Plan 500 cm in Wirklichkeit.
+      - type: definition
+        term: Maßstab
+        explanation: "Das Verhältnis von Länge in der Zeichnung zu Länge in der Wirklichkeit, geschrieben 1 : 500. Eine Länge im Plan wird mit 500 multipliziert, um die wirkliche Länge zu erhalten."
+      - type: example
+        title: Beispiel
+        blocks:
+          - type: text
+            text: |
+              Eine Strecke ist auf dem Plan 3 cm lang, der Maßstab ist 1 : 500. Wirklich sind das 3 cm · 500 = 1500 cm, also 15 m.
+  - type: section
+    id: gleichungen
+    title: Lineare Gleichungen
+    blocks:
+      - type: text
+        text: |
+          Wenn du eine unbekannte Länge aus gleichen Verhältnissen oder aus einer Rechnung bestimmen willst, stellst du eine Gleichung auf und löst sie. Bei einer **linearen Gleichung** kommt die gesuchte Zahl *x* nur einfach vor, nie als *x*² oder *x* · *x*. Du löst sie mit **Äquivalenzumformungen**: Du tust auf beiden Seiten dasselbe, bis *x* allein steht. Ein Strich wie | · 6 am Zeilenende heißt: beide Seiten werden mit 6 multipliziert. So löst du auch eine Gleichung aus zwei gleichen Verhältnissen. *x* : 6 ist dasselbe wie ein Bruch mit *x* im Zähler und 6 im Nenner, und mit 6 multipliziert steht *x* allein.
+      - type: definition
+        term: Äquivalenzumformung
+        explanation: Eine Umformung, die beide Seiten einer Gleichung gleich verändert (dieselbe Zahl addieren, subtrahieren, mit ihr multiplizieren oder durch sie teilen), ohne die Lösung zu ändern.
+      - type: example
+        title: Beispiel
+        blocks:
+          - type: text
+            text: |
+              Löse $3x + 5 = 20$. Erst auf beiden Seiten 5 subtrahieren: $3x = 15$. Dann durch 3 teilen: $x = 5$.
+          - type: formula
+            formula: '\frac{x}{6} = \frac{10}{4} \quad | \cdot 6'
+          - type: formula
+            formula: 'x = \frac{10 \cdot 6}{4} = 15'
+  - type: section
+    id: selbsttest
+    title: Kannst du das?
+    blocks:
+      - type: text
+        text: |
+          Wenn du wissen willst, ob du bereit bist, löse diese zwei Übungen. Du bekommst sofort eine Rückmeldung mit Begründung.
+      - type: multiple-choice
+        id: voraussetzungen
+        text: Welche Aussagen stimmen? Wähle alle richtigen. Kongruent heißt deckungsgleich.
+        options:
+          - text: Zwei Dreiecke mit den Seiten 5 cm, 6 cm, 7 cm und 7 cm, 5 cm, 6 cm sind kongruent.
+            correct: true
+            info: Alle drei Seitenlängen stimmen überein, nach SSS reicht das. Auf die Reihenfolge der Angaben kommt es nicht an.
+          - text: Zwei Dreiecke mit den Seiten 4 cm und 6 cm und je einem Winkel von 50° sind immer kongruent.
+            correct: false
+            info: SWS verlangt den Winkel zwischen den beiden Seiten. Liegt der 50°-Winkel woanders, können die Dreiecke verschieden sein.
+          - text: In einem Dreieck sind zwei Winkel 48° und 67° groß. Der dritte Winkel ist 65°.
+            correct: true
+            info: 48° + 67° = 115°, und 180° − 115° = 65°.
+          - text: Die Zuordnung „Seitenlänge eines Quadrats → Flächeninhalt“ ist proportional.
+            correct: false
+            info: Doppelte Seitenlänge ergibt die vierfache Fläche, nicht die doppelte. Proportional ist zum Beispiel „Seitenlänge → Umfang“.
+          - text: "Auf einer Karte im Maßstab 1 : 25 000 sind 4,5 cm in Wirklichkeit 1,125 km."
+            correct: true
+            info: 4,5 cm · 25 000 = 112 500 cm. Das sind 1125 m, also 1,125 km.
+          - text: "Die Gleichung x : 6 = 10 : 4 hat die Lösung x = 12."
+            correct: false
+            info: "Beide Seiten mit 6 multiplizieren, x = 10 · 6 : 4 = 15. Die 12 kommt aus 6 + 10 − 4. Bei gleichen Verhältnissen wird multipliziert und geteilt, nicht addiert."
+          - text: "Ein Winkel von 123° heißt stumpf."
+            correct: true
+            info: "Ein Winkel zwischen 90° und 180° heißt stumpf. Spitz wäre kleiner als 90°, ein rechter Winkel misst genau 90°."
+          - text: "Die Gleichung 3x + 5 = 20 hat die Lösung x = 25."
+            correct: false
+            info: "Erst auf beiden Seiten 5 subtrahieren, 3x = 15, dann durch 3 teilen, x = 5. Die 25 kommt davon, dass die 5 addiert statt subtrahiert wurde."
+        explanation: Jede Aussage gehört zu einem der Bausteine. Hast du eine falsch beurteilt, lies oben den Abschnitt dazu noch einmal.
+      - type: generated
+        id: karte-weg
+        given:
+          m: { oneOf: [2000, 5000] }
+          a: { decimal: [2, 9], step: 0.5 }
+        task:
+          text: "Auf einer Karte im Maßstab 1 : {{m}} ist ein Weg {{a}} cm lang. Wie lang ist er in Wirklichkeit? Gib die Länge in m an."
+        answer: { value: "a * m / 100", compare: { number: { format: decimal, decimals: 1, unit: m } } }
+        mistakes:
+          - { value: "a * m", message: "Das sind noch cm. 100 cm sind 1 m, also noch durch 100 teilen." }
+          - { value: "a * m / 1000", message: "Du hast durch 1000 geteilt. 1 m sind 100 cm, nicht 1000 cm." }
+          - {
+              value: "a / m * 100",
+              message: "Du hast geteilt statt multipliziert. Eine Länge auf der Karte wird mit dem Maßstabsfaktor multipliziert.",
+            }
+        hint: "Rechne erst mit dem Maßstab in cm und wandle dann in m um."
+        steps:
+          - "{{a}} cm · {{m}} = {{answer}} m, denn 100 cm sind 1 m."
+  - type: section
+    id: bereit
+    title: Du bist bereit, wenn du …
+    blocks:
+      - type: text
+        text: |
+          - erkennen und begründen kannst, dass Figuren deckungsgleich sind, und die Kongruenzsätze für Dreiecke anwenden kannst (Kongruenz),
+          - Winkel misst und den dritten Winkel im Dreieck aus 180° berechnest,
+          - proportionale Zuordnungen erkennst und mit dem Proportionalitätsfaktor rechnest,
+          - mit Maßstäben rechnest und Zeichnungen im passenden Maßstab liest,
+          - lineare Gleichungen lösen kannst, auch wenn sie als gleiche Verhältnisse dastehen.
+      - type: text
+        text: |
+          Warst du bei einem Punkt unsicher? Schau dir die Bausteine auf der Lernlandkarte an: [Kongruenz](https://lernapps.net/apps/map/mathematik/c/kongruenz/), [Proportionale Zuordnungen](https://lernapps.net/apps/map/mathematik/c/proportionale-zuordnungen/), [Maßstab](https://lernapps.net/apps/map/mathematik/c/massstab/) und [Lineare Gleichungen](https://lernapps.net/apps/map/mathematik/c/lineare-gleichungen/).
