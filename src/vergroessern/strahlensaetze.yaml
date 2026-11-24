@@ -9,31 +9,17 @@ blocks:
     blocks:
       - type: text
         text: |
-          Du lernst, in einer Figur mit zwei Parallelen Verhältnisse aufzustellen und damit fehlende Strecken zu berechnen. Die Sätze dafür heißen Strahlensätze. Du leitest sie aus der Streckung her.
+          Wenn du eine Strecke brauchst, die du nicht messen kannst (zum Beispiel wie hoch ein Turm ist, ohne hinaufzuklettern), helfen dir Parallelen und Strahlen. Du lernst, in einer Figur mit zwei Parallelen Verhältnisse aufzustellen und damit fehlende Strecken zu berechnen. Die Sätze dafür heißen Strahlensätze. Du leitest sie aus der Streckung her.
       - type: text
         text: |
           Mira hält ihr Pappschild vor eine Lampe Z. Der Schatten fällt auf eine Wand. Rückt die Wand weiter weg, wird der Schatten größer, aber die Form bleibt. Ein Punkt des Schilds und sein Schattenpunkt liegen mit Z auf einem Strahl.
-      - type: single-choice
-        id: faktor-ablesen
-        text: Ein Punkt liegt 4 cm von Z entfernt, sein Bildpunkt liegt 10 cm von Z entfernt. Welcher Streckfaktor gehört dazu?
-        options:
-          - text: "0,4"
-            correct: false
-            info: "Du hast Original durch Bild geteilt, 4 : 10. Das Bild ist weiter weg, der Faktor ist größer als 1."
-          - text: "2,5"
-            correct: true
-            info: "Der Faktor ist der Abstand des Bildes durch den Abstand des Originals, also 10 : 4 = 2,5."
-          - text: "6"
-            correct: false
-            info: Du hast subtrahiert, 10 − 4. Ein Faktor entsteht durch Teilen, nicht durch Subtrahieren.
-        explanation: Der Streckfaktor ist der Quotient aus dem Abstand des Bildes und dem Abstand des Originals.
   - type: section
     id: idee
     title: Zwei Strahlen, zwei Parallelen
     blocks:
       - type: text
         text: |
-          Das Bild zeigt zwei Strahlen, die von Z ausgehen. Die durchgezogene Strecke AB und die gestrichelte Strecke A′B′ liegen auf zwei parallelen Geraden. A und A′ liegen auf dem unteren Strahl, B und B′ auf dem oberen. Die Skizze ist nicht maßstabsgetreu.
+          Wenn zwei parallele Strecken von denselben Strahlen aus geschnitten werden, kannst du ihre Längen miteinander verbinden. Das Bild zeigt zwei Strahlen, die von Z ausgehen. Die durchgezogene Strecke AB und die gestrichelte Strecke A′B′ liegen auf zwei parallelen Geraden. A und A′ liegen auf dem unteren Strahl, B und B′ auf dem oberen. Die Skizze ist nicht maßstabsgetreu.
       - type: figure
         image: images/strahlensatz-v.svg
         alt: Von Z gehen zwei Strahlen nach rechts. Eine durchgezogene Strecke AB verbindet beide Strahlen nahe bei Z, eine längere gestrichelte Strecke A′B′ verbindet sie weiter rechts. Beide Strecken sind parallel.
@@ -66,7 +52,7 @@ blocks:
         blocks:
           - type: text
             text: |
-              Gegeben sind ZA = 4 cm, ZA′ = 10 cm, ZB = 5 cm und AB = 3 cm. Gesucht sind ZB′ und A′B′. Zuerst der Faktor: $k = \frac{10}{4} = 2{,}5$. Der Strich | · 5 in der nächsten Zeile heißt: beide Seiten werden mit 5 multipliziert.
+              Wenn dir zwei Strecken fehlen, die du aus anderen ableiten kannst, stellst du ein Verhältnis auf. Gegeben sind ZA = 4 cm, ZA′ = 10 cm, ZB = 5 cm und AB = 3 cm. Gesucht sind ZB′ und A′B′. Zuerst der Faktor: $k = \frac{10}{4} = 2{,}5$. Der Strich | · 5 in der nächsten Zeile heißt: beide Seiten werden mit 5 multipliziert.
           - type: formula
             formula: '\frac{\text{ZB′}}{5} = \frac{10}{4} \quad | \cdot 5'
           - type: formula

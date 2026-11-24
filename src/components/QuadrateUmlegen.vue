@@ -86,10 +86,14 @@ const fills: Record<string, string> = { a: "#cfe3ff", b: "#d4f0d0", c: "#ffe0b3"
     <p class="text" aria-live="polite">{{ text }}</p>
 
     <div class="buttons">
-      <button type="button" :disabled="step === 1" @click="step--">Zurück</button>
-      <button type="button" :disabled="step === steps" @click="step++">Nächster Schritt</button>
-      <button type="button" :disabled="step === 1" @click="step = 1">Von vorn</button>
+      <button type="button" class="knopf" :disabled="step === 1" @click="step--">Zurück</button>
+      <button type="button" class="knopf knopf-haupt" :disabled="step === steps" @click="step++">
+        Nächster Schritt
+      </button>
+      <button type="button" class="knopf" :disabled="step === 1" @click="step = 1">Von vorn</button>
     </div>
+    <p v-if="step === steps" class="knopf-grund">Das war der letzte Schritt. „Von vorn“ zeigt Schritt 1 noch einmal.</p>
+    <p v-else-if="step === 1" class="knopf-grund">Schritt 1: „Zurück“ und „Von vorn“ gehen erst ab Schritt 2.</p>
   </div>
 </template>
 
@@ -156,16 +160,31 @@ const fills: Record<string, string> = { a: "#cfe3ff", b: "#d4f0d0", c: "#ffe0b3"
   flex-wrap: wrap;
   gap: 0.5rem;
 }
-.buttons button {
+.knopf {
+  font: inherit;
   min-height: 44px;
-  padding: 0 0.9rem;
-  border: 1px solid var(--page-border);
-  border-radius: 0.4rem;
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--page-accent);
+  border-radius: 0.375rem;
   background: var(--page-surface);
   color: var(--page-text);
-  font: inherit;
+  cursor: pointer;
 }
-.buttons button:disabled {
-  opacity: 0.55;
+.knopf-haupt {
+  background: var(--page-accent);
+  color: var(--page-on-accent);
+}
+.knopf:disabled {
+  cursor: default;
+  opacity: 0.6;
+}
+.knopf:focus-visible {
+  outline: 3px solid var(--page-text);
+  outline-offset: 2px;
+}
+.knopf-grund {
+  margin: 0.25rem 0 0;
+  font-size: 0.9375rem;
+  color: var(--page-muted);
 }
 </style>

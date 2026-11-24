@@ -22,11 +22,11 @@ Kapitel `dreieck` · Das rechtwinklige Dreieck
 - `trigonometrie`: Ich kann mit Sinus, Kosinus und Tangens Seiten und Winkel in rechtwinkligen Dreiecken berechnen. Seiten `verhaeltnisse`, `seiten-berechnen`, `winkel-berechnen`.
 - `sinus-kosinussatz`: Ich kann mit Sinus- und Kosinussatz Seiten und Winkel in beliebigen Dreiecken berechnen. Seiten `sinussatz`, `kosinussatz`.
 
-Je Kapitel eine Recap-Seite `recap` für Voraussetzungen von außen: Kapitel 1 `kongruenz`, `proportionale-zuordnungen`, `massstab`, `lineare-gleichungen` (dazu Begriffe Winkelmessen und Winkelsumme im Dreieck); Kapitel 2 `quadratwurzeln`, `flaeche-umfang-quadrat-rechteck`.
+Je Kapitel eine Recap-Seite `recap` (höchstens zwei Übungen: eine Mehrfachauswahl „Welche Aussagen stimmen?“ über alle Bausteine und eine erzeugte Aufgabe) für Voraussetzungen von außen: Kapitel 1 `kongruenz`, `proportionale-zuordnungen`, `massstab`, `lineare-gleichungen` (dazu Begriffe Winkelmessen und Winkelsumme im Dreieck); Kapitel 2 `quadratwurzeln`, `flaeche-umfang-quadrat-rechteck`.
 
 ## Content structure
 
-Jede Seite: `title`, `description`, `competencies: [<id>]`, Abschnitte mit festen ids `einstieg` („Was du hier lernst“ und erste Aufgabe), `idee` (Erklärung mit Bild), `beispiel` (Beispielkasten, Rechnung zeilenweise), `uebung`. Jede Seite endet mit einem Satz „Wie es weitergeht“. Recap-Seiten: `recap: [mathematik/<id>, …]`, ein Abschnitt je Baustein, nur beschreibende Blöcke plus Komponente `Kurztest`. Geschichte: Klasse 9 vermisst Schulhof, Turm und Fluss; erfundene, gemischte Namen, keine Marken. Höchstens 350 Wörter Lesetext je Seite.
+Jede Seite: `title`, `description`, `competencies: [<id>]`, Abschnitte mit festen ids `einstieg` („Was du hier lernst“ und erste Aufgabe), `idee` (Erklärung mit Bild), `beispiel` (Beispielkasten, Rechnung zeilenweise), `uebung`. Jede Seite endet mit einem Satz „Wie es weitergeht“. Recap-Seiten: `recap: [mathematik/<id>, …]`, ein Abschnitt je Baustein, danach „Kannst du das?“ mit höchstens zwei Übungen (normale Fragen, keine Komponente), am Ende die Checkliste und die Kartenseiten. Geschichte: Klasse 9 vermisst Schulhof, Turm und Fluss; erfundene, gemischte Namen, keine Marken. Höchstens 350 Wörter Lesetext je Seite.
 
 ## Terminology
 
@@ -52,7 +52,6 @@ Komponenten in `src/components/` (je `.vue`, `.ts` Logik, `.test.ts`; Zugmodus m
 - `Streckung`: Regler k von 0,5 bis 2,5 in Schritten von 0,1, Dreieck 3-4-5 mit Abstand ZA = 5 cm, Tabelle vorher/nachher (Seite `streckung`).
 - `QuadrateUmlegen`: Regler a und b (1 bis 6 cm), drei Schritte mit „Zurück“, „Nächster Schritt“, „Von vorn“; vier Dreiecke nummeriert, Quadrate c² oder a² und b² (Seite `pythagoras-beweis`).
 - `WinkelRegler`: Regler α (10° bis 80°) und Hypotenuse (4 bis 10 cm), Tabelle mit Gegenkathete, Ankathete und den drei Verhältnissen (Seite `verhaeltnisse`).
-- `Kurztest`: eine Frage mit Auswahl und sofortiger Rückmeldung, nur in den Recap-Seiten (Kopie der Vorlage des Epics, mit Korrektur für 360 px).
 
 Formeln: einzeilige `formula`-Blöcke dürfen bei 360 px nicht überlaufen; lange Rechnungen auf mehrere Blöcke verteilen.
 
@@ -70,7 +69,11 @@ Lernlandkarte Mathematik; eigene Herleitungen. Nachgeschlagenes (Satz des Pythag
 
 ## Rules learned from mistakes
 
-- Antwortreihenfolge in Auswahlfragen und Kurztests ist im YAML gemischt (die richtige Antwort nicht immer zuerst); beim Ergänzen neuer Fragen die richtige Option nicht an den Anfang setzen.
+- Wiederholungen stehen nur auf Recap-Seiten; Inhaltsseiten haben keine Aufgaben, die Früheres abfragen.
+- Jede Seite, jeder Abschnitt und jedes Verfahren beginnt mit dem Anlass („Wenn du … willst, brauchst du …“), danach das Wie.
+- Eigene Komponenten haben Buttons nur mit sichtbarer Wirkung; am Ende eines Ablaufs sind sie deaktiviert und ein Satz sagt warum. Gestaltung wie „Prüfen“ der Laufzeit: Rand und Füllung `--page-accent`, Text `--page-on-accent` oder `--page-text`, Fokusrahmen `--page-text`.
+
+- Antwortreihenfolge in Auswahlfragen ist im YAML gemischt (die richtige Antwort nicht immer zuerst); beim Ergänzen neuer Fragen die richtige Option nicht an den Anfang setzen.
 - `generated`: Toleranz 0,05 bei einer Dezimalstelle, 0,0005 bei drei (die Laufzeit zeigt sie in der Lösung); `where` schließt unsinnige Größen aus (Turm und Fluss 6 bis 60 m, Leiter höchstens etwa 75°) und Fälle, in denen eine Fehlermeldung gleich der Lösung wäre (zum Beispiel α = 45° bei sin gegen cos).
 - Aufgabentexte nennen die Buchstaben, auf die Tipps und Lösungen verweisen (a, b, c, l, d).
 - Mehr als ein `: ` im Klartext einer YAML-Zeile in Anführungszeichen setzen; Kommas in Flow-Maps vermeiden (Block-Schreibweise).

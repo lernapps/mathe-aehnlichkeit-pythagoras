@@ -9,31 +9,17 @@ blocks:
     blocks:
       - type: text
         text: |
-          Du lernst den Sinussatz: Er verbindet in jedem Dreieck jede Seite mit dem gegenüberliegenden Winkel. Damit berechnest du Seiten und Winkel, auch wenn kein Winkel 90° misst.
+          Wenn du in einem Dreieck ohne rechten Winkel eine Entfernung brauchst, zum Beispiel zu einem Baum am anderen Ufer, hilft der Sinussatz. Du lernst den Sinussatz: Er verbindet in jedem Dreieck jede Seite mit dem gegenüberliegenden Winkel. Damit berechnest du Seiten und Winkel, auch wenn kein Winkel 90° misst.
       - type: text
         text: |
           Mira und Jonas wollen wissen, wie weit ein Baum am anderen Ufer des Flusses entfernt ist. Am nahen Ufer messen sie eine Strecke AB von 60 m. Von A aus sehen sie den Baum C unter dem Winkel 52° zu AB, von B aus unter 71°.
-      - type: single-choice
-        id: dritter-winkel
-        text: Wie groß ist der Winkel γ bei C im Dreieck ABC?
-        options:
-          - text: 57°
-            correct: true
-            info: Die Winkel im Dreieck sind zusammen 180°. 180° − 52° − 71° = 57°.
-          - text: 123°
-            correct: false
-            info: Das ist die Summe von 52° und 71°. Der dritte Winkel ergänzt sie auf 180°.
-          - text: 38°
-            correct: false
-            info: 90° − 52° würde nur im rechtwinkligen Dreieck gelten. Hier ist kein Winkel 90°, du brauchst die Winkelsumme 180°.
-        explanation: Im Dreieck ist der dritte Winkel 180° minus die beiden anderen.
   - type: section
     id: idee
     title: Die Höhe zeigt den Zusammenhang
     blocks:
       - type: text
         text: |
-          Der Sinus aus dem rechtwinkligen Dreieck hilft auch hier. Du zerlegst das Dreieck durch eine Höhe in zwei rechtwinklige Dreiecke. In dem Bild unten fällt die Höhe *h* von C senkrecht auf die Seite *c* im Punkt D. Seite *a* liegt dem Winkel *α* gegenüber, *b* liegt *β* gegenüber, *c* liegt *γ* gegenüber.
+          Wenn kein Winkel 90° misst, teilst du das Dreieck so, dass rechtwinklige Dreiecke entstehen. Der Sinus aus dem rechtwinkligen Dreieck hilft auch hier. Du zerlegst das Dreieck durch eine Höhe in zwei rechtwinklige Dreiecke. In dem Bild unten fällt die Höhe *h* von C senkrecht auf die Seite *c* im Punkt D. Seite *a* liegt dem Winkel *α* gegenüber, *b* liegt *β* gegenüber, *c* liegt *γ* gegenüber.
       - type: figure
         image: images/dreieck-hoehe-c.svg
         alt: Spitzwinkliges Dreieck ABC mit der gestrichelten Höhe h von C auf die Seite c. Der Winkel bei A ist α, der bei B ist β. Die Seite a liegt A gegenüber, b liegt B gegenüber, c liegt C gegenüber.
@@ -73,7 +59,7 @@ blocks:
         blocks:
           - type: text
             text: |
-              Gegeben: $c = 60$ m, $\alpha = 52^\circ$, $\beta = 71^\circ$. Gesucht ist $b$, die Strecke AC. Erst der dritte Winkel: $\gamma = 180^\circ - 52^\circ - 71^\circ = 57^\circ$. Das Paar $c$ und $\gamma$ ist bekannt, $b$ gehört zu $\beta$.
+              Wenn du eine Seite aus zwei Winkeln und einer Seite brauchst, setzt du die Werte in den Sinussatz ein. Gegeben: $c = 60$ m, $\alpha = 52^\circ$, $\beta = 71^\circ$. Gesucht ist $b$, die Strecke AC. Erst der dritte Winkel: $\gamma = 180^\circ - 52^\circ - 71^\circ = 57^\circ$. Das Paar $c$ und $\gamma$ ist bekannt, $b$ gehört zu $\beta$.
           - type: formula
             formula: '\frac{b}{\sin 71^\circ} = \frac{60}{\sin 57^\circ}'
           - type: formula

@@ -9,7 +9,7 @@ blocks:
     blocks:
       - type: text
         text: |
-          Du lernst die Seiten eines rechtwinkligen Dreiecks zu benennen und siehst durch Umlegen von Flächen, wie ihre Längen zusammenhängen: der Satz des Pythagoras.
+          Wenn du in einem rechtwinkligen Dreieck eine Länge suchst, ohne sie zu messen, brauchst du einen Zusammenhang zwischen den drei Seiten. Du lernst die Seiten eines rechtwinkligen Dreiecks zu benennen und siehst durch Umlegen von Flächen, wie ihre Längen zusammenhängen: der Satz des Pythagoras.
       - type: text
         text: |
           Jonas und Mira stecken im Schulgarten ein Beet ab. Eine Ecke soll genau rechtwinklig sein. Sie haben ein Seil mit zwölf gleich weit entfernten Knoten und legen es zu einem Dreieck mit den Seiten 3, 4 und 5 Abschnitten. Ob das wirklich einen rechten Winkel gibt, klärst du auf der nächsten Seite.
@@ -42,7 +42,7 @@ blocks:
         explanation: Die beiden Seiten eines rechtwinkligen Dreiecks, die den rechten Winkel einschließen.
       - type: text
         text: |
-          Über jeder Seite kannst du ein Quadrat zeichnen. Die Fläche des Quadrats über *a* ist *a* · *a*, über *b* ist es *b* · *b*, über *c* ist es *c* · *c*. Die Frage ist: Wie hängen diese drei Flächen zusammen?
+          Wenn du wissen willst, wie die drei Seiten zusammenhängen, hilft ein Blick auf die Quadrate über den Seiten. Über jeder Seite kannst du ein Quadrat zeichnen. Die Fläche des Quadrats über *a* ist *a* · *a*, über *b* ist es *b* · *b*, über *c* ist es *c* · *c*. Die Frage ist: Wie hängen diese drei Flächen zusammen?
       - type: text
         text: |
           Das Bild unten beantwortet sie in drei Schritten. Mit den Reglern stellst du die Katheten *a* und *b* ein. Ein großes Quadrat mit der Seite *a* + *b* enthält vier gleiche Dreiecke mit den Katheten *a* und *b*, grau gestrichelt und von 1 bis 4 nummeriert. In Schritt 1 bleibt in der Mitte ein schiefes Quadrat über *c* übrig. In Schritt 2 liegen dieselben vier Dreiecke anders, und es bleiben zwei Quadrate über *a* und *b* übrig. Mit „Nächster Schritt“ gehst du weiter, mit „Zurück“ und „Von vorn“ wieder zurück.
@@ -78,7 +78,7 @@ blocks:
         blocks:
           - type: text
             text: |
-              Das Dreieck mit den Seiten 3, 4 und 5 hat $3^2 + 4^2 = 9 + 16 = 25$ und $5^2 = 25$. Die Gleichung stimmt. Das spricht dafür, dass das Seildreieck einen rechten Winkel hat. Warum daraus wirklich ein rechter Winkel folgt (die Umkehrung des Satzes), zeigt die nächste Seite.
+              Wenn du prüfen willst, ob drei Längen zu einem rechtwinkligen Dreieck passen, setzt du sie in die Gleichung ein. Das Dreieck mit den Seiten 3, 4 und 5 hat $3^2 + 4^2 = 9 + 16 = 25$ und $5^2 = 25$. Die Gleichung stimmt. Das spricht dafür, dass das Seildreieck einen rechten Winkel hat. Warum daraus wirklich ein rechter Winkel folgt (die Umkehrung des Satzes), zeigt die nächste Seite.
           - type: formula
             formula: "3^2 + 4^2 = 9 + 16 = 25 = 5^2"
   - type: section
