@@ -73,6 +73,8 @@ Der Winkel *α* liegt zwischen den Seiten *b* und *c*. Bei *α* = 90° ist der K
 
 Im Kosinussatz steht auf der linken Seite die Seite *a* gegenüber von *α*. Rechts stehen die beiden anderen Seiten und der Winkel dazwischen. Willst du den Winkel, stellst du nach dem Kosinus um und nutzt cos⁻¹.
 
+Damit du bei einer Aufgabe nicht raten musst, welcher der beiden Sätze passt, hilft diese Übersicht.
+
 Welcher Satz passt zu welcher Angabe?:
 - Gegeben | Satz
 - Zwei Winkel und eine Seite | Sinussatz
@@ -81,6 +83,8 @@ Welcher Satz passt zu welcher Angabe?:
 - Alle drei Seiten | Kosinussatz
 
 ### Zwei Beispiele
+
+Wenn du den Kosinussatz anwenden willst, brauchst du zwei Fälle: die dritte Seite aus zwei Seiten und dem Winkel dazwischen und einen Winkel aus drei Seiten.
 
 **Beispiel: Abstand von Spielplatz und Teich**
 
@@ -98,7 +102,7 @@ Der Abstand ist $a = \sqrt{24\,587} \approx 156{,}8$ m. Ohne den Winkel hätte P
 
 **Beispiel: Einen Winkel aus drei Seiten**
 
-Ein Dreieck hat die Seiten $a = 7$ cm, $b = 8$ cm und $c = 9$ cm. Gesucht ist $\alpha$. Im Zähler steht $64 + 81 - 49 = 96$, im Nenner $2 \cdot 8 \cdot 9 = 144$.
+Wenn alle drei Seiten bekannt sind und du einen Winkel brauchst, stellst du den Kosinussatz nach dem Kosinus um. Ein Dreieck hat die Seiten $a = 7$ cm, $b = 8$ cm und $c = 9$ cm. Gesucht ist $\alpha$. Im Zähler steht $64 + 81 - 49 = 96$, im Nenner $2 \cdot 8 \cdot 9 = 144$.
 
 $\cos \alpha = \frac{b^2 + c^2 - a^2}{2bc}$
 

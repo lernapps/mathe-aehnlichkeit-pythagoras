@@ -63,6 +63,8 @@ Suchst du die Hypotenuse, wird addiert. Suchst du eine Kathete, wird subtrahiert
 
 ### Drei Beispiele
 
+Wenn du eine Seitenlänge ausrechnen sollst, hilft ein Beispiel für jeden der drei Fälle: die Hypotenuse, eine Kathete und eine Rechnung mit Rundung.
+
 **Beispiel: Hypotenuse gesucht**
 
 Katheten 5 cm und 12 cm.
@@ -91,13 +93,13 @@ Die Rampe ist etwa 3,26 m lang.
 
 ### Ist das Dreieck rechtwinklig?
 
-Wenn du prüfen willst, ob eine Ecke rechtwinklig ist (zum Beispiel beim Abstecken eines Beetes), drehst du den Satz um. Der Satz lässt sich umkehren. Stimmt für drei Seitenlängen die Gleichung $a^2 + b^2 = c^2$, wobei *c* die längste Seite ist, dann ist das Dreieck rechtwinklig. Stimmt sie nicht, ist es nicht rechtwinklig. Damit prüfst du auch das Seil mit den Knoten vom Schulgarten. Warum das stimmt: Zeichne ein rechtwinkliges Dreieck mit den Katheten *a* und *b*. Seine Hypotenuse *c*′ erfüllt $a^2 + b^2 = c'^2$. Gilt auch $a^2 + b^2 = c^2$, ist *c*′ = *c*. Beide Dreiecke haben dann drei gleiche Seiten, sie sind kongruent, und das gegebene Dreieck hat denselben rechten Winkel.
+Wenn du prüfen willst, ob eine Ecke rechtwinklig ist (zum Beispiel beim Abstecken eines Beetes), drehst du den Satz um. Stimmt für drei Seitenlängen die Gleichung $a^2 + b^2 = c^2$, wobei *c* die längste Seite ist, dann ist das Dreieck rechtwinklig. Stimmt sie nicht, ist es nicht rechtwinklig. Damit prüfst du auch das Seil mit den Knoten vom Schulgarten. Warum das stimmt: Zeichne ein rechtwinkliges Dreieck mit den Katheten *a* und *b*. Seine Hypotenuse *c*′ erfüllt $a^2 + b^2 = c'^2$. Gilt auch $a^2 + b^2 = c^2$, ist *c*′ = *c*. Beide Dreiecke haben dann drei gleiche Seiten, sie sind kongruent, und das gegebene Dreieck hat denselben rechten Winkel.
 
 - **Umkehrung des Satzes des Pythagoras**: Gilt in einem Dreieck $a^2 + b^2 = c^2$ für die längste Seite $c$, dann liegt dem $c$ ein rechter Winkel gegenüber.
 
 **Beispiel: Zwei Dreiecke prüfen**
 
-Seiten 3, 4, 5: $3^2 + 4^2 = 25 = 5^2$, also rechtwinklig. Das Seil im Garten gibt einen rechten Winkel. Seiten 5, 6, 8: $5^2 + 6^2 = 61$, aber $8^2 = 64$. Das Dreieck ist nicht rechtwinklig.
+Wenn du prüfen willst, ob ein Dreieck rechtwinklig ist, setzt du die Seiten in die Gleichung ein. Seiten 6, 8, 10: $6^2 + 8^2 = 100 = 10^2$, also rechtwinklig. Seiten 5, 6, 8: $5^2 + 6^2 = 61$, aber $8^2 = 64$. Das Dreieck ist nicht rechtwinklig.
 
 ### Übung
 

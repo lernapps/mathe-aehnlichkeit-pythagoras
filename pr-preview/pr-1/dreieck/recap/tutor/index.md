@@ -49,7 +49,7 @@ Wenn du eine Länge in einem rechtwinkligen Dreieck ausrechnen willst, brauchst 
 
 Wenn du aus einer Fläche die Seitenlänge eines Quadrats brauchst, fragst du: Welche Zahl mal sich selbst ergibt diese Fläche? Eine **Quadratzahl** entsteht, wenn du eine Zahl mit sich selbst multiplizierst: $7 \cdot 7 = 49$. Die **Quadratwurzel** kehrt das um.
 
-- **Quadratwurzel**: Die Quadratwurzel $\sqrt{a}$ einer Zahl $a \ge 0$ ist die nicht negative Zahl, deren Quadrat $a$ ergibt. Zum Beispiel ist $\sqrt{49} = 7$, denn $7 \cdot 7 = 49$.
+- **Quadratwurzel**: Die Quadratwurzel $\sqrt{a}$ einer Zahl $a \ge 0$ ist die Zahl, die nicht negativ ist (0 oder größer) und deren Quadrat $a$ ergibt. Zum Beispiel ist $\sqrt{49} = 7$, denn $7 \cdot 7 = 49$.
 
 **Beispiel: Näherungswert bestimmen**
 
@@ -91,7 +91,7 @@ Warst du bei einem Punkt unsicher? Schau dir die Bausteine auf der Lernlandkarte
   - ✗ Ein Quadrat mit dem Umfang 20 cm hat die Fläche 400 cm². – Erst die Seite, 20 cm : 4 = 5 cm, dann die Fläche, 5 cm · 5 cm = 25 cm². Die 400 kommt vom Quadrat des Umfangs.
   - ✓ Ein Rechteck mit der Fläche 54 cm² und der Länge 9 cm ist 6 cm breit. – Fläche = Länge mal Breite, also Breite = 54 cm² : 9 cm = 6 cm.
 - Lösung: Die Wurzel aus 75 liegt zwischen 8 und 9.; Ein Rechteck von 7 cm mal 4,5 cm hat den Umfang 23 cm.; Ein Rechteck mit der Fläche 54 cm² und der Länge 9 cm ist 6 cm breit.
-- Erklärung: Die ersten Aussagen prüfen Wurzeln, die anderen Fläche und Umfang. Bei jeder falschen findest du oben den Abschnitt dazu.
+- Erklärung: Die ersten beiden Aussagen prüfen Wurzeln, die anderen Fläche und Umfang. Hast du eine falsch beurteilt, lies oben den Abschnitt dazu noch einmal.
 - Link: [../?via=tutor#voraussetzungen](../?via=tutor#voraussetzungen)
 
 ### Aufgabe quadrat-umfang

@@ -51,7 +51,7 @@ Jonas und Mira stecken im Schulgarten ein Beet ab. Eine Ecke soll genau rechtwin
 
 ### Quadrate an den Seiten
 
-Die beiden Seiten am rechten Winkel heißen **Katheten**, die Seite gegenüber heißt **Hypotenuse**. Nenne die Katheten *a* und *b* und die Hypotenuse *c*.
+Damit du über die Seiten eines rechtwinkligen Dreiecks sprechen kannst, brauchst du ihre Namen. Die beiden Seiten am rechten Winkel heißen **Katheten**, die Seite gegenüber heißt **Hypotenuse**. Nenne die Katheten *a* und *b* und die Hypotenuse *c*.
 
 - **Hypotenuse**: Die längste Seite eines rechtwinkligen Dreiecks. Sie liegt dem rechten Winkel gegenüber.
 

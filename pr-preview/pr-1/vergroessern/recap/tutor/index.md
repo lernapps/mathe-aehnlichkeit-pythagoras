@@ -131,7 +131,7 @@ Warst du bei einem Punkt unsicher? Schau dir die Bausteine auf der Lernlandkarte
   - ✓ Ein Winkel von 123° heißt stumpf. – Ein Winkel zwischen 90° und 180° heißt stumpf. Spitz wäre kleiner als 90°, ein rechter Winkel misst genau 90°.
   - ✗ Die Gleichung 3x + 5 = 20 hat die Lösung x = 25. – Erst auf beiden Seiten 5 subtrahieren, 3x = 15, dann durch 3 teilen, x = 5. Die 25 kommt davon, dass die 5 addiert statt subtrahiert wurde.
 - Lösung: Zwei Dreiecke mit den Seiten 5 cm, 6 cm, 7 cm und 7 cm, 5 cm, 6 cm sind kongruent.; In einem Dreieck sind zwei Winkel 48° und 67° groß. Der dritte Winkel ist 65°.; Auf einer Karte im Maßstab 1 : 25 000 sind 4,5 cm in Wirklichkeit 1,125 km.; Ein Winkel von 123° heißt stumpf.
-- Erklärung: Jede Aussage gehört zu einem der Bausteine. Bei jeder falschen findest du oben den Abschnitt dazu.
+- Erklärung: Jede Aussage gehört zu einem der Bausteine. Hast du eine falsch beurteilt, lies oben den Abschnitt dazu noch einmal.
 - Link: [../?via=tutor#voraussetzungen](../?via=tutor#voraussetzungen)
 
 ### Aufgabe karte-weg

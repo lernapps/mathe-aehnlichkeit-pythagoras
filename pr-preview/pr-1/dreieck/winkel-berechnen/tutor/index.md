@@ -65,6 +65,8 @@ sin⁻¹ ist keine Division. Es bedeutet nicht 1 durch sin, sondern die Umkehrfu
 
 ### Beispiele
 
+Wenn du sehen willst, wie die Umkehrfunktion einen Winkel liefert, helfen zwei Fälle: die Neigung einer Rampe und beide Winkel eines Dreiecks.
+
 **Beispiel: Neigung der Rampe**
 
 Die Rampe ist 4 m lang und überwindet 0,5 m. Bekannt sind Gegenkathete und Hypotenuse, also Sinus.
@@ -75,7 +77,7 @@ $\alpha = \sin^{-1}(0{,}125) \approx 7{,}2^\circ$
 
 **Beispiel: Beide Winkel eines Dreiecks**
 
-Ein rechtwinkliges Dreieck hat die Katheten 5 cm und 12 cm. Der Winkel, der der 12 gegenüberliegt, ist $\tan^{-1}\left(\frac{12}{5}\right) \approx 67{,}4^\circ$. Der andere spitze Winkel ist $90^\circ - 67{,}4^\circ = 22{,}6^\circ$.
+Wenn du beide spitzen Winkel brauchst, berechnest du einen und ergänzt den anderen zu 90°. Ein rechtwinkliges Dreieck hat die Katheten 5 cm und 12 cm. Der Winkel, der der 12 gegenüberliegt, ist $\tan^{-1}\left(\frac{12}{5}\right) \approx 67{,}4^\circ$. Der andere spitze Winkel ist $90^\circ - 67{,}4^\circ = 22{,}6^\circ$.
 
 ### Übung
 

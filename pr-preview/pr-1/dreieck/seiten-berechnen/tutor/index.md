@@ -45,7 +45,7 @@ Mit dem Taschenrechner aus einem Winkel und einer Seite eine fehlende Seite eine
 
 Wenn du eine Höhe oder Länge brauchst, die du nicht messen kannst, aber einen Winkel kennst (zum Beispiel wie hoch eine Rampe steigt), berechnest du aus Winkel und Seite die fehlende Seite eines rechtwinkligen Dreiecks. Du wählst dafür Sinus, Kosinus oder Tangens und bedienst den Taschenrechner richtig.
 
-Die Klasse will die Höhe einer Rampe wissen. Gemessen sind die Länge der Rampe und der Winkel, den sie mit dem Boden bildet. Den Sinus eines Winkels liefert der Taschenrechner. Er muss dafür auf Grad stehen, im Display steht oft DEG. Umstellen kannst du das meist mit der Taste MODE, SETUP oder DRG.
+Die Klasse will die Höhe einer Rampe wissen. Gemessen sind die Länge der Rampe und der Winkel, den sie mit dem Boden bildet. Dafür brauchst du den Sinus eines Winkels, und den liefert der Taschenrechner. Er muss dabei auf Grad stehen, im Display steht oft DEG. Umstellen kannst du das meist mit der Taste MODE, SETUP oder DRG.
 
 - Aufgabe `rechner-modus` (unten)
 
@@ -72,6 +72,8 @@ $\text{Gegenkathete} = \text{Ankathete} \cdot \tan \alpha$
 Zeichne zuerst eine Skizze und benenne die Seiten vom Winkel *α* aus. Schreibe dann das passende Verhältnis auf, bevor du rechnest. Der Rechner muss auf Grad (DEG) stehen.
 
 ### Beispiele
+
+Wenn du sehen willst, wie du das passende Verhältnis wählst, helfen zwei Fälle: Die Höhe einer Rampe ist gesucht, und ihre Länge ist gesucht.
 
 **Beispiel: Rampenhöhe**
 
