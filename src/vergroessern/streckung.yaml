@@ -117,7 +117,7 @@ blocks:
         answer: { value: "b / a", compare: { number: { format: decimal, decimals: 1 } } }
         mistakes:
           - {
-              value: "a / b",
+              value: "round(a / b, 1)",
               message: "Du hast das Original durch das Bild geteilt. Der Faktor ist Bildlänge durch Originallänge.",
             }
           - {

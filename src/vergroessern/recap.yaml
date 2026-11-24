@@ -32,7 +32,7 @@ blocks:
     blocks:
       - type: text
         text: |
-          Wenn du in einem Dreieck einen Winkel brauchst, den du nicht messen kannst, helfen die Winkelsumme und ein paar Wörter für Winkel. Mit dem Geodreieck misst du einen Winkel: Lege den Nullpunkt auf den Scheitel, einen Schenkel auf die Nulllinie und lies am anderen Schenkel ab. Ein Winkel zwischen 0° und 90° heißt spitz, bei genau 90° rechter Winkel, zwischen 90° und 180° stumpf.
+          Wenn in einem Dreieck ein Winkel fehlt, rechnest du ihn aus den anderen aus. Dazu brauchst du die Winkelsumme und ein paar Wörter für Winkel. Mit dem Geodreieck misst du einen Winkel: Lege den Nullpunkt auf den Scheitel, einen Schenkel auf die Nulllinie und lies am anderen Schenkel ab. Ein Winkel zwischen 0° und 90° heißt spitz, bei genau 90° rechter Winkel, zwischen 90° und 180° stumpf.
       - type: definition
         term: Winkelsumme im Dreieck
         explanation: In jedem Dreieck sind die drei Innenwinkel zusammen 180°. Sind zwei Winkel bekannt, ist der dritte 180° minus ihre Summe.
@@ -80,7 +80,7 @@ blocks:
     blocks:
       - type: text
         text: |
-          Wenn du eine unbekannte Länge aus gleichen Verhältnissen oder aus einer Rechnung bestimmen willst, stellst du eine Gleichung auf und löst sie. Bei einer **linearen Gleichung** kommt die gesuchte Zahl *x* nur einfach vor, nie als *x*² oder *x* · *x*. Du löst sie mit **Äquivalenzumformungen**: Du tust auf beiden Seiten dasselbe, bis *x* allein steht. Ein Strich wie | · 6 am Zeilenende heißt: beide Seiten werden mit 6 multipliziert. So löst du auch eine Gleichung aus zwei gleichen Verhältnissen. *x* : 6 ist dasselbe wie der Bruch *x* über 6, und mit 6 multipliziert steht *x* allein.
+          Wenn du eine unbekannte Länge aus gleichen Verhältnissen oder aus einer Rechnung bestimmen willst, stellst du eine Gleichung auf und löst sie. Bei einer **linearen Gleichung** kommt die gesuchte Zahl *x* nur einfach vor, nie als *x*² oder *x* · *x*. Du löst sie mit **Äquivalenzumformungen**: Du tust auf beiden Seiten dasselbe, bis *x* allein steht. Ein Strich wie | · 6 am Zeilenende heißt: beide Seiten werden mit 6 multipliziert. So löst du auch eine Gleichung aus zwei gleichen Verhältnissen. *x* : 6 ist dasselbe wie ein Bruch mit *x* im Zähler und 6 im Nenner, und mit 6 multipliziert steht *x* allein.
       - type: definition
         term: Äquivalenzumformung
         explanation: Eine Umformung, die beide Seiten einer Gleichung gleich verändert (dieselbe Zahl addieren, subtrahieren, mit ihr multiplizieren oder durch sie teilen), ohne die Lösung zu ändern.
@@ -103,7 +103,7 @@ blocks:
           Wenn du wissen willst, ob du bereit bist, löse diese zwei Übungen. Du bekommst sofort eine Rückmeldung mit Begründung.
       - type: multiple-choice
         id: voraussetzungen
-        text: Welche Aussagen stimmen? Wähle alle richtigen.
+        text: Welche Aussagen stimmen? Wähle alle richtigen. Kongruent heißt deckungsgleich.
         options:
           - text: Zwei Dreiecke mit den Seiten 5 cm, 6 cm, 7 cm und 7 cm, 5 cm, 6 cm sind kongruent.
             correct: true
@@ -123,6 +123,12 @@ blocks:
           - text: "Die Gleichung x : 6 = 10 : 4 hat die Lösung x = 12."
             correct: false
             info: "Beide Seiten mit 6 multiplizieren, x = 10 · 6 : 4 = 15. Die 12 kommt aus 6 + 10 − 4. Bei gleichen Verhältnissen wird multipliziert und geteilt, nicht addiert."
+          - text: "Ein Winkel von 123° heißt stumpf."
+            correct: true
+            info: "Ein Winkel zwischen 90° und 180° heißt stumpf. Spitz wäre kleiner als 90°, ein rechter Winkel misst genau 90°."
+          - text: "Die Gleichung 3x + 5 = 20 hat die Lösung x = 25."
+            correct: false
+            info: "Erst auf beiden Seiten 5 subtrahieren, 3x = 15, dann durch 3 teilen, x = 5. Die 25 kommt davon, dass die 5 addiert statt subtrahiert wurde."
         explanation: Jede Aussage gehört zu einem der Bausteine. Bei jeder falschen findest du oben den Abschnitt dazu.
       - type: generated
         id: karte-weg

@@ -187,13 +187,9 @@ function onInput(e: Event) {
   padding: 0.5rem 1rem;
   border: 2px solid var(--page-accent);
   border-radius: 0.375rem;
-  background: var(--page-surface);
-  color: var(--page-text);
-  cursor: pointer;
-}
-.knopf-haupt {
   background: var(--page-accent);
   color: var(--page-on-accent);
+  cursor: pointer;
 }
 .knopf:disabled {
   cursor: default;

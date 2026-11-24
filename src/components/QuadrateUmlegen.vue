@@ -87,9 +87,7 @@ const fills: Record<string, string> = { a: "#cfe3ff", b: "#d4f0d0", c: "#ffe0b3"
 
     <div class="buttons">
       <button type="button" class="knopf" :disabled="step === 1" @click="step--">Zurück</button>
-      <button type="button" class="knopf knopf-haupt" :disabled="step === steps" @click="step++">
-        Nächster Schritt
-      </button>
+      <button type="button" class="knopf" :disabled="step === steps" @click="step++">Nächster Schritt</button>
       <button type="button" class="knopf" :disabled="step === 1" @click="step = 1">Von vorn</button>
     </div>
     <p v-if="step === steps" class="knopf-grund">Das war der letzte Schritt. „Von vorn“ zeigt Schritt 1 noch einmal.</p>
@@ -166,13 +164,9 @@ const fills: Record<string, string> = { a: "#cfe3ff", b: "#d4f0d0", c: "#ffe0b3"
   padding: 0.5rem 1rem;
   border: 2px solid var(--page-accent);
   border-radius: 0.375rem;
-  background: var(--page-surface);
-  color: var(--page-text);
-  cursor: pointer;
-}
-.knopf-haupt {
   background: var(--page-accent);
   color: var(--page-on-accent);
+  cursor: pointer;
 }
 .knopf:disabled {
   cursor: default;
